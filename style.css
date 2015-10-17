@@ -177,6 +177,8 @@ main section.box, main section {
         background: rgba(181, 181, 181, 0.3); }
       main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star {
         background: rgba(134, 80, 172, 0.3); }
+    main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm {
+      float: right; }
     main section.box article.standard#tradelist .tradepoll .trade-description, main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
       background: whitesmoke;
       border: 1px solid #e8e8e8; }
