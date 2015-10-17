@@ -1,0 +1,121 @@
+// Layout
+
+body
+	background: $grey-lightest
+	font-family: 'Arimo', sans-serif
+	a
+		@include transition (0.3s ease all)
+		&:hover, &:active, &:focus
+			@include transition(0.1s ease all)
+
+header
+	background: $grey-b-darkest
+	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+	a img#logo
+		@include css3-prefix(filter, brightness(1000))
+	nav#menu
+		a
+			@include border-radius(50%)
+			color: $primary
+			text-shadow: none
+			text-transform: capitalize
+			width: 70px
+			padding: 5px 10px 20px 10px
+			&:hover, &:active, &:focus
+				background: rgba($black, 0.1)
+				@include border-radius(50%)
+			img
+				@include css3-prefix(filter, brightness(1000))
+
+main
+	section.box, section
+		background: transparent
+		@include box-shadow(0, 0, 0, transparent)
+		.title
+			@include css3-prefix(filter, brightness(0.25))
+			&:hover, &:active, &:focus
+				@include css3-prefix(filter, brightness(1))
+				a
+					color: $grey
+					text-shadow: none
+			a
+				color: $grey-darkest
+		/* Lounge destroyer filter options */
+		.ld-trade-filters, .ld-match-filters
+			margin: 50px 9px -2em 1%
+			background: $white
+			width: 100%
+			@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		/* Trade section */
+		article.standard#tradelist
+			.tradepoll
+				margin: 0.5em 0 0.5em 0
+				background: $white
+				float: left
+				width: 100%
+				padding: 1%
+				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+				@include border-radius(3px)
+				.tradeheader
+					a.button.destroyer
+						background: $grey-darkest
+						color: $secondary !important
+						@include border-radius(3px)
+						border: 1px solid $grey-darker
+						border-bottom-width: 2px
+						@include box-shadow(0, 1px, 2px, rgba($grey-darker, 0.5))
+						&:hover
+							border-color: $secondary
+							background: darken($grey-darkest, 5)
+							color: $primary
+							@include box-shadow(0, 1px, 2px, rgba($grey-darker, 0.5))
+						&:active, &:focus
+							background: darken($grey-darkest, 5)
+							@include box-shadow(0, 3px, 5px, rgba($grey-darker, 0.5))
+				.tradecnt
+					.left, .right
+						background: $white
+						@include box-shadow(0, 0, 0, transparent)
+						.oitm
+							.item
+								background: rgba($grey, 0.3)
+							.item.Star
+								background: rgba(#8650ac, 0.3)
+				.trade-description, .ld-steam-extra-wrapper .ld-steam-extra
+					background: $grey-lightest
+					border: 1px solid darken($grey-lightest, 5)
+				.trade-description
+					p
+						color: $black
+						border-left: 2px solid $primary
+				.ld-steam-extra-wrapper .ld-steam-extra
+					@include border-radius(0)
+					&::after
+						background-image: none
+		article.standard
+			.matchmain
+				.match
+					margin: 0.5em 0 0.5em 0
+					background-color: $white
+					float: left
+					width: 100%
+					padding: 1%
+					background-repeat: no-repeat
+					background-position: right
+					@include border-radius(3px)
+					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+					.matchleft
+						a > div:first-child, a > div:last-child
+							position: relative
+							width: 44% !important
+							background: $grey-lightest
+							border: 1px solid darken($grey-lightest, 5)
+							.teamtext
+								background: transparent
+							.team
+								border: 2px solid rgb(184,184,184)
+								@include border-radius(0)
+						a > div:first-child
+							.team
+								right: 0
+

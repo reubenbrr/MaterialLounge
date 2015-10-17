@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+body {
+  background: whitesmoke;
+  font-family: "Arimo", sans-serif; }
+  body a {
+    -webkit-transition: 0.3s ease all;
+    -khtml-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all; }
+    body a:hover, body a:active, body a:focus {
+      -webkit-transition: 0.1s ease all;
+      -khtml-transition: 0.1s ease all;
+      -moz-transition: 0.1s ease all;
+      -ms-transition: 0.1s ease all;
+      -o-transition: 0.1s ease all;
+      transition: 0.1s ease all; }
+
+header {
+  background: #4f4f4f;
+  -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+  -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+  -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+  -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+  box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5); }
+  header a img#logo {
+    -webkit-filter: brightness(1000);
+    -khtml-filter: brightness(1000);
+    -moz-filter: brightness(1000);
+    -ms-filter: brightness(1000);
+    -o-filter: brightness(1000);
+    filter: brightness(1000); }
+  header nav#menu a {
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    color: #5fe5d0;
+    text-shadow: none;
+    text-transform: capitalize;
+    width: 70px;
+    padding: 5px 10px 20px 10px; }
+    header nav#menu a:hover, header nav#menu a:active, header nav#menu a:focus {
+      background: rgba(0, 0, 0, 0.1);
+      -webkit-border-radius: 50%;
+      -khtml-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
+    header nav#menu a img {
+      -webkit-filter: brightness(1000);
+      -khtml-filter: brightness(1000);
+      -moz-filter: brightness(1000);
+      -ms-filter: brightness(1000);
+      -o-filter: brightness(1000);
+      filter: brightness(1000); }
+
+main section.box, main section {
+  background: transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  /* Lounge destroyer filter options */
+  /* Trade section */ }
+  main section.box .title, main section .title {
+    -webkit-filter: brightness(0.25);
+    -khtml-filter: brightness(0.25);
+    -moz-filter: brightness(0.25);
+    -ms-filter: brightness(0.25);
+    -o-filter: brightness(0.25);
+    filter: brightness(0.25); }
+    main section.box .title:hover, main section.box .title:active, main section.box .title:focus, main section .title:hover, main section .title:active, main section .title:focus {
+      -webkit-filter: brightness(1);
+      -khtml-filter: brightness(1);
+      -moz-filter: brightness(1);
+      -ms-filter: brightness(1);
+      -o-filter: brightness(1);
+      filter: brightness(1); }
+      main section.box .title:hover a, main section.box .title:active a, main section.box .title:focus a, main section .title:hover a, main section .title:active a, main section .title:focus a {
+        color: #b5b5b5;
+        text-shadow: none; }
+    main section.box .title a, main section .title a {
+      color: dimgray; }
+  main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
+    margin: 50px 9px -2em 1%;
+    background: #fff;
+    width: 100%;
+    -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5); }
+  main section.box article.standard#tradelist .tradepoll, main section article.standard#tradelist .tradepoll {
+    margin: 0.5em 0 0.5em 0;
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 1%;
+    -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; }
+    main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer {
+      background: dimgray;
+      color: #ff7917 !important;
+      -webkit-border-radius: 3px;
+      -khtml-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      border: 1px solid #8f8f8f;
+      border-bottom-width: 2px;
+      -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+      -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+      -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+      -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+      -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+      box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
+      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover {
+        border-color: #ff7917;
+        background: #5c5c5c;
+        color: #5fe5d0;
+        -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+        -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+        -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+        -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+        -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+        box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
+      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus {
+        background: #5c5c5c;
+        -webkit-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
+        -khtml-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
+        -moz-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
+        -ms-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
+        -o-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
+        box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5); }
+    main section.box article.standard#tradelist .tradepoll .tradecnt .left, main section.box article.standard#tradelist .tradepoll .tradecnt .right, main section article.standard#tradelist .tradepoll .tradecnt .left, main section article.standard#tradelist .tradepoll .tradecnt .right {
+      background: #fff;
+      -webkit-box-shadow: 0 0 0 transparent;
+      -khtml-box-shadow: 0 0 0 transparent;
+      -moz-box-shadow: 0 0 0 transparent;
+      -ms-box-shadow: 0 0 0 transparent;
+      -o-box-shadow: 0 0 0 transparent;
+      box-shadow: 0 0 0 transparent; }
+      main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item {
+        background: rgba(181, 181, 181, 0.3); }
+      main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star {
+        background: rgba(134, 80, 172, 0.3); }
+    main section.box article.standard#tradelist .tradepoll .trade-description, main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
+      background: whitesmoke;
+      border: 1px solid #e8e8e8; }
+    main section.box article.standard#tradelist .tradepoll .trade-description p, main section article.standard#tradelist .tradepoll .trade-description p {
+      color: #000;
+      border-left: 2px solid #5fe5d0; }
+    main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+      main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after {
+        background-image: none; }
+  main section.box article.standard .matchmain .match, main section article.standard .matchmain .match {
+    margin: 0.5em 0 0.5em 0;
+    background-color: #fff;
+    float: left;
+    width: 100%;
+    padding: 1%;
+    background-repeat: no-repeat;
+    background-position: right;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5); }
+    main section.box article.standard .matchmain .match .matchleft a > div:first-child, main section.box article.standard .matchmain .match .matchleft a > div:last-child, main section article.standard .matchmain .match .matchleft a > div:first-child, main section article.standard .matchmain .match .matchleft a > div:last-child {
+      position: relative;
+      width: 44% !important;
+      background: whitesmoke;
+      border: 1px solid #e8e8e8; }
+      main section.box article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section.box article.standard .matchmain .match .matchleft a > div:last-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:last-child .teamtext {
+        background: transparent; }
+      main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section.box article.standard .matchmain .match .matchleft a > div:last-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:last-child .team {
+        border: 2px solid #b8b8b8;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0; }
+    main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team {
+      right: 0; }
