@@ -43,7 +43,8 @@ main section.box, main section {
   margin-right: 0;
   padding: 0;
   /* Lounge destroyer filter options */
-  /* Trade section */ }
+  /* Trade section */
+  /* Betting section */ }
   main section.box:first-child, main section:first-child {
     margin-right: 1em; }
   main section.box .title, main section .title {
@@ -92,7 +93,7 @@ main section.box, main section {
     background: #fff;
     float: left;
     width: 100%;
-    padding: 1%;
+    padding: 0;
     border-top: 2px solid #5fe5d0;
     -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
     -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
@@ -113,72 +114,43 @@ main section.box, main section {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px; }
     main section.box article.standard#tradelist .tradepoll .tradeheader, main section article.standard#tradelist .tradepoll .tradeheader {
-      background: whitesmoke;
-      border: 1px solid #e8e8e8;
-      margin-bottom: 0.5em; }
+      margin: 0;
+      border-bottom: 1px solid rgba(95, 229, 208, 0.3);
+      background: whitesmoke; }
       main section.box article.standard#tradelist .tradepoll .tradeheader a:first-child img, main section article.standard#tradelist .tradepoll .tradeheader a:first-child img {
         margin-top: 0.3em; }
-      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer {
-        float: right !important;
-        padding: 4px;
-        margin: 0 0 0 0.5em;
-        background: #33dec3;
-        color: #fff !important;
-        -webkit-border-radius: 3px;
-        -khtml-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
-        border-radius: 3px;
-        border: 1px solid #1fbfa6;
-        border-bottom-width: 2px;
+    main section.box article.standard#tradelist .tradepoll .tradecnt, main section article.standard#tradelist .tradepoll .tradecnt {
+      background: transparent;
+      width: 98%;
+      margin: 0 0.5em; }
+      main section.box article.standard#tradelist .tradepoll .tradecnt .left, main section.box article.standard#tradelist .tradepoll .tradecnt .right, main section article.standard#tradelist .tradepoll .tradecnt .left, main section article.standard#tradelist .tradepoll .tradecnt .right {
+        background: #fff;
         -webkit-box-shadow: 0 0 0 transparent;
         -khtml-box-shadow: 0 0 0 transparent;
         -moz-box-shadow: 0 0 0 transparent;
         -ms-box-shadow: 0 0 0 transparent;
         -o-box-shadow: 0 0 0 transparent;
         box-shadow: 0 0 0 transparent; }
-        main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover {
-          border-color: #147d6d;
-          background: #1fbfa6;
-          color: #5fe5d0;
-          -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-          -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-          -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-          -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-          -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-          box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
-        main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus {
-          background: #1fbfa6;
-          -webkit-transition: 0.3s ease all;
-          -khtml-transition: 0.3s ease all;
-          -moz-transition: 0.3s ease all;
-          -ms-transition: 0.3s ease all;
-          -o-transition: 0.3s ease all;
-          transition: 0.3s ease all;
-          -webkit-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-          -khtml-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-          -moz-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-          -ms-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-          -o-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-          box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5); }
-    main section.box article.standard#tradelist .tradepoll .tradecnt .left, main section.box article.standard#tradelist .tradepoll .tradecnt .right, main section article.standard#tradelist .tradepoll .tradecnt .left, main section article.standard#tradelist .tradepoll .tradecnt .right {
-      background: #fff;
-      -webkit-box-shadow: 0 0 0 transparent;
-      -khtml-box-shadow: 0 0 0 transparent;
-      -moz-box-shadow: 0 0 0 transparent;
-      -ms-box-shadow: 0 0 0 transparent;
-      -o-box-shadow: 0 0 0 transparent;
-      box-shadow: 0 0 0 transparent; }
-      main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item {
-        background: rgba(181, 181, 181, 0.3); }
-      main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star {
-        background: rgba(134, 80, 172, 0.3); }
-    main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm {
-      float: right; }
+        main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item {
+          background: rgba(181, 181, 181, 0.3); }
+        main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star {
+          background: rgba(134, 80, 172, 0.3); }
+      main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm {
+        float: right; }
+    main section.box article.standard#tradelist .tradepoll .ld-slidedown, main section article.standard#tradelist .tradepoll .ld-slidedown {
+      margin: 0 0 0.5em 0 !important; }
     main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
       background: whitesmoke;
-      border: 1px solid #e8e8e8; }
+      border-bottom: 1px solid rgba(95, 229, 208, 0.3);
+      border-left: 0;
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+      main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after {
+        background-image: none; }
       main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info {
         border-color: rgba(95, 229, 208, 0.3); }
         main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img {
@@ -186,7 +158,9 @@ main section.box, main section {
           main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
             border: 2px solid #5fe5d0; }
     main section.box article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .trade-description {
-      background: #fff;
+      width: 98%;
+      margin: 0.5em;
+      background: transparent;
       border: 1px solid #e8e8e8;
       border-left: 2px solid #5fe5d0;
       -webkit-border-radius: 0;
@@ -207,15 +181,6 @@ main section.box, main section {
         -o-border-radius: 0;
         border-radius: 0;
         color: #000; }
-    main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
-      -webkit-border-radius: 0;
-      -khtml-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
-      border-radius: 0; }
-      main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after {
-        background-image: none; }
   main section.box article.standard .matchmain, main section article.standard .matchmain {
     margin-bottom: 1em; }
     main section.box article.standard .matchmain .match, main section article.standard .matchmain .match {
@@ -261,12 +226,25 @@ main section.box, main section {
           border-radius: 0; }
       main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team {
         right: 0; }
+      main section.box article.standard .matchmain .match .winsorloses, main section article.standard .matchmain .match .winsorloses {
+        background: transparent;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0; }
+      main section.box article.standard .matchmain .match hr, main section article.standard .matchmain .match hr {
+        width: 100%;
+        border-bottom: 1px solid whitesmoke; }
+    main section.box article.standard .matchmain.custom-my-bets-margin .matchheader .whenm, main section article.standard .matchmain.custom-my-bets-margin .matchheader .whenm {
+      margin-top: 5px; }
     main section.box article.standard .matchmain .matchheader, main section article.standard .matchmain .matchheader {
       text-shadow: none !important;
       width: 100%;
       margin-bottom: 0;
-      background: #fff;
-      border-bottom: 1px solid #e8e8e8;
+      background: whitesmoke;
+      border-bottom: 1px solid rgba(233, 30, 99, 0.3);
       -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
       -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
       -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
@@ -276,6 +254,25 @@ main section.box, main section {
       border-top: 2px solid #E91E63; }
       main section.box article.standard .matchmain .matchheader .whenm, main section article.standard .matchmain .matchheader .whenm {
         text-shadow: none !important; }
+  main section.box article.standard #betreturns, main section article.standard #betreturns {
+    background: #fff;
+    float: left;
+    border-top: 2px solid #00BCD4;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+    main section.box article.standard #betreturns .bpheader, main section article.standard #betreturns .bpheader {
+      color: dimgray;
+      padding: 1em 1em 0 1em; }
 
 header {
   background: #5fe5d0;
@@ -366,3 +363,93 @@ aside#submenu {
     text-align: right; }
     aside#submenu footer a:hover {
       color: #cc6e00; }
+
+a.button.destroyer, .button, .buttonright {
+  float: right !important;
+  padding: 4px;
+  margin: 0 0 0 0.5em;
+  background: #33dec3;
+  color: #fff !important;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #1fbfa6;
+  border-bottom-width: 2px;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+  a.button.destroyer:hover, .button:hover, .buttonright:hover {
+    border-color: #147d6d;
+    background: #1fbfa6;
+    color: #5fe5d0;
+    -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
+  a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus, .buttonright:active, .buttonright:focus {
+    background: #1fbfa6;
+    -webkit-transition: 0.3s ease all;
+    -khtml-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    -webkit-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -khtml-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -moz-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -ms-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -o-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5); }
+
+.matchmain .buttonright {
+  float: right !important;
+  padding: 4px;
+  margin: 0 0 0 0.5em;
+  background: #E91E63;
+  color: #fff !important;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #c1134e;
+  border-bottom-width: 2px;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+  .matchmain .buttonright:hover {
+    border-color: #930e3b;
+    background: #c1134e;
+    color: #E91E63;
+    -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+    box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
+  .matchmain .buttonright:active, .matchmain .buttonright:focus {
+    background: #c1134e;
+    -webkit-transition: 0.3s ease all;
+    -khtml-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    -webkit-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -khtml-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -moz-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -ms-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    -o-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+    box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5); }

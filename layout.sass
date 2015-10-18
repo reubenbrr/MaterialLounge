@@ -43,36 +43,20 @@ main
 				background: $white
 				float: left
 				width: 100%
-				padding: 1%
+				padding: 0
 				border-top: 2px solid $primary
 				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 				@include border-radius-separate(0, 0, 3px, 3px)
 				.tradeheader
+					margin: 0
+					border-bottom: 1px solid rgba($primary, 0.3)
 					background: $grey-lightest
-					border: 1px solid darken($grey-lightest, 5)
-					margin-bottom: 0.5em
 					a:first-child img
 						margin-top: 0.3em
-					a.button.destroyer
-						float: right !important
-						padding: 4px
-						margin: 0 0 0 0.5em
-						background: $primary-dark
-						color: $white !important
-						@include border-radius(3px)
-						border: 1px solid $primary-darker
-						border-bottom-width: 2px
-						@include box-shadow(0, 0, 0, transparent)
-						&:hover
-							border-color: $primary-darkest
-							background: $primary-darker
-							color: $primary
-							@include box-shadow(0, 1px, 2px, rgba($grey-darker, 0.5))
-						&:active, &:focus
-							background: $primary-darker
-							@include transition(0.3s ease all)
-							@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 				.tradecnt
+					background: transparent
+					width: 98%
+					margin: 0 0.5em
 					.left, .right
 						background: $white
 						@include box-shadow(0, 0, 0, transparent)
@@ -84,9 +68,15 @@ main
 					.left
 						.oitm
 							float: right
+				.ld-slidedown
+					margin: 0 0 0.5em 0 !important
 				.ld-steam-extra-wrapper .ld-steam-extra
 					background: $grey-lightest
-					border: 1px solid darken($grey-lightest, 5)
+					border-bottom: 1px solid rgba($primary, 0.3)
+					border-left: 0
+					@include border-radius(0)
+					&::after
+						background-image: none
 					.ld-steam-info
 						border-color: rgba($primary, 0.3)
 						.ld-steam-img
@@ -94,7 +84,9 @@ main
 							img
 								border: 2px solid $primary
 				.trade-description
-					background: $white
+					width: 98%
+					margin: 0.5em
+					background: transparent
 					border: 1px solid darken($grey-lightest, 5)
 					border-left: 2px solid $primary
 					&div
@@ -105,10 +97,7 @@ main
 						border-left: 0
 						@include border-radius(0)
 						color: $black
-				.ld-steam-extra-wrapper .ld-steam-extra
-					@include border-radius(0)
-					&::after
-						background-image: none
+		/* Betting section */
 		article.standard
 			.matchmain
 				margin-bottom: 1em
@@ -136,13 +125,33 @@ main
 						a > div:first-child
 							.team
 								right: 0
+					.winsorloses
+						background: transparent
+						@include border-radius(0)
+					hr
+						width: 100%
+						border-bottom: 1px solid $grey-lightest
+				&.custom-my-bets-margin
+					.matchheader
+						.whenm
+							margin-top: 5px
 				.matchheader
 					text-shadow: none !important
 					width: 100%
 					margin-bottom: 0
-					background: $white
-					border-bottom: 1px solid darken($grey-lightest, 5)
+					background: $grey-lightest
+					border-bottom: 1px solid rgba($secondary, 0.3)
 					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 					border-top: 2px solid $secondary
 					.whenm
 						text-shadow: none !important
+			#betreturns
+				background: $white
+				float: left
+				border-top: 2px solid $tertiary
+				@include border-radius-separate(0, 0, 3px, 3px)
+				.bpheader
+					color: $grey-darkest
+					padding: 1em 1em 0 1em
+
+
