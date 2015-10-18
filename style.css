@@ -331,6 +331,7 @@ header {
     -o-filter: brightness(1000);
     filter: brightness(1000); }
   header nav#menu a {
+    min-height: 53px;
     color: #fff;
     font-weight: bold;
     text-shadow: none;
