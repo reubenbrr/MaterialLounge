@@ -221,8 +221,13 @@ main section.box, main section {
       float: right; }
     main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
       background: whitesmoke;
-      border: 1px solid #e8e8e8;
-      border-left: 2px solid #5fe5d0; }
+      border: 1px solid #e8e8e8; }
+      main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info {
+        border-color: rgba(95, 229, 208, 0.3); }
+        main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img {
+          padding-top: 3px; }
+          main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
+            border: 2px solid #5fe5d0; }
     main section.box article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .trade-description {
       background: #fff;
       border: 1px solid #e8e8e8;
