@@ -51,8 +51,10 @@ main
 					margin: 0
 					border-bottom: 1px solid rgba($primary, 0.3)
 					background: $grey-lightest
+					a.button.destroyer
+						float: right !important
 					a:first-child img
-						margin-top: 0.3em
+						margin-top: 0.4em
 				.tradecnt
 					background: transparent
 					width: 98%
@@ -129,7 +131,8 @@ main
 				&.custom-my-bets-margin
 					.matchheader
 						.whenm
-							margin-top: 5px
+							line-height: 20px
+							margin-top: 4px
 				.matchheader
 					text-shadow: none !important
 					width: 100%
@@ -140,6 +143,11 @@ main
 					border-top: 2px solid $secondary
 					.whenm
 						text-shadow: none !important
+					.bettedIndicator
+						vertical-align: middle
+						line-height: 20px
+						font-size: 25px
+						color: $secondary
 			#betreturns
 				background: $white
 				float: left
