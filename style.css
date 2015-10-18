@@ -286,13 +286,14 @@ main section.box, main section {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     border-radius: 0;
-    background: transparent;
     color: #000;
     text-shadow: none;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 1px 4px;
     z-index: 1;
-    font-weight: 500; }
+    font-weight: 500;
+    padding: 1px 0; }
+  .oitm .item .value {
+    padding: 1px 4px; }
 .oitm .item.Star {
   background: rgba(134, 80, 172, 0.3); }
 .oitm .item.StatTrak {
@@ -383,7 +384,7 @@ aside#submenu {
         border-radius: 0;
         border-color: #5fe5d0; }
   aside#submenu #follow a {
-    opacity: 0.4;
+    opacity: 0.3;
     -webkit-filter: brightness(0);
     -khtml-filter: brightness(0);
     -moz-filter: brightness(0);
@@ -391,7 +392,7 @@ aside#submenu {
     -o-filter: brightness(0);
     filter: brightness(0); }
     aside#submenu #follow a:hover {
-      opacity: 0.6; }
+      opacity: 0.4; }
   aside#submenu #follow a#ftw:hover {
     background-position: 0 0 !important; }
   aside#submenu #follow a#ffb:hover {
