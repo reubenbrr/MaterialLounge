@@ -60,11 +60,6 @@ main
 					.left, .right
 						background: $white
 						@include box-shadow(0, 0, 0, transparent)
-						.oitm
-							.item
-								background: rgba($grey, 0.3)
-							.item.Star
-								background: rgba(#8650ac, 0.3)
 					.left
 						.oitm
 							float: right
@@ -153,5 +148,30 @@ main
 				.bpheader
 					color: $grey-darkest
 					padding: 1em 1em 0 1em
+
+/* Items */
+.oitm
+	.item
+		@include border-radius(0)
+		background: rgba($grey, 0.3)
+		.value, .rarity
+			@include border-radius(0)
+			background: transparent
+			color: $black
+			text-shadow: none
+			background-color: rgba($white, 0.7)
+			padding: 1px 4px
+			z-index: 1
+			font-weight: 500
+	.item.Star
+		background: rgba(#8650ac, 0.3)
+	.item.StatTrak
+		background: rgba(207, 106, 50, 0.3)
+		@include box-shadow(0, 0, 0, transparent)
+		.clreff
+			@include border-radius(0)
+			background-color: rgba(235, 119, 55, 0.8) !important
+			text-shadow: none
+			z-index: 2
 
 

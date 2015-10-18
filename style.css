@@ -131,10 +131,6 @@ main section.box, main section {
         -ms-box-shadow: 0 0 0 transparent;
         -o-box-shadow: 0 0 0 transparent;
         box-shadow: 0 0 0 transparent; }
-        main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item {
-          background: rgba(181, 181, 181, 0.3); }
-        main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section.box article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm .item.Star, main section article.standard#tradelist .tradepoll .tradecnt .right .oitm .item.Star {
-          background: rgba(134, 80, 172, 0.3); }
       main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm {
         float: right; }
     main section.box article.standard#tradelist .tradepoll .ld-slidedown, main section article.standard#tradelist .tradepoll .ld-slidedown {
@@ -273,6 +269,50 @@ main section.box, main section {
     main section.box article.standard #betreturns .bpheader, main section article.standard #betreturns .bpheader {
       color: dimgray;
       padding: 1em 1em 0 1em; }
+
+/* Items */
+.oitm .item {
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background: rgba(181, 181, 181, 0.3); }
+  .oitm .item .value, .oitm .item .rarity {
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #000;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1px 4px;
+    z-index: 1;
+    font-weight: 500; }
+.oitm .item.Star {
+  background: rgba(134, 80, 172, 0.3); }
+.oitm .item.StatTrak {
+  background: rgba(207, 106, 50, 0.3);
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+  .oitm .item.StatTrak .clreff {
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    background-color: rgba(235, 119, 55, 0.8) !important;
+    text-shadow: none;
+    z-index: 2; }
 
 header {
   background: #5fe5d0;
