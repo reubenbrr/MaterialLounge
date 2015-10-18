@@ -14,7 +14,8 @@
 ------------------------------------------------------------- */
 body {
   background: whitesmoke;
-  font-family: "Arimo", sans-serif; }
+  font-family: "Arimo", sans-serif;
+  text-shadow: none !important; }
   body a {
     -webkit-transition: 0.3s ease all;
     -khtml-transition: 0.3s ease all;
@@ -31,7 +32,7 @@ body {
       transition: 0.1s ease all; }
 
 header {
-  background: #4f4f4f;
+  background: #5fe5d0;
   -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
   -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
   -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
@@ -46,25 +47,28 @@ header {
     -o-filter: brightness(1000);
     filter: brightness(1000); }
   header nav#menu a {
-    -webkit-border-radius: 50%;
-    -khtml-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    color: #5fe5d0;
+    color: #fff;
+    font-weight: bold;
     text-shadow: none;
     text-transform: capitalize;
     width: 70px;
-    padding: 5px 10px 20px 10px; }
+    padding: 0 10px 10px 10px;
+    border: 2px solid transparent;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
     header nav#menu a:hover, header nav#menu a:active, header nav#menu a:focus {
-      background: rgba(0, 0, 0, 0.1);
-      -webkit-border-radius: 50%;
-      -khtml-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%; }
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 2px solid rgba(0, 0, 0, 0.02); }
     header nav#menu a img {
       -webkit-filter: brightness(1000);
       -khtml-filter: brightness(1000);
@@ -72,6 +76,8 @@ header {
       -ms-filter: brightness(1000);
       -o-filter: brightness(1000);
       filter: brightness(1000); }
+  header #login, header #logout {
+    margin-top: 0.7em !important; }
 
 main section.box, main section {
   background: transparent;
@@ -84,6 +90,12 @@ main section.box, main section {
   /* Lounge destroyer filter options */
   /* Trade section */ }
   main section.box .title, main section .title {
+    -webkit-transition: 0.5s ease all;
+    -khtml-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
     -webkit-filter: brightness(0.25);
     -khtml-filter: brightness(0.25);
     -moz-filter: brightness(0.25);
@@ -96,7 +108,13 @@ main section.box, main section {
       -moz-filter: brightness(1);
       -ms-filter: brightness(1);
       -o-filter: brightness(1);
-      filter: brightness(1); }
+      filter: brightness(1);
+      -webkit-transition: 0.1s ease all;
+      -khtml-transition: 0.1s ease all;
+      -moz-transition: 0.1s ease all;
+      -ms-transition: 0.1s ease all;
+      -o-transition: 0.1s ease all;
+      transition: 0.1s ease all; }
       main section.box .title:hover a, main section.box .title:active a, main section.box .title:focus a, main section .title:hover a, main section .title:active a, main section .title:focus a {
         color: #b5b5b5;
         text-shadow: none; }
@@ -118,53 +136,75 @@ main section.box, main section {
     float: left;
     width: 100%;
     padding: 1%;
+    border-top: 2px solid #5fe5d0;
     -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
     -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
     -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
     -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
     -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
     box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px; }
-    main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer {
-      background: dimgray;
-      color: #ff7917 !important;
-      -webkit-border-radius: 3px;
-      -khtml-border-radius: 3px;
-      -moz-border-radius: 3px;
-      -ms-border-radius: 3px;
-      -o-border-radius: 3px;
-      border-radius: 3px;
-      border: 1px solid #8f8f8f;
-      border-bottom-width: 2px;
-      -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-      -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-      -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-      -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-      -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-      box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
-      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover {
-        border-color: #ff7917;
-        background: #5c5c5c;
-        color: #5fe5d0;
-        -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-        -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-        -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-        -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-        -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
-        box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
-      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus {
-        background: #5c5c5c;
-        -webkit-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
-        -khtml-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
-        -moz-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
-        -ms-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
-        -o-box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5);
-        box-shadow: 0 3px 5px rgba(143, 143, 143, 0.5); }
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
+    main section.box article.standard#tradelist .tradepoll .tradeheader, main section article.standard#tradelist .tradepoll .tradeheader {
+      background: whitesmoke;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 0.5em; }
+      main section.box article.standard#tradelist .tradepoll .tradeheader a:first-child img, main section article.standard#tradelist .tradepoll .tradeheader a:first-child img {
+        margin-top: 0.3em; }
+      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer {
+        float: right !important;
+        padding: 4px;
+        margin: 0 0 0 0.5em;
+        background: #33dec3;
+        color: #fff !important;
+        -webkit-border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #1fbfa6;
+        border-bottom-width: 2px;
+        -webkit-box-shadow: 0 0 0 transparent;
+        -khtml-box-shadow: 0 0 0 transparent;
+        -moz-box-shadow: 0 0 0 transparent;
+        -ms-box-shadow: 0 0 0 transparent;
+        -o-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent; }
+        main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:hover {
+          border-color: #147d6d;
+          background: #1fbfa6;
+          color: #5fe5d0;
+          -webkit-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+          -khtml-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+          -moz-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+          -ms-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+          -o-box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5);
+          box-shadow: 0 1px 2px rgba(143, 143, 143, 0.5); }
+        main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:active, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer:focus {
+          background: #1fbfa6;
+          -webkit-transition: 0.3s ease all;
+          -khtml-transition: 0.3s ease all;
+          -moz-transition: 0.3s ease all;
+          -ms-transition: 0.3s ease all;
+          -o-transition: 0.3s ease all;
+          transition: 0.3s ease all;
+          -webkit-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+          -khtml-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+          -moz-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+          -ms-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+          -o-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
+          box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5); }
     main section.box article.standard#tradelist .tradepoll .tradecnt .left, main section.box article.standard#tradelist .tradepoll .tradecnt .right, main section article.standard#tradelist .tradepoll .tradecnt .left, main section article.standard#tradelist .tradepoll .tradecnt .right {
       background: #fff;
       -webkit-box-shadow: 0 0 0 transparent;
@@ -179,12 +219,29 @@ main section.box, main section {
         background: rgba(134, 80, 172, 0.3); }
     main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm {
       float: right; }
-    main section.box article.standard#tradelist .tradepoll .trade-description, main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
+    main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
       background: whitesmoke;
-      border: 1px solid #e8e8e8; }
-    main section.box article.standard#tradelist .tradepoll .trade-description p, main section article.standard#tradelist .tradepoll .trade-description p {
-      color: #000;
+      border: 1px solid #e8e8e8;
       border-left: 2px solid #5fe5d0; }
+    main section.box article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .trade-description {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      border-left: 2px solid #5fe5d0;
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+      main section.box article.standard#tradelist .tradepoll .trade-description p, main section article.standard#tradelist .tradepoll .trade-description p {
+        border-left: 0;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        color: #000; }
     main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
       -webkit-border-radius: 0;
       -khtml-border-radius: 0;
@@ -194,40 +251,63 @@ main section.box, main section {
       border-radius: 0; }
       main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after {
         background-image: none; }
-  main section.box article.standard .matchmain .match, main section article.standard .matchmain .match {
-    margin: 0.5em 0 0.5em 0;
-    background-color: #fff;
-    float: left;
-    width: 100%;
-    padding: 1%;
-    background-repeat: no-repeat;
-    background-position: right;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5); }
-    main section.box article.standard .matchmain .match .matchleft a > div:first-child, main section.box article.standard .matchmain .match .matchleft a > div:last-child, main section article.standard .matchmain .match .matchleft a > div:first-child, main section article.standard .matchmain .match .matchleft a > div:last-child {
-      position: relative;
-      width: 44% !important;
-      background: whitesmoke;
-      border: 1px solid #e8e8e8; }
-      main section.box article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section.box article.standard .matchmain .match .matchleft a > div:last-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:last-child .teamtext {
-        background: transparent; }
-      main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section.box article.standard .matchmain .match .matchleft a > div:last-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:last-child .team {
-        border: 2px solid #b8b8b8;
-        -webkit-border-radius: 0;
-        -khtml-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
-        border-radius: 0; }
-    main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team {
-      right: 0; }
+  main section.box article.standard .matchmain, main section article.standard .matchmain {
+    margin-bottom: 1em; }
+    main section.box article.standard .matchmain .match, main section article.standard .matchmain .match {
+      margin: 0;
+      background-color: #fff;
+      float: left;
+      width: 100%;
+      padding: 1%;
+      background-repeat: no-repeat;
+      background-position: right;
+      -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -webkit-border-top-left-radius: 0;
+      -webkit-border-top-right-radius: 0;
+      -webkit-border-bottom-right-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      -moz-border-radius-topleft: 0;
+      -moz-border-radius-topright: 0;
+      -moz-border-radius-bottomright: 3px;
+      -moz-border-radius-bottomleft: 3px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px; }
+      main section.box article.standard .matchmain .match .matchleft a > div:first-child, main section.box article.standard .matchmain .match .matchleft a > div:last-child, main section article.standard .matchmain .match .matchleft a > div:first-child, main section article.standard .matchmain .match .matchleft a > div:last-child {
+        position: relative;
+        width: 44% !important;
+        background: whitesmoke;
+        border: 1px solid #e8e8e8; }
+        main section.box article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section.box article.standard .matchmain .match .matchleft a > div:last-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:last-child .teamtext {
+          background: transparent; }
+        main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section.box article.standard .matchmain .match .matchleft a > div:last-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:last-child .team {
+          border: 2px solid #b8b8b8;
+          -webkit-border-radius: 0;
+          -khtml-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+          border-radius: 0; }
+      main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team {
+        right: 0; }
+    main section.box article.standard .matchmain .matchheader, main section article.standard .matchmain .matchheader {
+      text-shadow: none !important;
+      width: 100%;
+      margin-bottom: 0;
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+      -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      border-top: 2px solid #E91E63; }
+      main section.box article.standard .matchmain .matchheader .whenm, main section article.standard .matchmain .matchheader .whenm {
+        text-shadow: none !important; }

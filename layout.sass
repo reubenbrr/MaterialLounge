@@ -3,38 +3,47 @@
 body
 	background: $grey-lightest
 	font-family: 'Arimo', sans-serif
+	text-shadow: none !important
 	a
 		@include transition (0.3s ease all)
 		&:hover, &:active, &:focus
 			@include transition(0.1s ease all)
 
 header
-	background: $grey-b-darkest
+	background: $primary
 	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 	a img#logo
 		@include css3-prefix(filter, brightness(1000))
 	nav#menu
 		a
-			@include border-radius(50%)
-			color: $primary
+			color: $white
+			font-weight: bold
 			text-shadow: none
 			text-transform: capitalize
 			width: 70px
-			padding: 5px 10px 20px 10px
+			padding: 0 10px 10px 10px
+			border: 2px solid transparent
+			@include border-radius(0)
 			&:hover, &:active, &:focus
-				background: rgba($black, 0.1)
-				@include border-radius(50%)
+				@include border-radius(0)
+				background-color: rgba($black, 0.05)
+				border: 2px solid rgba($black, 0.02)
 			img
 				@include css3-prefix(filter, brightness(1000))
+	#login, #logout
+		margin-top: 0.7em !important
+
 
 main
 	section.box, section
 		background: transparent
 		@include box-shadow(0, 0, 0, transparent)
 		.title
+			@include transition(0.5s ease all)
 			@include css3-prefix(filter, brightness(0.25))
 			&:hover, &:active, &:focus
 				@include css3-prefix(filter, brightness(1))
+				@include transition(0.1s ease all)
 				a
 					color: $grey
 					text-shadow: none
@@ -54,24 +63,34 @@ main
 				float: left
 				width: 100%
 				padding: 1%
+				border-top: 2px solid $primary
 				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-				@include border-radius(3px)
+				@include border-radius-separate(0, 0, 3px, 3px)
 				.tradeheader
+					background: $grey-lightest
+					border: 1px solid darken($grey-lightest, 5)
+					margin-bottom: 0.5em
+					a:first-child img
+						margin-top: 0.3em
 					a.button.destroyer
-						background: $grey-darkest
-						color: $secondary !important
+						float: right !important
+						padding: 4px
+						margin: 0 0 0 0.5em
+						background: $primary-dark
+						color: $white !important
 						@include border-radius(3px)
-						border: 1px solid $grey-darker
+						border: 1px solid $primary-darker
 						border-bottom-width: 2px
-						@include box-shadow(0, 1px, 2px, rgba($grey-darker, 0.5))
+						@include box-shadow(0, 0, 0, transparent)
 						&:hover
-							border-color: $secondary
-							background: darken($grey-darkest, 5)
+							border-color: $primary-darkest
+							background: $primary-darker
 							color: $primary
 							@include box-shadow(0, 1px, 2px, rgba($grey-darker, 0.5))
 						&:active, &:focus
-							background: darken($grey-darkest, 5)
-							@include box-shadow(0, 3px, 5px, rgba($grey-darker, 0.5))
+							background: $primary-darker
+							@include transition(0.3s ease all)
+							@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 				.tradecnt
 					.left, .right
 						background: $white
@@ -84,29 +103,37 @@ main
 					.left
 						.oitm
 							float: right
-				.trade-description, .ld-steam-extra-wrapper .ld-steam-extra
+				.ld-steam-extra-wrapper .ld-steam-extra
 					background: $grey-lightest
 					border: 1px solid darken($grey-lightest, 5)
+					border-left: 2px solid $primary
 				.trade-description
+					background: $white
+					border: 1px solid darken($grey-lightest, 5)
+					border-left: 2px solid $primary
+					@include border-radius(0)
 					p
+						border-left: 0
+						@include border-radius(0)
 						color: $black
-						border-left: 2px solid $primary
+
 				.ld-steam-extra-wrapper .ld-steam-extra
 					@include border-radius(0)
 					&::after
 						background-image: none
 		article.standard
 			.matchmain
+				margin-bottom: 1em
 				.match
-					margin: 0.5em 0 0.5em 0
+					margin: 0
 					background-color: $white
 					float: left
 					width: 100%
 					padding: 1%
 					background-repeat: no-repeat
 					background-position: right
-					@include border-radius(3px)
 					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+					@include border-radius-separate(0, 0, 3px, 3px)
 					.matchleft
 						a > div:first-child, a > div:last-child
 							position: relative
@@ -121,4 +148,14 @@ main
 						a > div:first-child
 							.team
 								right: 0
+				.matchheader
+					text-shadow: none !important
+					width: 100%
+					margin-bottom: 0
+					background: $white
+					border-bottom: 1px solid darken($grey-lightest, 5)
+					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+					border-top: 2px solid $secondary
+					.whenm
+						text-shadow: none !important
 
