@@ -238,7 +238,10 @@ main section.box, main section {
       -ms-border-radius: 0;
       -o-border-radius: 0;
       border-radius: 0; }
+      main section.box article.standard#tradelist .tradepoll .trade-descriptiondiv, main section article.standard#tradelist .tradepoll .trade-descriptiondiv {
+        color: #000; }
       main section.box article.standard#tradelist .tradepoll .trade-description p, main section article.standard#tradelist .tradepoll .trade-description p {
+        opacity: 1;
         border-left: 0;
         -webkit-border-radius: 0;
         -khtml-border-radius: 0;
