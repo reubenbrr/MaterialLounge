@@ -167,3 +167,35 @@ main
 					.whenm
 						text-shadow: none !important
 
+aside
+	&#submenu
+		background: transparent
+		nav
+			a
+				background: $white
+				border-top: none
+				border-bottom: 2px solid $grey-light
+				color: $primary
+				margin-bottom: 0.25em
+				&:hover
+					background: lighten($grey-lightest, 2)
+					color: $primary-darker
+					@include border-radius(0)
+					border-color: $primary
+		#follow a
+			opacity: 0.4
+			@include css3-prefix(filter, brightness(0))
+			&:hover
+				opacity: 0.6
+		#follow a#ftw:hover
+			background-position: 0 0 !important
+		#follow a#ffb:hover
+			background-position: -44px 0 !important
+		#follow a#fvk:hover
+			background-position: -79px 0 !important
+		footer
+			margin-top: -30px
+			text-align: right
+			a:hover
+				color: darken(#ff8a00, 10)
+

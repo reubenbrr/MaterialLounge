@@ -319,3 +319,43 @@ main section.box, main section {
       border-top: 2px solid #E91E63; }
       main section.box article.standard .matchmain .matchheader .whenm, main section article.standard .matchmain .matchheader .whenm {
         text-shadow: none !important; }
+
+aside#submenu {
+  background: transparent; }
+  aside#submenu nav a {
+    background: #fff;
+    border-top: none;
+    border-bottom: 2px solid #c2c2c2;
+    color: #5fe5d0;
+    margin-bottom: 0.25em; }
+    aside#submenu nav a:hover {
+      background: #fafafa;
+      color: #1fbfa6;
+      -webkit-border-radius: 0;
+      -khtml-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0;
+      border-color: #5fe5d0; }
+  aside#submenu #follow a {
+    opacity: 0.4;
+    -webkit-filter: brightness(0);
+    -khtml-filter: brightness(0);
+    -moz-filter: brightness(0);
+    -ms-filter: brightness(0);
+    -o-filter: brightness(0);
+    filter: brightness(0); }
+    aside#submenu #follow a:hover {
+      opacity: 0.6; }
+  aside#submenu #follow a#ftw:hover {
+    background-position: 0 0 !important; }
+  aside#submenu #follow a#ffb:hover {
+    background-position: -44px 0 !important; }
+  aside#submenu #follow a#fvk:hover {
+    background-position: -79px 0 !important; }
+  aside#submenu footer {
+    margin-top: -30px;
+    text-align: right; }
+    aside#submenu footer a:hover {
+      color: #cc6e00; }
