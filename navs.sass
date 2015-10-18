@@ -1,0 +1,58 @@
+//Navbar
+header
+	background: $primary
+	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+	a img#logo
+		@include css3-prefix(filter, brightness(1000))
+	nav#menu
+		a
+			color: $white
+			font-weight: bold
+			text-shadow: none
+			text-transform: capitalize
+			width: 70px
+			padding: 0 10px 10px 10px
+			border: 2px solid transparent
+			@include border-radius(0)
+			&:hover, &:active, &:focus
+				@include border-radius(0)
+				background-color: rgba($black, 0.05)
+				border: 2px solid rgba($black, 0.02)
+			img
+				@include css3-prefix(filter, brightness(1000))
+	#login, #logout
+		margin-top: 0.7em !important
+
+//Sidebar
+aside
+	&#submenu
+		background: transparent
+		nav
+			margin-top: 0.5em
+			a
+				background: $white
+				border-top: none
+				border-bottom: 2px solid $grey-darkest
+				color: $grey-darkest
+				margin-bottom: 0.25em
+				&:hover
+					background: lighten($grey-lightest, 2)
+					color: $primary-darker
+					@include border-radius(0)
+					border-color: $primary
+		#follow a
+			opacity: 0.4
+			@include css3-prefix(filter, brightness(0))
+			&:hover
+				opacity: 0.6
+		#follow a#ftw:hover
+			background-position: 0 0 !important
+		#follow a#ffb:hover
+			background-position: -44px 0 !important
+		#follow a#fvk:hover
+			background-position: -79px 0 !important
+		footer
+			margin-top: -30px
+			text-align: right
+			a:hover
+				color: darken(#ff8a00, 10)
