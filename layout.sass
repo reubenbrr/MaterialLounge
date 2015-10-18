@@ -38,6 +38,11 @@ main
 	section.box, section
 		background: transparent
 		@include box-shadow(0, 0, 0, transparent)
+		margin-left: 0
+		margin-right: 0
+		padding: 0
+		&:first-child
+			margin-right: 1em
 		.title
 			@include transition(0.5s ease all)
 			@include css3-prefix(filter, brightness(0.25))
@@ -124,7 +129,6 @@ main
 						border-left: 0
 						@include border-radius(0)
 						color: $black
-
 				.ld-steam-extra-wrapper .ld-steam-extra
 					@include border-radius(0)
 					&::after
@@ -171,11 +175,12 @@ aside
 	&#submenu
 		background: transparent
 		nav
+			margin-top: 0.5em
 			a
 				background: $white
 				border-top: none
-				border-bottom: 2px solid $grey-light
-				color: $primary
+				border-bottom: 2px solid $grey-darkest
+				color: $grey-darkest
 				margin-bottom: 0.25em
 				&:hover
 					background: lighten($grey-lightest, 2)

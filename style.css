@@ -87,8 +87,13 @@ main section.box, main section {
   -ms-box-shadow: 0 0 0 transparent;
   -o-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
   /* Lounge destroyer filter options */
   /* Trade section */ }
+  main section.box:first-child, main section:first-child {
+    margin-right: 1em; }
   main section.box .title, main section .title {
     -webkit-transition: 0.5s ease all;
     -khtml-transition: 0.5s ease all;
@@ -322,22 +327,24 @@ main section.box, main section {
 
 aside#submenu {
   background: transparent; }
-  aside#submenu nav a {
-    background: #fff;
-    border-top: none;
-    border-bottom: 2px solid #c2c2c2;
-    color: #5fe5d0;
-    margin-bottom: 0.25em; }
-    aside#submenu nav a:hover {
-      background: #fafafa;
-      color: #1fbfa6;
-      -webkit-border-radius: 0;
-      -khtml-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
-      border-radius: 0;
-      border-color: #5fe5d0; }
+  aside#submenu nav {
+    margin-top: 0.5em; }
+    aside#submenu nav a {
+      background: #fff;
+      border-top: none;
+      border-bottom: 2px solid dimgray;
+      color: dimgray;
+      margin-bottom: 0.25em; }
+      aside#submenu nav a:hover {
+        background: #fafafa;
+        color: #1fbfa6;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+        border-color: #5fe5d0; }
   aside#submenu #follow a {
     opacity: 0.4;
     -webkit-filter: brightness(0);
