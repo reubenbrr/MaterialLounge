@@ -13,19 +13,33 @@ a.button.destroyer, .button, .buttonright
 	&:hover
 		background: $primary-darker
 		color: $primary
+		@include box-shadow(0, 0, 0, transparent)
 	&:active, &:focus
 		background: $primary-darker
 		@include transition(0.3s ease all)
 		@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
-.matchmain
-	.buttonright
+.matchmain, .bpheader
+	a.button.destroyer, .button, .buttonright
 		background: $secondary
 		color: $white !important
 		@include border-radius(0)
 		@include box-shadow(0, 0, 0, transparent)
 		&:hover
 			color: $secondary
+			@include box-shadow(0, 0, 0, transparent)
 		&:active, &:focus
 			background: $secondary-dark
 			@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+
+.matchheader
+	.buttonright
+		background: $secondary-dark
+		color: $white !important
+		@include border-radius(0)
+		@include box-shadow(0, 0, 0, transparent)
+		&:hover
+			background: $secondary-darker
+			@include box-shadow(0, 0, 0, transparent)
+		&:active, &:focus
+			background: $secondary-darker

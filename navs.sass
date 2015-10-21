@@ -1,6 +1,6 @@
 //Navbar
 header
-	background: $primary
+	background: $primary-dark
 	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 	a img#logo
 		@include css3-prefix(filter, brightness(1000))
@@ -11,8 +11,8 @@ header
 			font-weight: bold
 			text-shadow: none
 			text-transform: capitalize
-			width: 70px
-			padding: 0 10px 10px 10px
+			width: 90px
+			padding: 0 5px 5px 5px
 			border: 2px solid transparent
 			@include border-radius(0)
 			&:hover, &:active, &:focus
@@ -20,9 +20,10 @@ header
 				background-color: rgba($black, 0.05)
 				border: 2px solid rgba($black, 0.02)
 			img
+				@include css3-prefix(filter, grayscale(1))
 				@include css3-prefix(filter, brightness(1000))
 	#login, #logout
-		margin-top: 0.7em !important
+		margin-top: 1em !important
 
 //Sidebar
 aside

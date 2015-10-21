@@ -5,9 +5,12 @@ body
 	font-family: 'Roboto', sans-serif
 	text-shadow: none !important
 	a
+		text-shadow: none
 		@include transition (0.3s ease all)
 		&:hover, &:active, &:focus
 			@include transition(0.1s ease all)
+	*
+		box-sizing: border-box
 
 //Main page section
 main
@@ -16,9 +19,16 @@ main
 		@include box-shadow(0, 0, 0, transparent)
 		margin-left: 0
 		margin-right: 0
-		padding: 0
+		padding-left: 1em
+		padding-right: 1em
+		width: 50%
 		&:first-child
-			margin-right: 1em
+			padding-right: 0
+		a
+			color: $primary
+			text-shadow: none
+			&:hover, &:active, &:focus
+				color: $primary-dark
 		.title
 			@include transition(0.5s ease all)
 			@include css3-prefix(filter, brightness(0.25))
@@ -32,34 +42,58 @@ main
 				color: $grey-darkest
 		/* Lounge destroyer filter options */
 		.ld-trade-filters, .ld-match-filters
-			margin: 50px 9px -2em 1%
-			background: $white
+			margin: 4em 0 0em 0
 			width: 100%
 			@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+			a
+				color: $white
+				text-shadow: none
+				&:hover, &:active, &:focus
+					color: $white
+		.ld-trade-filters
+			background-color: $primary
+		.ld-match-filters
+			background-color: $secondary
+		/* Article */
+		article.standard
+			width: 100%
+			margin: 2.5em 0 0 0 !important
+			.full
+				margin: 0
+				padding: 0.5em 1em
 		/* Trade section */
 		article.standard#tradelist
+			margin-top: 1em !important
+		article.standard
 			.tradepoll
-				margin: 0.5em 0 0.5em 0
+				margin: 0 0 1em 0
 				background: $white
 				float: left
 				width: 100%
 				padding: 0
-				border-top: 2px solid $primary
 				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 				@include border-radius-separate(0, 0, 3px, 3px)
 				.tradeheader
+					width: 100%
 					margin: 0
 					border-top: 0
-					border-bottom: 1px solid rgba($primary, 0.3)
-					background: $grey-lightest
+					border-bottom: none
+					background: $primary
+					padding: 1em
+					a
+						color: $white
+						text-shadow: none
+						img
+							margin-top: 3px
+							@include css3-prefix(filter, brightness(1000))
 					a.button.destroyer
 						float: right !important
 					a:first-child img
 						margin-top: 0.4em
 				.tradecnt
-					background: transparent
-					width: 98%
-					margin: 0 0.5em
+					background-color: transparent
+					width: 100%
+					padding: 0.5em 1em
 					.left, .right
 						background: $white
 						@include box-shadow(0, 0, 0, transparent)
@@ -69,23 +103,25 @@ main
 				.ld-slidedown
 					margin: 0 0 0.5em 0 !important
 				.ld-steam-extra-wrapper .ld-steam-extra
-					background: $grey-lightest
-					border-bottom: 1px solid rgba($primary, 0.3)
+					background: $primary-light
+					border-bottom: none
 					border-left: 0
+					margin-bottom: 0
 					@include border-radius(0)
 					&::after
 						background-image: none
 					.ld-steam-info
-						border-color: rgba($primary, 0.3)
+						border: none
 						.ld-steam-img
 							padding-top: 3px
+							margin-top: 0.4em
+							margin-left: 0.2em
 							img
 								border: 2px solid $primary
 				.trade-description
-					width: 98%
-					margin: 0.5em
+					width: 100%
+					padding: 1em
 					background: transparent
-					border: 1px solid darken($grey-lightest, 5)
 					border-left: 2px solid $primary
 					&div
 						color: $black
@@ -96,9 +132,22 @@ main
 						@include border-radius(0)
 						color: $black
 		/* Betting section */
+		article.standard#bets,
+			margin-top: 1em !important
+			a
+				color: $black
+				text-shadow: none
+				&:hover, &:active, &:focus
+					color: $grey-b-darkest
 		article.standard
 			.matchmain
-				margin-bottom: 1em
+				margin: 0 0 1em 0
+				background: $white
+				float: left
+				width: 100%
+				padding: 0
+				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+				@include border-radius-separate(0, 0, 3px, 3px)
 				.match
 					margin: 0
 					background-color: $white
@@ -112,12 +161,13 @@ main
 					.matchleft
 						a > div:first-child, a > div:last-child
 							position: relative
-							width: 44% !important
+							width: 40% !important
 							background: $grey-lightest
 							border: 1px solid darken($grey-lightest, 5)
 							.teamtext
 								background: transparent
 							.team
+								height: 55px
 								border: 2px solid rgb(184,184,184)
 								@include border-radius(0)
 						a > div:first-child
@@ -126,19 +176,21 @@ main
 					.winsorloses
 						background: transparent
 						@include border-radius(0)
+						a
+							color: $black
 					hr
 						width: 100%
 						border-bottom: 1px solid $grey-lightest
 				&.custom-my-bets-margin
 					.matchheader
-						.whenm
+						.whenm, .eventm
 							line-height: 20px
 							margin-top: 4px
 				.matchheader
 					text-shadow: none !important
 					width: 100%
 					margin-bottom: 0
-					background: $grey-lightest
+					background: $secondary
 					border-bottom: 1px solid rgba($secondary, 0.3)
 					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 					border-top: 2px solid $secondary
@@ -148,18 +200,32 @@ main
 						vertical-align: middle
 						line-height: 20px
 						font-size: 25px
-						color: $secondary
+						color: $white
 			#betreturns
 				background: $white
 				float: left
-				border-top: 2px solid $tertiary
+				border-top: 2px solid $secondary
 				@include border-radius-separate(0, 0, 3px, 3px)
 				.bpheader
 					color: $grey-darkest
 					padding: 1em 1em 0 1em
+			.bpheader
+				width: 100%
+				padding: 1em 0 0 0
+				.button
+					margin-left: 0
 
 /* Items */
 .oitm
+	.name
+		min-width: 0 !important
+		background: $grey-lightest
+		color: $black
+		a
+			color: $primary !important
+			text-shadow: none !important
+			&:hover, &:active, &:focus
+				color: $primary-dark !important
 	.item
 		@include border-radius(0)
 		background: rgba($grey, 0.3)
@@ -168,7 +234,6 @@ main
 			color: $black
 			text-shadow: none
 			background-color: rgba($white, 0.7)
-			z-index: 1
 			font-weight: 500
 			padding: 1px 0
 		.value
@@ -182,6 +247,74 @@ main
 			@include border-radius(0)
 			background-color: rgba(235, 119, 55, 0.8) !important
 			text-shadow: none
-			z-index: 2
+
+/* Profile */
+.box-shiny-alt, .box-shiny
+	padding: 1em
+	margin: 0 0 1em 0
+	background: $white
+	float: left
+	width: 100%
+	color: $black
+	text-shadow: none
+	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+	@include border-radius(3px)
+
+.full
+	width: 100%
+	margin: 0.5em 1em
+	color: $black
+	text-shadow: none
+	.button
+		margin-left: 0
+		margin-top: 5px
+		margin-bottom: 5px
+		margin-right: 0.5em
+	input
+		width: 100%
+		margin: 0.5em 0
+		padding: 0.25em 0.5em
+		background: $grey-lightest
+		color: $black
+		border: 1px solid $grey-lightest
+		@include border-radius(0)
+		@include box-shadow(0, 0, 0, transparent)
+		&:focus
+			color: $black
+			background: $grey-lightest
+			border: 1px solid $primary
+			outline: 0
+
+
+#backpack
+	.inventoryStatisticsBox
+		padding: 1em
+		margin: 0 0 1em 0
+		background: $white
+		float: left
+		width: 100%
+		color: $black
+		text-shadow: none
+		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		@include border-radius(3px)
+		+ .full
+			margin: 0
+	.srch
+		margin: 0
+		input
+			width: 50%
+			float: right
+			margin: 0
+			padding: 0.25em 0.5em
+			background: $white
+			color: $black
+			border: 1px solid $white
+			@include border-radius(0)
+			@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+			&:focus
+				color: $black
+				background: $white
+				border: 1px solid $primary
+				outline: 0
 
 

@@ -13,10 +13,11 @@
 
 ------------------------------------------------------------- */
 body {
-  background: whitesmoke;
+  background: #e8e8e8;
   font-family: "Roboto", sans-serif;
   text-shadow: none !important; }
   body a {
+    text-shadow: none;
     -webkit-transition: 0.3s ease all;
     -khtml-transition: 0.3s ease all;
     -moz-transition: 0.3s ease all;
@@ -30,6 +31,8 @@ body {
       -ms-transition: 0.1s ease all;
       -o-transition: 0.1s ease all;
       transition: 0.1s ease all; }
+  body * {
+    box-sizing: border-box; }
 
 main section.box, main section {
   background: transparent;
@@ -41,12 +44,20 @@ main section.box, main section {
   box-shadow: 0 0 0 transparent;
   margin-left: 0;
   margin-right: 0;
-  padding: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 50%;
   /* Lounge destroyer filter options */
+  /* Article */
   /* Trade section */
   /* Betting section */ }
   main section.box:first-child, main section:first-child {
-    margin-right: 1em; }
+    padding-right: 0; }
+  main section.box a, main section a {
+    color: #5fe5d0;
+    text-shadow: none; }
+    main section.box a:hover, main section.box a:active, main section.box a:focus, main section a:hover, main section a:active, main section a:focus {
+      color: #33dec3; }
   main section.box .title, main section .title {
     -webkit-transition: 0.5s ease all;
     -khtml-transition: 0.5s ease all;
@@ -74,33 +85,48 @@ main section.box, main section {
       -o-transition: 0.1s ease all;
       transition: 0.1s ease all; }
       main section.box .title:hover a, main section.box .title:active a, main section.box .title:focus a, main section .title:hover a, main section .title:active a, main section .title:focus a {
-        color: #b5b5b5;
+        color: #a8a8a8;
         text-shadow: none; }
     main section.box .title a, main section .title a {
-      color: dimgray; }
+      color: #5b5b5b; }
   main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
-    margin: 50px 9px -2em 1%;
-    background: #fff;
+    margin: 4em 0 0em 0;
     width: 100%;
-    -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5); }
-  main section.box article.standard#tradelist .tradepoll, main section article.standard#tradelist .tradepoll {
-    margin: 0.5em 0 0.5em 0;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    main section.box .ld-trade-filters a, main section.box .ld-match-filters a, main section .ld-trade-filters a, main section .ld-match-filters a {
+      color: #fff;
+      text-shadow: none; }
+      main section.box .ld-trade-filters a:hover, main section.box .ld-trade-filters a:active, main section.box .ld-trade-filters a:focus, main section.box .ld-match-filters a:hover, main section.box .ld-match-filters a:active, main section.box .ld-match-filters a:focus, main section .ld-trade-filters a:hover, main section .ld-trade-filters a:active, main section .ld-trade-filters a:focus, main section .ld-match-filters a:hover, main section .ld-match-filters a:active, main section .ld-match-filters a:focus {
+        color: #fff; }
+  main section.box .ld-trade-filters, main section .ld-trade-filters {
+    background-color: #5fe5d0; }
+  main section.box .ld-match-filters, main section .ld-match-filters {
+    background-color: #eb3c77; }
+  main section.box article.standard, main section article.standard {
+    width: 100%;
+    margin: 2.5em 0 0 0 !important; }
+    main section.box article.standard .full, main section article.standard .full {
+      margin: 0;
+      padding: 0.5em 1em; }
+  main section.box article.standard#tradelist, main section article.standard#tradelist {
+    margin-top: 1em !important; }
+  main section.box article.standard .tradepoll, main section article.standard .tradepoll {
+    margin: 0 0 1em 0;
     background: #fff;
     float: left;
     width: 100%;
     padding: 0;
-    border-top: 2px solid #5fe5d0;
-    -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-    box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -webkit-border-top-left-radius: 0;
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 3px;
@@ -113,20 +139,33 @@ main section.box, main section {
     border-top-right-radius: 0;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px; }
-    main section.box article.standard#tradelist .tradepoll .tradeheader, main section article.standard#tradelist .tradepoll .tradeheader {
+    main section.box article.standard .tradepoll .tradeheader, main section article.standard .tradepoll .tradeheader {
+      width: 100%;
       margin: 0;
       border-top: 0;
-      border-bottom: 1px solid rgba(95, 229, 208, 0.3);
-      background: whitesmoke; }
-      main section.box article.standard#tradelist .tradepoll .tradeheader a.button.destroyer, main section article.standard#tradelist .tradepoll .tradeheader a.button.destroyer {
+      border-bottom: none;
+      background: #5fe5d0;
+      padding: 1em; }
+      main section.box article.standard .tradepoll .tradeheader a, main section article.standard .tradepoll .tradeheader a {
+        color: #fff;
+        text-shadow: none; }
+        main section.box article.standard .tradepoll .tradeheader a img, main section article.standard .tradepoll .tradeheader a img {
+          margin-top: 3px;
+          -webkit-filter: brightness(1000);
+          -khtml-filter: brightness(1000);
+          -moz-filter: brightness(1000);
+          -ms-filter: brightness(1000);
+          -o-filter: brightness(1000);
+          filter: brightness(1000); }
+      main section.box article.standard .tradepoll .tradeheader a.button.destroyer, main section article.standard .tradepoll .tradeheader a.button.destroyer {
         float: right !important; }
-      main section.box article.standard#tradelist .tradepoll .tradeheader a:first-child img, main section article.standard#tradelist .tradepoll .tradeheader a:first-child img {
+      main section.box article.standard .tradepoll .tradeheader a:first-child img, main section article.standard .tradepoll .tradeheader a:first-child img {
         margin-top: 0.4em; }
-    main section.box article.standard#tradelist .tradepoll .tradecnt, main section article.standard#tradelist .tradepoll .tradecnt {
-      background: transparent;
-      width: 98%;
-      margin: 0 0.5em; }
-      main section.box article.standard#tradelist .tradepoll .tradecnt .left, main section.box article.standard#tradelist .tradepoll .tradecnt .right, main section article.standard#tradelist .tradepoll .tradecnt .left, main section article.standard#tradelist .tradepoll .tradecnt .right {
+    main section.box article.standard .tradepoll .tradecnt, main section article.standard .tradepoll .tradecnt {
+      background-color: transparent;
+      width: 100%;
+      padding: 0.5em 1em; }
+      main section.box article.standard .tradepoll .tradecnt .left, main section.box article.standard .tradepoll .tradecnt .right, main section article.standard .tradepoll .tradecnt .left, main section article.standard .tradepoll .tradecnt .right {
         background: #fff;
         -webkit-box-shadow: 0 0 0 transparent;
         -khtml-box-shadow: 0 0 0 transparent;
@@ -134,33 +173,35 @@ main section.box, main section {
         -ms-box-shadow: 0 0 0 transparent;
         -o-box-shadow: 0 0 0 transparent;
         box-shadow: 0 0 0 transparent; }
-      main section.box article.standard#tradelist .tradepoll .tradecnt .left .oitm, main section article.standard#tradelist .tradepoll .tradecnt .left .oitm {
+      main section.box article.standard .tradepoll .tradecnt .left .oitm, main section article.standard .tradepoll .tradecnt .left .oitm {
         float: right; }
-    main section.box article.standard#tradelist .tradepoll .ld-slidedown, main section article.standard#tradelist .tradepoll .ld-slidedown {
+    main section.box article.standard .tradepoll .ld-slidedown, main section article.standard .tradepoll .ld-slidedown {
       margin: 0 0 0.5em 0 !important; }
-    main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
-      background: whitesmoke;
-      border-bottom: 1px solid rgba(95, 229, 208, 0.3);
+    main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
+      background: #8becdd;
+      border-bottom: none;
       border-left: 0;
+      margin-bottom: 0;
       -webkit-border-radius: 0;
       -khtml-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0;
       border-radius: 0; }
-      main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after {
+      main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after {
         background-image: none; }
-      main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info {
-        border-color: rgba(95, 229, 208, 0.3); }
-        main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img {
-          padding-top: 3px; }
-          main section.box article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section article.standard#tradelist .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
+      main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info {
+        border: none; }
+        main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img {
+          padding-top: 3px;
+          margin-top: 0.4em;
+          margin-left: 0.2em; }
+          main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
             border: 2px solid #5fe5d0; }
-    main section.box article.standard#tradelist .tradepoll .trade-description, main section article.standard#tradelist .tradepoll .trade-description {
-      width: 98%;
-      margin: 0.5em;
+    main section.box article.standard .tradepoll .trade-description, main section article.standard .tradepoll .trade-description {
+      width: 100%;
+      padding: 1em;
       background: transparent;
-      border: 1px solid #e8e8e8;
       border-left: 2px solid #5fe5d0;
       -webkit-border-radius: 0;
       -khtml-border-radius: 0;
@@ -168,9 +209,9 @@ main section.box, main section {
       -ms-border-radius: 0;
       -o-border-radius: 0;
       border-radius: 0; }
-      main section.box article.standard#tradelist .tradepoll .trade-descriptiondiv, main section article.standard#tradelist .tradepoll .trade-descriptiondiv {
+      main section.box article.standard .tradepoll .trade-descriptiondiv, main section article.standard .tradepoll .trade-descriptiondiv {
         color: #000; }
-      main section.box article.standard#tradelist .tradepoll .trade-description p, main section article.standard#tradelist .tradepoll .trade-description p {
+      main section.box article.standard .tradepoll .trade-description p, main section article.standard .tradepoll .trade-description p {
         opacity: 1;
         border-left: 0;
         -webkit-border-radius: 0;
@@ -180,8 +221,37 @@ main section.box, main section {
         -o-border-radius: 0;
         border-radius: 0;
         color: #000; }
+  main section.box article.standard#bets, main section article.standard#bets {
+    margin-top: 1em !important; }
+    main section.box article.standard#bets a, main section article.standard#bets a {
+      color: #000;
+      text-shadow: none; }
+      main section.box article.standard#bets a:hover, main section.box article.standard#bets a:active, main section.box article.standard#bets a:focus, main section article.standard#bets a:hover, main section article.standard#bets a:active, main section article.standard#bets a:focus {
+        color: #424242; }
   main section.box article.standard .matchmain, main section article.standard .matchmain {
-    margin-bottom: 1em; }
+    margin: 0 0 1em 0;
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 0;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; }
     main section.box article.standard .matchmain .match, main section article.standard .matchmain .match {
       margin: 0;
       background-color: #fff;
@@ -190,12 +260,12 @@ main section.box, main section {
       padding: 1%;
       background-repeat: no-repeat;
       background-position: right;
-      -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
+      -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
       -webkit-border-top-left-radius: 0;
       -webkit-border-top-right-radius: 0;
       -webkit-border-bottom-right-radius: 3px;
@@ -210,12 +280,13 @@ main section.box, main section {
       border-bottom-left-radius: 3px; }
       main section.box article.standard .matchmain .match .matchleft a > div:first-child, main section.box article.standard .matchmain .match .matchleft a > div:last-child, main section article.standard .matchmain .match .matchleft a > div:first-child, main section article.standard .matchmain .match .matchleft a > div:last-child {
         position: relative;
-        width: 44% !important;
-        background: whitesmoke;
-        border: 1px solid #e8e8e8; }
+        width: 40% !important;
+        background: #e8e8e8;
+        border: 1px solid #dbdbdb; }
         main section.box article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section.box article.standard .matchmain .match .matchleft a > div:last-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:first-child .teamtext, main section article.standard .matchmain .match .matchleft a > div:last-child .teamtext {
           background: transparent; }
         main section.box article.standard .matchmain .match .matchleft a > div:first-child .team, main section.box article.standard .matchmain .match .matchleft a > div:last-child .team, main section article.standard .matchmain .match .matchleft a > div:first-child .team, main section article.standard .matchmain .match .matchleft a > div:last-child .team {
+          height: 55px;
           border: 2px solid #b8b8b8;
           -webkit-border-radius: 0;
           -khtml-border-radius: 0;
@@ -233,36 +304,38 @@ main section.box, main section {
         -ms-border-radius: 0;
         -o-border-radius: 0;
         border-radius: 0; }
+        main section.box article.standard .matchmain .match .winsorloses a, main section article.standard .matchmain .match .winsorloses a {
+          color: #000; }
       main section.box article.standard .matchmain .match hr, main section article.standard .matchmain .match hr {
         width: 100%;
-        border-bottom: 1px solid whitesmoke; }
-    main section.box article.standard .matchmain.custom-my-bets-margin .matchheader .whenm, main section article.standard .matchmain.custom-my-bets-margin .matchheader .whenm {
+        border-bottom: 1px solid #e8e8e8; }
+    main section.box article.standard .matchmain.custom-my-bets-margin .matchheader .whenm, main section.box article.standard .matchmain.custom-my-bets-margin .matchheader .eventm, main section article.standard .matchmain.custom-my-bets-margin .matchheader .whenm, main section article.standard .matchmain.custom-my-bets-margin .matchheader .eventm {
       line-height: 20px;
       margin-top: 4px; }
     main section.box article.standard .matchmain .matchheader, main section article.standard .matchmain .matchheader {
       text-shadow: none !important;
       width: 100%;
       margin-bottom: 0;
-      background: whitesmoke;
-      border-bottom: 1px solid rgba(233, 30, 99, 0.3);
-      -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-      border-top: 2px solid #E91E63; }
+      background: #eb3c77;
+      border-bottom: 1px solid rgba(235, 60, 119, 0.3);
+      -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      border-top: 2px solid #eb3c77; }
       main section.box article.standard .matchmain .matchheader .whenm, main section article.standard .matchmain .matchheader .whenm {
         text-shadow: none !important; }
       main section.box article.standard .matchmain .matchheader .bettedIndicator, main section article.standard .matchmain .matchheader .bettedIndicator {
         vertical-align: middle;
         line-height: 20px;
         font-size: 25px;
-        color: #E91E63; }
+        color: #fff; }
   main section.box article.standard #betreturns, main section article.standard #betreturns {
     background: #fff;
     float: left;
-    border-top: 2px solid #00BCD4;
+    border-top: 2px solid #eb3c77;
     -webkit-border-top-left-radius: 0;
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 3px;
@@ -276,10 +349,24 @@ main section.box, main section {
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px; }
     main section.box article.standard #betreturns .bpheader, main section article.standard #betreturns .bpheader {
-      color: dimgray;
+      color: #5b5b5b;
       padding: 1em 1em 0 1em; }
+  main section.box article.standard .bpheader, main section article.standard .bpheader {
+    width: 100%;
+    padding: 1em 0 0 0; }
+    main section.box article.standard .bpheader .button, main section article.standard .bpheader .button {
+      margin-left: 0; }
 
 /* Items */
+.oitm .name {
+  min-width: 0 !important;
+  background: #e8e8e8;
+  color: #000; }
+  .oitm .name a {
+    color: #5fe5d0 !important;
+    text-shadow: none !important; }
+    .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
+      color: #33dec3 !important; }
 .oitm .item {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -287,7 +374,7 @@ main section.box, main section {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  background: rgba(181, 181, 181, 0.3); }
+  background: rgba(168, 168, 168, 0.3); }
   .oitm .item .value, .oitm .item .rarity {
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
@@ -298,7 +385,6 @@ main section.box, main section {
     color: #000;
     text-shadow: none;
     background-color: rgba(255, 255, 255, 0.7);
-    z-index: 1;
     font-weight: 500;
     padding: 1px 0; }
   .oitm .item .value {
@@ -321,17 +407,123 @@ main section.box, main section {
     -o-border-radius: 0;
     border-radius: 0;
     background-color: rgba(235, 119, 55, 0.8) !important;
-    text-shadow: none;
-    z-index: 2; }
+    text-shadow: none; }
+
+/* Profile */
+.box-shiny-alt, .box-shiny {
+  padding: 1em;
+  margin: 0 0 1em 0;
+  background: #fff;
+  float: left;
+  width: 100%;
+  color: #000;
+  text-shadow: none;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+.full {
+  width: 100%;
+  margin: 0.5em 1em;
+  color: #000;
+  text-shadow: none; }
+  .full .button {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0.5em; }
+  .full input {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.25em 0.5em;
+    background: #e8e8e8;
+    color: #000;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+    .full input:focus {
+      color: #000;
+      background: #e8e8e8;
+      border: 1px solid #5fe5d0;
+      outline: 0; }
+
+#backpack .inventoryStatisticsBox {
+  padding: 1em;
+  margin: 0 0 1em 0;
+  background: #fff;
+  float: left;
+  width: 100%;
+  color: #000;
+  text-shadow: none;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  #backpack .inventoryStatisticsBox + .full {
+    margin: 0; }
+#backpack .srch {
+  margin: 0; }
+  #backpack .srch input {
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0.25em 0.5em;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    #backpack .srch input:focus {
+      color: #000;
+      background: #fff;
+      border: 1px solid #5fe5d0;
+      outline: 0; }
 
 header {
-  background: #5fe5d0;
-  -webkit-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-  -khtml-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-  -moz-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-  -ms-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-  -o-box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5);
-  box-shadow: 0 1px 2px rgba(181, 181, 181, 0.5); }
+  background: #33dec3;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
   header a img#logo {
     -webkit-filter: brightness(1000);
     -khtml-filter: brightness(1000);
@@ -345,8 +537,8 @@ header {
     font-weight: bold;
     text-shadow: none;
     text-transform: capitalize;
-    width: 70px;
-    padding: 0 10px 10px 10px;
+    width: 90px;
+    padding: 0 5px 5px 5px;
     border: 2px solid transparent;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
@@ -364,6 +556,12 @@ header {
       background-color: rgba(0, 0, 0, 0.05);
       border: 2px solid rgba(0, 0, 0, 0.02); }
     header nav#menu a img {
+      -webkit-filter: grayscale(1);
+      -khtml-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -ms-filter: grayscale(1);
+      -o-filter: grayscale(1);
+      filter: grayscale(1);
       -webkit-filter: brightness(1000);
       -khtml-filter: brightness(1000);
       -moz-filter: brightness(1000);
@@ -371,7 +569,7 @@ header {
       -o-filter: brightness(1000);
       filter: brightness(1000); }
   header #login, header #logout {
-    margin-top: 0.7em !important; }
+    margin-top: 1em !important; }
 
 aside#submenu {
   background: transparent; }
@@ -381,10 +579,10 @@ aside#submenu {
       background: #fff;
       border-top: 0;
       border-bottom: 2px solid rgba(95, 229, 208, 0.5);
-      color: dimgray;
+      color: #5b5b5b;
       margin-bottom: 0.25em; }
       aside#submenu nav a:hover {
-        background: #fafafa;
+        background: #ededed;
         color: #1fbfa6;
         -webkit-border-radius: 0;
         -khtml-border-radius: 0;
@@ -439,7 +637,13 @@ a.button.destroyer, .button, .buttonright {
   box-shadow: 0 0 0 transparent; }
   a.button.destroyer:hover, .button:hover, .buttonright:hover {
     background: #1fbfa6;
-    color: #5fe5d0; }
+    color: #5fe5d0;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
   a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus, .buttonright:active, .buttonright:focus {
     background: #1fbfa6;
     -webkit-transition: 0.3s ease all;
@@ -448,15 +652,15 @@ a.button.destroyer, .button, .buttonright {
     -ms-transition: 0.3s ease all;
     -o-transition: 0.3s ease all;
     transition: 0.3s ease all;
-    -webkit-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -khtml-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -moz-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -ms-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -o-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5); }
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -ms-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -o-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
-.matchmain .buttonright {
-  background: #E91E63;
+.matchmain a.button.destroyer, .matchmain .button, .matchmain .buttonright, .bpheader a.button.destroyer, .bpheader .button, .bpheader .buttonright {
+  background: #eb3c77;
   color: #fff !important;
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -470,13 +674,45 @@ a.button.destroyer, .button, .buttonright {
   -ms-box-shadow: 0 0 0 transparent;
   -o-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
-  .matchmain .buttonright:hover {
-    color: #E91E63; }
-  .matchmain .buttonright:active, .matchmain .buttonright:focus {
-    background: #c1134e;
-    -webkit-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -khtml-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -moz-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -ms-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    -o-box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5);
-    box-shadow: 0 2px 3px rgba(143, 143, 143, 0.5); }
+  .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover {
+    color: #eb3c77;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain .buttonright:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader .buttonright:focus {
+    background: #dd175a;
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -ms-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -o-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+
+.matchheader .buttonright {
+  background: #dd175a;
+  color: #fff !important;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+  .matchheader .buttonright:hover {
+    background: #af1247;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  .matchheader .buttonright:active, .matchheader .buttonright:focus {
+    background: #af1247; }
