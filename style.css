@@ -115,6 +115,8 @@ main section.box, main section {
       padding: 0.5em 1em; }
   main section.box article.standard#tradelist, main section article.standard#tradelist {
     margin-top: 1em !important; }
+    main section.box article.standard#tradelist a, main section article.standard#tradelist a {
+      text-shadow: none; }
   main section.box article.standard .tradepoll, main section article.standard .tradepoll {
     margin: 0 0 1em 0;
     background: #fff;
@@ -145,12 +147,12 @@ main section.box, main section {
       border-top: 0;
       border-bottom: none;
       background: #5fe5d0;
-      padding: 1em; }
+      padding: 1em;
+      min-height: 55px; }
       main section.box article.standard .tradepoll .tradeheader a, main section article.standard .tradepoll .tradeheader a {
         color: #fff;
         text-shadow: none; }
         main section.box article.standard .tradepoll .tradeheader a img, main section article.standard .tradepoll .tradeheader a img {
-          margin-top: 3px;
           -webkit-filter: brightness(1000);
           -khtml-filter: brightness(1000);
           -moz-filter: brightness(1000);
@@ -507,6 +509,26 @@ main section.box, main section {
       background: #e8e8e8;
       border: 1px solid #5fe5d0;
       outline: 0; }
+  .box-shiny-alt textarea, .box-shiny textarea, #satrade textarea {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 1em;
+    background: #e8e8e8;
+    color: #000;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; }
+    .box-shiny-alt textarea:focus, .box-shiny textarea:focus, #satrade textarea:focus {
+      outline: 0; }
 
 .box-shiny-alt, .box-shiny {
   margin: 0 0 1em 0; }
@@ -626,7 +648,6 @@ header {
     text-transform: capitalize;
     width: 90px;
     padding: 0 5px 5px 5px;
-    border: 2px solid transparent;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
     -moz-border-radius: 0;
@@ -640,8 +661,7 @@ header {
       -ms-border-radius: 0;
       -o-border-radius: 0;
       border-radius: 0;
-      background-color: rgba(0, 0, 0, 0.05);
-      border: 2px solid rgba(0, 0, 0, 0.02); }
+      background-color: rgba(0, 0, 0, 0.05); }
     header nav#menu a img {
       -webkit-filter: grayscale(1);
       -khtml-filter: grayscale(1);
@@ -655,8 +675,6 @@ header {
       -ms-filter: brightness(1000);
       -o-filter: brightness(1000);
       filter: brightness(1000); }
-  header #login, header #logout {
-    margin-top: 1em !important; }
 
 aside#submenu {
   background: transparent; }

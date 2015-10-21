@@ -64,6 +64,8 @@ main
 		/* Trade section */
 		article.standard#tradelist
 			margin-top: 1em !important
+			a
+				text-shadow: none
 		article.standard
 			.tradepoll
 				margin: 0 0 1em 0
@@ -80,11 +82,11 @@ main
 					border-bottom: none
 					background: $primary
 					padding: 1em
+					min-height: 55px
 					a
 						color: $white
 						text-shadow: none
 						img
-							margin-top: 3px
 							@include css3-prefix(filter, brightness(1000))
 					a.button.destroyer
 						float: right !important
@@ -309,6 +311,16 @@ main
 			color: $black
 			background: $grey-lightest
 			border: 1px solid $primary
+			outline: 0
+	textarea
+		width: 100%
+		margin: 0.5em 0
+		padding: 1em
+		background: $grey-lightest
+		color: $black
+		@include box-shadow(0, 0, 0, transparent)
+		@include border-radius(3px)
+		&:focus
 			outline: 0
 .box-shiny-alt, .box-shiny
 	margin: 0 0 1em 0
