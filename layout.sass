@@ -6,9 +6,9 @@ body
 	text-shadow: none !important
 	a
 		text-shadow: none
-		@include transition (0.3s ease all)
+		@include transition (0.3s linear all)
 		&:hover, &:active, &:focus
-			@include transition(0.1s ease all)
+			@include transition(0.1s linear all)
 	*
 		box-sizing: border-box
 
@@ -25,15 +25,16 @@ main
 		&:first-child
 			padding-right: 0
 		a
-			color: $primary
+			font-weight: bold
+			color: $secondary-dark
 			text-shadow: none
 			&:hover, &:active, &:focus
-				color: $primary-dark
+				color: $secondary-darker
 		.title
 			@include transition(0.5s ease all)
-			@include css3-prefix(filter, brightness(0.25))
+			@include css3-prefix(filter, brightness(00))
 			&:hover, &:active, &:focus
-				@include css3-prefix(filter, brightness(1))
+				@include css3-prefix(filter, brightness(0))
 				@include transition(0.1s ease all)
 				a
 					color: $grey
@@ -44,16 +45,14 @@ main
 		.ld-trade-filters, .ld-match-filters
 			margin: 4em 0 0em 0
 			width: 100%
+			background: $white
 			@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 			a
-				color: $white
+				font-weight: bold
+				color: $black
 				text-shadow: none
 				&:hover, &:active, &:focus
-					color: $white
-		.ld-trade-filters
-			background-color: $primary
-		.ld-match-filters
-			background-color: $secondary
+					color: $black
 		/* Article */
 		article.standard
 			width: 100%
@@ -80,14 +79,16 @@ main
 					margin: 0
 					border-top: 0
 					border-bottom: none
-					background: $primary
+					background: $primary-light
 					padding: 1em
 					min-height: 55px
 					a
-						color: $white
+						color: $black
 						text-shadow: none
 						img
 							@include css3-prefix(filter, brightness(1000))
+						+ span
+							min-height: 28px
 					a.button.destroyer
 						float: right !important
 					a:first-child img
@@ -105,7 +106,7 @@ main
 				.ld-slidedown
 					margin: 0 0 0.5em 0 !important
 				.ld-steam-extra-wrapper .ld-steam-extra
-					background: $primary-light
+					background: $primary-lighter
 					border-bottom: none
 					border-left: 0
 					margin-bottom: 0
@@ -125,6 +126,10 @@ main
 					padding: 1em
 					background: transparent
 					border-left: 2px solid $primary
+					a
+						&:hover, &:active, &:focus
+							@include transition(0s ease none)
+							text-decoration: underline
 					&div
 						color: $black
 					@include border-radius(0)
@@ -150,6 +155,27 @@ main
 				padding: 0
 				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 				@include border-radius-separate(0, 0, 3px, 3px)
+				.matchheader
+					text-shadow: none !important
+					min-height: 55px
+					padding: 1em
+					width: 100%
+					margin-bottom: 0
+					background: $secondary-light
+					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+					font-weight: bold
+					span
+						font-weight: normal
+					.whenm, .eventm
+						font-weight: bold
+						line-height: 20px
+						text-shadow: none !important
+						span
+							font-weight: normal
+					.bettedIndicator
+						vertical-align: middle
+						font-size: 25px
+						color: $white
 				.match
 					margin: 0
 					background-color: $white
@@ -160,6 +186,16 @@ main
 					background-position: right
 					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 					@include border-radius-separate(0, 0, 3px, 3px)
+					hr + div.full
+						span
+							line-height: 25px
+					.potwin
+						color: $secondary
+						font-size: 20px
+						line-height: 10px
+						background: $grey-lightest
+						padding: 0.5em
+						@include border-radius(0)
 					.matchleft
 						a > div:first-child, a > div:last-child
 							position: relative
@@ -185,24 +221,6 @@ main
 						border-bottom: 1px solid $grey-lightest
 				&.custom-my-bets-margin
 					.matchheader
-						.whenm, .eventm
-							line-height: 20px
-							margin-top: 4px
-				.matchheader
-					text-shadow: none !important
-					width: 100%
-					margin-bottom: 0
-					background: $secondary
-					border-bottom: 1px solid rgba($secondary, 0.3)
-					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-					border-top: 2px solid $secondary
-					.whenm
-						text-shadow: none !important
-					.bettedIndicator
-						vertical-align: middle
-						line-height: 20px
-						font-size: 25px
-						color: $white
 			#betreturns
 				background: $white
 				float: left
@@ -230,9 +248,28 @@ main
 
 .oitm
 	.name
+		margin-top: 13px !important
+		border-top: 2px solid $primary
+		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		@include border-radius(3px)
 		min-width: 0 !important
-		background: $grey-lightest
+		background: $white
 		color: $black
+		overflow: visible
+		span, i, br, b
+			float: left
+			clear: both
+		&:before
+			float: left
+			position: relative
+			top: -16px
+			left: 16.666666666%
+			height: 0
+			width: 0
+			content: ''
+			border-left: 10px transparent solid
+			border-right: 10px transparent solid
+			border-bottom: 10px $primary solid
 		a
 			color: $primary !important
 			text-shadow: none !important
@@ -262,10 +299,11 @@ main
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade
-	padding: 1em
+	padding: 1em !important
 	background: $white
 	float: left
-	width: 100%
+	width: 100% !important
+	margin: 0
 	color: $black
 	text-shadow: none
 	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
@@ -284,20 +322,24 @@ main
 		margin-top: 5px
 		margin-bottom: 5px
 		margin-right: 0.5em
-	input, .srch input
+	.srch input
 		text-transform: capitalize
 		width: 100%
+	input
+		width: 78% !important
+		float: left !important
+	input, .srch input
 		margin: 0.5em 0
 		padding: 0.25em 0.5em
-		background: $grey-lightest
+		background: $white
 		color: $black
-		border: 1px solid $grey-lightest
+		border-bottom: 1px solid $grey-lighter
 		@include border-radius(0)
 		@include box-shadow(0, 0, 0, transparent)
 		&:focus
 			color: $black
-			background: $grey-lightest
-			border: 1px solid $primary
+			background: $white
+			border-color: $primary
 			outline: 0
 	select
 		margin: 0.5em 0 0 0.5em
@@ -342,9 +384,24 @@ main
 
 .full
 	width: 100%
-	margin: 0.5em 1em
+	margin: 0.5em 0
 	color: $black
 	text-shadow: none
+	table
+		width: 100%
+		margin: 0
+		tbody
+			tr
+				&:nth-child(odd)
+					background: $white
+				&:nth-child(even)
+					background: darken($white, 5)
+				td
+					padding: 2px 5px
+					a
+						font-weight: normal
+
+
 
 #backpack
 	.full
@@ -381,4 +438,13 @@ main
 			border: 1px solid $primary
 			outline: 0
 
+/* Bet table */
+#ajaxcont
+	padding: 1em !important
+	background: $white
+	float: left
+	width: 100% !important
+	margin: 0
+	color: $black
+	text-shadow: none
 

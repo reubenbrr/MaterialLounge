@@ -1,23 +1,47 @@
-a.button.destroyer, .button, .buttonright
+a.button.destroyer, .button
 	padding: 8px 10px
 	margin: 0 0 0 0.5em
-	background: $primary-dark
-	color: $white !important
+	background: $white
+	color: $primary !important
 	@include border-radius(0)
 	text-transform: uppercase
 	font-weight: 700
-	font-size: 12px
+	font-size: 12px !important
 	border: none
 	text-shadow: none !important
 	@include box-shadow(0, 0, 0, transparent)
 	&:hover
-		background: $primary-darker
-		color: $primary
+		background: $primary
+		color: $white !important
 		@include box-shadow(0, 0, 0, transparent)
 	&:active, &:focus
-		background: $primary-darker
+		background: $primary
+		color: $white !important
 		@include transition(0.3s ease all)
 		@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+
+.buttonright
+	padding: 8px 10px
+	margin: 0 0 0 0.5em
+	background: $primary
+	color: $white !important
+	@include border-radius(0)
+	text-transform: uppercase
+	font-weight: 700
+	font-size: 12px !important
+	border: none
+	text-shadow: none !important
+	@include box-shadow(0, 0, 0, transparent)
+	&:hover
+		background: $primary-light
+		color: $white !important
+		@include box-shadow(0, 0, 0, transparent)
+	&:active, &:focus
+		background: $primary-light
+		color: $white !important
+		@include transition(0.3s ease all)
+		@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+
 
 .matchmain, .bpheader
 	a.button.destroyer, .button, .buttonright
@@ -43,3 +67,12 @@ a.button.destroyer, .button, .buttonright
 			@include box-shadow(0, 0, 0, transparent)
 		&:active, &:focus
 			background: $secondary-darker
+
+.tradepoll .tradeheader span a.button
+	float: left !important
+
+.box-shiny-alt
+	.button
+		float: right
+		&:nth-child(7), &:nth-child(8)
+			margin-top: 1em

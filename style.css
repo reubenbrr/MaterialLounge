@@ -18,19 +18,19 @@ body {
   text-shadow: none !important; }
   body a {
     text-shadow: none;
-    -webkit-transition: 0.3s ease all;
-    -khtml-transition: 0.3s ease all;
-    -moz-transition: 0.3s ease all;
-    -ms-transition: 0.3s ease all;
-    -o-transition: 0.3s ease all;
-    transition: 0.3s ease all; }
+    -webkit-transition: 0.3s linear all;
+    -khtml-transition: 0.3s linear all;
+    -moz-transition: 0.3s linear all;
+    -ms-transition: 0.3s linear all;
+    -o-transition: 0.3s linear all;
+    transition: 0.3s linear all; }
     body a:hover, body a:active, body a:focus {
-      -webkit-transition: 0.1s ease all;
-      -khtml-transition: 0.1s ease all;
-      -moz-transition: 0.1s ease all;
-      -ms-transition: 0.1s ease all;
-      -o-transition: 0.1s ease all;
-      transition: 0.1s ease all; }
+      -webkit-transition: 0.1s linear all;
+      -khtml-transition: 0.1s linear all;
+      -moz-transition: 0.1s linear all;
+      -ms-transition: 0.1s linear all;
+      -o-transition: 0.1s linear all;
+      transition: 0.1s linear all; }
   body * {
     box-sizing: border-box; }
 
@@ -54,10 +54,11 @@ main section.box, main section {
   main section.box:first-child, main section:first-child {
     padding-right: 0; }
   main section.box a, main section a {
-    color: #5fe5d0;
+    font-weight: bold;
+    color: #58a436;
     text-shadow: none; }
     main section.box a:hover, main section.box a:active, main section.box a:focus, main section a:hover, main section a:active, main section a:focus {
-      color: #33dec3; }
+      color: #437d2a; }
   main section.box .title, main section .title {
     -webkit-transition: 0.5s ease all;
     -khtml-transition: 0.5s ease all;
@@ -65,19 +66,19 @@ main section.box, main section {
     -ms-transition: 0.5s ease all;
     -o-transition: 0.5s ease all;
     transition: 0.5s ease all;
-    -webkit-filter: brightness(0.25);
-    -khtml-filter: brightness(0.25);
-    -moz-filter: brightness(0.25);
-    -ms-filter: brightness(0.25);
-    -o-filter: brightness(0.25);
-    filter: brightness(0.25); }
+    -webkit-filter: brightness(0);
+    -khtml-filter: brightness(0);
+    -moz-filter: brightness(0);
+    -ms-filter: brightness(0);
+    -o-filter: brightness(0);
+    filter: brightness(0); }
     main section.box .title:hover, main section.box .title:active, main section.box .title:focus, main section .title:hover, main section .title:active, main section .title:focus {
-      -webkit-filter: brightness(1);
-      -khtml-filter: brightness(1);
-      -moz-filter: brightness(1);
-      -ms-filter: brightness(1);
-      -o-filter: brightness(1);
-      filter: brightness(1);
+      -webkit-filter: brightness(0);
+      -khtml-filter: brightness(0);
+      -moz-filter: brightness(0);
+      -ms-filter: brightness(0);
+      -o-filter: brightness(0);
+      filter: brightness(0);
       -webkit-transition: 0.1s ease all;
       -khtml-transition: 0.1s ease all;
       -moz-transition: 0.1s ease all;
@@ -92,6 +93,7 @@ main section.box, main section {
   main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
     margin: 4em 0 0em 0;
     width: 100%;
+    background: #fff;
     -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -99,14 +101,11 @@ main section.box, main section {
     -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
     main section.box .ld-trade-filters a, main section.box .ld-match-filters a, main section .ld-trade-filters a, main section .ld-match-filters a {
-      color: #fff;
+      font-weight: bold;
+      color: #000;
       text-shadow: none; }
       main section.box .ld-trade-filters a:hover, main section.box .ld-trade-filters a:active, main section.box .ld-trade-filters a:focus, main section.box .ld-match-filters a:hover, main section.box .ld-match-filters a:active, main section.box .ld-match-filters a:focus, main section .ld-trade-filters a:hover, main section .ld-trade-filters a:active, main section .ld-trade-filters a:focus, main section .ld-match-filters a:hover, main section .ld-match-filters a:active, main section .ld-match-filters a:focus {
-        color: #fff; }
-  main section.box .ld-trade-filters, main section .ld-trade-filters {
-    background-color: #5fe5d0; }
-  main section.box .ld-match-filters, main section .ld-match-filters {
-    background-color: #eb3c77; }
+        color: #000; }
   main section.box article.standard, main section article.standard {
     width: 100%;
     margin: 2.5em 0 0 0 !important; }
@@ -146,11 +145,11 @@ main section.box, main section {
       margin: 0;
       border-top: 0;
       border-bottom: none;
-      background: #5fe5d0;
+      background: #ffc133;
       padding: 1em;
       min-height: 55px; }
       main section.box article.standard .tradepoll .tradeheader a, main section article.standard .tradepoll .tradeheader a {
-        color: #fff;
+        color: #000;
         text-shadow: none; }
         main section.box article.standard .tradepoll .tradeheader a img, main section article.standard .tradepoll .tradeheader a img {
           -webkit-filter: brightness(1000);
@@ -159,6 +158,8 @@ main section.box, main section {
           -ms-filter: brightness(1000);
           -o-filter: brightness(1000);
           filter: brightness(1000); }
+        main section.box article.standard .tradepoll .tradeheader a + span, main section article.standard .tradepoll .tradeheader a + span {
+          min-height: 28px; }
       main section.box article.standard .tradepoll .tradeheader a.button.destroyer, main section article.standard .tradepoll .tradeheader a.button.destroyer {
         float: right !important; }
       main section.box article.standard .tradepoll .tradeheader a:first-child img, main section article.standard .tradepoll .tradeheader a:first-child img {
@@ -180,7 +181,7 @@ main section.box, main section {
     main section.box article.standard .tradepoll .ld-slidedown, main section article.standard .tradepoll .ld-slidedown {
       margin: 0 0 0.5em 0 !important; }
     main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra {
-      background: #8becdd;
+      background: #ffd066;
       border-bottom: none;
       border-left: 0;
       margin-bottom: 0;
@@ -199,18 +200,26 @@ main section.box, main section {
           margin-top: 0.4em;
           margin-left: 0.2em; }
           main section.box article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section article.standard .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
-            border: 2px solid #5fe5d0; }
+            border: 2px solid #ffb100; }
     main section.box article.standard .tradepoll .trade-description, main section article.standard .tradepoll .trade-description {
       width: 100%;
       padding: 1em;
       background: transparent;
-      border-left: 2px solid #5fe5d0;
+      border-left: 2px solid #ffb100;
       -webkit-border-radius: 0;
       -khtml-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0;
       border-radius: 0; }
+      main section.box article.standard .tradepoll .trade-description a:hover, main section.box article.standard .tradepoll .trade-description a:active, main section.box article.standard .tradepoll .trade-description a:focus, main section article.standard .tradepoll .trade-description a:hover, main section article.standard .tradepoll .trade-description a:active, main section article.standard .tradepoll .trade-description a:focus {
+        -webkit-transition: 0s ease none;
+        -khtml-transition: 0s ease none;
+        -moz-transition: 0s ease none;
+        -ms-transition: 0s ease none;
+        -o-transition: 0s ease none;
+        transition: 0s ease none;
+        text-decoration: underline; }
       main section.box article.standard .tradepoll .trade-descriptiondiv, main section article.standard .tradepoll .trade-descriptiondiv {
         color: #000; }
       main section.box article.standard .tradepoll .trade-description p, main section article.standard .tradepoll .trade-description p {
@@ -254,6 +263,32 @@ main section.box, main section {
     border-top-right-radius: 0;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px; }
+    main section.box article.standard .matchmain .matchheader, main section article.standard .matchmain .matchheader {
+      text-shadow: none !important;
+      min-height: 55px;
+      padding: 1em;
+      width: 100%;
+      margin-bottom: 0;
+      background: #8dd070;
+      -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      font-weight: bold; }
+      main section.box article.standard .matchmain .matchheader span, main section article.standard .matchmain .matchheader span {
+        font-weight: normal; }
+      main section.box article.standard .matchmain .matchheader .whenm, main section.box article.standard .matchmain .matchheader .eventm, main section article.standard .matchmain .matchheader .whenm, main section article.standard .matchmain .matchheader .eventm {
+        font-weight: bold;
+        line-height: 20px;
+        text-shadow: none !important; }
+        main section.box article.standard .matchmain .matchheader .whenm span, main section.box article.standard .matchmain .matchheader .eventm span, main section article.standard .matchmain .matchheader .whenm span, main section article.standard .matchmain .matchheader .eventm span {
+          font-weight: normal; }
+      main section.box article.standard .matchmain .matchheader .bettedIndicator, main section article.standard .matchmain .matchheader .bettedIndicator {
+        vertical-align: middle;
+        font-size: 25px;
+        color: #fff; }
     main section.box article.standard .matchmain .match, main section article.standard .matchmain .match {
       margin: 0;
       background-color: #fff;
@@ -280,6 +315,20 @@ main section.box, main section {
       border-top-right-radius: 0;
       border-bottom-right-radius: 3px;
       border-bottom-left-radius: 3px; }
+      main section.box article.standard .matchmain .match hr + div.full span, main section article.standard .matchmain .match hr + div.full span {
+        line-height: 25px; }
+      main section.box article.standard .matchmain .match .potwin, main section article.standard .matchmain .match .potwin {
+        color: #6fc34a;
+        font-size: 20px;
+        line-height: 10px;
+        background: #e8e8e8;
+        padding: 0.5em;
+        -webkit-border-radius: 0;
+        -khtml-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0; }
       main section.box article.standard .matchmain .match .matchleft a > div:first-child, main section.box article.standard .matchmain .match .matchleft a > div:last-child, main section article.standard .matchmain .match .matchleft a > div:first-child, main section article.standard .matchmain .match .matchleft a > div:last-child {
         position: relative;
         width: 40% !important;
@@ -311,33 +360,10 @@ main section.box, main section {
       main section.box article.standard .matchmain .match hr, main section article.standard .matchmain .match hr {
         width: 100%;
         border-bottom: 1px solid #e8e8e8; }
-    main section.box article.standard .matchmain.custom-my-bets-margin .matchheader .whenm, main section.box article.standard .matchmain.custom-my-bets-margin .matchheader .eventm, main section article.standard .matchmain.custom-my-bets-margin .matchheader .whenm, main section article.standard .matchmain.custom-my-bets-margin .matchheader .eventm {
-      line-height: 20px;
-      margin-top: 4px; }
-    main section.box article.standard .matchmain .matchheader, main section article.standard .matchmain .matchheader {
-      text-shadow: none !important;
-      width: 100%;
-      margin-bottom: 0;
-      background: #eb3c77;
-      border-bottom: 1px solid rgba(235, 60, 119, 0.3);
-      -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      border-top: 2px solid #eb3c77; }
-      main section.box article.standard .matchmain .matchheader .whenm, main section article.standard .matchmain .matchheader .whenm {
-        text-shadow: none !important; }
-      main section.box article.standard .matchmain .matchheader .bettedIndicator, main section article.standard .matchmain .matchheader .bettedIndicator {
-        vertical-align: middle;
-        line-height: 20px;
-        font-size: 25px;
-        color: #fff; }
   main section.box article.standard #betreturns, main section article.standard #betreturns {
     background: #fff;
     float: left;
-    border-top: 2px solid #eb3c77;
+    border-top: 2px solid #6fc34a;
     -webkit-border-top-left-radius: 0;
     -webkit-border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 3px;
@@ -372,14 +398,43 @@ main section.box, main section {
   float: right; }
 
 .oitm .name {
+  margin-top: 13px !important;
+  border-top: 2px solid #ffb100;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   min-width: 0 !important;
-  background: #e8e8e8;
-  color: #000; }
+  background: #fff;
+  color: #000;
+  overflow: visible; }
+  .oitm .name span, .oitm .name i, .oitm .name br, .oitm .name b {
+    float: left;
+    clear: both; }
+  .oitm .name:before {
+    float: left;
+    position: relative;
+    top: -16px;
+    left: 16.66667%;
+    height: 0;
+    width: 0;
+    content: "";
+    border-left: 10px transparent solid;
+    border-right: 10px transparent solid;
+    border-bottom: 10px #ffb100 solid; }
   .oitm .name a {
-    color: #5fe5d0 !important;
+    color: #ffb100 !important;
     text-shadow: none !important; }
     .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
-      color: #33dec3 !important; }
+      color: #cc8e00 !important; }
 .oitm .item {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -424,10 +479,11 @@ main section.box, main section {
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade {
-  padding: 1em;
+  padding: 1em !important;
   background: #fff;
   float: left;
-  width: 100%;
+  width: 100% !important;
+  margin: 0;
   color: #000;
   text-shadow: none;
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -443,7 +499,7 @@ main section.box, main section {
   -o-border-radius: 3px;
   border-radius: 3px; }
   .box-shiny-alt a.tab, .box-shiny a.tab, #satrade a.tab {
-    color: #5fe5d0;
+    color: #ffb100;
     background: #e8e8e8;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
@@ -453,7 +509,7 @@ main section.box, main section {
     border-radius: 0; }
     .box-shiny-alt a.tab:hover, .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:hover, .box-shiny a.tab:active, .box-shiny a.tab:focus, #satrade a.tab:hover, #satrade a.tab:active, #satrade a.tab:focus {
       background: #f4f4f4;
-      color: #5fe5d0 !important; }
+      color: #ffb100 !important; }
     .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #satrade a.tab:first-child {
       border-right: 1px solid #fff; }
   .box-shiny-alt .button, .box-shiny .button, #satrade .button {
@@ -461,14 +517,18 @@ main section.box, main section {
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 0.5em; }
-  .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, .box-shiny .srch input, #satrade input, #satrade .srch input {
+  .box-shiny-alt .srch input, .box-shiny .srch input, #satrade .srch input {
     text-transform: capitalize;
-    width: 100%;
+    width: 100%; }
+  .box-shiny-alt input, .box-shiny input, #satrade input {
+    width: 78% !important;
+    float: left !important; }
+  .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, .box-shiny .srch input, #satrade input, #satrade .srch input {
     margin: 0.5em 0;
     padding: 0.25em 0.5em;
-    background: #e8e8e8;
+    background: #fff;
     color: #000;
-    border: 1px solid #e8e8e8;
+    border-bottom: 1px solid #cecece;
     -webkit-border-radius: 0;
     -khtml-border-radius: 0;
     -moz-border-radius: 0;
@@ -483,8 +543,8 @@ main section.box, main section {
     box-shadow: 0 0 0 transparent; }
     .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, .box-shiny .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
       color: #000;
-      background: #e8e8e8;
-      border: 1px solid #5fe5d0;
+      background: #fff;
+      border-color: #ffb100;
       outline: 0; }
   .box-shiny-alt select, .box-shiny select, #satrade select {
     margin: 0.5em 0 0 0.5em;
@@ -507,7 +567,7 @@ main section.box, main section {
     .box-shiny-alt select:focus, .box-shiny select:focus, #satrade select:focus {
       color: #000;
       background: #e8e8e8;
-      border: 1px solid #5fe5d0;
+      border: 1px solid #ffb100;
       outline: 0; }
   .box-shiny-alt textarea, .box-shiny textarea, #satrade textarea {
     width: 100%;
@@ -560,15 +620,26 @@ main section.box, main section {
     background: #fff; }
     .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
       background: #f4f4f4;
-      color: #5fe5d0 !important; }
+      color: #ffb100 !important; }
     .tabholder a.tab:first-child {
       border-right: #e8e8e8 1px solid; }
 
 .full {
   width: 100%;
-  margin: 0.5em 1em;
+  margin: 0.5em 0;
   color: #000;
   text-shadow: none; }
+  .full table {
+    width: 100%;
+    margin: 0; }
+    .full table tbody tr:nth-child(odd) {
+      background: #fff; }
+    .full table tbody tr:nth-child(even) {
+      background: #f2f2f2; }
+    .full table tbody tr td {
+      padding: 2px 5px; }
+      .full table tbody tr td a {
+        font-weight: normal; }
 
 #backpack .full {
   margin: 0.5em 0; }
@@ -622,11 +693,21 @@ main section.box, main section {
     .srch input:focus {
       color: #000;
       background: #fff;
-      border: 1px solid #5fe5d0;
+      border: 1px solid #ffb100;
       outline: 0; }
 
+/* Bet table */
+#ajaxcont {
+  padding: 1em !important;
+  background: #fff;
+  float: left;
+  width: 100% !important;
+  margin: 0;
+  color: #000;
+  text-shadow: none; }
+
 header {
-  background: #33dec3;
+  background: #ffc133;
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -682,20 +763,20 @@ aside#submenu {
     margin-top: 0.5em; }
     aside#submenu nav a {
       background: #fff;
-      border-top: 0;
-      border-bottom: 2px solid rgba(95, 229, 208, 0.5);
       color: #5b5b5b;
-      margin-bottom: 0.25em; }
+      margin-bottom: 0.25em;
+      border-bottom: 2px solid #fff;
+      border-top: 2px solid #fff; }
       aside#submenu nav a:hover {
-        background: #ededed;
-        color: #1fbfa6;
+        background: #f4f4f4;
+        border-bottom-color: #ffb100;
+        border-top-color: #f4f4f4;
         -webkit-border-radius: 0;
         -khtml-border-radius: 0;
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
-        border-radius: 0;
-        border-color: #5fe5d0; }
+        border-radius: 0; }
   aside#submenu #follow a {
     opacity: 0.3;
     -webkit-filter: brightness(0);
@@ -718,10 +799,57 @@ aside#submenu {
     aside#submenu footer a:hover {
       color: #cc6e00; }
 
-a.button.destroyer, .button, .buttonright {
+a.button.destroyer, .button {
   padding: 8px 10px;
   margin: 0 0 0 0.5em;
-  background: #33dec3;
+  background: #fff;
+  color: #ffb100 !important;
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px !important;
+  border: none;
+  text-shadow: none !important;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+  a.button.destroyer:hover, .button:hover {
+    background: #ffb100;
+    color: #fff !important;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus {
+    background: #ffb100;
+    color: #fff !important;
+    -webkit-transition: 0.3s ease all;
+    -khtml-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -ms-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -o-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+
+.buttonright {
+  padding: 8px 10px;
+  margin: 0 0 0 0.5em;
+  background: #ffb100;
   color: #fff !important;
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -731,7 +859,7 @@ a.button.destroyer, .button, .buttonright {
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 12px !important;
   border: none;
   text-shadow: none !important;
   -webkit-box-shadow: 0 0 0 transparent;
@@ -740,17 +868,18 @@ a.button.destroyer, .button, .buttonright {
   -ms-box-shadow: 0 0 0 transparent;
   -o-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
-  a.button.destroyer:hover, .button:hover, .buttonright:hover {
-    background: #1fbfa6;
-    color: #5fe5d0;
+  .buttonright:hover {
+    background: #ffc133;
+    color: #fff !important;
     -webkit-box-shadow: 0 0 0 transparent;
     -khtml-box-shadow: 0 0 0 transparent;
     -moz-box-shadow: 0 0 0 transparent;
     -ms-box-shadow: 0 0 0 transparent;
     -o-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-  a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus, .buttonright:active, .buttonright:focus {
-    background: #1fbfa6;
+  .buttonright:active, .buttonright:focus {
+    background: #ffc133;
+    color: #fff !important;
     -webkit-transition: 0.3s ease all;
     -khtml-transition: 0.3s ease all;
     -moz-transition: 0.3s ease all;
@@ -765,7 +894,7 @@ a.button.destroyer, .button, .buttonright {
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
 .matchmain a.button.destroyer, .matchmain .button, .matchmain .buttonright, .bpheader a.button.destroyer, .bpheader .button, .bpheader .buttonright {
-  background: #eb3c77;
+  background: #6fc34a;
   color: #fff !important;
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -780,7 +909,7 @@ a.button.destroyer, .button, .buttonright {
   -o-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
   .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover {
-    color: #eb3c77;
+    color: #6fc34a;
     -webkit-box-shadow: 0 0 0 transparent;
     -khtml-box-shadow: 0 0 0 transparent;
     -moz-box-shadow: 0 0 0 transparent;
@@ -788,7 +917,7 @@ a.button.destroyer, .button, .buttonright {
     -o-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
   .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain .buttonright:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader .buttonright:focus {
-    background: #dd175a;
+    background: #58a436;
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
@@ -797,7 +926,7 @@ a.button.destroyer, .button, .buttonright {
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
 .matchheader .buttonright {
-  background: #dd175a;
+  background: #58a436;
   color: #fff !important;
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -812,7 +941,7 @@ a.button.destroyer, .button, .buttonright {
   -o-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
   .matchheader .buttonright:hover {
-    background: #af1247;
+    background: #437d2a;
     -webkit-box-shadow: 0 0 0 transparent;
     -khtml-box-shadow: 0 0 0 transparent;
     -moz-box-shadow: 0 0 0 transparent;
@@ -820,4 +949,12 @@ a.button.destroyer, .button, .buttonright {
     -o-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
   .matchheader .buttonright:active, .matchheader .buttonright:focus {
-    background: #af1247; }
+    background: #437d2a; }
+
+.tradepoll .tradeheader span a.button {
+  float: left !important; }
+
+.box-shiny-alt .button {
+  float: right; }
+  .box-shiny-alt .button:nth-child(7), .box-shiny-alt .button:nth-child(8) {
+    margin-top: 1em; }

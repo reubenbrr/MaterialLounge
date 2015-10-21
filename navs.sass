@@ -1,6 +1,6 @@
 //Navbar
 header
-	background: $primary-dark
+	background: $primary-light
 	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 	a img#logo
 		@include css3-prefix(filter, brightness(1000))
@@ -29,15 +29,15 @@ aside
 			margin-top: 0.5em
 			a
 				background: $white
-				border-top: 0
-				border-bottom: 2px solid rgba($primary, 0.5)
 				color: $grey-darkest
 				margin-bottom: 0.25em
+				border-bottom: 2px solid $white
+				border-top: 2px solid $white
 				&:hover
-					background: lighten($grey-lightest, 2)
-					color: $primary-darker
+					background: lighten($grey-lightest, 5)
+					border-bottom-color: $primary
+					border-top-color: lighten($grey-lightest, 5)
 					@include border-radius(0)
-					border-color: $primary
 		#follow a
 			opacity: 0.3
 			@include css3-prefix(filter, brightness(0))
