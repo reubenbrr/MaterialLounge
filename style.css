@@ -358,6 +358,17 @@ main section.box, main section {
       margin-left: 0; }
 
 /* Items */
+.tradepoll .left, .tradepoll .right {
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -khtml-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+.tradepoll .left .oitm {
+  float: right; }
+
 .oitm .name {
   min-width: 0 !important;
   background: #e8e8e8;
@@ -409,10 +420,9 @@ main section.box, main section {
     background-color: rgba(235, 119, 55, 0.8) !important;
     text-shadow: none; }
 
-/* Profile */
-.box-shiny-alt, .box-shiny {
+/* Boxes */
+.box-shiny-alt, .box-shiny, #satrade {
   padding: 1em;
-  margin: 0 0 1em 0;
   background: #fff;
   float: left;
   width: 100%;
@@ -430,18 +440,27 @@ main section.box, main section {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px; }
-
-.full {
-  width: 100%;
-  margin: 0.5em 1em;
-  color: #000;
-  text-shadow: none; }
-  .full .button {
+  .box-shiny-alt a.tab, .box-shiny a.tab, #satrade a.tab {
+    color: #5fe5d0;
+    background: #e8e8e8;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+    .box-shiny-alt a.tab:hover, .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:hover, .box-shiny a.tab:active, .box-shiny a.tab:focus, #satrade a.tab:hover, #satrade a.tab:active, #satrade a.tab:focus {
+      background: #f4f4f4;
+      color: #5fe5d0 !important; }
+    .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #satrade a.tab:first-child {
+      border-right: 1px solid #fff; }
+  .box-shiny-alt .button, .box-shiny .button, #satrade .button {
     margin-left: 0;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 0.5em; }
-  .full input {
+  .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, .box-shiny .srch input, #satrade input, #satrade .srch input {
+    text-transform: capitalize;
     width: 100%;
     margin: 0.5em 0;
     padding: 0.25em 0.5em;
@@ -460,12 +479,77 @@ main section.box, main section {
     -ms-box-shadow: 0 0 0 transparent;
     -o-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-    .full input:focus {
+    .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, .box-shiny .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
+      color: #000;
+      background: #e8e8e8;
+      border: 1px solid #5fe5d0;
+      outline: 0; }
+  .box-shiny-alt select, .box-shiny select, #satrade select {
+    margin: 0.5em 0 0 0.5em;
+    padding: 0.25em 0.5em;
+    background: #e8e8e8;
+    color: #000;
+    border: 1px solid #e8e8e8;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0 transparent;
+    -khtml-box-shadow: 0 0 0 transparent;
+    -moz-box-shadow: 0 0 0 transparent;
+    -ms-box-shadow: 0 0 0 transparent;
+    -o-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+    .box-shiny-alt select:focus, .box-shiny select:focus, #satrade select:focus {
       color: #000;
       background: #e8e8e8;
       border: 1px solid #5fe5d0;
       outline: 0; }
 
+.box-shiny-alt, .box-shiny {
+  margin: 0 0 1em 0; }
+
+.tabholder {
+  width: 100%;
+  margin: 0;
+  padding: 0 1em;
+  -webkit-border-top-left-radius: 0 3px 0 3px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 0 3px 0 3px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 0 3px 0 3px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px; }
+  .tabholder a.tab {
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    color: #000;
+    background: #fff; }
+    .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
+      background: #f4f4f4;
+      color: #5fe5d0 !important; }
+    .tabholder a.tab:first-child {
+      border-right: #e8e8e8 1px solid; }
+
+.full {
+  width: 100%;
+  margin: 0.5em 1em;
+  color: #000;
+  text-shadow: none; }
+
+#backpack .full {
+  margin: 0.5em 0; }
 #backpack .inventoryStatisticsBox {
   padding: 1em;
   margin: 0 0 1em 0;
@@ -488,9 +572,12 @@ main section.box, main section {
   border-radius: 3px; }
   #backpack .inventoryStatisticsBox + .full {
     margin: 0; }
-#backpack .srch {
-  margin: 0; }
-  #backpack .srch input {
+
+.srch {
+  width: 100%;
+  margin: 0.5em 0; }
+  .srch input {
+    text-transform: capitalize;
     width: 50%;
     float: right;
     margin: 0;
@@ -510,7 +597,7 @@ main section.box, main section {
     -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
-    #backpack .srch input:focus {
+    .srch input:focus {
       color: #000;
       background: #fff;
       border: 1px solid #5fe5d0;

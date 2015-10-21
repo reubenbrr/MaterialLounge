@@ -215,7 +215,17 @@ main
 				.button
 					margin-left: 0
 
+
+
 /* Items */
+.tradepoll
+	.left, .right
+		background: $white
+		@include box-shadow(0, 0, 0, transparent)
+	.left
+		.oitm
+			float: right
+
 .oitm
 	.name
 		min-width: 0 !important
@@ -248,10 +258,9 @@ main
 			background-color: rgba(235, 119, 55, 0.8) !important
 			text-shadow: none
 
-/* Profile */
-.box-shiny-alt, .box-shiny
+/* Boxes */
+.box-shiny-alt, .box-shiny, #satrade
 	padding: 1em
-	margin: 0 0 1em 0
 	background: $white
 	float: left
 	width: 100%
@@ -259,18 +268,22 @@ main
 	text-shadow: none
 	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 	@include border-radius(3px)
-
-.full
-	width: 100%
-	margin: 0.5em 1em
-	color: $black
-	text-shadow: none
+	a.tab
+		color: $primary
+		background: $grey-lightest
+		@include border-radius(0)
+		&:hover, &:active, &:focus
+			background: lighten($grey-lightest, 5)
+			color: $primary !important
+		&:first-child
+			border-right: 1px solid $white
 	.button
 		margin-left: 0
 		margin-top: 5px
 		margin-bottom: 5px
 		margin-right: 0.5em
-	input
+	input, .srch input
+		text-transform: capitalize
 		width: 100%
 		margin: 0.5em 0
 		padding: 0.25em 0.5em
@@ -284,9 +297,46 @@ main
 			background: $grey-lightest
 			border: 1px solid $primary
 			outline: 0
+	select
+		margin: 0.5em 0 0 0.5em
+		padding: 0.25em 0.5em
+		background: $grey-lightest
+		color: $black
+		border: 1px solid $grey-lightest
+		@include border-radius(0)
+		@include box-shadow(0, 0, 0, transparent)
+		&:focus
+			color: $black
+			background: $grey-lightest
+			border: 1px solid $primary
+			outline: 0
+.box-shiny-alt, .box-shiny
+	margin: 0 0 1em 0
 
+.tabholder
+	width: 100%
+	margin: 0
+	padding: 0 1em
+	@include border-radius-separate(0 3px 0 3px)
+	a.tab
+		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		color: $black
+		background: $white
+		&:hover, &:active, &:focus
+			background: lighten($grey-lightest, 5)
+			color: $primary !important
+		&:first-child
+			border-right: $grey-lightest 1px solid
+
+.full
+	width: 100%
+	margin: 0.5em 1em
+	color: $black
+	text-shadow: none
 
 #backpack
+	.full
+		margin: 0.5em 0
 	.inventoryStatisticsBox
 		padding: 1em
 		margin: 0 0 1em 0
@@ -299,22 +349,24 @@ main
 		@include border-radius(3px)
 		+ .full
 			margin: 0
-	.srch
+.srch
+	width: 100%
+	margin: 0.5em 0
+	input
+		text-transform: capitalize
+		width: 50%
+		float: right
 		margin: 0
-		input
-			width: 50%
-			float: right
-			margin: 0
-			padding: 0.25em 0.5em
-			background: $white
+		padding: 0.25em 0.5em
+		background: $white
+		color: $black
+		border: 1px solid $white
+		@include border-radius(0)
+		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		&:focus
 			color: $black
-			border: 1px solid $white
-			@include border-radius(0)
-			@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-			&:focus
-				color: $black
-				background: $white
-				border: 1px solid $primary
-				outline: 0
+			background: $white
+			border: 1px solid $primary
+			outline: 0
 
 
