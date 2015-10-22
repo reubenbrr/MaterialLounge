@@ -5,9 +5,9 @@ body
 	text-shadow: none !important
 	a
 		text-shadow: none
-		+single-transition (0.3s linear all)
+		+transition (0.3s linear all)
 		&:hover, &:active, &:focus
-			+single-transition(0.1s linear all)
+			+transition(0.1s linear all)
 	*
 		box-sizing: border-box
 
@@ -30,11 +30,11 @@ main
 			&:hover, &:active, &:focus
 				color: $secondary-darker
 		.title
-			+single-transition(0.5s ease all)
+			+transition(0.5s ease all)
 			+filter(brightness(0))
 			&:hover, &:active, &:focus
 				+filter(brightness(0))
-				+single-transition(0.1s ease all)
+				+transition(0.1s ease all)
 				a
 					color: $grey
 					text-shadow: none
@@ -42,7 +42,7 @@ main
 				color: $grey-darkest
 		/* Lounge destroyer filter options */
 		.ld-trade-filters, .ld-match-filters
-			margin: 4em 0 0em 0
+			margin: 4em 0 -1.5em 0
 			padding: 1em
 			width: 100%
 			background: $white
@@ -63,7 +63,6 @@ main
 				padding: 0.5em 1em
 		/* Panels */
 		article.standard#tradelist
-			margin-top: 1em !important
 			a
 				text-shadow: none
 			.tradepoll
@@ -87,7 +86,7 @@ main
 				background: $white
 				border-top: 0
 				padding: 1em
-				min-height: 55px
+				height: 55px
 				a
 					color: $black
 					text-shadow: none
@@ -95,6 +94,20 @@ main
 						+filter(brightness(0))
 					+ span
 						min-height: 28px
+					span.donor
+						text-shadow: none
+						background: #6fd3ff
+						padding: 0 2px
+						margin-left: 20px
+						position: relative
+						&:before
+							width: 20px
+							height: 20px
+							content: ''
+							background: url(../img/donor.png) no-repeat
+							position: absolute
+							left: -20px
+							top: 0
 				a.button.destroyer
 					float: right !important
 				a:first-child img
@@ -181,7 +194,7 @@ main
 				border-left: 2px solid $primary
 				a
 					&:hover, &:active, &:focus
-						+single-transition(0s ease none)
+						+transition(0s ease none)
 						text-decoration: underline
 				&div
 					color: $black
@@ -193,7 +206,6 @@ main
 					color: $black
 		/* Betting section */
 		article.standard#bets,
-			margin-top: 1em !important
 			a
 				color: $black
 				text-shadow: none

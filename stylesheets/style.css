@@ -5,15 +5,15 @@ body {
   text-shadow: none !important; }
   body a {
     text-shadow: none;
-    -moz-transition: 0.3s, linear, all 1s;
-    -o-transition: 0.3s, linear, all 1s;
-    -webkit-transition: 0.3s, linear, all 1s;
-    transition: 0.3s linear all 1s; }
+    -moz-transition: linear 0.3s all;
+    -o-transition: linear 0.3s all;
+    -webkit-transition: linear 0.3s all;
+    transition: linear 0.3s all; }
     body a:hover, body a:active, body a:focus {
-      -moz-transition: 0.1s, linear, all 1s;
-      -o-transition: 0.1s, linear, all 1s;
-      -webkit-transition: 0.1s, linear, all 1s;
-      transition: 0.1s linear all 1s; }
+      -moz-transition: linear 0.1s all;
+      -o-transition: linear 0.1s all;
+      -webkit-transition: linear 0.1s all;
+      transition: linear 0.1s all; }
   body * {
     box-sizing: border-box; }
 
@@ -40,26 +40,26 @@ main section.box, main section {
     main section.box a:hover, main section.box a:active, main section.box a:focus, main section a:hover, main section a:active, main section a:focus {
       color: #437d2a; }
   main section.box .title, main section .title {
-    -moz-transition: 0.5s, ease, all 1s;
-    -o-transition: 0.5s, ease, all 1s;
-    -webkit-transition: 0.5s, ease, all 1s;
-    transition: 0.5s ease all 1s;
+    -moz-transition: ease 0.5s all;
+    -o-transition: ease 0.5s all;
+    -webkit-transition: ease 0.5s all;
+    transition: ease 0.5s all;
     -webkit-filter: brightness(0);
     filter: brightness(0); }
     main section.box .title:hover, main section.box .title:active, main section.box .title:focus, main section .title:hover, main section .title:active, main section .title:focus {
       -webkit-filter: brightness(0);
       filter: brightness(0);
-      -moz-transition: 0.1s, ease, all 1s;
-      -o-transition: 0.1s, ease, all 1s;
-      -webkit-transition: 0.1s, ease, all 1s;
-      transition: 0.1s ease all 1s; }
+      -moz-transition: ease 0.1s all;
+      -o-transition: ease 0.1s all;
+      -webkit-transition: ease 0.1s all;
+      transition: ease 0.1s all; }
       main section.box .title:hover a, main section.box .title:active a, main section.box .title:focus a, main section .title:hover a, main section .title:active a, main section .title:focus a {
         color: #a8a8a8;
         text-shadow: none; }
     main section.box .title a, main section .title a {
       color: #5b5b5b; }
   main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
-    margin: 4em 0 0em 0;
+    margin: 4em 0 -1.5em 0;
     padding: 1em;
     width: 100%;
     background: #fff;
@@ -79,12 +79,10 @@ main section.box, main section {
     main section.box article.standard .full, main section article.standard .full {
       margin: 0;
       padding: 0.5em 1em; }
-  main section.box article.standard#tradelist, main section article.standard#tradelist {
-    margin-top: 1em !important; }
-    main section.box article.standard#tradelist a, main section article.standard#tradelist a {
-      text-shadow: none; }
-    main section.box article.standard#tradelist .tradepoll .tradeheader, main section article.standard#tradelist .tradepoll .tradeheader {
-      border-bottom: 2px solid #ff8a00; }
+  main section.box article.standard#tradelist a, main section article.standard#tradelist a {
+    text-shadow: none; }
+  main section.box article.standard#tradelist .tradepoll .tradeheader, main section article.standard#tradelist .tradepoll .tradeheader {
+    border-bottom: 2px solid #ff8a00; }
   main section.box article.standard#bets .matchmain .matchheader, main section article.standard#bets .matchmain .matchheader {
     border-bottom: 2px solid #6fc34a; }
   main section.box .tradepoll, main section.box .matchmain, main section .tradepoll, main section .matchmain {
@@ -105,7 +103,7 @@ main section.box, main section {
       background: #fff;
       border-top: 0;
       padding: 1em;
-      min-height: 55px; }
+      height: 55px; }
       main section.box .tradepoll .tradeheader a, main section.box .tradepoll .matchheader a, main section.box .matchmain .tradeheader a, main section.box .matchmain .matchheader a, main section .tradepoll .tradeheader a, main section .tradepoll .matchheader a, main section .matchmain .tradeheader a, main section .matchmain .matchheader a {
         color: #000;
         text-shadow: none; }
@@ -114,6 +112,20 @@ main section.box, main section {
           filter: brightness(0); }
         main section.box .tradepoll .tradeheader a + span, main section.box .tradepoll .matchheader a + span, main section.box .matchmain .tradeheader a + span, main section.box .matchmain .matchheader a + span, main section .tradepoll .tradeheader a + span, main section .tradepoll .matchheader a + span, main section .matchmain .tradeheader a + span, main section .matchmain .matchheader a + span {
           min-height: 28px; }
+        main section.box .tradepoll .tradeheader a span.donor, main section.box .tradepoll .matchheader a span.donor, main section.box .matchmain .tradeheader a span.donor, main section.box .matchmain .matchheader a span.donor, main section .tradepoll .tradeheader a span.donor, main section .tradepoll .matchheader a span.donor, main section .matchmain .tradeheader a span.donor, main section .matchmain .matchheader a span.donor {
+          text-shadow: none;
+          background: #6fd3ff;
+          padding: 0 2px;
+          margin-left: 20px;
+          position: relative; }
+          main section.box .tradepoll .tradeheader a span.donor:before, main section.box .tradepoll .matchheader a span.donor:before, main section.box .matchmain .tradeheader a span.donor:before, main section.box .matchmain .matchheader a span.donor:before, main section .tradepoll .tradeheader a span.donor:before, main section .tradepoll .matchheader a span.donor:before, main section .matchmain .tradeheader a span.donor:before, main section .matchmain .matchheader a span.donor:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            background: url(../img/donor.png) no-repeat;
+            position: absolute;
+            left: -20px;
+            top: 0; }
       main section.box .tradepoll .tradeheader a.button.destroyer, main section.box .tradepoll .matchheader a.button.destroyer, main section.box .matchmain .tradeheader a.button.destroyer, main section.box .matchmain .matchheader a.button.destroyer, main section .tradepoll .tradeheader a.button.destroyer, main section .tradepoll .matchheader a.button.destroyer, main section .matchmain .tradeheader a.button.destroyer, main section .matchmain .matchheader a.button.destroyer {
         float: right !important; }
       main section.box .tradepoll .tradeheader a:first-child img, main section.box .tradepoll .matchheader a:first-child img, main section.box .matchmain .tradeheader a:first-child img, main section.box .matchmain .matchheader a:first-child img, main section .tradepoll .tradeheader a:first-child img, main section .tradepoll .matchheader a:first-child img, main section .matchmain .tradeheader a:first-child img, main section .matchmain .matchheader a:first-child img {
@@ -212,10 +224,10 @@ main section.box, main section {
       -webkit-border-radius: 0;
       border-radius: 0; }
       main section.box .tradepoll .trade-description a:hover, main section.box .tradepoll .trade-description a:active, main section.box .tradepoll .trade-description a:focus, main section.box .matchmain .trade-description a:hover, main section.box .matchmain .trade-description a:active, main section.box .matchmain .trade-description a:focus, main section .tradepoll .trade-description a:hover, main section .tradepoll .trade-description a:active, main section .tradepoll .trade-description a:focus, main section .matchmain .trade-description a:hover, main section .matchmain .trade-description a:active, main section .matchmain .trade-description a:focus {
-        -moz-transition: 0s, ease, none 1s;
-        -o-transition: 0s, ease, none 1s;
-        -webkit-transition: 0s, ease, none 1s;
-        transition: 0s ease none 1s;
+        -moz-transition: ease 0s none;
+        -o-transition: ease 0s none;
+        -webkit-transition: ease 0s none;
+        transition: ease 0s none;
         text-decoration: underline; }
       main section.box .tradepoll .trade-descriptiondiv, main section.box .matchmain .trade-descriptiondiv, main section .tradepoll .trade-descriptiondiv, main section .matchmain .trade-descriptiondiv {
         color: #000; }
@@ -226,13 +238,11 @@ main section.box, main section {
         -webkit-border-radius: 0;
         border-radius: 0;
         color: #000; }
-  main section.box article.standard#bets, main section article.standard#bets {
-    margin-top: 1em !important; }
-    main section.box article.standard#bets a, main section article.standard#bets a {
-      color: #000;
-      text-shadow: none; }
-      main section.box article.standard#bets a:hover, main section.box article.standard#bets a:active, main section.box article.standard#bets a:focus, main section article.standard#bets a:hover, main section article.standard#bets a:active, main section article.standard#bets a:focus {
-        color: #424242; }
+  main section.box article.standard#bets a, main section article.standard#bets a {
+    color: #000;
+    text-shadow: none; }
+    main section.box article.standard#bets a:hover, main section.box article.standard#bets a:active, main section.box article.standard#bets a:focus, main section article.standard#bets a:hover, main section article.standard#bets a:active, main section article.standard#bets a:focus {
+      color: #424242; }
   main section.box article.standard #betreturns, main section article.standard #betreturns {
     background: #fff;
     float: left;
@@ -641,10 +651,10 @@ a.button.destroyer, .button {
   .buttonright:active, .buttonright:focus {
     background: #ffa133;
     color: #fff !important;
-    -moz-transition: 0.3s, ease, all 1s;
-    -o-transition: 0.3s, ease, all 1s;
-    -webkit-transition: 0.3s, ease, all 1s;
-    transition: 0.3s ease all 1s;
+    -moz-transition: ease 0.3s all;
+    -o-transition: ease 0.3s all;
+    -webkit-transition: ease 0.3s all;
+    transition: ease 0.3s all;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
