@@ -365,15 +365,24 @@ main section.box, main section {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
+  .box-shiny-alt .tradepoll, .box-shiny .tradepoll, #satrade .tradepoll {
+    margin-top: 0.5em;
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
   .box-shiny-alt a.tab, .box-shiny a.tab, #satrade a.tab {
-    color: #ff8a00;
-    background: #e8e8e8;
+    color: #fff !important;
+    background: #ff8a00;
+    text-transform: uppercase;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0; }
-    .box-shiny-alt a.tab:hover, .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:hover, .box-shiny a.tab:active, .box-shiny a.tab:focus, #satrade a.tab:hover, #satrade a.tab:active, #satrade a.tab:focus {
-      background: #f4f4f4;
-      color: #ff8a00 !important; }
+    .box-shiny-alt a.tab:hover, .box-shiny a.tab:hover, #satrade a.tab:hover {
+      background: #ffa133;
+      color: #fff !important; }
+    .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:active, .box-shiny a.tab:focus, #satrade a.tab:active, #satrade a.tab:focus {
+      background: #ffb966;
+      color: #fff !important; }
     .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #satrade a.tab:first-child {
       border-right: 1px solid #fff; }
   .box-shiny-alt a[href~="profiles"] + div, .box-shiny a[href~="profiles"] + div, #satrade a[href~="profiles"] + div {
@@ -387,7 +396,7 @@ main section.box, main section {
     margin-right: 0.5em; }
   .box-shiny-alt .srch input, .box-shiny .srch input, #satrade .srch input {
     text-transform: capitalize;
-    width: 100%; }
+    width: 100% !important; }
   .box-shiny-alt input, .box-shiny input, #satrade input {
     width: 78% !important;
     float: left !important; }
@@ -396,6 +405,9 @@ main section.box, main section {
     padding: 0.25em 0.5em;
     background: #fff;
     color: #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
     border-bottom: 1px solid #cecece;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -406,6 +418,9 @@ main section.box, main section {
     .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, .box-shiny .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
       color: #000;
       background: #fff;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
       border-color: #ff8a00;
       outline: 0; }
   .box-shiny-alt select, .box-shiny select, #satrade select {
@@ -429,14 +444,15 @@ main section.box, main section {
     width: 100%;
     margin: 0.5em 0;
     padding: 1em;
-    background: #e8e8e8;
+    background: #fff;
     color: #000;
+    border-left: 2px solid #ff8a00;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
     .box-shiny-alt textarea:focus, .box-shiny textarea:focus, #satrade textarea:focus {
       outline: 0; }
 
@@ -446,20 +462,29 @@ main section.box, main section {
 .tabholder {
   width: 100%;
   margin: 0;
-  padding: 0 1em;
-  -moz-border-radius: 0 3px 0 3px;
-  -webkit-border-radius: 0;
-  border-radius: 0 3px 0 3px; }
+  padding: 1em 1em 0 1em;
+  -moz-border-radius: 3px 0 3px 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 3px 0; }
   .tabholder a.tab {
     -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    color: #000;
-    background: #fff; }
+    color: #ff8a00;
+    text-transform: uppercase;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8; }
     .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
       background: #f4f4f4;
       color: #ff8a00 !important; }
+    .tabholder a.tab:last-child {
+      -moz-border-radius: 0 3px 0 0;
+      -webkit-border-radius: 0;
+      border-radius: 0 3px 0 0; }
     .tabholder a.tab:first-child {
+      -moz-border-radius: 3px 0 0 0;
+      -webkit-border-radius: 3px;
+      border-radius: 3px 0 0 0;
       border-right: #e8e8e8 1px solid; }
 
 .full {
@@ -479,24 +504,48 @@ main section.box, main section {
       .full table tbody tr td a {
         font-weight: normal; }
 
-#backpack .full {
-  margin: 0.5em 0; }
-#backpack .inventoryStatisticsBox {
-  padding: 1em;
-  margin: 0 0 1em 0;
+#backpack, #itemlist {
   background: #fff;
-  float: left;
-  width: 100%;
   color: #000;
-  text-shadow: none;
+  margin-top: 0;
+  padding: 0.5em 1em;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
-  #backpack .inventoryStatisticsBox + .full {
+  #backpack .bpheader, #itemlist .bpheader {
+    width: 100%;
+    padding: 0.5 1em;
+    background: transparent;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-top: 0;
+    border-bottom: 2px solid #ff8a00;
+    margin-bottom: 1em; }
+    #backpack .bpheader div, #itemlist .bpheader div {
+      color: #000 !important; }
+  #backpack .full, #itemlist .full {
     margin: 0; }
+  #backpack .inventoryStatisticsBox, #itemlist .inventoryStatisticsBox {
+    padding: 1em;
+    margin: 0 0 1em 0;
+    background: #fff;
+    float: left;
+    width: 100%;
+    color: #000;
+    text-shadow: none;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
+    #backpack .inventoryStatisticsBox + .full, #itemlist .inventoryStatisticsBox + .full {
+      margin: 0; }
+  #backpack .standard a, #itemlist .standard a {
+    text-shadow: none !important; }
 
 .srch {
   width: 100%;
@@ -509,17 +558,20 @@ main section.box, main section {
     padding: 0.25em 0.5em;
     background: #fff;
     color: #000;
-    border: 1px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #cecece;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
     .srch input:focus {
       color: #000;
       background: #fff;
-      border: 1px solid #ff8a00;
+      border-color: #ff8a00;
       outline: 0; }
 
 /* Bet table */
