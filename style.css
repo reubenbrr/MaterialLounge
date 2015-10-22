@@ -485,6 +485,10 @@ main section.box, main section {
       color: #ff8a00 !important; }
     .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #satrade a.tab:first-child {
       border-right: 1px solid #fff; }
+  .box-shiny-alt a[href~="profiles"] + div, .box-shiny a[href~="profiles"] + div, #satrade a[href~="profiles"] + div {
+    margin: 0 0.5em; }
+  .box-shiny-alt #avatar, .box-shiny #avatar, #satrade #avatar {
+    margin: 0; }
   .box-shiny-alt .button, .box-shiny .button, #satrade .button {
     margin-left: 0;
     margin-top: 5px;
