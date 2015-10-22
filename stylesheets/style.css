@@ -126,6 +126,48 @@ main section.box, main section {
             position: absolute;
             left: -20px;
             top: 0; }
+        main section.box .tradepoll .tradeheader a span.donor2, main section.box .tradepoll .matchheader a span.donor2, main section.box .matchmain .tradeheader a span.donor2, main section.box .matchmain .matchheader a span.donor2, main section .tradepoll .tradeheader a span.donor2, main section .tradepoll .matchheader a span.donor2, main section .matchmain .tradeheader a span.donor2, main section .matchmain .matchheader a span.donor2 {
+          text-shadow: none;
+          background: #4b69ff;
+          padding: 0 2px;
+          margin-left: 20px;
+          position: relative; }
+          main section.box .tradepoll .tradeheader a span.donor2:before, main section.box .tradepoll .matchheader a span.donor2:before, main section.box .matchmain .tradeheader a span.donor2:before, main section.box .matchmain .matchheader a span.donor2:before, main section .tradepoll .tradeheader a span.donor2:before, main section .tradepoll .matchheader a span.donor2:before, main section .matchmain .tradeheader a span.donor2:before, main section .matchmain .matchheader a span.donor2:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            background: url(../img/donor2.png) no-repeat;
+            position: absolute;
+            left: -20px;
+            top: 0; }
+        main section.box .tradepoll .tradeheader a span.donor3, main section.box .tradepoll .matchheader a span.donor3, main section.box .matchmain .tradeheader a span.donor3, main section.box .matchmain .matchheader a span.donor3, main section .tradepoll .tradeheader a span.donor3, main section .tradepoll .matchheader a span.donor3, main section .matchmain .tradeheader a span.donor3, main section .matchmain .matchheader a span.donor3 {
+          text-shadow: none;
+          background: #8847ff;
+          padding: 0 2px;
+          margin-left: 20px;
+          position: relative; }
+          main section.box .tradepoll .tradeheader a span.donor3:before, main section.box .tradepoll .matchheader a span.donor3:before, main section.box .matchmain .tradeheader a span.donor3:before, main section.box .matchmain .matchheader a span.donor3:before, main section .tradepoll .tradeheader a span.donor3:before, main section .tradepoll .matchheader a span.donor3:before, main section .matchmain .tradeheader a span.donor3:before, main section .matchmain .matchheader a span.donor3:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            background: url(../img/donor3.png) no-repeat;
+            position: absolute;
+            left: -20px;
+            top: 0; }
+        main section.box .tradepoll .tradeheader a span.donor4, main section.box .tradepoll .matchheader a span.donor4, main section.box .matchmain .tradeheader a span.donor4, main section.box .matchmain .matchheader a span.donor4, main section .tradepoll .tradeheader a span.donor4, main section .tradepoll .matchheader a span.donor4, main section .matchmain .tradeheader a span.donor4, main section .matchmain .matchheader a span.donor4 {
+          text-shadow: none;
+          background: #ffaf00;
+          padding: 0 2px;
+          margin-left: 20px;
+          position: relative; }
+          main section.box .tradepoll .tradeheader a span.donor4:before, main section.box .tradepoll .matchheader a span.donor4:before, main section.box .matchmain .tradeheader a span.donor4:before, main section.box .matchmain .matchheader a span.donor4:before, main section .tradepoll .tradeheader a span.donor4:before, main section .tradepoll .matchheader a span.donor4:before, main section .matchmain .tradeheader a span.donor4:before, main section .matchmain .matchheader a span.donor4:before {
+            width: 20px;
+            height: 20px;
+            content: "";
+            background: url(../img/donor4.png) no-repeat;
+            position: absolute;
+            left: -20px;
+            top: 0; }
       main section.box .tradepoll .tradeheader a.button.destroyer, main section.box .tradepoll .matchheader a.button.destroyer, main section.box .matchmain .tradeheader a.button.destroyer, main section.box .matchmain .matchheader a.button.destroyer, main section .tradepoll .tradeheader a.button.destroyer, main section .tradepoll .matchheader a.button.destroyer, main section .matchmain .tradeheader a.button.destroyer, main section .matchmain .matchheader a.button.destroyer {
         float: right !important; }
       main section.box .tradepoll .tradeheader a:first-child img, main section.box .tradepoll .matchheader a:first-child img, main section.box .matchmain .tradeheader a:first-child img, main section.box .matchmain .matchheader a:first-child img, main section .tradepoll .tradeheader a:first-child img, main section .tradepoll .matchheader a:first-child img, main section .matchmain .tradeheader a:first-child img, main section .matchmain .matchheader a:first-child img {
