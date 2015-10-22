@@ -44,8 +44,10 @@ main
 		/* Lounge destroyer filter options */
 		.ld-trade-filters, .ld-match-filters
 			margin: 4em 0 0em 0
+			padding: 1em
 			width: 100%
 			background: $white
+			height: auto
 			+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 			a
 				font-weight: bold
@@ -67,13 +69,11 @@ main
 				text-shadow: none
 			.tradepoll
 				.tradeheader
-					border-top: 2px solid $primary
-					border-bottom: 2px solid $primary-lighter
+					border-bottom: 2px solid $primary
 		article.standard#bets
 			.matchmain
 				.matchheader
-					border-top: 2px solid $secondary
-					border-bottom: 2px solid $secondary-lighter
+					border-bottom: 2px solid $secondary
 		.tradepoll, .matchmain
 			margin: 0 0 1em 0
 			background: $white
@@ -86,6 +86,7 @@ main
 				width: 100%
 				margin: 0
 				background: $white
+				border-top: 0
 				padding: 1em
 				min-height: 55px
 				a
@@ -110,11 +111,13 @@ main
 				.bettedIndicator
 					vertical-align: middle
 					font-size: 25px
-					color: $white
+					color: $secondary
 			.tradecnt, .match
 				background-color: transparent
 				width: 100%
 				padding: 0.5em 1em
+				+border-radius(0)
+				+box-shadow(0, 0, 0, transparent)
 				.left, .right
 					background: $white
 					+box-shadow(0, 0, 0, transparent)
@@ -158,10 +161,9 @@ main
 				margin: 0 0 0.5em 0 !important
 			.ld-steam-extra-wrapper .ld-steam-extra
 				background: $white
-				border-bottom: none
+				border-bottom: 1px solid $grey-lightest
 				border-left: 0
 				margin-bottom: 0
-				border-bottom: 1px solid $grey-lightest
 				+border-radius(0)
 				&::after
 					background-image: none
@@ -213,8 +215,6 @@ main
 				.button
 					margin-left: 0
 
-
-
 /* Items */
 .tradepoll
 	.left, .right
@@ -228,6 +228,9 @@ main
 	.name
 		margin-top: 13px !important
 		border-top: 2px solid $primary
+		border-left: 0
+		border-right: 0
+		border-bottom: 0
 		+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 		+border-radius(3px)
 		min-width: 0 !important
@@ -241,7 +244,7 @@ main
 			float: left
 			position: relative
 			top: -16px
-			left: 16.666666666%
+			left: 15%
 			height: 0
 			width: 0
 			content: ''
@@ -265,7 +268,11 @@ main
 			padding: 1px 0
 		.value
 			padding: 1px 4px
+	.item.Souvenir
+		+box-shadow(0, 0, 0, transparent)
+		background: rgba(#ffce00, 0.4)
 	.item.Star
+		+box-shadow(0, 0, 0, transparent)
 		background: rgba(#8650ac, 0.3)
 	.item.StatTrak
 		background: rgba(207, 106, 50, 0.3)
@@ -378,8 +385,6 @@ main
 					padding: 2px 5px
 					a
 						font-weight: normal
-
-
 
 #backpack
 	.full
