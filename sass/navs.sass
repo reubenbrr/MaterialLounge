@@ -1,9 +1,9 @@
 //Navbar
 header
 	background: $primary-light
-	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+	+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 	a img#logo
-		@include css3-prefix(filter, brightness(1000))
+		+css3-prefix(filter, brightness(1000))
 	nav#menu
 		a
 			min-height: 53px
@@ -13,13 +13,13 @@ header
 			text-transform: capitalize
 			width: 90px
 			padding: 0 5px 5px 5px
-			@include border-radius(0)
+			+border-radius(0)
 			&:hover, &:active, &:focus
-				@include border-radius(0)
+				+border-radius(0)
 				background-color: rgba($black, 0.05)
 			img
-				@include css3-prefix(filter, grayscale(1))
-				@include css3-prefix(filter, brightness(1000))
+				+css3-prefix(filter, grayscale(1))
+				+css3-prefix(filter, brightness(1000))
 
 //Sidebar
 aside
@@ -37,10 +37,10 @@ aside
 					background: lighten($grey-lightest, 5)
 					border-bottom-color: $primary
 					border-top-color: lighten($grey-lightest, 5)
-					@include border-radius(0)
+					+border-radius(0)
 		#follow a
 			opacity: 0.3
-			@include css3-prefix(filter, brightness(0))
+			+css3-prefix(filter, brightness(0))
 			&:hover
 				opacity: 0.4
 		#follow a#ftw:hover

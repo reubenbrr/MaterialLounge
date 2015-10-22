@@ -3,68 +3,67 @@ a.button.destroyer, .button
 	margin: 0 0 0 0.5em
 	background: $white
 	color: $primary !important
-	@include border-radius(0)
+	+border-radius(0)
 	text-transform: uppercase
 	font-weight: 700
 	font-size: 12px !important
 	border: none
 	text-shadow: none !important
-	@include box-shadow(0, 0, 0, transparent)
+	+box-shadow(0, 0, 0, transparent)
 	&:hover
 		background: $primary
 		color: $white !important
-		@include box-shadow(0, 0, 0, transparent)
+		+box-shadow(0, 0, 0, transparent)
 	&:active, &:focus
 		background: $primary
 		color: $white !important
-		@include transition(0.3s ease all)
-		@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+		+box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
 .buttonright
 	padding: 8px 10px
 	margin: 0 0 0 0.5em
 	background: $primary
 	color: $white !important
-	@include border-radius(0)
+	+border-radius(0)
 	text-transform: uppercase
 	font-weight: 700
 	font-size: 12px !important
 	border: none
 	text-shadow: none !important
-	@include box-shadow(0, 0, 0, transparent)
+	+box-shadow(0, 0, 0, transparent)
 	&:hover
 		background: $primary-light
 		color: $white !important
-		@include box-shadow(0, 0, 0, transparent)
+		+box-shadow(0, 0, 0, transparent)
 	&:active, &:focus
 		background: $primary-light
 		color: $white !important
-		@include transition(0.3s ease all)
-		@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+		+transition(0.3s ease all)
+		+box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
 
 .matchmain, .bpheader
 	a.button.destroyer, .button, .buttonright
 		background: $secondary
 		color: $white !important
-		@include border-radius(0)
-		@include box-shadow(0, 0, 0, transparent)
+		+border-radius(0)
+		+box-shadow(0, 0, 0, transparent)
 		&:hover
 			color: $secondary
-			@include box-shadow(0, 0, 0, transparent)
+			+box-shadow(0, 0, 0, transparent)
 		&:active, &:focus
 			background: $secondary-dark
-			@include box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+			+box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
 .matchheader
 	.buttonright
 		background: $secondary-dark
 		color: $white !important
-		@include border-radius(0)
-		@include box-shadow(0, 0, 0, transparent)
+		+border-radius(0)
+		+box-shadow(0, 0, 0, transparent)
 		&:hover
 			background: $secondary-darker
-			@include box-shadow(0, 0, 0, transparent)
+			+box-shadow(0, 0, 0, transparent)
 		&:active, &:focus
 			background: $secondary-darker
 

@@ -6,9 +6,9 @@ body
 	text-shadow: none !important
 	a
 		text-shadow: none
-		@include transition (0.3s linear all)
+		+transition (0.3s linear all)
 		&:hover, &:active, &:focus
-			@include transition(0.1s linear all)
+			+transition(0.1s linear all)
 	*
 		box-sizing: border-box
 
@@ -16,7 +16,7 @@ body
 main
 	section.box, section
 		background: transparent
-		@include box-shadow(0, 0, 0, transparent)
+		+box-shadow(0, 0, 0, transparent)
 		margin-left: 0
 		margin-right: 0
 		padding-left: 1em
@@ -31,11 +31,11 @@ main
 			&:hover, &:active, &:focus
 				color: $secondary-darker
 		.title
-			@include transition(0.5s ease all)
-			@include css3-prefix(filter, brightness(00))
+			+transition(0.5s ease all)
+			+css3-prefix(filter, brightness(00))
 			&:hover, &:active, &:focus
-				@include css3-prefix(filter, brightness(0))
-				@include transition(0.1s ease all)
+				+css3-prefix(filter, brightness(0))
+				+transition(0.1s ease all)
 				a
 					color: $grey
 					text-shadow: none
@@ -46,7 +46,7 @@ main
 			margin: 4em 0 0em 0
 			width: 100%
 			background: $white
-			@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+			+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 			a
 				font-weight: bold
 				color: $black
@@ -60,84 +60,136 @@ main
 			.full
 				margin: 0
 				padding: 0.5em 1em
-		/* Trade section */
+		/* Panels */
 		article.standard#tradelist
 			margin-top: 1em !important
 			a
 				text-shadow: none
-		article.standard
 			.tradepoll
-				margin: 0 0 1em 0
-				background: $white
-				float: left
-				width: 100%
-				padding: 0
-				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-				@include border-radius-separate(0, 0, 3px, 3px)
 				.tradeheader
-					width: 100%
-					margin: 0
-					border-top: 0
-					border-bottom: none
-					background: $primary-light
-					padding: 1em
-					min-height: 55px
-					a
-						color: $black
-						text-shadow: none
-						img
-							@include css3-prefix(filter, brightness(1000))
-						+ span
-							min-height: 28px
-					a.button.destroyer
-						float: right !important
-					a:first-child img
-						margin-top: 0.4em
-				.tradecnt
-					background-color: transparent
-					width: 100%
-					padding: 0.5em 1em
-					.left, .right
-						background: $white
-						@include box-shadow(0, 0, 0, transparent)
-					.left
-						.oitm
-							float: right
-				.ld-slidedown
-					margin: 0 0 0.5em 0 !important
-				.ld-steam-extra-wrapper .ld-steam-extra
-					background: $primary-lighter
-					border-bottom: none
-					border-left: 0
-					margin-bottom: 0
-					@include border-radius(0)
-					&::after
-						background-image: none
-					.ld-steam-info
-						border: none
-						.ld-steam-img
-							padding-top: 3px
-							margin-top: 0.4em
-							margin-left: 0.2em
-							img
-								border: 2px solid $primary
-				.trade-description
-					width: 100%
-					padding: 1em
+					border-top: 2px solid $primary
+					border-bottom: 2px solid $primary-lighter
+		article.standard#bets
+			.matchmain
+				.matchheader
+					border-top: 2px solid $secondary
+					border-bottom: 2px solid $secondary-lighter
+		.tradepoll, .matchmain
+			margin: 0 0 1em 0
+			background: $white
+			float: left
+			width: 100%
+			padding: 0
+			+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+			+border-radius(3px)
+			.tradeheader, .matchheader
+				width: 100%
+				margin: 0
+				background: $white
+				padding: 1em
+				min-height: 55px
+				a
+					color: $black
+					text-shadow: none
+					img
+						+css3-prefix(filter, brightness(0))
+					+ span
+						min-height: 28px
+				a.button.destroyer
+					float: right !important
+				a:first-child img
+					margin-top: 0.4em
+				span
+					font-weight: normal
+				.whenm, .eventm
+					font-weight: bold
+					line-height: 20px
+					text-shadow: none !important
+					span
+						font-weight: normal
+				.bettedIndicator
+					vertical-align: middle
+					font-size: 25px
+					color: $white
+			.tradecnt, .match
+				background-color: transparent
+				width: 100%
+				padding: 0.5em 1em
+				.left, .right
+					background: $white
+					+box-shadow(0, 0, 0, transparent)
+				.left
+					.oitm
+						float: right
+				hr + div.full
+					span
+						line-height: 25px
+				.winsorloses
 					background: transparent
-					border-left: 2px solid $primary
+					+border-radius(0)
 					a
-						&:hover, &:active, &:focus
-							@include transition(0s ease none)
-							text-decoration: underline
-					&div
 						color: $black
-					@include border-radius(0)
-					p
-						opacity: 1
-						border-left: 0
-						@include border-radius(0)
-						color: $black
+				hr
+					width: 100%
+					border-bottom: 1px solid $grey-lightest
+				.potwin
+					color: $secondary
+					font-size: 20px
+					line-height: 10px
+					background: $grey-lightest
+					padding: 0.5em
+					+border-radius(0)
+				.matchleft
+					a > div:first-child, a > div:last-child
+						position: relative
+						width: 40% !important
+						background: $grey-lightest
+						border: 1px solid darken($grey-lightest, 5)
+						.teamtext
+							background: transparent
+						.team
+							height: 55px
+							border: 2px solid rgb(184,184,184)
+							+border-radius(0)
+					a > div:first-child
+						.team
+							right: 0
+			.ld-slidedown
+				margin: 0 0 0.5em 0 !important
+			.ld-steam-extra-wrapper .ld-steam-extra
+				background: $white
+				border-bottom: none
+				border-left: 0
+				margin-bottom: 0
+				border-bottom: 1px solid $grey-lightest
+				+border-radius(0)
+				&::after
+					background-image: none
+				.ld-steam-info
+					border: none
+					.ld-steam-img
+						padding-top: 3px
+						margin-top: 0.4em
+						margin-left: 0.2em
+						img
+							border: 2px solid $primary
+			.trade-description
+				width: 100%
+				padding: 1em
+				background: transparent
+				border-left: 2px solid $primary
+				a
+					&:hover, &:active, &:focus
+						+transition(0s ease none)
+						text-decoration: underline
+				&div
+					color: $black
+				+border-radius(0)
+				p
+					opacity: 1
+					border-left: 0
+					+border-radius(0)
+					color: $black
 		/* Betting section */
 		article.standard#bets,
 			margin-top: 1em !important
@@ -147,85 +199,11 @@ main
 				&:hover, &:active, &:focus
 					color: $grey-b-darkest
 		article.standard
-			.matchmain
-				margin: 0 0 1em 0
-				background: $white
-				float: left
-				width: 100%
-				padding: 0
-				@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-				@include border-radius-separate(0, 0, 3px, 3px)
-				.matchheader
-					text-shadow: none !important
-					min-height: 55px
-					padding: 1em
-					width: 100%
-					margin-bottom: 0
-					background: $secondary-light
-					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-					font-weight: bold
-					span
-						font-weight: normal
-					.whenm, .eventm
-						font-weight: bold
-						line-height: 20px
-						text-shadow: none !important
-						span
-							font-weight: normal
-					.bettedIndicator
-						vertical-align: middle
-						font-size: 25px
-						color: $white
-				.match
-					margin: 0
-					background-color: $white
-					float: left
-					width: 100%
-					padding: 1%
-					background-repeat: no-repeat
-					background-position: right
-					@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-					@include border-radius-separate(0, 0, 3px, 3px)
-					hr + div.full
-						span
-							line-height: 25px
-					.potwin
-						color: $secondary
-						font-size: 20px
-						line-height: 10px
-						background: $grey-lightest
-						padding: 0.5em
-						@include border-radius(0)
-					.matchleft
-						a > div:first-child, a > div:last-child
-							position: relative
-							width: 40% !important
-							background: $grey-lightest
-							border: 1px solid darken($grey-lightest, 5)
-							.teamtext
-								background: transparent
-							.team
-								height: 55px
-								border: 2px solid rgb(184,184,184)
-								@include border-radius(0)
-						a > div:first-child
-							.team
-								right: 0
-					.winsorloses
-						background: transparent
-						@include border-radius(0)
-						a
-							color: $black
-					hr
-						width: 100%
-						border-bottom: 1px solid $grey-lightest
-				&.custom-my-bets-margin
-					.matchheader
 			#betreturns
 				background: $white
 				float: left
 				border-top: 2px solid $secondary
-				@include border-radius-separate(0, 0, 3px, 3px)
+				+border-radius-separate(0, 0, 3px, 3px)
 				.bpheader
 					color: $grey-darkest
 					padding: 1em 1em 0 1em
@@ -241,7 +219,7 @@ main
 .tradepoll
 	.left, .right
 		background: $white
-		@include box-shadow(0, 0, 0, transparent)
+		+box-shadow(0, 0, 0, transparent)
 	.left
 		.oitm
 			float: right
@@ -250,8 +228,8 @@ main
 	.name
 		margin-top: 13px !important
 		border-top: 2px solid $primary
-		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-		@include border-radius(3px)
+		+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		+border-radius(3px)
 		min-width: 0 !important
 		background: $white
 		color: $black
@@ -276,10 +254,10 @@ main
 			&:hover, &:active, &:focus
 				color: $primary-dark !important
 	.item
-		@include border-radius(0)
+		+border-radius(0)
 		background: rgba($grey, 0.3)
 		.value, .rarity
-			@include border-radius(0)
+			+border-radius(0)
 			color: $black
 			text-shadow: none
 			background-color: rgba($white, 0.7)
@@ -291,9 +269,9 @@ main
 		background: rgba(#8650ac, 0.3)
 	.item.StatTrak
 		background: rgba(207, 106, 50, 0.3)
-		@include box-shadow(0, 0, 0, transparent)
+		+box-shadow(0, 0, 0, transparent)
 		.clreff
-			@include border-radius(0)
+			+border-radius(0)
 			background-color: rgba(235, 119, 55, 0.8) !important
 			text-shadow: none
 
@@ -306,12 +284,12 @@ main
 	margin: 0
 	color: $black
 	text-shadow: none
-	@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-	@include border-radius(3px)
+	+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+	+border-radius(3px)
 	a.tab
 		color: $primary
 		background: $grey-lightest
-		@include border-radius(0)
+		+border-radius(0)
 		&:hover, &:active, &:focus
 			background: lighten($grey-lightest, 5)
 			color: $primary !important
@@ -334,8 +312,8 @@ main
 		background: $white
 		color: $black
 		border-bottom: 1px solid $grey-lighter
-		@include border-radius(0)
-		@include box-shadow(0, 0, 0, transparent)
+		+border-radius(0)
+		+box-shadow(0, 0, 0, transparent)
 		&:focus
 			color: $black
 			background: $white
@@ -347,8 +325,8 @@ main
 		background: $grey-lightest
 		color: $black
 		border: 1px solid $grey-lightest
-		@include border-radius(0)
-		@include box-shadow(0, 0, 0, transparent)
+		+border-radius(0)
+		+box-shadow(0, 0, 0, transparent)
 		&:focus
 			color: $black
 			background: $grey-lightest
@@ -360,8 +338,8 @@ main
 		padding: 1em
 		background: $grey-lightest
 		color: $black
-		@include box-shadow(0, 0, 0, transparent)
-		@include border-radius(3px)
+		+box-shadow(0, 0, 0, transparent)
+		+border-radius(3px)
 		&:focus
 			outline: 0
 .box-shiny-alt, .box-shiny
@@ -371,9 +349,9 @@ main
 	width: 100%
 	margin: 0
 	padding: 0 1em
-	@include border-radius-separate(0 3px 0 3px)
+	+border-radius-separate(0 3px 0 3px)
 	a.tab
-		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 		color: $black
 		background: $white
 		&:hover, &:active, &:focus
@@ -414,8 +392,8 @@ main
 		width: 100%
 		color: $black
 		text-shadow: none
-		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
-		@include border-radius(3px)
+		+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		+border-radius(3px)
 		+ .full
 			margin: 0
 .srch
@@ -430,8 +408,8 @@ main
 		background: $white
 		color: $black
 		border: 1px solid $white
-		@include border-radius(0)
-		@include box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+		+border-radius(0)
+		+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
 		&:focus
 			color: $black
 			background: $white
