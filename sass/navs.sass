@@ -1,9 +1,12 @@
 //Navbar
 header
-	background: $primary-light
-	+box-shadow(0, 1px, 2px, rgba($grey, 0.5))
+	//background: url("//b.thumbs.redditmedia.com/84QAg-eZgfvfMsdD51K-_Kok5R878WQOAdm_8jsAbqg.jpg")
+	background-image: none
+	background-position: 300px -170px
+	background-color: $nav-background
+	+single-box-shadow(0 1px 2px rgba($grey, 0.5))
 	a img#logo
-		+css3-prefix(filter, brightness(1000))
+		+filter(brightness(1000))
 	nav#menu
 		a
 			min-height: 53px
@@ -16,10 +19,10 @@ header
 			+border-radius(0)
 			&:hover, &:active, &:focus
 				+border-radius(0)
-				background-color: rgba($black, 0.05)
+				background-color: rgba($white, 0.2)
 			img
-				+css3-prefix(filter, grayscale(1))
-				+css3-prefix(filter, brightness(1000))
+				+filter(grayscale(1))
+				+filter(brightness(1000))
 
 //Sidebar
 aside
@@ -40,7 +43,7 @@ aside
 					+border-radius(0)
 		#follow a
 			opacity: 0.3
-			+css3-prefix(filter, brightness(0))
+			+filter(brightness(0))
 			&:hover
 				opacity: 0.4
 		#follow a#ftw:hover

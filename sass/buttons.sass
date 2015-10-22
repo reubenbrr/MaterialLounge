@@ -9,15 +9,15 @@ a.button.destroyer, .button
 	font-size: 12px !important
 	border: none
 	text-shadow: none !important
-	+box-shadow(0, 0, 0, transparent)
+	+single-box-shadow(0, 0, 0, transparent)
 	&:hover
 		background: $primary
 		color: $white !important
-		+box-shadow(0, 0, 0, transparent)
+		+single-box-shadow(0, 0, 0, transparent)
 	&:active, &:focus
 		background: $primary
 		color: $white !important
-		+box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+		+single-box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
 .buttonright
 	padding: 8px 10px
@@ -30,16 +30,16 @@ a.button.destroyer, .button
 	font-size: 12px !important
 	border: none
 	text-shadow: none !important
-	+box-shadow(0, 0, 0, transparent)
+	+single-box-shadow(0, 0, 0, transparent)
 	&:hover
 		background: $primary-light
 		color: $white !important
-		+box-shadow(0, 0, 0, transparent)
+		+single-box-shadow(0, 0, 0, transparent)
 	&:active, &:focus
 		background: $primary-light
 		color: $white !important
-		+transition(0.3s ease all)
-		+box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+		+single-transition(0.3s ease all)
+		+single-box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
 
 .matchmain, .bpheader
@@ -47,23 +47,23 @@ a.button.destroyer, .button
 		background: $secondary
 		color: $white !important
 		+border-radius(0)
-		+box-shadow(0, 0, 0, transparent)
+		+single-box-shadow(0, 0, 0, transparent)
 		&:hover
 			color: $secondary
-			+box-shadow(0, 0, 0, transparent)
+			+single-box-shadow(0, 0, 0, transparent)
 		&:active, &:focus
 			background: $secondary-dark
-			+box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+			+single-box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
 
 .matchheader
 	.buttonright
 		background: $secondary-dark
 		color: $white !important
 		+border-radius(0)
-		+box-shadow(0, 0, 0, transparent)
+		+single-box-shadow(0, 0, 0, transparent)
 		&:hover
 			background: $secondary-darker
-			+box-shadow(0, 0, 0, transparent)
+			+single-box-shadow(0, 0, 0, transparent)
 		&:active, &:focus
 			background: $secondary-darker
 

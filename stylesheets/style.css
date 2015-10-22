@@ -1,47 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900,500,500italic,700italic,900italic,400italic,300,300italic);
-/* -------------------------------------------------------------
-  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
-  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
-
-  List of CSS3 Sass Mixins File to be @imported and @included as you need
-
-  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
-  ENDING css files
-
-  note: All CSS3 Properties are being supported by Safari 5
-  more info: http://www.findmebyip.com/litmus/#css3-properties
-
-------------------------------------------------------------- */
 body {
   background: #e8e8e8;
   font-family: "Roboto", sans-serif;
   text-shadow: none !important; }
   body a {
     text-shadow: none;
-    -webkit-transition: 0.3s linear all;
-    -khtml-transition: 0.3s linear all;
-    -moz-transition: 0.3s linear all;
-    -ms-transition: 0.3s linear all;
-    -o-transition: 0.3s linear all;
-    transition: 0.3s linear all; }
+    -moz-transition: 0.3s, linear, all 1s;
+    -o-transition: 0.3s, linear, all 1s;
+    -webkit-transition: 0.3s, linear, all 1s;
+    transition: 0.3s linear all 1s; }
     body a:hover, body a:active, body a:focus {
-      -webkit-transition: 0.1s linear all;
-      -khtml-transition: 0.1s linear all;
-      -moz-transition: 0.1s linear all;
-      -ms-transition: 0.1s linear all;
-      -o-transition: 0.1s linear all;
-      transition: 0.1s linear all; }
+      -moz-transition: 0.1s, linear, all 1s;
+      -o-transition: 0.1s, linear, all 1s;
+      -webkit-transition: 0.1s, linear, all 1s;
+      transition: 0.1s linear all 1s; }
   body * {
     box-sizing: border-box; }
 
 main section.box, main section {
   background: transparent;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333;
   margin-left: 0;
   margin-right: 0;
   padding-left: 1em;
@@ -60,31 +40,19 @@ main section.box, main section {
     main section.box a:hover, main section.box a:active, main section.box a:focus, main section a:hover, main section a:active, main section a:focus {
       color: #437d2a; }
   main section.box .title, main section .title {
-    -webkit-transition: 0.5s ease all;
-    -khtml-transition: 0.5s ease all;
-    -moz-transition: 0.5s ease all;
-    -ms-transition: 0.5s ease all;
-    -o-transition: 0.5s ease all;
-    transition: 0.5s ease all;
+    -moz-transition: 0.5s, ease, all 1s;
+    -o-transition: 0.5s, ease, all 1s;
+    -webkit-transition: 0.5s, ease, all 1s;
+    transition: 0.5s ease all 1s;
     -webkit-filter: brightness(0);
-    -khtml-filter: brightness(0);
-    -moz-filter: brightness(0);
-    -ms-filter: brightness(0);
-    -o-filter: brightness(0);
     filter: brightness(0); }
     main section.box .title:hover, main section.box .title:active, main section.box .title:focus, main section .title:hover, main section .title:active, main section .title:focus {
       -webkit-filter: brightness(0);
-      -khtml-filter: brightness(0);
-      -moz-filter: brightness(0);
-      -ms-filter: brightness(0);
-      -o-filter: brightness(0);
       filter: brightness(0);
-      -webkit-transition: 0.1s ease all;
-      -khtml-transition: 0.1s ease all;
-      -moz-transition: 0.1s ease all;
-      -ms-transition: 0.1s ease all;
-      -o-transition: 0.1s ease all;
-      transition: 0.1s ease all; }
+      -moz-transition: 0.1s, ease, all 1s;
+      -o-transition: 0.1s, ease, all 1s;
+      -webkit-transition: 0.1s, ease, all 1s;
+      transition: 0.1s ease all 1s; }
       main section.box .title:hover a, main section.box .title:active a, main section.box .title:focus a, main section .title:hover a, main section .title:active a, main section .title:focus a {
         color: #a8a8a8;
         text-shadow: none; }
@@ -96,12 +64,9 @@ main section.box, main section {
     width: 100%;
     background: #fff;
     height: auto;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333; }
     main section.box .ld-trade-filters a, main section.box .ld-match-filters a, main section .ld-trade-filters a, main section .ld-match-filters a {
       font-weight: bold;
       color: #000;
@@ -128,17 +93,11 @@ main section.box, main section {
     float: left;
     width: 100%;
     padding: 0;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
     -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px; }
     main section.box .tradepoll .tradeheader, main section.box .tradepoll .matchheader, main section.box .matchmain .tradeheader, main section.box .matchmain .matchheader, main section .tradepoll .tradeheader, main section .tradepoll .matchheader, main section .matchmain .tradeheader, main section .matchmain .matchheader {
       width: 100%;
@@ -152,10 +111,6 @@ main section.box, main section {
         text-shadow: none; }
         main section.box .tradepoll .tradeheader a img, main section.box .tradepoll .matchheader a img, main section.box .matchmain .tradeheader a img, main section.box .matchmain .matchheader a img, main section .tradepoll .tradeheader a img, main section .tradepoll .matchheader a img, main section .matchmain .tradeheader a img, main section .matchmain .matchheader a img {
           -webkit-filter: brightness(0);
-          -khtml-filter: brightness(0);
-          -moz-filter: brightness(0);
-          -ms-filter: brightness(0);
-          -o-filter: brightness(0);
           filter: brightness(0); }
         main section.box .tradepoll .tradeheader a + span, main section.box .tradepoll .matchheader a + span, main section.box .matchmain .tradeheader a + span, main section.box .matchmain .matchheader a + span, main section .tradepoll .tradeheader a + span, main section .tradepoll .matchheader a + span, main section .matchmain .tradeheader a + span, main section .matchmain .matchheader a + span {
           min-height: 28px; }
@@ -179,37 +134,25 @@ main section.box, main section {
       background-color: transparent;
       width: 100%;
       padding: 0.5em 1em;
-      -webkit-border-radius: 0;
-      -khtml-border-radius: 0;
       -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
+      -webkit-border-radius: 0;
       border-radius: 0;
-      -webkit-box-shadow: 0 0 0 transparent;
-      -khtml-box-shadow: 0 0 0 transparent;
-      -moz-box-shadow: 0 0 0 transparent;
-      -ms-box-shadow: 0 0 0 transparent;
-      -o-box-shadow: 0 0 0 transparent;
-      box-shadow: 0 0 0 transparent; }
+      -moz-box-shadow: 0 0 0 transparent #333333;
+      -webkit-box-shadow: 0 0 0 transparent #333333;
+      box-shadow: 0 0 0 transparent #333333; }
       main section.box .tradepoll .tradecnt .left, main section.box .tradepoll .tradecnt .right, main section.box .tradepoll .match .left, main section.box .tradepoll .match .right, main section.box .matchmain .tradecnt .left, main section.box .matchmain .tradecnt .right, main section.box .matchmain .match .left, main section.box .matchmain .match .right, main section .tradepoll .tradecnt .left, main section .tradepoll .tradecnt .right, main section .tradepoll .match .left, main section .tradepoll .match .right, main section .matchmain .tradecnt .left, main section .matchmain .tradecnt .right, main section .matchmain .match .left, main section .matchmain .match .right {
         background: #fff;
-        -webkit-box-shadow: 0 0 0 transparent;
-        -khtml-box-shadow: 0 0 0 transparent;
-        -moz-box-shadow: 0 0 0 transparent;
-        -ms-box-shadow: 0 0 0 transparent;
-        -o-box-shadow: 0 0 0 transparent;
-        box-shadow: 0 0 0 transparent; }
+        -moz-box-shadow: 0 0 0 transparent #333333;
+        -webkit-box-shadow: 0 0 0 transparent #333333;
+        box-shadow: 0 0 0 transparent #333333; }
       main section.box .tradepoll .tradecnt .left .oitm, main section.box .tradepoll .match .left .oitm, main section.box .matchmain .tradecnt .left .oitm, main section.box .matchmain .match .left .oitm, main section .tradepoll .tradecnt .left .oitm, main section .tradepoll .match .left .oitm, main section .matchmain .tradecnt .left .oitm, main section .matchmain .match .left .oitm {
         float: right; }
       main section.box .tradepoll .tradecnt hr + div.full span, main section.box .tradepoll .match hr + div.full span, main section.box .matchmain .tradecnt hr + div.full span, main section.box .matchmain .match hr + div.full span, main section .tradepoll .tradecnt hr + div.full span, main section .tradepoll .match hr + div.full span, main section .matchmain .tradecnt hr + div.full span, main section .matchmain .match hr + div.full span {
         line-height: 25px; }
       main section.box .tradepoll .tradecnt .winsorloses, main section.box .tradepoll .match .winsorloses, main section.box .matchmain .tradecnt .winsorloses, main section.box .matchmain .match .winsorloses, main section .tradepoll .tradecnt .winsorloses, main section .tradepoll .match .winsorloses, main section .matchmain .tradecnt .winsorloses, main section .matchmain .match .winsorloses {
         background: transparent;
-        -webkit-border-radius: 0;
-        -khtml-border-radius: 0;
         -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
+        -webkit-border-radius: 0;
         border-radius: 0; }
         main section.box .tradepoll .tradecnt .winsorloses a, main section.box .tradepoll .match .winsorloses a, main section.box .matchmain .tradecnt .winsorloses a, main section.box .matchmain .match .winsorloses a, main section .tradepoll .tradecnt .winsorloses a, main section .tradepoll .match .winsorloses a, main section .matchmain .tradecnt .winsorloses a, main section .matchmain .match .winsorloses a {
           color: #000; }
@@ -222,11 +165,8 @@ main section.box, main section {
         line-height: 10px;
         background: #e8e8e8;
         padding: 0.5em;
-        -webkit-border-radius: 0;
-        -khtml-border-radius: 0;
         -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
+        -webkit-border-radius: 0;
         border-radius: 0; }
       main section.box .tradepoll .tradecnt .matchleft a > div:first-child, main section.box .tradepoll .tradecnt .matchleft a > div:last-child, main section.box .tradepoll .match .matchleft a > div:first-child, main section.box .tradepoll .match .matchleft a > div:last-child, main section.box .matchmain .tradecnt .matchleft a > div:first-child, main section.box .matchmain .tradecnt .matchleft a > div:last-child, main section.box .matchmain .match .matchleft a > div:first-child, main section.box .matchmain .match .matchleft a > div:last-child, main section .tradepoll .tradecnt .matchleft a > div:first-child, main section .tradepoll .tradecnt .matchleft a > div:last-child, main section .tradepoll .match .matchleft a > div:first-child, main section .tradepoll .match .matchleft a > div:last-child, main section .matchmain .tradecnt .matchleft a > div:first-child, main section .matchmain .tradecnt .matchleft a > div:last-child, main section .matchmain .match .matchleft a > div:first-child, main section .matchmain .match .matchleft a > div:last-child {
         position: relative;
@@ -238,11 +178,8 @@ main section.box, main section {
         main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team {
           height: 55px;
           border: 2px solid #b8b8b8;
-          -webkit-border-radius: 0;
-          -khtml-border-radius: 0;
           -moz-border-radius: 0;
-          -ms-border-radius: 0;
-          -o-border-radius: 0;
+          -webkit-border-radius: 0;
           border-radius: 0; }
       main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:first-child .team {
         right: 0; }
@@ -253,11 +190,8 @@ main section.box, main section {
       border-bottom: 1px solid #e8e8e8;
       border-left: 0;
       margin-bottom: 0;
-      -webkit-border-radius: 0;
-      -khtml-border-radius: 0;
       -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
+      -webkit-border-radius: 0;
       border-radius: 0; }
       main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra::after, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra::after {
         background-image: none; }
@@ -274,30 +208,22 @@ main section.box, main section {
       padding: 1em;
       background: transparent;
       border-left: 2px solid #ff8a00;
-      -webkit-border-radius: 0;
-      -khtml-border-radius: 0;
       -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
+      -webkit-border-radius: 0;
       border-radius: 0; }
       main section.box .tradepoll .trade-description a:hover, main section.box .tradepoll .trade-description a:active, main section.box .tradepoll .trade-description a:focus, main section.box .matchmain .trade-description a:hover, main section.box .matchmain .trade-description a:active, main section.box .matchmain .trade-description a:focus, main section .tradepoll .trade-description a:hover, main section .tradepoll .trade-description a:active, main section .tradepoll .trade-description a:focus, main section .matchmain .trade-description a:hover, main section .matchmain .trade-description a:active, main section .matchmain .trade-description a:focus {
-        -webkit-transition: 0s ease none;
-        -khtml-transition: 0s ease none;
-        -moz-transition: 0s ease none;
-        -ms-transition: 0s ease none;
-        -o-transition: 0s ease none;
-        transition: 0s ease none;
+        -moz-transition: 0s, ease, none 1s;
+        -o-transition: 0s, ease, none 1s;
+        -webkit-transition: 0s, ease, none 1s;
+        transition: 0s ease none 1s;
         text-decoration: underline; }
       main section.box .tradepoll .trade-descriptiondiv, main section.box .matchmain .trade-descriptiondiv, main section .tradepoll .trade-descriptiondiv, main section .matchmain .trade-descriptiondiv {
         color: #000; }
       main section.box .tradepoll .trade-description p, main section.box .matchmain .trade-description p, main section .tradepoll .trade-description p, main section .matchmain .trade-description p {
         opacity: 1;
         border-left: 0;
-        -webkit-border-radius: 0;
-        -khtml-border-radius: 0;
         -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
+        -webkit-border-radius: 0;
         border-radius: 0;
         color: #000; }
   main section.box article.standard#bets, main section article.standard#bets {
@@ -311,18 +237,9 @@ main section.box, main section {
     background: #fff;
     float: left;
     border-top: 2px solid #6fc34a;
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 0;
-    -moz-border-radius-topright: 0;
-    -moz-border-radius-bottomright: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px; }
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0;
+    border-radius: 0 0 3px 3px; }
     main section.box article.standard #betreturns .bpheader, main section article.standard #betreturns .bpheader {
       color: #5b5b5b;
       padding: 1em 1em 0 1em; }
@@ -335,12 +252,9 @@ main section.box, main section {
 /* Items */
 .tradepoll .left, .tradepoll .right {
   background: #fff;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333; }
 .tradepoll .left .oitm {
   float: right; }
 
@@ -350,17 +264,11 @@ main section.box, main section {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   min-width: 0 !important;
   background: #fff;
@@ -395,19 +303,13 @@ main section.box, main section {
     .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
       color: #cc6e00 !important; }
 .oitm .item {
-  -webkit-border-radius: 0;
-  -khtml-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  -webkit-border-radius: 0;
   border-radius: 0;
   background: rgba(168, 168, 168, 0.3); }
   .oitm .item .value, .oitm .item .rarity {
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
     color: #000;
     text-shadow: none;
@@ -417,35 +319,23 @@ main section.box, main section {
   .oitm .item .value {
     padding: 1px 4px; }
 .oitm .item.Souvenir {
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333;
   background: rgba(255, 206, 0, 0.4); }
 .oitm .item.Star {
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333;
   background: rgba(134, 80, 172, 0.3); }
 .oitm .item.StatTrak {
   background: rgba(207, 106, 50, 0.3);
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333; }
   .oitm .item.StatTrak .clreff {
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
     background-color: rgba(235, 119, 55, 0.8) !important;
     text-shadow: none; }
@@ -459,26 +349,17 @@ main section.box, main section {
   margin: 0;
   color: #000;
   text-shadow: none;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px; }
   .box-shiny-alt a.tab, .box-shiny a.tab, #satrade a.tab {
     color: #ff8a00;
     background: #e8e8e8;
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0; }
     .box-shiny-alt a.tab:hover, .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:hover, .box-shiny a.tab:active, .box-shiny a.tab:focus, #satrade a.tab:hover, #satrade a.tab:active, #satrade a.tab:focus {
       background: #f4f4f4;
@@ -506,18 +387,12 @@ main section.box, main section {
     background: #fff;
     color: #000;
     border-bottom: 1px solid #cecece;
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333; }
     .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, .box-shiny .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
       color: #000;
       background: #fff;
@@ -529,18 +404,12 @@ main section.box, main section {
     background: #e8e8e8;
     color: #000;
     border: 1px solid #e8e8e8;
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333; }
     .box-shiny-alt select:focus, .box-shiny select:focus, #satrade select:focus {
       color: #000;
       background: #e8e8e8;
@@ -552,17 +421,11 @@ main section.box, main section {
     padding: 1em;
     background: #e8e8e8;
     color: #000;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333;
     -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    -webkit-border-radius: 3px;
     border-radius: 3px; }
     .box-shiny-alt textarea:focus, .box-shiny textarea:focus, #satrade textarea:focus {
       outline: 0; }
@@ -574,25 +437,13 @@ main section.box, main section {
   width: 100%;
   margin: 0;
   padding: 0 1em;
-  -webkit-border-top-left-radius: 0 3px 0 3px;
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-topleft: 0 3px 0 3px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-top-left-radius: 0 3px 0 3px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px; }
+  -moz-border-radius: 0 3px 0 3px;
+  -webkit-border-radius: 0;
+  border-radius: 0 3px 0 3px; }
   .tabholder a.tab {
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
     color: #000;
     background: #fff; }
     .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
@@ -628,17 +479,11 @@ main section.box, main section {
   width: 100%;
   color: #000;
   text-shadow: none;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px; }
   #backpack .inventoryStatisticsBox + .full {
     margin: 0; }
@@ -655,18 +500,12 @@ main section.box, main section {
     background: #fff;
     color: #000;
     border: 1px solid #fff;
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333; }
     .srch input:focus {
       color: #000;
       background: #fff;
@@ -684,19 +523,14 @@ main section.box, main section {
   text-shadow: none; }
 
 header {
-  background: #ffa133;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -khtml-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -ms-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -o-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+  background-image: none;
+  background-position: 300px -170px;
+  background-color: #252d3a;
+  -moz-box-shadow: 0px 5px 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0px 5px 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0px 5px 0 1px 2px rgba(168, 168, 168, 0.5); }
   header a img#logo {
     -webkit-filter: brightness(1000);
-    -khtml-filter: brightness(1000);
-    -moz-filter: brightness(1000);
-    -ms-filter: brightness(1000);
-    -o-filter: brightness(1000);
     filter: brightness(1000); }
   header nav#menu a {
     min-height: 53px;
@@ -706,32 +540,18 @@ header {
     text-transform: capitalize;
     width: 90px;
     padding: 0 5px 5px 5px;
-    -webkit-border-radius: 0;
-    -khtml-border-radius: 0;
     -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+    -webkit-border-radius: 0;
     border-radius: 0; }
     header nav#menu a:hover, header nav#menu a:active, header nav#menu a:focus {
-      -webkit-border-radius: 0;
-      -khtml-border-radius: 0;
       -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
+      -webkit-border-radius: 0;
       border-radius: 0;
-      background-color: rgba(0, 0, 0, 0.05); }
+      background-color: rgba(255, 255, 255, 0.2); }
     header nav#menu a img {
       -webkit-filter: grayscale(1);
-      -khtml-filter: grayscale(1);
-      -moz-filter: grayscale(1);
-      -ms-filter: grayscale(1);
-      -o-filter: grayscale(1);
       filter: grayscale(1);
       -webkit-filter: brightness(1000);
-      -khtml-filter: brightness(1000);
-      -moz-filter: brightness(1000);
-      -ms-filter: brightness(1000);
-      -o-filter: brightness(1000);
       filter: brightness(1000); }
 
 aside#submenu {
@@ -748,19 +568,12 @@ aside#submenu {
         background: #f4f4f4;
         border-bottom-color: #ff8a00;
         border-top-color: #f4f4f4;
-        -webkit-border-radius: 0;
-        -khtml-border-radius: 0;
         -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
+        -webkit-border-radius: 0;
         border-radius: 0; }
   aside#submenu #follow a {
     opacity: 0.3;
     -webkit-filter: brightness(0);
-    -khtml-filter: brightness(0);
-    -moz-filter: brightness(0);
-    -ms-filter: brightness(0);
-    -o-filter: brightness(0);
     filter: brightness(0); }
     aside#submenu #follow a:hover {
       opacity: 0.4; }
@@ -781,144 +594,97 @@ a.button.destroyer, .button {
   margin: 0 0 0 0.5em;
   background: #fff;
   color: #ff8a00 !important;
-  -webkit-border-radius: 0;
-  -khtml-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  -webkit-border-radius: 0;
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px !important;
   border: none;
   text-shadow: none !important;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333; }
   a.button.destroyer:hover, .button:hover {
     background: #ff8a00;
     color: #fff !important;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333; }
   a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus {
     background: #ff8a00;
     color: #fff !important;
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -ms-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -o-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333; }
 
 .buttonright {
   padding: 8px 10px;
   margin: 0 0 0 0.5em;
   background: #ff8a00;
   color: #fff !important;
-  -webkit-border-radius: 0;
-  -khtml-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  -webkit-border-radius: 0;
   border-radius: 0;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px !important;
   border: none;
   text-shadow: none !important;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333; }
   .buttonright:hover {
     background: #ffa133;
     color: #fff !important;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333; }
   .buttonright:active, .buttonright:focus {
     background: #ffa133;
     color: #fff !important;
-    -webkit-transition: 0.3s ease all;
-    -khtml-transition: 0.3s ease all;
-    -moz-transition: 0.3s ease all;
-    -ms-transition: 0.3s ease all;
-    -o-transition: 0.3s ease all;
-    transition: 0.3s ease all;
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -ms-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -o-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+    -moz-transition: 0.3s, ease, all 1s;
+    -o-transition: 0.3s, ease, all 1s;
+    -webkit-transition: 0.3s, ease, all 1s;
+    transition: 0.3s ease all 1s;
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333; }
 
 .matchmain a.button.destroyer, .matchmain .button, .matchmain .buttonright, .bpheader a.button.destroyer, .bpheader .button, .bpheader .buttonright {
   background: #6fc34a;
   color: #fff !important;
-  -webkit-border-radius: 0;
-  -khtml-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  -webkit-border-radius: 0;
   border-radius: 0;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333; }
   .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover {
     color: #6fc34a;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333; }
   .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain .buttonright:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader .buttonright:focus {
     background: #58a436;
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -khtml-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -ms-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -o-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333; }
 
 .matchheader .buttonright {
   background: #58a436;
   color: #fff !important;
-  -webkit-border-radius: 0;
-  -khtml-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  -webkit-border-radius: 0;
   border-radius: 0;
-  -webkit-box-shadow: 0 0 0 transparent;
-  -khtml-box-shadow: 0 0 0 transparent;
-  -moz-box-shadow: 0 0 0 transparent;
-  -ms-box-shadow: 0 0 0 transparent;
-  -o-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  -moz-box-shadow: 0 0 0 transparent #333333;
+  -webkit-box-shadow: 0 0 0 transparent #333333;
+  box-shadow: 0 0 0 transparent #333333; }
   .matchheader .buttonright:hover {
     background: #437d2a;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    -moz-box-shadow: 0 0 0 transparent #333333;
+    -webkit-box-shadow: 0 0 0 transparent #333333;
+    box-shadow: 0 0 0 transparent #333333; }
   .matchheader .buttonright:active, .matchheader .buttonright:focus {
     background: #437d2a; }
 
