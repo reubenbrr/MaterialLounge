@@ -9,15 +9,15 @@ a.button.destroyer, .button
 	font-size: 12px !important
 	border: none
 	text-shadow: none !important
-	+single-box-shadow(0, 0, 0, transparent)
+	+box-shadow(0 0 0 transparent)
 	&:hover
 		background: $primary
 		color: $white !important
-		+single-box-shadow(0, 0, 0, transparent)
+		+box-shadow(0 0 0 transparent)
 	&:active, &:focus
 		background: $primary
 		color: $white !important
-		+single-box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
 .buttonright
 	padding: 8px 10px
@@ -30,16 +30,16 @@ a.button.destroyer, .button
 	font-size: 12px !important
 	border: none
 	text-shadow: none !important
-	+single-box-shadow(0, 0, 0, transparent)
+	+box-shadow(0 0 0 transparent)
 	&:hover
 		background: $primary-light
 		color: $white !important
-		+single-box-shadow(0, 0, 0, transparent)
+		+box-shadow(0 0 0 transparent)
 	&:active, &:focus
 		background: $primary-light
 		color: $white !important
 		+single-transition(0.3s ease all)
-		+single-box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
 
 .matchmain, .bpheader
@@ -47,23 +47,23 @@ a.button.destroyer, .button
 		background: $secondary
 		color: $white !important
 		+border-radius(0)
-		+single-box-shadow(0, 0, 0, transparent)
+		+box-shadow(0 0 0 transparent)
 		&:hover
 			color: $secondary
-			+single-box-shadow(0, 0, 0, transparent)
+			+box-shadow(0 0 0 transparent)
 		&:active, &:focus
 			background: $secondary-dark
-			+single-box-shadow(0, 2px, 3px, rgba($grey-darker, 0.5))
+			+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
 .matchheader
 	.buttonright
 		background: $secondary-dark
 		color: $white !important
 		+border-radius(0)
-		+single-box-shadow(0, 0, 0, transparent)
+		+box-shadow(0 0 0 transparent)
 		&:hover
 			background: $secondary-darker
-			+single-box-shadow(0, 0, 0, transparent)
+			+box-shadow(0 0 0 transparent)
 		&:active, &:focus
 			background: $secondary-darker
 

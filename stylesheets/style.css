@@ -19,9 +19,9 @@ body {
 
 main section.box, main section {
   background: transparent;
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
   margin-left: 0;
   margin-right: 0;
   padding-left: 1em;
@@ -64,9 +64,9 @@ main section.box, main section {
     width: 100%;
     background: #fff;
     height: auto;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333; }
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
     main section.box .ld-trade-filters a, main section.box .ld-match-filters a, main section .ld-trade-filters a, main section .ld-match-filters a {
       font-weight: bold;
       color: #000;
@@ -93,9 +93,9 @@ main section.box, main section {
     float: left;
     width: 100%;
     padding: 0;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -137,14 +137,14 @@ main section.box, main section {
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
       border-radius: 0;
-      -moz-box-shadow: 0 0 0 transparent #333333;
-      -webkit-box-shadow: 0 0 0 transparent #333333;
-      box-shadow: 0 0 0 transparent #333333; }
+      -moz-box-shadow: 0 0 0 transparent;
+      -webkit-box-shadow: 0 0 0 transparent;
+      box-shadow: 0 0 0 transparent; }
       main section.box .tradepoll .tradecnt .left, main section.box .tradepoll .tradecnt .right, main section.box .tradepoll .match .left, main section.box .tradepoll .match .right, main section.box .matchmain .tradecnt .left, main section.box .matchmain .tradecnt .right, main section.box .matchmain .match .left, main section.box .matchmain .match .right, main section .tradepoll .tradecnt .left, main section .tradepoll .tradecnt .right, main section .tradepoll .match .left, main section .tradepoll .match .right, main section .matchmain .tradecnt .left, main section .matchmain .tradecnt .right, main section .matchmain .match .left, main section .matchmain .match .right {
         background: #fff;
-        -moz-box-shadow: 0 0 0 transparent #333333;
-        -webkit-box-shadow: 0 0 0 transparent #333333;
-        box-shadow: 0 0 0 transparent #333333; }
+        -moz-box-shadow: 0 0 0 transparent;
+        -webkit-box-shadow: 0 0 0 transparent;
+        box-shadow: 0 0 0 transparent; }
       main section.box .tradepoll .tradecnt .left .oitm, main section.box .tradepoll .match .left .oitm, main section.box .matchmain .tradecnt .left .oitm, main section.box .matchmain .match .left .oitm, main section .tradepoll .tradecnt .left .oitm, main section .tradepoll .match .left .oitm, main section .matchmain .tradecnt .left .oitm, main section .matchmain .match .left .oitm {
         float: right; }
       main section.box .tradepoll .tradecnt hr + div.full span, main section.box .tradepoll .match hr + div.full span, main section.box .matchmain .tradecnt hr + div.full span, main section.box .matchmain .match hr + div.full span, main section .tradepoll .tradecnt hr + div.full span, main section .tradepoll .match hr + div.full span, main section .matchmain .tradecnt hr + div.full span, main section .matchmain .match hr + div.full span {
@@ -252,9 +252,9 @@ main section.box, main section {
 /* Items */
 .tradepoll .left, .tradepoll .right {
   background: #fff;
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333; }
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
 .tradepoll .left .oitm {
   float: right; }
 
@@ -264,9 +264,9 @@ main section.box, main section {
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -319,20 +319,20 @@ main section.box, main section {
   .oitm .item .value {
     padding: 1px 4px; }
 .oitm .item.Souvenir {
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
   background: rgba(255, 206, 0, 0.4); }
 .oitm .item.Star {
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
   background: rgba(134, 80, 172, 0.3); }
 .oitm .item.StatTrak {
   background: rgba(207, 106, 50, 0.3);
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333; }
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
   .oitm .item.StatTrak .clreff {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -349,9 +349,9 @@ main section.box, main section {
   margin: 0;
   color: #000;
   text-shadow: none;
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
@@ -390,9 +390,9 @@ main section.box, main section {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333; }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
     .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, .box-shiny .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
       color: #000;
       background: #fff;
@@ -407,9 +407,9 @@ main section.box, main section {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333; }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
     .box-shiny-alt select:focus, .box-shiny select:focus, #satrade select:focus {
       color: #000;
       background: #e8e8e8;
@@ -421,9 +421,9 @@ main section.box, main section {
     padding: 1em;
     background: #e8e8e8;
     color: #000;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333;
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -441,9 +441,9 @@ main section.box, main section {
   -webkit-border-radius: 0;
   border-radius: 0 3px 0 3px; }
   .tabholder a.tab {
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     color: #000;
     background: #fff; }
     .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
@@ -479,9 +479,9 @@ main section.box, main section {
   width: 100%;
   color: #000;
   text-shadow: none;
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
@@ -503,9 +503,9 @@ main section.box, main section {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333;
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) #333333; }
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
     .srch input:focus {
       color: #000;
       background: #fff;
@@ -526,9 +526,9 @@ header {
   background-image: none;
   background-position: 300px -170px;
   background-color: #252d3a;
-  -moz-box-shadow: 0px 5px 0 1px 2px rgba(168, 168, 168, 0.5);
-  -webkit-box-shadow: 0px 5px 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0px 5px 0 1px 2px rgba(168, 168, 168, 0.5); }
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
   header a img#logo {
     -webkit-filter: brightness(1000);
     filter: brightness(1000); }
@@ -549,10 +549,8 @@ header {
       border-radius: 0;
       background-color: rgba(255, 255, 255, 0.2); }
     header nav#menu a img {
-      -webkit-filter: grayscale(1);
-      filter: grayscale(1);
-      -webkit-filter: brightness(1000);
-      filter: brightness(1000); }
+      -webkit-filter: grayscale(1) brightness(1000);
+      filter: grayscale(1) brightness(1000); }
 
 aside#submenu {
   background: transparent; }
@@ -602,21 +600,21 @@ a.button.destroyer, .button {
   font-size: 12px !important;
   border: none;
   text-shadow: none !important;
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333; }
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
   a.button.destroyer:hover, .button:hover {
     background: #ff8a00;
     color: #fff !important;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333; }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
   a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus {
     background: #ff8a00;
     color: #fff !important;
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333; }
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
 .buttonright {
   padding: 8px 10px;
@@ -631,15 +629,15 @@ a.button.destroyer, .button {
   font-size: 12px !important;
   border: none;
   text-shadow: none !important;
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333; }
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
   .buttonright:hover {
     background: #ffa133;
     color: #fff !important;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333; }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
   .buttonright:active, .buttonright:focus {
     background: #ffa133;
     color: #fff !important;
@@ -647,9 +645,9 @@ a.button.destroyer, .button {
     -o-transition: 0.3s, ease, all 1s;
     -webkit-transition: 0.3s, ease, all 1s;
     transition: 0.3s ease all 1s;
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333; }
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
 .matchmain a.button.destroyer, .matchmain .button, .matchmain .buttonright, .bpheader a.button.destroyer, .bpheader .button, .bpheader .buttonright {
   background: #6fc34a;
@@ -657,19 +655,19 @@ a.button.destroyer, .button {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333; }
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
   .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover {
     color: #6fc34a;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333; }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
   .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain .buttonright:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader .buttonright:focus {
     background: #58a436;
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333;
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5) #333333; }
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
 .matchheader .buttonright {
   background: #58a436;
@@ -677,14 +675,14 @@ a.button.destroyer, .button {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  -moz-box-shadow: 0 0 0 transparent #333333;
-  -webkit-box-shadow: 0 0 0 transparent #333333;
-  box-shadow: 0 0 0 transparent #333333; }
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
   .matchheader .buttonright:hover {
     background: #437d2a;
-    -moz-box-shadow: 0 0 0 transparent #333333;
-    -webkit-box-shadow: 0 0 0 transparent #333333;
-    box-shadow: 0 0 0 transparent #333333; }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
   .matchheader .buttonright:active, .matchheader .buttonright:focus {
     background: #437d2a; }
 
