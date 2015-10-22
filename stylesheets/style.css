@@ -580,11 +580,13 @@ aside#submenu {
         -webkit-border-radius: 0;
         border-radius: 0; }
   aside#submenu #follow a {
-    opacity: 0.3;
-    -webkit-filter: brightness(0);
-    filter: brightness(0); }
+    opacity: 1;
+    -webkit-filter: brightness(100) saturate(0);
+    filter: brightness(100) saturate(0); }
     aside#submenu #follow a:hover {
-      opacity: 0.4; }
+      -webkit-filter: brightness(50) saturate(0);
+      filter: brightness(50) saturate(0);
+      opacity: 0.6; }
   aside#submenu #follow a#ftw:hover {
     background-position: 0 0 !important; }
   aside#submenu #follow a#ffb:hover {
