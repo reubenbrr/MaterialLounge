@@ -24,7 +24,6 @@ main
 		&:first-child
 			padding-right: 0
 		a
-			font-weight: bold
 			color: $secondary-dark
 			text-shadow: none
 			&:hover, &:active, &:focus
@@ -88,6 +87,7 @@ main
 				padding: 1em
 				height: 55px
 				a
+					font-weight: bold
 					color: $black
 					text-shadow: none
 					img
@@ -110,7 +110,7 @@ main
 							top: 0
 					span.donor2
 						text-shadow: none
-						background: #4b69ff
+						background: #6780ff
 						padding: 0 2px
 						margin-left: 20px
 						position: relative
@@ -124,7 +124,7 @@ main
 							top: 0
 					span.donor3
 						text-shadow: none
-						background: #8847ff
+						background: #be9ef8
 						padding: 0 2px
 						margin-left: 20px
 						position: relative
@@ -172,6 +172,8 @@ main
 				padding: 0.5em 1em
 				+border-radius(0)
 				+box-shadow(0 0 0 transparent)
+				a
+					font-weight: bold
 				.left, .right
 					background: $white
 					+box-shadow(0 0 0 transparent)
@@ -458,18 +460,64 @@ main
 	color: $black
 	text-shadow: none
 	table
+		text-indent: 0 !important
 		width: 100%
 		margin: 0
+		background: $white
 		tbody
 			tr
+				border-bottom: 1px solid $white
+				td
+					vertical-align: middle
+					padding: 5px 5px
+					a
+						color: $secondary
+					&:first-child
+						background-color: $secondary
+						border-right: 1px solid $white
+						padding: 0
+						&:hover
+							background-color: $secondary-light
+						a
+							padding: 10px
+							color: $white
+					&[colspan="2"], &[colspan="6"]
+						padding: 5px 10px
+						border-bottom: 0
+						border-right: 0
+					&[colspan="2"]
+						&:only-child
+							display: none
+					span
+						&.won
+							text-shadow: none
+							color: $secondary
+						&.lost
+							text-shadow: none
+							color: $red
+				+ tr[class], + tr[class] + tr[class]
+					+transition(0.3s ease all)
 				&:nth-child(odd)
 					background: $white
+					+ tr[class] + tr[class]
+						border-top: 0
+					+ tr[class], + tr[class] + tr[class]
+						background: $white
+						border-bottom: 0
+						td
+							&[colspan="2"], &[colspan="6"]
+								background: $white
 				&:nth-child(even)
 					background: darken($white, 5)
-				td
-					padding: 2px 5px
-					a
-						font-weight: normal
+					+ tr[class] + tr[class]
+						border-top: 0
+					+ tr[class], + tr[class] + tr[class]
+						background: darken($white, 5)
+						border-bottom: 0
+						td
+							&[colspan="2"], &[colspan="6"]
+								background: darken($white, 5)
+
 
 #backpack, #itemlist
 	background: $white
@@ -530,13 +578,25 @@ main
 			border-color: $primary
 			outline: 0
 
-/* Bet table */
-#ajaxcont
+/* Bet table + LoungeStats */
+#ajaxCont
 	padding: 1em !important
 	background: $white
 	float: left
 	width: 100% !important
-	margin: 0
+	margin: 1em 0
 	color: $black
 	text-shadow: none
-
+	+box-shadow(0 1px 2px rgba($grey, 0.5))
+	+border-radius(3px)
+	hr
+		padding-top: 0.5em
+		width: 100%
+		border-color: $primary
+	#loungestats_datacontainer
+		#loungestats_fullscreenbutton
+			margin-top: 0
+			height: auto
+		#loungestats_stats_text
+			a
+				color: $secondary
