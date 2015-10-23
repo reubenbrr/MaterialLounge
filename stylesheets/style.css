@@ -113,7 +113,8 @@ main section.box, main section {
           min-height: 28px; }
         main section.box .tradepoll .tradeheader a span.donor, main section.box .tradepoll .matchheader a span.donor, main section.box .matchmain .tradeheader a span.donor, main section.box .matchmain .matchheader a span.donor, main section .tradepoll .tradeheader a span.donor, main section .tradepoll .matchheader a span.donor, main section .matchmain .tradeheader a span.donor, main section .matchmain .matchheader a span.donor {
           text-shadow: none;
-          background: #6fd3ff;
+          background: none;
+          color: #50c1f2;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
@@ -127,7 +128,8 @@ main section.box, main section {
             top: 0; }
         main section.box .tradepoll .tradeheader a span.donor2, main section.box .tradepoll .matchheader a span.donor2, main section.box .matchmain .tradeheader a span.donor2, main section.box .matchmain .matchheader a span.donor2, main section .tradepoll .tradeheader a span.donor2, main section .tradepoll .matchheader a span.donor2, main section .matchmain .tradeheader a span.donor2, main section .matchmain .matchheader a span.donor2 {
           text-shadow: none;
-          background: #6780ff;
+          background: none;
+          color: #445fe8;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
@@ -141,7 +143,8 @@ main section.box, main section {
             top: 0; }
         main section.box .tradepoll .tradeheader a span.donor3, main section.box .tradepoll .matchheader a span.donor3, main section.box .matchmain .tradeheader a span.donor3, main section.box .matchmain .matchheader a span.donor3, main section .tradepoll .tradeheader a span.donor3, main section .tradepoll .matchheader a span.donor3, main section .matchmain .tradeheader a span.donor3, main section .matchmain .matchheader a span.donor3 {
           text-shadow: none;
-          background: #be9ef8;
+          background: none;
+          color: #8451e2;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
@@ -155,7 +158,8 @@ main section.box, main section {
             top: 0; }
         main section.box .tradepoll .tradeheader a span.donor4, main section.box .tradepoll .matchheader a span.donor4, main section.box .matchmain .tradeheader a span.donor4, main section.box .matchmain .matchheader a span.donor4, main section .tradepoll .tradeheader a span.donor4, main section .tradepoll .matchheader a span.donor4, main section .matchmain .tradeheader a span.donor4, main section .matchmain .matchheader a span.donor4 {
           text-shadow: none;
-          background: #ffaf00;
+          background: none;
+          color: #ffaf00;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
@@ -540,57 +544,55 @@ main section.box, main section {
     width: 100%;
     margin: 0;
     background: #fff; }
-    .full table tbody tr {
-      border-bottom: 1px solid #fff; }
-      .full table tbody tr td {
-        vertical-align: middle;
-        padding: 5px 5px; }
-        .full table tbody tr td a {
-          color: #6fc34a; }
-        .full table tbody tr td:first-child {
-          background-color: #6fc34a;
-          border-right: 1px solid #fff;
-          padding: 0; }
-          .full table tbody tr td:first-child:hover {
-            background-color: #8dd070; }
-          .full table tbody tr td:first-child a {
-            padding: 10px;
-            color: #fff; }
-        .full table tbody tr td[colspan="2"], .full table tbody tr td[colspan="6"] {
-          padding: 5px 10px;
-          border-bottom: 0;
-          border-right: 0; }
-        .full table tbody tr td[colspan="2"]:only-child {
-          display: none; }
-        .full table tbody tr td span.won {
-          text-shadow: none;
-          color: #6fc34a; }
-        .full table tbody tr td span.lost {
-          text-shadow: none;
-          color: #C62828; }
-      .full table tbody tr + tr[class], .full table tbody tr + tr[class] + tr[class] {
-        -moz-transition: ease 0.3s all;
-        -o-transition: ease 0.3s all;
-        -webkit-transition: ease 0.3s all;
-        transition: ease 0.3s all; }
-      .full table tbody tr:nth-child(odd) {
-        background: #fff; }
-        .full table tbody tr:nth-child(odd) + tr[class] + tr[class] {
-          border-top: 0; }
-        .full table tbody tr:nth-child(odd) + tr[class], .full table tbody tr:nth-child(odd) + tr[class] + tr[class] {
-          background: #fff;
-          border-bottom: 0; }
-          .full table tbody tr:nth-child(odd) + tr[class] td[colspan="2"], .full table tbody tr:nth-child(odd) + tr[class] td[colspan="6"], .full table tbody tr:nth-child(odd) + tr[class] + tr[class] td[colspan="2"], .full table tbody tr:nth-child(odd) + tr[class] + tr[class] td[colspan="6"] {
-            background: #fff; }
-      .full table tbody tr:nth-child(even) {
-        background: #f2f2f2; }
-        .full table tbody tr:nth-child(even) + tr[class] + tr[class] {
-          border-top: 0; }
-        .full table tbody tr:nth-child(even) + tr[class], .full table tbody tr:nth-child(even) + tr[class] + tr[class] {
-          background: #f2f2f2;
-          border-bottom: 0; }
-          .full table tbody tr:nth-child(even) + tr[class] td[colspan="2"], .full table tbody tr:nth-child(even) + tr[class] td[colspan="6"], .full table tbody tr:nth-child(even) + tr[class] + tr[class] td[colspan="2"], .full table tbody tr:nth-child(even) + tr[class] + tr[class] td[colspan="6"] {
-            background: #f2f2f2; }
+    .full table tbody tr td {
+      vertical-align: middle;
+      padding: 5px 5px; }
+      .full table tbody tr td a {
+        color: #6fc34a; }
+      .full table tbody tr td:first-child {
+        background-color: #6fc34a;
+        border-right: 1px solid #fff;
+        padding: 0; }
+        .full table tbody tr td:first-child:hover {
+          background-color: #8dd070; }
+        .full table tbody tr td:first-child a {
+          padding: 10px;
+          color: #fff; }
+      .full table tbody tr td[colspan="2"], .full table tbody tr td[colspan="6"] {
+        padding: 5px 10px;
+        border-bottom: 0;
+        border-right: 0; }
+      .full table tbody tr td[colspan="2"]:only-child {
+        display: none; }
+      .full table tbody tr td span.won {
+        text-shadow: none;
+        color: #6fc34a; }
+      .full table tbody tr td span.lost {
+        text-shadow: none;
+        color: #C62828; }
+    .full table tbody tr + tr[class], .full table tbody tr + tr[class] + tr[class] {
+      -moz-transition: ease 0.3s all;
+      -o-transition: ease 0.3s all;
+      -webkit-transition: ease 0.3s all;
+      transition: ease 0.3s all; }
+    .full table tbody tr:nth-child(odd) {
+      background: #fff; }
+      .full table tbody tr:nth-child(odd) + tr[class] + tr[class] {
+        border-top: 0; }
+      .full table tbody tr:nth-child(odd) + tr[class], .full table tbody tr:nth-child(odd) + tr[class] + tr[class] {
+        background: #fff;
+        border-bottom: 0; }
+        .full table tbody tr:nth-child(odd) + tr[class] td[colspan="2"], .full table tbody tr:nth-child(odd) + tr[class] td[colspan="6"], .full table tbody tr:nth-child(odd) + tr[class] + tr[class] td[colspan="2"], .full table tbody tr:nth-child(odd) + tr[class] + tr[class] td[colspan="6"] {
+          background: #fff; }
+    .full table tbody tr:nth-child(even) {
+      background: #f2f2f2; }
+      .full table tbody tr:nth-child(even) + tr[class] + tr[class] {
+        border-top: 0; }
+      .full table tbody tr:nth-child(even) + tr[class], .full table tbody tr:nth-child(even) + tr[class] + tr[class] {
+        background: #f2f2f2;
+        border-bottom: 0; }
+        .full table tbody tr:nth-child(even) + tr[class] td[colspan="2"], .full table tbody tr:nth-child(even) + tr[class] td[colspan="6"], .full table tbody tr:nth-child(even) + tr[class] + tr[class] td[colspan="2"], .full table tbody tr:nth-child(even) + tr[class] + tr[class] td[colspan="6"] {
+          background: #f2f2f2; }
 
 #backpack, #itemlist {
   background: #fff;
