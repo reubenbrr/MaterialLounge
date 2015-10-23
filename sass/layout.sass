@@ -70,7 +70,7 @@ main
 			.matchmain
 				.matchheader
 					border-bottom: 2px solid $secondary
-		.tradepoll, .matchmain
+		.tradepoll, .matchmain, #betreturns
 			margin: 0 0 1em 0
 			background: $white
 			float: left
@@ -78,12 +78,13 @@ main
 			padding: 0
 			+box-shadow(0 1px 2px rgba($grey, 0.5))
 			+border-radius(3px)
-			.tradeheader, .matchheader
+			.tradeheader, .matchheader, .bpheader
 				width: 100%
 				margin: 0
 				background: $white
 				border-top: 0
 				padding: 1em
+				line-height: 2em
 				height: 55px
 				a
 					font-weight: bold
@@ -155,8 +156,14 @@ main
 							top: 0
 				a.button.destroyer
 					float: right !important
-				a:first-child img
-					margin-top: 0.4em
+				a[onclick^="addBookmark"]
+					padding: 0 10px
+					img
+						height: 15px
+						margin-bottom: -3px
+					&:hover
+						img
+							+filter(brightness(0.5))
 				span
 					font-weight: normal
 				.whenm, .eventm
@@ -262,16 +269,28 @@ main
 			#betreturns
 				background: $white
 				float: left
-				border-top: 2px solid $secondary
-				+border-radius(0 0 3px 3px)
+				+border-radius(3px)
 				.bpheader
-					color: $grey-darkest
-					padding: 1em 1em 0 1em
+					border-bottom: 2px solid $secondary
+					padding: 1em 0.5em
+					+border-radius(0)
+					+box-shadow(0 0 0 transparent)
 			.bpheader
 				width: 100%
-				padding: 1em 0 0 0
+				padding: 1em
+				background: $white
+				color: $grey-b-darkest
+				+border-radius(0 3px)
+				+box-shadow(0 1px 2px rgba($grey, 0.5))
 				.button
 					margin-left: 0
+				+ form.full
+					width: 100%
+					padding: 1em
+					background: $white
+					+border-radius(3px)
+					+box-shadow(0 1px 2px rgba($grey, 0.5))
+
 
 /* Items */
 .tradepoll
