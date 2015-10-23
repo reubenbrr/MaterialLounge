@@ -816,9 +816,12 @@ main section.box, main section {
         text-align: center; }
         main section.box article.standard .bpheader .button#freezebutton + div, main section.box article.standard #betreturns .bpheader .button#freezebutton + div, main section article.standard .bpheader .button#freezebutton + div, main section article.standard #betreturns .bpheader .button#freezebutton + div {
           margin-top: 1em !important; }
+    main section.box article.standard .bpheader .full, main section.box article.standard #betreturns .bpheader .full, main section article.standard .bpheader .full, main section article.standard #betreturns .bpheader .full {
+      padding: 1em 1em 0 1em; }
+    main section.box article.standard .bpheader .full + .full, main section.box article.standard #betreturns .bpheader .full + .full, main section article.standard .bpheader .full + .full, main section article.standard #betreturns .bpheader .full + .full {
+      padding: 0 1em 1em 1em; }
     main section.box article.standard .bpheader + .full, main section.box article.standard .bpheader + .full + .full, main section.box article.standard #betreturns .bpheader + .full, main section.box article.standard #betreturns .bpheader + .full + .full, main section article.standard .bpheader + .full, main section article.standard .bpheader + .full + .full, main section article.standard #betreturns .bpheader + .full, main section article.standard #betreturns .bpheader + .full + .full {
       width: 100%;
-      padding: 1em;
       background: #fff;
       -moz-border-radius: 0 0 3px 3px;
       -webkit-border-radius: 0;
