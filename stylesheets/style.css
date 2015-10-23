@@ -527,6 +527,7 @@ main section.box, main section {
     main section.box a:hover, main section.box a:active, main section.box a:focus, main section a:hover, main section a:active, main section a:focus {
       color: #437d2a; }
   main section.box .title, main section .title {
+    margin-left: 0;
     -moz-transition: ease 0.5s all;
     -o-transition: ease 0.5s all;
     -webkit-transition: ease 0.5s all;
@@ -572,7 +573,7 @@ main section.box, main section {
     border-bottom: 2px solid #ff8a00; }
   main section.box article.standard#bets .matchmain .matchheader, main section article.standard#bets .matchmain .matchheader {
     border-bottom: 2px solid #6fc34a; }
-  main section.box .tradepoll, main section.box .matchmain, main section.box #betreturns, main section .tradepoll, main section .matchmain, main section #betreturns {
+  main section.box .tradepoll, main section.box .matchmain, main section .tradepoll, main section .matchmain {
     margin: 0 0 1em 0;
     background: #fff;
     float: left;
@@ -584,7 +585,7 @@ main section.box, main section {
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
-    main section.box .tradepoll .tradeheader, main section.box .tradepoll .matchheader, main section.box .tradepoll .bpheader, main section.box .matchmain .tradeheader, main section.box .matchmain .matchheader, main section.box .matchmain .bpheader, main section.box #betreturns .tradeheader, main section.box #betreturns .matchheader, main section.box #betreturns .bpheader, main section .tradepoll .tradeheader, main section .tradepoll .matchheader, main section .tradepoll .bpheader, main section .matchmain .tradeheader, main section .matchmain .matchheader, main section .matchmain .bpheader, main section #betreturns .tradeheader, main section #betreturns .matchheader, main section #betreturns .bpheader {
+    main section.box .tradepoll .tradeheader, main section.box .tradepoll .matchheader, main section.box .matchmain .tradeheader, main section.box .matchmain .matchheader, main section .tradepoll .tradeheader, main section .tradepoll .matchheader, main section .matchmain .tradeheader, main section .matchmain .matchheader {
       width: 100%;
       margin: 0;
       background: #fff;
@@ -592,23 +593,23 @@ main section.box, main section {
       padding: 1em;
       line-height: 2em;
       height: 55px; }
-      main section.box .tradepoll .tradeheader a, main section.box .tradepoll .matchheader a, main section.box .tradepoll .bpheader a, main section.box .matchmain .tradeheader a, main section.box .matchmain .matchheader a, main section.box .matchmain .bpheader a, main section.box #betreturns .tradeheader a, main section.box #betreturns .matchheader a, main section.box #betreturns .bpheader a, main section .tradepoll .tradeheader a, main section .tradepoll .matchheader a, main section .tradepoll .bpheader a, main section .matchmain .tradeheader a, main section .matchmain .matchheader a, main section .matchmain .bpheader a, main section #betreturns .tradeheader a, main section #betreturns .matchheader a, main section #betreturns .bpheader a {
+      main section.box .tradepoll .tradeheader a, main section.box .tradepoll .matchheader a, main section.box .matchmain .tradeheader a, main section.box .matchmain .matchheader a, main section .tradepoll .tradeheader a, main section .tradepoll .matchheader a, main section .matchmain .tradeheader a, main section .matchmain .matchheader a {
         font-weight: bold;
         color: #000;
         text-shadow: none; }
-        main section.box .tradepoll .tradeheader a img, main section.box .tradepoll .matchheader a img, main section.box .tradepoll .bpheader a img, main section.box .matchmain .tradeheader a img, main section.box .matchmain .matchheader a img, main section.box .matchmain .bpheader a img, main section.box #betreturns .tradeheader a img, main section.box #betreturns .matchheader a img, main section.box #betreturns .bpheader a img, main section .tradepoll .tradeheader a img, main section .tradepoll .matchheader a img, main section .tradepoll .bpheader a img, main section .matchmain .tradeheader a img, main section .matchmain .matchheader a img, main section .matchmain .bpheader a img, main section #betreturns .tradeheader a img, main section #betreturns .matchheader a img, main section #betreturns .bpheader a img {
+        main section.box .tradepoll .tradeheader a img, main section.box .tradepoll .matchheader a img, main section.box .matchmain .tradeheader a img, main section.box .matchmain .matchheader a img, main section .tradepoll .tradeheader a img, main section .tradepoll .matchheader a img, main section .matchmain .tradeheader a img, main section .matchmain .matchheader a img {
           -webkit-filter: brightness(0);
           filter: brightness(0); }
-        main section.box .tradepoll .tradeheader a + span, main section.box .tradepoll .matchheader a + span, main section.box .tradepoll .bpheader a + span, main section.box .matchmain .tradeheader a + span, main section.box .matchmain .matchheader a + span, main section.box .matchmain .bpheader a + span, main section.box #betreturns .tradeheader a + span, main section.box #betreturns .matchheader a + span, main section.box #betreturns .bpheader a + span, main section .tradepoll .tradeheader a + span, main section .tradepoll .matchheader a + span, main section .tradepoll .bpheader a + span, main section .matchmain .tradeheader a + span, main section .matchmain .matchheader a + span, main section .matchmain .bpheader a + span, main section #betreturns .tradeheader a + span, main section #betreturns .matchheader a + span, main section #betreturns .bpheader a + span {
+        main section.box .tradepoll .tradeheader a + span, main section.box .tradepoll .matchheader a + span, main section.box .matchmain .tradeheader a + span, main section.box .matchmain .matchheader a + span, main section .tradepoll .tradeheader a + span, main section .tradepoll .matchheader a + span, main section .matchmain .tradeheader a + span, main section .matchmain .matchheader a + span {
           min-height: 28px; }
-        main section.box .tradepoll .tradeheader a span.donor, main section.box .tradepoll .matchheader a span.donor, main section.box .tradepoll .bpheader a span.donor, main section.box .matchmain .tradeheader a span.donor, main section.box .matchmain .matchheader a span.donor, main section.box .matchmain .bpheader a span.donor, main section.box #betreturns .tradeheader a span.donor, main section.box #betreturns .matchheader a span.donor, main section.box #betreturns .bpheader a span.donor, main section .tradepoll .tradeheader a span.donor, main section .tradepoll .matchheader a span.donor, main section .tradepoll .bpheader a span.donor, main section .matchmain .tradeheader a span.donor, main section .matchmain .matchheader a span.donor, main section .matchmain .bpheader a span.donor, main section #betreturns .tradeheader a span.donor, main section #betreturns .matchheader a span.donor, main section #betreturns .bpheader a span.donor {
+        main section.box .tradepoll .tradeheader a span.donor, main section.box .tradepoll .matchheader a span.donor, main section.box .matchmain .tradeheader a span.donor, main section.box .matchmain .matchheader a span.donor, main section .tradepoll .tradeheader a span.donor, main section .tradepoll .matchheader a span.donor, main section .matchmain .tradeheader a span.donor, main section .matchmain .matchheader a span.donor {
           text-shadow: none;
           background: none;
           color: #50c1f2;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
-          main section.box .tradepoll .tradeheader a span.donor:before, main section.box .tradepoll .matchheader a span.donor:before, main section.box .tradepoll .bpheader a span.donor:before, main section.box .matchmain .tradeheader a span.donor:before, main section.box .matchmain .matchheader a span.donor:before, main section.box .matchmain .bpheader a span.donor:before, main section.box #betreturns .tradeheader a span.donor:before, main section.box #betreturns .matchheader a span.donor:before, main section.box #betreturns .bpheader a span.donor:before, main section .tradepoll .tradeheader a span.donor:before, main section .tradepoll .matchheader a span.donor:before, main section .tradepoll .bpheader a span.donor:before, main section .matchmain .tradeheader a span.donor:before, main section .matchmain .matchheader a span.donor:before, main section .matchmain .bpheader a span.donor:before, main section #betreturns .tradeheader a span.donor:before, main section #betreturns .matchheader a span.donor:before, main section #betreturns .bpheader a span.donor:before {
+          main section.box .tradepoll .tradeheader a span.donor:before, main section.box .tradepoll .matchheader a span.donor:before, main section.box .matchmain .tradeheader a span.donor:before, main section.box .matchmain .matchheader a span.donor:before, main section .tradepoll .tradeheader a span.donor:before, main section .tradepoll .matchheader a span.donor:before, main section .matchmain .tradeheader a span.donor:before, main section .matchmain .matchheader a span.donor:before {
             width: 20px;
             height: 20px;
             content: "";
@@ -616,14 +617,14 @@ main section.box, main section {
             position: absolute;
             left: -20px;
             top: 0; }
-        main section.box .tradepoll .tradeheader a span.donor2, main section.box .tradepoll .matchheader a span.donor2, main section.box .tradepoll .bpheader a span.donor2, main section.box .matchmain .tradeheader a span.donor2, main section.box .matchmain .matchheader a span.donor2, main section.box .matchmain .bpheader a span.donor2, main section.box #betreturns .tradeheader a span.donor2, main section.box #betreturns .matchheader a span.donor2, main section.box #betreturns .bpheader a span.donor2, main section .tradepoll .tradeheader a span.donor2, main section .tradepoll .matchheader a span.donor2, main section .tradepoll .bpheader a span.donor2, main section .matchmain .tradeheader a span.donor2, main section .matchmain .matchheader a span.donor2, main section .matchmain .bpheader a span.donor2, main section #betreturns .tradeheader a span.donor2, main section #betreturns .matchheader a span.donor2, main section #betreturns .bpheader a span.donor2 {
+        main section.box .tradepoll .tradeheader a span.donor2, main section.box .tradepoll .matchheader a span.donor2, main section.box .matchmain .tradeheader a span.donor2, main section.box .matchmain .matchheader a span.donor2, main section .tradepoll .tradeheader a span.donor2, main section .tradepoll .matchheader a span.donor2, main section .matchmain .tradeheader a span.donor2, main section .matchmain .matchheader a span.donor2 {
           text-shadow: none;
           background: none;
           color: #445fe8;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
-          main section.box .tradepoll .tradeheader a span.donor2:before, main section.box .tradepoll .matchheader a span.donor2:before, main section.box .tradepoll .bpheader a span.donor2:before, main section.box .matchmain .tradeheader a span.donor2:before, main section.box .matchmain .matchheader a span.donor2:before, main section.box .matchmain .bpheader a span.donor2:before, main section.box #betreturns .tradeheader a span.donor2:before, main section.box #betreturns .matchheader a span.donor2:before, main section.box #betreturns .bpheader a span.donor2:before, main section .tradepoll .tradeheader a span.donor2:before, main section .tradepoll .matchheader a span.donor2:before, main section .tradepoll .bpheader a span.donor2:before, main section .matchmain .tradeheader a span.donor2:before, main section .matchmain .matchheader a span.donor2:before, main section .matchmain .bpheader a span.donor2:before, main section #betreturns .tradeheader a span.donor2:before, main section #betreturns .matchheader a span.donor2:before, main section #betreturns .bpheader a span.donor2:before {
+          main section.box .tradepoll .tradeheader a span.donor2:before, main section.box .tradepoll .matchheader a span.donor2:before, main section.box .matchmain .tradeheader a span.donor2:before, main section.box .matchmain .matchheader a span.donor2:before, main section .tradepoll .tradeheader a span.donor2:before, main section .tradepoll .matchheader a span.donor2:before, main section .matchmain .tradeheader a span.donor2:before, main section .matchmain .matchheader a span.donor2:before {
             width: 20px;
             height: 20px;
             content: "";
@@ -631,14 +632,14 @@ main section.box, main section {
             position: absolute;
             left: -20px;
             top: 0; }
-        main section.box .tradepoll .tradeheader a span.donor3, main section.box .tradepoll .matchheader a span.donor3, main section.box .tradepoll .bpheader a span.donor3, main section.box .matchmain .tradeheader a span.donor3, main section.box .matchmain .matchheader a span.donor3, main section.box .matchmain .bpheader a span.donor3, main section.box #betreturns .tradeheader a span.donor3, main section.box #betreturns .matchheader a span.donor3, main section.box #betreturns .bpheader a span.donor3, main section .tradepoll .tradeheader a span.donor3, main section .tradepoll .matchheader a span.donor3, main section .tradepoll .bpheader a span.donor3, main section .matchmain .tradeheader a span.donor3, main section .matchmain .matchheader a span.donor3, main section .matchmain .bpheader a span.donor3, main section #betreturns .tradeheader a span.donor3, main section #betreturns .matchheader a span.donor3, main section #betreturns .bpheader a span.donor3 {
+        main section.box .tradepoll .tradeheader a span.donor3, main section.box .tradepoll .matchheader a span.donor3, main section.box .matchmain .tradeheader a span.donor3, main section.box .matchmain .matchheader a span.donor3, main section .tradepoll .tradeheader a span.donor3, main section .tradepoll .matchheader a span.donor3, main section .matchmain .tradeheader a span.donor3, main section .matchmain .matchheader a span.donor3 {
           text-shadow: none;
           background: none;
           color: #8451e2;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
-          main section.box .tradepoll .tradeheader a span.donor3:before, main section.box .tradepoll .matchheader a span.donor3:before, main section.box .tradepoll .bpheader a span.donor3:before, main section.box .matchmain .tradeheader a span.donor3:before, main section.box .matchmain .matchheader a span.donor3:before, main section.box .matchmain .bpheader a span.donor3:before, main section.box #betreturns .tradeheader a span.donor3:before, main section.box #betreturns .matchheader a span.donor3:before, main section.box #betreturns .bpheader a span.donor3:before, main section .tradepoll .tradeheader a span.donor3:before, main section .tradepoll .matchheader a span.donor3:before, main section .tradepoll .bpheader a span.donor3:before, main section .matchmain .tradeheader a span.donor3:before, main section .matchmain .matchheader a span.donor3:before, main section .matchmain .bpheader a span.donor3:before, main section #betreturns .tradeheader a span.donor3:before, main section #betreturns .matchheader a span.donor3:before, main section #betreturns .bpheader a span.donor3:before {
+          main section.box .tradepoll .tradeheader a span.donor3:before, main section.box .tradepoll .matchheader a span.donor3:before, main section.box .matchmain .tradeheader a span.donor3:before, main section.box .matchmain .matchheader a span.donor3:before, main section .tradepoll .tradeheader a span.donor3:before, main section .tradepoll .matchheader a span.donor3:before, main section .matchmain .tradeheader a span.donor3:before, main section .matchmain .matchheader a span.donor3:before {
             width: 20px;
             height: 20px;
             content: "";
@@ -646,14 +647,14 @@ main section.box, main section {
             position: absolute;
             left: -20px;
             top: 0; }
-        main section.box .tradepoll .tradeheader a span.donor4, main section.box .tradepoll .matchheader a span.donor4, main section.box .tradepoll .bpheader a span.donor4, main section.box .matchmain .tradeheader a span.donor4, main section.box .matchmain .matchheader a span.donor4, main section.box .matchmain .bpheader a span.donor4, main section.box #betreturns .tradeheader a span.donor4, main section.box #betreturns .matchheader a span.donor4, main section.box #betreturns .bpheader a span.donor4, main section .tradepoll .tradeheader a span.donor4, main section .tradepoll .matchheader a span.donor4, main section .tradepoll .bpheader a span.donor4, main section .matchmain .tradeheader a span.donor4, main section .matchmain .matchheader a span.donor4, main section .matchmain .bpheader a span.donor4, main section #betreturns .tradeheader a span.donor4, main section #betreturns .matchheader a span.donor4, main section #betreturns .bpheader a span.donor4 {
+        main section.box .tradepoll .tradeheader a span.donor4, main section.box .tradepoll .matchheader a span.donor4, main section.box .matchmain .tradeheader a span.donor4, main section.box .matchmain .matchheader a span.donor4, main section .tradepoll .tradeheader a span.donor4, main section .tradepoll .matchheader a span.donor4, main section .matchmain .tradeheader a span.donor4, main section .matchmain .matchheader a span.donor4 {
           text-shadow: none;
           background: none;
           color: #ffaf00;
           padding: 0 2px;
           margin-left: 20px;
           position: relative; }
-          main section.box .tradepoll .tradeheader a span.donor4:before, main section.box .tradepoll .matchheader a span.donor4:before, main section.box .tradepoll .bpheader a span.donor4:before, main section.box .matchmain .tradeheader a span.donor4:before, main section.box .matchmain .matchheader a span.donor4:before, main section.box .matchmain .bpheader a span.donor4:before, main section.box #betreturns .tradeheader a span.donor4:before, main section.box #betreturns .matchheader a span.donor4:before, main section.box #betreturns .bpheader a span.donor4:before, main section .tradepoll .tradeheader a span.donor4:before, main section .tradepoll .matchheader a span.donor4:before, main section .tradepoll .bpheader a span.donor4:before, main section .matchmain .tradeheader a span.donor4:before, main section .matchmain .matchheader a span.donor4:before, main section .matchmain .bpheader a span.donor4:before, main section #betreturns .tradeheader a span.donor4:before, main section #betreturns .matchheader a span.donor4:before, main section #betreturns .bpheader a span.donor4:before {
+          main section.box .tradepoll .tradeheader a span.donor4:before, main section.box .tradepoll .matchheader a span.donor4:before, main section.box .matchmain .tradeheader a span.donor4:before, main section.box .matchmain .matchheader a span.donor4:before, main section .tradepoll .tradeheader a span.donor4:before, main section .tradepoll .matchheader a span.donor4:before, main section .matchmain .tradeheader a span.donor4:before, main section .matchmain .matchheader a span.donor4:before {
             width: 20px;
             height: 20px;
             content: "";
@@ -661,29 +662,29 @@ main section.box, main section {
             position: absolute;
             left: -20px;
             top: 0; }
-      main section.box .tradepoll .tradeheader a.button.destroyer, main section.box .tradepoll .matchheader a.button.destroyer, main section.box .tradepoll .bpheader a.button.destroyer, main section.box .matchmain .tradeheader a.button.destroyer, main section.box .matchmain .matchheader a.button.destroyer, main section.box .matchmain .bpheader a.button.destroyer, main section.box #betreturns .tradeheader a.button.destroyer, main section.box #betreturns .matchheader a.button.destroyer, main section.box #betreturns .bpheader a.button.destroyer, main section .tradepoll .tradeheader a.button.destroyer, main section .tradepoll .matchheader a.button.destroyer, main section .tradepoll .bpheader a.button.destroyer, main section .matchmain .tradeheader a.button.destroyer, main section .matchmain .matchheader a.button.destroyer, main section .matchmain .bpheader a.button.destroyer, main section #betreturns .tradeheader a.button.destroyer, main section #betreturns .matchheader a.button.destroyer, main section #betreturns .bpheader a.button.destroyer {
+      main section.box .tradepoll .tradeheader a.button.destroyer, main section.box .tradepoll .matchheader a.button.destroyer, main section.box .matchmain .tradeheader a.button.destroyer, main section.box .matchmain .matchheader a.button.destroyer, main section .tradepoll .tradeheader a.button.destroyer, main section .tradepoll .matchheader a.button.destroyer, main section .matchmain .tradeheader a.button.destroyer, main section .matchmain .matchheader a.button.destroyer {
         float: right !important; }
-      main section.box .tradepoll .tradeheader a[onclick^="addBookmark"], main section.box .tradepoll .matchheader a[onclick^="addBookmark"], main section.box .tradepoll .bpheader a[onclick^="addBookmark"], main section.box .matchmain .tradeheader a[onclick^="addBookmark"], main section.box .matchmain .matchheader a[onclick^="addBookmark"], main section.box .matchmain .bpheader a[onclick^="addBookmark"], main section.box #betreturns .tradeheader a[onclick^="addBookmark"], main section.box #betreturns .matchheader a[onclick^="addBookmark"], main section.box #betreturns .bpheader a[onclick^="addBookmark"], main section .tradepoll .tradeheader a[onclick^="addBookmark"], main section .tradepoll .matchheader a[onclick^="addBookmark"], main section .tradepoll .bpheader a[onclick^="addBookmark"], main section .matchmain .tradeheader a[onclick^="addBookmark"], main section .matchmain .matchheader a[onclick^="addBookmark"], main section .matchmain .bpheader a[onclick^="addBookmark"], main section #betreturns .tradeheader a[onclick^="addBookmark"], main section #betreturns .matchheader a[onclick^="addBookmark"], main section #betreturns .bpheader a[onclick^="addBookmark"] {
+      main section.box .tradepoll .tradeheader a[onclick^="addBookmark"], main section.box .tradepoll .matchheader a[onclick^="addBookmark"], main section.box .matchmain .tradeheader a[onclick^="addBookmark"], main section.box .matchmain .matchheader a[onclick^="addBookmark"], main section .tradepoll .tradeheader a[onclick^="addBookmark"], main section .tradepoll .matchheader a[onclick^="addBookmark"], main section .matchmain .tradeheader a[onclick^="addBookmark"], main section .matchmain .matchheader a[onclick^="addBookmark"] {
         padding: 0 10px; }
-        main section.box .tradepoll .tradeheader a[onclick^="addBookmark"] img, main section.box .tradepoll .matchheader a[onclick^="addBookmark"] img, main section.box .tradepoll .bpheader a[onclick^="addBookmark"] img, main section.box .matchmain .tradeheader a[onclick^="addBookmark"] img, main section.box .matchmain .matchheader a[onclick^="addBookmark"] img, main section.box .matchmain .bpheader a[onclick^="addBookmark"] img, main section.box #betreturns .tradeheader a[onclick^="addBookmark"] img, main section.box #betreturns .matchheader a[onclick^="addBookmark"] img, main section.box #betreturns .bpheader a[onclick^="addBookmark"] img, main section .tradepoll .tradeheader a[onclick^="addBookmark"] img, main section .tradepoll .matchheader a[onclick^="addBookmark"] img, main section .tradepoll .bpheader a[onclick^="addBookmark"] img, main section .matchmain .tradeheader a[onclick^="addBookmark"] img, main section .matchmain .matchheader a[onclick^="addBookmark"] img, main section .matchmain .bpheader a[onclick^="addBookmark"] img, main section #betreturns .tradeheader a[onclick^="addBookmark"] img, main section #betreturns .matchheader a[onclick^="addBookmark"] img, main section #betreturns .bpheader a[onclick^="addBookmark"] img {
+        main section.box .tradepoll .tradeheader a[onclick^="addBookmark"] img, main section.box .tradepoll .matchheader a[onclick^="addBookmark"] img, main section.box .matchmain .tradeheader a[onclick^="addBookmark"] img, main section.box .matchmain .matchheader a[onclick^="addBookmark"] img, main section .tradepoll .tradeheader a[onclick^="addBookmark"] img, main section .tradepoll .matchheader a[onclick^="addBookmark"] img, main section .matchmain .tradeheader a[onclick^="addBookmark"] img, main section .matchmain .matchheader a[onclick^="addBookmark"] img {
           height: 15px;
           margin-bottom: -3px; }
-        main section.box .tradepoll .tradeheader a[onclick^="addBookmark"]:hover img, main section.box .tradepoll .matchheader a[onclick^="addBookmark"]:hover img, main section.box .tradepoll .bpheader a[onclick^="addBookmark"]:hover img, main section.box .matchmain .tradeheader a[onclick^="addBookmark"]:hover img, main section.box .matchmain .matchheader a[onclick^="addBookmark"]:hover img, main section.box .matchmain .bpheader a[onclick^="addBookmark"]:hover img, main section.box #betreturns .tradeheader a[onclick^="addBookmark"]:hover img, main section.box #betreturns .matchheader a[onclick^="addBookmark"]:hover img, main section.box #betreturns .bpheader a[onclick^="addBookmark"]:hover img, main section .tradepoll .tradeheader a[onclick^="addBookmark"]:hover img, main section .tradepoll .matchheader a[onclick^="addBookmark"]:hover img, main section .tradepoll .bpheader a[onclick^="addBookmark"]:hover img, main section .matchmain .tradeheader a[onclick^="addBookmark"]:hover img, main section .matchmain .matchheader a[onclick^="addBookmark"]:hover img, main section .matchmain .bpheader a[onclick^="addBookmark"]:hover img, main section #betreturns .tradeheader a[onclick^="addBookmark"]:hover img, main section #betreturns .matchheader a[onclick^="addBookmark"]:hover img, main section #betreturns .bpheader a[onclick^="addBookmark"]:hover img {
+        main section.box .tradepoll .tradeheader a[onclick^="addBookmark"]:hover img, main section.box .tradepoll .matchheader a[onclick^="addBookmark"]:hover img, main section.box .matchmain .tradeheader a[onclick^="addBookmark"]:hover img, main section.box .matchmain .matchheader a[onclick^="addBookmark"]:hover img, main section .tradepoll .tradeheader a[onclick^="addBookmark"]:hover img, main section .tradepoll .matchheader a[onclick^="addBookmark"]:hover img, main section .matchmain .tradeheader a[onclick^="addBookmark"]:hover img, main section .matchmain .matchheader a[onclick^="addBookmark"]:hover img {
           -webkit-filter: brightness(0.5);
           filter: brightness(0.5); }
-      main section.box .tradepoll .tradeheader span, main section.box .tradepoll .matchheader span, main section.box .tradepoll .bpheader span, main section.box .matchmain .tradeheader span, main section.box .matchmain .matchheader span, main section.box .matchmain .bpheader span, main section.box #betreturns .tradeheader span, main section.box #betreturns .matchheader span, main section.box #betreturns .bpheader span, main section .tradepoll .tradeheader span, main section .tradepoll .matchheader span, main section .tradepoll .bpheader span, main section .matchmain .tradeheader span, main section .matchmain .matchheader span, main section .matchmain .bpheader span, main section #betreturns .tradeheader span, main section #betreturns .matchheader span, main section #betreturns .bpheader span {
+      main section.box .tradepoll .tradeheader span, main section.box .tradepoll .matchheader span, main section.box .matchmain .tradeheader span, main section.box .matchmain .matchheader span, main section .tradepoll .tradeheader span, main section .tradepoll .matchheader span, main section .matchmain .tradeheader span, main section .matchmain .matchheader span {
         font-weight: normal; }
-      main section.box .tradepoll .tradeheader .whenm, main section.box .tradepoll .tradeheader .eventm, main section.box .tradepoll .matchheader .whenm, main section.box .tradepoll .matchheader .eventm, main section.box .tradepoll .bpheader .whenm, main section.box .tradepoll .bpheader .eventm, main section.box .matchmain .tradeheader .whenm, main section.box .matchmain .tradeheader .eventm, main section.box .matchmain .matchheader .whenm, main section.box .matchmain .matchheader .eventm, main section.box .matchmain .bpheader .whenm, main section.box .matchmain .bpheader .eventm, main section.box #betreturns .tradeheader .whenm, main section.box #betreturns .tradeheader .eventm, main section.box #betreturns .matchheader .whenm, main section.box #betreturns .matchheader .eventm, main section.box #betreturns .bpheader .whenm, main section.box #betreturns .bpheader .eventm, main section .tradepoll .tradeheader .whenm, main section .tradepoll .tradeheader .eventm, main section .tradepoll .matchheader .whenm, main section .tradepoll .matchheader .eventm, main section .tradepoll .bpheader .whenm, main section .tradepoll .bpheader .eventm, main section .matchmain .tradeheader .whenm, main section .matchmain .tradeheader .eventm, main section .matchmain .matchheader .whenm, main section .matchmain .matchheader .eventm, main section .matchmain .bpheader .whenm, main section .matchmain .bpheader .eventm, main section #betreturns .tradeheader .whenm, main section #betreturns .tradeheader .eventm, main section #betreturns .matchheader .whenm, main section #betreturns .matchheader .eventm, main section #betreturns .bpheader .whenm, main section #betreturns .bpheader .eventm {
+      main section.box .tradepoll .tradeheader .whenm, main section.box .tradepoll .tradeheader .eventm, main section.box .tradepoll .matchheader .whenm, main section.box .tradepoll .matchheader .eventm, main section.box .matchmain .tradeheader .whenm, main section.box .matchmain .tradeheader .eventm, main section.box .matchmain .matchheader .whenm, main section.box .matchmain .matchheader .eventm, main section .tradepoll .tradeheader .whenm, main section .tradepoll .tradeheader .eventm, main section .tradepoll .matchheader .whenm, main section .tradepoll .matchheader .eventm, main section .matchmain .tradeheader .whenm, main section .matchmain .tradeheader .eventm, main section .matchmain .matchheader .whenm, main section .matchmain .matchheader .eventm {
         font-weight: bold;
         line-height: 20px;
         text-shadow: none !important; }
-        main section.box .tradepoll .tradeheader .whenm span, main section.box .tradepoll .tradeheader .eventm span, main section.box .tradepoll .matchheader .whenm span, main section.box .tradepoll .matchheader .eventm span, main section.box .tradepoll .bpheader .whenm span, main section.box .tradepoll .bpheader .eventm span, main section.box .matchmain .tradeheader .whenm span, main section.box .matchmain .tradeheader .eventm span, main section.box .matchmain .matchheader .whenm span, main section.box .matchmain .matchheader .eventm span, main section.box .matchmain .bpheader .whenm span, main section.box .matchmain .bpheader .eventm span, main section.box #betreturns .tradeheader .whenm span, main section.box #betreturns .tradeheader .eventm span, main section.box #betreturns .matchheader .whenm span, main section.box #betreturns .matchheader .eventm span, main section.box #betreturns .bpheader .whenm span, main section.box #betreturns .bpheader .eventm span, main section .tradepoll .tradeheader .whenm span, main section .tradepoll .tradeheader .eventm span, main section .tradepoll .matchheader .whenm span, main section .tradepoll .matchheader .eventm span, main section .tradepoll .bpheader .whenm span, main section .tradepoll .bpheader .eventm span, main section .matchmain .tradeheader .whenm span, main section .matchmain .tradeheader .eventm span, main section .matchmain .matchheader .whenm span, main section .matchmain .matchheader .eventm span, main section .matchmain .bpheader .whenm span, main section .matchmain .bpheader .eventm span, main section #betreturns .tradeheader .whenm span, main section #betreturns .tradeheader .eventm span, main section #betreturns .matchheader .whenm span, main section #betreturns .matchheader .eventm span, main section #betreturns .bpheader .whenm span, main section #betreturns .bpheader .eventm span {
+        main section.box .tradepoll .tradeheader .whenm span, main section.box .tradepoll .tradeheader .eventm span, main section.box .tradepoll .matchheader .whenm span, main section.box .tradepoll .matchheader .eventm span, main section.box .matchmain .tradeheader .whenm span, main section.box .matchmain .tradeheader .eventm span, main section.box .matchmain .matchheader .whenm span, main section.box .matchmain .matchheader .eventm span, main section .tradepoll .tradeheader .whenm span, main section .tradepoll .tradeheader .eventm span, main section .tradepoll .matchheader .whenm span, main section .tradepoll .matchheader .eventm span, main section .matchmain .tradeheader .whenm span, main section .matchmain .tradeheader .eventm span, main section .matchmain .matchheader .whenm span, main section .matchmain .matchheader .eventm span {
           font-weight: normal; }
-      main section.box .tradepoll .tradeheader .bettedIndicator, main section.box .tradepoll .matchheader .bettedIndicator, main section.box .tradepoll .bpheader .bettedIndicator, main section.box .matchmain .tradeheader .bettedIndicator, main section.box .matchmain .matchheader .bettedIndicator, main section.box .matchmain .bpheader .bettedIndicator, main section.box #betreturns .tradeheader .bettedIndicator, main section.box #betreturns .matchheader .bettedIndicator, main section.box #betreturns .bpheader .bettedIndicator, main section .tradepoll .tradeheader .bettedIndicator, main section .tradepoll .matchheader .bettedIndicator, main section .tradepoll .bpheader .bettedIndicator, main section .matchmain .tradeheader .bettedIndicator, main section .matchmain .matchheader .bettedIndicator, main section .matchmain .bpheader .bettedIndicator, main section #betreturns .tradeheader .bettedIndicator, main section #betreturns .matchheader .bettedIndicator, main section #betreturns .bpheader .bettedIndicator {
+      main section.box .tradepoll .tradeheader .bettedIndicator, main section.box .tradepoll .matchheader .bettedIndicator, main section.box .matchmain .tradeheader .bettedIndicator, main section.box .matchmain .matchheader .bettedIndicator, main section .tradepoll .tradeheader .bettedIndicator, main section .tradepoll .matchheader .bettedIndicator, main section .matchmain .tradeheader .bettedIndicator, main section .matchmain .matchheader .bettedIndicator {
         vertical-align: middle;
         font-size: 25px;
         color: #6fc34a; }
-    main section.box .tradepoll .tradecnt, main section.box .tradepoll .match, main section.box .matchmain .tradecnt, main section.box .matchmain .match, main section.box #betreturns .tradecnt, main section.box #betreturns .match, main section .tradepoll .tradecnt, main section .tradepoll .match, main section .matchmain .tradecnt, main section .matchmain .match, main section #betreturns .tradecnt, main section #betreturns .match {
+    main section.box .tradepoll .tradecnt, main section.box .tradepoll .match, main section.box .matchmain .tradecnt, main section.box .matchmain .match, main section .tradepoll .tradecnt, main section .tradepoll .match, main section .matchmain .tradecnt, main section .matchmain .match {
       background-color: transparent;
       width: 100%;
       padding: 0.5em 1em;
@@ -693,28 +694,28 @@ main section.box, main section {
       -moz-box-shadow: 0 0 0 transparent;
       -webkit-box-shadow: 0 0 0 transparent;
       box-shadow: 0 0 0 transparent; }
-      main section.box .tradepoll .tradecnt a, main section.box .tradepoll .match a, main section.box .matchmain .tradecnt a, main section.box .matchmain .match a, main section.box #betreturns .tradecnt a, main section.box #betreturns .match a, main section .tradepoll .tradecnt a, main section .tradepoll .match a, main section .matchmain .tradecnt a, main section .matchmain .match a, main section #betreturns .tradecnt a, main section #betreturns .match a {
+      main section.box .tradepoll .tradecnt a, main section.box .tradepoll .match a, main section.box .matchmain .tradecnt a, main section.box .matchmain .match a, main section .tradepoll .tradecnt a, main section .tradepoll .match a, main section .matchmain .tradecnt a, main section .matchmain .match a {
         font-weight: bold; }
-      main section.box .tradepoll .tradecnt .left, main section.box .tradepoll .tradecnt .right, main section.box .tradepoll .match .left, main section.box .tradepoll .match .right, main section.box .matchmain .tradecnt .left, main section.box .matchmain .tradecnt .right, main section.box .matchmain .match .left, main section.box .matchmain .match .right, main section.box #betreturns .tradecnt .left, main section.box #betreturns .tradecnt .right, main section.box #betreturns .match .left, main section.box #betreturns .match .right, main section .tradepoll .tradecnt .left, main section .tradepoll .tradecnt .right, main section .tradepoll .match .left, main section .tradepoll .match .right, main section .matchmain .tradecnt .left, main section .matchmain .tradecnt .right, main section .matchmain .match .left, main section .matchmain .match .right, main section #betreturns .tradecnt .left, main section #betreturns .tradecnt .right, main section #betreturns .match .left, main section #betreturns .match .right {
+      main section.box .tradepoll .tradecnt .left, main section.box .tradepoll .tradecnt .right, main section.box .tradepoll .match .left, main section.box .tradepoll .match .right, main section.box .matchmain .tradecnt .left, main section.box .matchmain .tradecnt .right, main section.box .matchmain .match .left, main section.box .matchmain .match .right, main section .tradepoll .tradecnt .left, main section .tradepoll .tradecnt .right, main section .tradepoll .match .left, main section .tradepoll .match .right, main section .matchmain .tradecnt .left, main section .matchmain .tradecnt .right, main section .matchmain .match .left, main section .matchmain .match .right {
         background: #fff;
         -moz-box-shadow: 0 0 0 transparent;
         -webkit-box-shadow: 0 0 0 transparent;
         box-shadow: 0 0 0 transparent; }
-      main section.box .tradepoll .tradecnt .left .oitm, main section.box .tradepoll .match .left .oitm, main section.box .matchmain .tradecnt .left .oitm, main section.box .matchmain .match .left .oitm, main section.box #betreturns .tradecnt .left .oitm, main section.box #betreturns .match .left .oitm, main section .tradepoll .tradecnt .left .oitm, main section .tradepoll .match .left .oitm, main section .matchmain .tradecnt .left .oitm, main section .matchmain .match .left .oitm, main section #betreturns .tradecnt .left .oitm, main section #betreturns .match .left .oitm {
+      main section.box .tradepoll .tradecnt .left .oitm, main section.box .tradepoll .match .left .oitm, main section.box .matchmain .tradecnt .left .oitm, main section.box .matchmain .match .left .oitm, main section .tradepoll .tradecnt .left .oitm, main section .tradepoll .match .left .oitm, main section .matchmain .tradecnt .left .oitm, main section .matchmain .match .left .oitm {
         float: right; }
-      main section.box .tradepoll .tradecnt hr + div.full span, main section.box .tradepoll .match hr + div.full span, main section.box .matchmain .tradecnt hr + div.full span, main section.box .matchmain .match hr + div.full span, main section.box #betreturns .tradecnt hr + div.full span, main section.box #betreturns .match hr + div.full span, main section .tradepoll .tradecnt hr + div.full span, main section .tradepoll .match hr + div.full span, main section .matchmain .tradecnt hr + div.full span, main section .matchmain .match hr + div.full span, main section #betreturns .tradecnt hr + div.full span, main section #betreturns .match hr + div.full span {
+      main section.box .tradepoll .tradecnt hr + div.full span, main section.box .tradepoll .match hr + div.full span, main section.box .matchmain .tradecnt hr + div.full span, main section.box .matchmain .match hr + div.full span, main section .tradepoll .tradecnt hr + div.full span, main section .tradepoll .match hr + div.full span, main section .matchmain .tradecnt hr + div.full span, main section .matchmain .match hr + div.full span {
         line-height: 25px; }
-      main section.box .tradepoll .tradecnt .winsorloses, main section.box .tradepoll .match .winsorloses, main section.box .matchmain .tradecnt .winsorloses, main section.box .matchmain .match .winsorloses, main section.box #betreturns .tradecnt .winsorloses, main section.box #betreturns .match .winsorloses, main section .tradepoll .tradecnt .winsorloses, main section .tradepoll .match .winsorloses, main section .matchmain .tradecnt .winsorloses, main section .matchmain .match .winsorloses, main section #betreturns .tradecnt .winsorloses, main section #betreturns .match .winsorloses {
+      main section.box .tradepoll .tradecnt .winsorloses, main section.box .tradepoll .match .winsorloses, main section.box .matchmain .tradecnt .winsorloses, main section.box .matchmain .match .winsorloses, main section .tradepoll .tradecnt .winsorloses, main section .tradepoll .match .winsorloses, main section .matchmain .tradecnt .winsorloses, main section .matchmain .match .winsorloses {
         background: transparent;
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border-radius: 0; }
-        main section.box .tradepoll .tradecnt .winsorloses a, main section.box .tradepoll .match .winsorloses a, main section.box .matchmain .tradecnt .winsorloses a, main section.box .matchmain .match .winsorloses a, main section.box #betreturns .tradecnt .winsorloses a, main section.box #betreturns .match .winsorloses a, main section .tradepoll .tradecnt .winsorloses a, main section .tradepoll .match .winsorloses a, main section .matchmain .tradecnt .winsorloses a, main section .matchmain .match .winsorloses a, main section #betreturns .tradecnt .winsorloses a, main section #betreturns .match .winsorloses a {
+        main section.box .tradepoll .tradecnt .winsorloses a, main section.box .tradepoll .match .winsorloses a, main section.box .matchmain .tradecnt .winsorloses a, main section.box .matchmain .match .winsorloses a, main section .tradepoll .tradecnt .winsorloses a, main section .tradepoll .match .winsorloses a, main section .matchmain .tradecnt .winsorloses a, main section .matchmain .match .winsorloses a {
           color: #000; }
-      main section.box .tradepoll .tradecnt hr, main section.box .tradepoll .match hr, main section.box .matchmain .tradecnt hr, main section.box .matchmain .match hr, main section.box #betreturns .tradecnt hr, main section.box #betreturns .match hr, main section .tradepoll .tradecnt hr, main section .tradepoll .match hr, main section .matchmain .tradecnt hr, main section .matchmain .match hr, main section #betreturns .tradecnt hr, main section #betreturns .match hr {
+      main section.box .tradepoll .tradecnt hr, main section.box .tradepoll .match hr, main section.box .matchmain .tradecnt hr, main section.box .matchmain .match hr, main section .tradepoll .tradecnt hr, main section .tradepoll .match hr, main section .matchmain .tradecnt hr, main section .matchmain .match hr {
         width: 100%;
         border-bottom: 1px solid #e8e8e8; }
-      main section.box .tradepoll .tradecnt .potwin, main section.box .tradepoll .match .potwin, main section.box .matchmain .tradecnt .potwin, main section.box .matchmain .match .potwin, main section.box #betreturns .tradecnt .potwin, main section.box #betreturns .match .potwin, main section .tradepoll .tradecnt .potwin, main section .tradepoll .match .potwin, main section .matchmain .tradecnt .potwin, main section .matchmain .match .potwin, main section #betreturns .tradecnt .potwin, main section #betreturns .match .potwin {
+      main section.box .tradepoll .tradecnt .potwin, main section.box .tradepoll .match .potwin, main section.box .matchmain .tradecnt .potwin, main section.box .matchmain .match .potwin, main section .tradepoll .tradecnt .potwin, main section .tradepoll .match .potwin, main section .matchmain .tradecnt .potwin, main section .matchmain .match .potwin {
         color: #6fc34a;
         font-size: 20px;
         line-height: 10px;
@@ -723,24 +724,24 @@ main section.box, main section {
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border-radius: 0; }
-      main section.box .tradepoll .tradecnt .matchleft a > div:first-child, main section.box .tradepoll .tradecnt .matchleft a > div:last-child, main section.box .tradepoll .match .matchleft a > div:first-child, main section.box .tradepoll .match .matchleft a > div:last-child, main section.box .matchmain .tradecnt .matchleft a > div:first-child, main section.box .matchmain .tradecnt .matchleft a > div:last-child, main section.box .matchmain .match .matchleft a > div:first-child, main section.box .matchmain .match .matchleft a > div:last-child, main section.box #betreturns .tradecnt .matchleft a > div:first-child, main section.box #betreturns .tradecnt .matchleft a > div:last-child, main section.box #betreturns .match .matchleft a > div:first-child, main section.box #betreturns .match .matchleft a > div:last-child, main section .tradepoll .tradecnt .matchleft a > div:first-child, main section .tradepoll .tradecnt .matchleft a > div:last-child, main section .tradepoll .match .matchleft a > div:first-child, main section .tradepoll .match .matchleft a > div:last-child, main section .matchmain .tradecnt .matchleft a > div:first-child, main section .matchmain .tradecnt .matchleft a > div:last-child, main section .matchmain .match .matchleft a > div:first-child, main section .matchmain .match .matchleft a > div:last-child, main section #betreturns .tradecnt .matchleft a > div:first-child, main section #betreturns .tradecnt .matchleft a > div:last-child, main section #betreturns .match .matchleft a > div:first-child, main section #betreturns .match .matchleft a > div:last-child {
+      main section.box .tradepoll .tradecnt .matchleft a > div:first-child, main section.box .tradepoll .tradecnt .matchleft a > div:last-child, main section.box .tradepoll .match .matchleft a > div:first-child, main section.box .tradepoll .match .matchleft a > div:last-child, main section.box .matchmain .tradecnt .matchleft a > div:first-child, main section.box .matchmain .tradecnt .matchleft a > div:last-child, main section.box .matchmain .match .matchleft a > div:first-child, main section.box .matchmain .match .matchleft a > div:last-child, main section .tradepoll .tradecnt .matchleft a > div:first-child, main section .tradepoll .tradecnt .matchleft a > div:last-child, main section .tradepoll .match .matchleft a > div:first-child, main section .tradepoll .match .matchleft a > div:last-child, main section .matchmain .tradecnt .matchleft a > div:first-child, main section .matchmain .tradecnt .matchleft a > div:last-child, main section .matchmain .match .matchleft a > div:first-child, main section .matchmain .match .matchleft a > div:last-child {
         position: relative;
         width: 40% !important;
         background: #e8e8e8;
         border: 1px solid #dbdbdb; }
-        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section.box .tradepoll .match .matchleft a > div:first-child .teamtext, main section.box .tradepoll .match .matchleft a > div:last-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section.box .matchmain .match .matchleft a > div:first-child .teamtext, main section.box .matchmain .match .matchleft a > div:last-child .teamtext, main section.box #betreturns .tradecnt .matchleft a > div:first-child .teamtext, main section.box #betreturns .tradecnt .matchleft a > div:last-child .teamtext, main section.box #betreturns .match .matchleft a > div:first-child .teamtext, main section.box #betreturns .match .matchleft a > div:last-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section .tradepoll .match .matchleft a > div:first-child .teamtext, main section .tradepoll .match .matchleft a > div:last-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section .matchmain .match .matchleft a > div:first-child .teamtext, main section .matchmain .match .matchleft a > div:last-child .teamtext, main section #betreturns .tradecnt .matchleft a > div:first-child .teamtext, main section #betreturns .tradecnt .matchleft a > div:last-child .teamtext, main section #betreturns .match .matchleft a > div:first-child .teamtext, main section #betreturns .match .matchleft a > div:last-child .teamtext {
+        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section.box .tradepoll .match .matchleft a > div:first-child .teamtext, main section.box .tradepoll .match .matchleft a > div:last-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section.box .matchmain .match .matchleft a > div:first-child .teamtext, main section.box .matchmain .match .matchleft a > div:last-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section .tradepoll .match .matchleft a > div:first-child .teamtext, main section .tradepoll .match .matchleft a > div:last-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section .matchmain .match .matchleft a > div:first-child .teamtext, main section .matchmain .match .matchleft a > div:last-child .teamtext {
           background: transparent; }
-        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section.box #betreturns .tradecnt .matchleft a > div:first-child .team, main section.box #betreturns .tradecnt .matchleft a > div:last-child .team, main section.box #betreturns .match .matchleft a > div:first-child .team, main section.box #betreturns .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team, main section #betreturns .tradecnt .matchleft a > div:first-child .team, main section #betreturns .tradecnt .matchleft a > div:last-child .team, main section #betreturns .match .matchleft a > div:first-child .team, main section #betreturns .match .matchleft a > div:last-child .team {
+        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team {
           height: 55px;
           border: 2px solid #b8b8b8;
           -moz-border-radius: 0;
           -webkit-border-radius: 0;
           border-radius: 0; }
-      main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box #betreturns .tradecnt .matchleft a > div:first-child .team, main section.box #betreturns .match .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section #betreturns .tradecnt .matchleft a > div:first-child .team, main section #betreturns .match .matchleft a > div:first-child .team {
+      main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:first-child .team {
         right: 0; }
-    main section.box .tradepoll .ld-slidedown, main section.box .matchmain .ld-slidedown, main section.box #betreturns .ld-slidedown, main section .tradepoll .ld-slidedown, main section .matchmain .ld-slidedown, main section #betreturns .ld-slidedown {
+    main section.box .tradepoll .ld-slidedown, main section.box .matchmain .ld-slidedown, main section .tradepoll .ld-slidedown, main section .matchmain .ld-slidedown {
       margin: 0 0 0.5em 0 !important; }
-    main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra, main section.box #betreturns .ld-steam-extra-wrapper .ld-steam-extra, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra, main section #betreturns .ld-steam-extra-wrapper .ld-steam-extra {
+    main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra {
       background: #fff;
       border-bottom: 1px solid #e8e8e8;
       border-left: 0;
@@ -748,17 +749,17 @@ main section.box, main section {
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
       border-radius: 0; }
-      main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra::after, main section.box #betreturns .ld-steam-extra-wrapper .ld-steam-extra::after, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra::after, main section #betreturns .ld-steam-extra-wrapper .ld-steam-extra::after {
+      main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra::after, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra::after, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra::after {
         background-image: none; }
-      main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section.box #betreturns .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section #betreturns .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info {
+      main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info {
         border: none; }
-        main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section.box #betreturns .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section #betreturns .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img {
+        main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img {
           padding-top: 3px;
           margin-top: 0.4em;
           margin-left: 0.2em; }
-          main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section.box #betreturns .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section #betreturns .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
+          main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra .ld-steam-info .ld-steam-img img {
             border: 2px solid #ff8a00; }
-    main section.box .tradepoll .trade-description, main section.box .matchmain .trade-description, main section.box #betreturns .trade-description, main section .tradepoll .trade-description, main section .matchmain .trade-description, main section #betreturns .trade-description {
+    main section.box .tradepoll .trade-description, main section.box .matchmain .trade-description, main section .tradepoll .trade-description, main section .matchmain .trade-description {
       width: 100%;
       padding: 1em;
       background: transparent;
@@ -766,15 +767,15 @@ main section.box, main section {
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
       border-radius: 0; }
-      main section.box .tradepoll .trade-description a:hover, main section.box .tradepoll .trade-description a:active, main section.box .tradepoll .trade-description a:focus, main section.box .matchmain .trade-description a:hover, main section.box .matchmain .trade-description a:active, main section.box .matchmain .trade-description a:focus, main section.box #betreturns .trade-description a:hover, main section.box #betreturns .trade-description a:active, main section.box #betreturns .trade-description a:focus, main section .tradepoll .trade-description a:hover, main section .tradepoll .trade-description a:active, main section .tradepoll .trade-description a:focus, main section .matchmain .trade-description a:hover, main section .matchmain .trade-description a:active, main section .matchmain .trade-description a:focus, main section #betreturns .trade-description a:hover, main section #betreturns .trade-description a:active, main section #betreturns .trade-description a:focus {
+      main section.box .tradepoll .trade-description a:hover, main section.box .tradepoll .trade-description a:active, main section.box .tradepoll .trade-description a:focus, main section.box .matchmain .trade-description a:hover, main section.box .matchmain .trade-description a:active, main section.box .matchmain .trade-description a:focus, main section .tradepoll .trade-description a:hover, main section .tradepoll .trade-description a:active, main section .tradepoll .trade-description a:focus, main section .matchmain .trade-description a:hover, main section .matchmain .trade-description a:active, main section .matchmain .trade-description a:focus {
         -moz-transition: ease 0s none;
         -o-transition: ease 0s none;
         -webkit-transition: ease 0s none;
         transition: ease 0s none;
         text-decoration: underline; }
-      main section.box .tradepoll .trade-descriptiondiv, main section.box .matchmain .trade-descriptiondiv, main section.box #betreturns .trade-descriptiondiv, main section .tradepoll .trade-descriptiondiv, main section .matchmain .trade-descriptiondiv, main section #betreturns .trade-descriptiondiv {
+      main section.box .tradepoll .trade-descriptiondiv, main section.box .matchmain .trade-descriptiondiv, main section .tradepoll .trade-descriptiondiv, main section .matchmain .trade-descriptiondiv {
         color: #000; }
-      main section.box .tradepoll .trade-description p, main section.box .matchmain .trade-description p, main section.box #betreturns .trade-description p, main section .tradepoll .trade-description p, main section .matchmain .trade-description p, main section #betreturns .trade-description p {
+      main section.box .tradepoll .trade-description p, main section.box .matchmain .trade-description p, main section .tradepoll .trade-description p, main section .matchmain .trade-description p {
         opacity: 1;
         border-left: 0;
         -moz-border-radius: 0;
@@ -787,43 +788,56 @@ main section.box, main section {
     main section.box article.standard#bets a:hover, main section.box article.standard#bets a:active, main section.box article.standard#bets a:focus, main section article.standard#bets a:hover, main section article.standard#bets a:active, main section article.standard#bets a:focus {
       color: #424242; }
   main section.box article.standard #betreturns, main section article.standard #betreturns {
-    background: #fff;
     float: left;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
-    main section.box article.standard #betreturns .bpheader, main section article.standard #betreturns .bpheader {
-      border-bottom: 2px solid #6fc34a;
-      padding: 1em 0.5em;
+    main section.box article.standard #betreturns + .bpheader, main section article.standard #betreturns + .bpheader {
+      margin-top: 1em; }
+  main section.box article.standard .bpheader, main section.box article.standard #betreturns .bpheader, main section article.standard .bpheader, main section article.standard #betreturns .bpheader {
+    width: 100%;
+    padding: 1em;
+    line-height: 1.5em;
+    font-weight: bold;
+    background: #fff;
+    color: #424242;
+    border-bottom: 2px solid #6fc34a;
+    border-top: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    main section.box article.standard .bpheader .button, main section.box article.standard #betreturns .bpheader .button, main section article.standard .bpheader .button, main section article.standard #betreturns .bpheader .button {
+      margin-left: 0; }
+      main section.box article.standard .bpheader .button#freezebutton, main section.box article.standard #betreturns .bpheader .button#freezebutton, main section article.standard .bpheader .button#freezebutton, main section article.standard #betreturns .bpheader .button#freezebutton {
+        width: 100%;
+        text-align: center; }
+        main section.box article.standard .bpheader .button#freezebutton + div, main section.box article.standard #betreturns .bpheader .button#freezebutton + div, main section article.standard .bpheader .button#freezebutton + div, main section article.standard #betreturns .bpheader .button#freezebutton + div {
+          margin-top: 1em !important; }
+    main section.box article.standard .bpheader + .full, main section.box article.standard .bpheader + .full + .full, main section.box article.standard #betreturns .bpheader + .full, main section.box article.standard #betreturns .bpheader + .full + .full, main section article.standard .bpheader + .full, main section article.standard .bpheader + .full + .full, main section article.standard #betreturns .bpheader + .full, main section article.standard #betreturns .bpheader + .full + .full {
+      width: 100%;
+      padding: 1em;
+      background: #fff;
+      -moz-border-radius: 0 0 3px 3px;
+      -webkit-border-radius: 0;
+      border-radius: 0 0 3px 3px;
+      -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+      box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+    main section.box article.standard .bpheader + .full + .bpheader, main section.box article.standard #betreturns .bpheader + .full + .bpheader, main section article.standard .bpheader + .full + .bpheader, main section article.standard #betreturns .bpheader + .full + .bpheader {
+      margin-top: 1em; }
+    main section.box article.standard .bpheader + form.full + .bpheader, main section.box article.standard #betreturns .bpheader + form.full + .bpheader, main section article.standard .bpheader + form.full + .bpheader, main section article.standard #betreturns .bpheader + form.full + .bpheader {
+      background: transparent;
+      padding: 0;
+      border-bottom: 0;
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
       border-radius: 0;
       -moz-box-shadow: 0 0 0 transparent;
       -webkit-box-shadow: 0 0 0 transparent;
       box-shadow: 0 0 0 transparent; }
-  main section.box article.standard .bpheader, main section article.standard .bpheader {
-    width: 100%;
-    padding: 1em;
-    background: #fff;
-    color: #424242;
-    -moz-border-radius: 0 3px;
-    -webkit-border-radius: 0;
-    border-radius: 0 3px;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
-    main section.box article.standard .bpheader .button, main section article.standard .bpheader .button {
-      margin-left: 0; }
-    main section.box article.standard .bpheader + form.full, main section article.standard .bpheader + form.full {
-      width: 100%;
-      padding: 1em;
-      background: #fff;
-      -moz-border-radius: 3px;
-      -webkit-border-radius: 3px;
-      border-radius: 3px;
-      -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-      box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
 
 /* Items */
 .tradepoll .left, .tradepoll .right {
@@ -834,87 +848,92 @@ main section.box, main section {
 .tradepoll .left .oitm {
   float: right; }
 
-.oitm .name {
-  margin-top: 10px !important;
-  border-top: 2px solid #ff8a00;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  min-width: 0 !important;
-  background: #fff;
-  color: #000;
-  overflow: visible; }
-  .oitm .name span, .oitm .name i, .oitm .name br, .oitm .name b {
-    float: left;
-    clear: both; }
-  .oitm .name:after {
-    content: "";
-    float: left;
-    position: absolute;
-    background: transparent;
-    width: 100%;
-    height: 10px;
-    top: -10px;
-    left: 0; }
-  .oitm .name:before {
-    float: left;
-    position: relative;
-    top: -16px;
-    left: 15%;
-    height: 0;
-    width: 0;
-    content: "";
-    border-left: 10px transparent solid;
-    border-right: 10px transparent solid;
-    border-bottom: 10px #ff8a00 solid; }
-  .oitm .name a {
-    color: #ff8a00 !important;
-    text-shadow: none !important; }
-    .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
-      color: #cc6e00 !important; }
-.oitm .item {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background: rgba(168, 168, 168, 0.3); }
-  .oitm .item .value, .oitm .item .rarity {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+.oitm {
+  -moz-transition: ease 0.1s all;
+  -o-transition: ease 0.1s all;
+  -webkit-transition: ease 0.1s all;
+  transition: ease 0.1s all; }
+  .oitm .name {
+    margin-top: 10px !important;
+    border-top: 2px solid #ff8a00;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    min-width: 0 !important;
+    background: #fff;
     color: #000;
-    text-shadow: none;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-weight: 500;
-    padding: 1px 0; }
-  .oitm .item .value {
-    padding: 1px 4px; }
-.oitm .item.Souvenir {
-  -moz-box-shadow: 0 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
-  background: rgba(255, 206, 0, 0.4); }
-.oitm .item.Star {
-  -moz-box-shadow: 0 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent;
-  background: rgba(134, 80, 172, 0.3); }
-.oitm .item.StatTrak {
-  background: rgba(207, 106, 50, 0.3);
-  -moz-box-shadow: 0 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
-  .oitm .item.StatTrak .clreff {
+    overflow: visible; }
+    .oitm .name span, .oitm .name i, .oitm .name br, .oitm .name b {
+      float: left;
+      clear: both; }
+    .oitm .name:after {
+      content: "";
+      float: left;
+      position: absolute;
+      background: transparent;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0; }
+    .oitm .name:before {
+      float: left;
+      position: relative;
+      top: -16px;
+      left: 15%;
+      height: 0;
+      width: 0;
+      content: "";
+      border-left: 10px transparent solid;
+      border-right: 10px transparent solid;
+      border-bottom: 10px #ff8a00 solid; }
+    .oitm .name a {
+      color: #ff8a00 !important;
+      text-shadow: none !important; }
+      .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
+        color: #cc6e00 !important; }
+  .oitm .item {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
-    background-color: rgba(235, 119, 55, 0.8) !important;
-    text-shadow: none; }
+    background: rgba(168, 168, 168, 0.3); }
+    .oitm .item .value, .oitm .item .rarity {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      color: #000;
+      text-shadow: none;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-weight: 500;
+      padding: 1px 0; }
+    .oitm .item .value {
+      padding: 1px 4px; }
+  .oitm .item.Souvenir {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    background: rgba(255, 206, 0, 0.4); }
+  .oitm .item.Star {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    background: rgba(134, 80, 172, 0.3); }
+  .oitm .item.StatTrak {
+    background: rgba(207, 106, 50, 0.3);
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+    .oitm .item.StatTrak .clreff {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background-color: rgba(235, 119, 55, 0.8) !important;
+      text-shadow: none; }
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade {
@@ -1117,7 +1136,7 @@ main section.box, main section {
   background: #fff;
   color: #000;
   margin-top: 0;
-  padding: 0.5em 1em;
+  padding: 1em;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -1286,6 +1305,7 @@ a.button.destroyer, .button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px !important;
+  line-height: 1.5em;
   border: none;
   text-shadow: none !important;
   -moz-box-shadow: 0 0 0 transparent;
@@ -1319,7 +1339,8 @@ a.button.destroyer, .button {
   text-shadow: none !important;
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  box-shadow: 0 0 0 transparent;
+  line-height: 1.5em; }
   .buttonright:hover {
     background: #ffa133;
     color: #fff !important;
@@ -1345,14 +1366,15 @@ a.button.destroyer, .button {
   border-radius: 0;
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  box-shadow: 0 0 0 transparent;
+  line-height: 1.5em; }
   .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover {
-    color: #6fc34a;
+    background: #8dd070;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
   .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain .buttonright:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader .buttonright:focus {
-    background: #58a436;
+    background: #8dd070;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }

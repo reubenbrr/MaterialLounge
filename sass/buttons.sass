@@ -7,6 +7,7 @@ a.button.destroyer, .button
 	text-transform: uppercase
 	font-weight: 700
 	font-size: 12px !important
+	line-height: 1.5em
 	border: none
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
@@ -31,6 +32,7 @@ a.button.destroyer, .button
 	border: none
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
+	line-height: 1.5em
 	&:hover
 		background: $primary-light
 		color: $white !important
@@ -48,11 +50,12 @@ a.button.destroyer, .button
 		color: $white !important
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
+		line-height: 1.5em
 		&:hover
-			color: $secondary
+			background: $secondary-light
 			+box-shadow(0 0 0 transparent)
 		&:active, &:focus
-			background: $secondary-dark
+			background: $secondary-light
 			+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
 .matchheader

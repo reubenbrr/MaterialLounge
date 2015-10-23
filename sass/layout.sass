@@ -28,6 +28,7 @@ main
 			&:hover, &:active, &:focus
 				color: $secondary-darker
 		.title
+			margin-left: 0
 			+transition(0.5s ease all)
 			+filter(brightness(0))
 			&:hover, &:active, &:focus
@@ -70,7 +71,7 @@ main
 			.matchmain
 				.matchheader
 					border-bottom: 2px solid $secondary
-		.tradepoll, .matchmain, #betreturns
+		.tradepoll, .matchmain
 			margin: 0 0 1em 0
 			background: $white
 			float: left
@@ -78,7 +79,7 @@ main
 			padding: 0
 			+box-shadow(0 1px 2px rgba($grey, 0.5))
 			+border-radius(3px)
-			.tradeheader, .matchheader, .bpheader
+			.tradeheader, .matchheader
 				width: 100%
 				margin: 0
 				background: $white
@@ -267,29 +268,42 @@ main
 					color: $grey-b-darkest
 		article.standard
 			#betreturns
-				background: $white
 				float: left
 				+border-radius(3px)
-				.bpheader
-					border-bottom: 2px solid $secondary
-					padding: 1em 0.5em
-					+border-radius(0)
-					+box-shadow(0 0 0 transparent)
-			.bpheader
+				+ .bpheader
+					margin-top: 1em
+			.bpheader, #betreturns .bpheader
 				width: 100%
 				padding: 1em
+				line-height: 1.5em
+				font-weight: bold
 				background: $white
 				color: $grey-b-darkest
-				+border-radius(0 3px)
+				border-bottom: 2px solid $secondary
+				border-top: 0
+				+border-radius(0)
 				+box-shadow(0 1px 2px rgba($grey, 0.5))
 				.button
 					margin-left: 0
-				+ form.full
+					&#freezebutton
+						width: 100%
+						text-align: center
+						+ div
+							margin-top: 1em !important
+				+ .full, + .full + .full
 					width: 100%
 					padding: 1em
 					background: $white
-					+border-radius(3px)
+					+border-radius(0 0 3px 3px)
 					+box-shadow(0 1px 2px rgba($grey, 0.5))
+				+ .full + .bpheader
+					margin-top: 1em
+				+ form.full + .bpheader
+					background: transparent
+					padding: 0
+					border-bottom: 0
+					+border-radius(0)
+					+box-shadow(0 0 0 transparent)
 
 
 /* Items */
@@ -302,6 +316,7 @@ main
 			float: right
 
 .oitm
+	+transition(0.1s ease all)
 	.name
 		margin-top: 10px !important
 		border-top: 2px solid $primary
@@ -544,7 +559,7 @@ main
 	background: $white
 	color: $black
 	margin-top: 0
-	padding: 0.5em 1em
+	padding: 1em
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
 	+border-radius(3px)
 	.bpheader
