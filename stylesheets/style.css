@@ -3261,7 +3261,10 @@ main section.box, main section {
     margin-top: 0.5em;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
+    box-shadow: 0 0 0 transparent;
+    background: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/av/2x_web/ic_play_arrow_black_24dp.png");
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%; }
   .box-shiny-alt a.tab, .box-shiny a.tab, #last30bets a.tab, #disqus_thread a.tab, #satrade a.tab {
     color: #fff !important;
     background: #ff8a00;
@@ -3575,6 +3578,8 @@ main section.box, main section {
 .srch {
   width: 100%;
   margin: 0.5em 0; }
+  .srch .selectbox {
+    height: auto !important; }
   .srch input {
     text-transform: capitalize;
     width: 50%;
@@ -3820,7 +3825,7 @@ header {
 aside#submenu {
   background: transparent; }
   aside#submenu nav {
-    margin-top: 0.5em; }
+    margin-top: 1.25em; }
     aside#submenu nav a {
       background: #fff;
       color: #5b5b5b;
