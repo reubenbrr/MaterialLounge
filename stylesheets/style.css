@@ -3645,7 +3645,10 @@ main section.box, main section {
     overflow: visible; }
     .oitm .name span, .oitm .name i, .oitm .name br, .oitm .name b {
       float: left;
-      clear: both; }
+      clear: both;
+      white-space: normal; }
+    .oitm .name b {
+      margin-bottom: 0.25em; }
     .oitm .name:after {
       content: "";
       float: left;
@@ -3658,7 +3661,7 @@ main section.box, main section {
     .oitm .name:before {
       float: left;
       position: relative;
-      top: -16px;
+      top: -17px;
       left: 15%;
       height: 0;
       width: 0;
