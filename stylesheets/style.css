@@ -3057,6 +3057,10 @@ main section.box, main section {
         vertical-align: middle;
         font-size: 25px;
         color: #6fc34a; }
+    main section.box .tradepoll .tradecnt, main section.box .matchmain .tradecnt, main section .tradepoll .tradecnt, main section .matchmain .tradecnt {
+      background: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/av/2x_web/ic_play_arrow_black_24dp.png");
+      background-repeat: no-repeat !important;
+      background-position: 50% 50%; }
     main section.box .tradepoll .tradecnt, main section.box .tradepoll .match, main section.box .matchmain .tradecnt, main section.box .matchmain .match, main section .tradepoll .tradecnt, main section .tradepoll .match, main section .matchmain .tradecnt, main section .matchmain .match {
       background-color: transparent;
       width: 100%;
