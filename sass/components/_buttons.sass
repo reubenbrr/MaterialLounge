@@ -43,9 +43,13 @@ a.button.destroyer, .button
 		+transition(0.3s ease all)
 		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
-#profile .srch .button
+#profile .srch .button,
+#queue .button
 	@extend .buttonright
 
+#queue .button
+	width: 100% !important
+	margin: 0.5em 0
 
 .matchmain, .bpheader
 	a.button.destroyer, .button, .buttonright

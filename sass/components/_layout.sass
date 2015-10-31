@@ -304,7 +304,6 @@ main
 				font-weight: bold
 				background: $white
 				color: $grey-b-darkest
-				border-bottom: 2px solid $secondary
 				border-top: 0
 				+border-radius(0)
 				+box-shadow(0 1px 2px rgba($grey, 0.5))
@@ -457,6 +456,11 @@ main
 			&:nth-child(7),
 			&:nth-child(8)
 
+#queue
+	+border-radius(3px)
+	padding: 1em !important
+	background-color: $white !important
+	+box-shadow(0 1px 2px rgba($grey, 0.5) !important)
 
 .winsorloses
 	background: transparent
@@ -464,29 +468,13 @@ main
 	a
 		color: $black
 
-#stream
-	.tabselect
-		width: 100%
-		margin: 0 0 1em 0
-		+border-radius(3px)
-		.tab
-			+border-radius(0)
-			background-color: $white
-			color: $primary
-			.subtabs
-				margin-top: -1px
-				.tab:last-child
-					+border-radius(0 2px 0 2px)
-			&:hover, &:active, &:focus
-				background: lighten($grey-lightest, 5)
-				color: $primary !important
-
 #last30bets, #disqus_thread
 	@extend .box-shiny
 
 .box-shiny-alt, .box-shiny
 	margin: 0 0 1em 0
 
+/* Tabs */
 .tabholder
 	width: 100%
 	margin: 0
@@ -510,6 +498,25 @@ main
 .box-shiny-alt+.tabholder
 	margin-top: 0 !important
 
+#stream
+	.tabselect
+		width: 100%
+		margin: 0 0 1em 0
+		+border-radius(3px)
+		.tab
+			+border-radius(0)
+			background-color: $white
+			color: $primary
+			.subtabs
+				margin-top: -1px
+				.tab:last-child
+					+border-radius(0 2px 0 2px)
+			&:hover, &:active, &:focus
+				background: lighten($grey-lightest, 5)
+				color: $primary !important
+
+
+/* Used as fullwidth container in boxes */
 .full
 	width: 100%
 	margin: 0.5em 0
@@ -575,7 +582,7 @@ main
 							&[colspan="2"], &[colspan="6"]
 								background: darken($white, 5)
 
-
+/* Backpack styling */
 #backpack, #itemlist
 	background: $white
 	color: $black
@@ -594,7 +601,6 @@ main
 		font-weight: bold
 		text-transform: capitalize
 		border-top: 0
-		border-bottom: 2px solid $primary
 		margin-bottom: 1em
 		div
 			color: $black !important
@@ -615,6 +621,7 @@ main
 		a
 			text-shadow: none !important
 
+/* Search form */
 .srch
 	width: 100%
 	margin: 0.5em 0
