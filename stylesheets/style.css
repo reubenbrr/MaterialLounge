@@ -3354,6 +3354,30 @@ main section.box, main section {
     border-radius: 0; }
     .box-shiny-alt textarea:focus, .box-shiny textarea:focus, #satrade textarea:focus {
       outline: 0; }
+  .box-shiny-alt a .team + b,
+  .box-shiny-alt a .team + b + br + i, .box-shiny a .team + b,
+  .box-shiny a .team + b + br + i, #satrade a .team + b,
+  #satrade a .team + b + br + i {
+    color: #000 !important; }
+  .box-shiny-alt a.active .team, .box-shiny a.active .team, #satrade a.active .team {
+    box-sizing: content-box;
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 2px solid #6fc34a; }
+    .box-shiny-alt a.active .team + b,
+    .box-shiny-alt a.active .team + b + br + i, .box-shiny a.active .team + b,
+    .box-shiny a.active .team + b + br + i, #satrade a.active .team + b,
+    #satrade a.active .team + b + br + i {
+      color: #6fc34a !important; }
+  .box-shiny-alt div:first-child[style="display: flex"], .box-shiny div:first-child[style="display: flex"], #satrade div:first-child[style="display: flex"] {
+    font-weight: bold;
+    margin-bottom: 1em; }
+  .box-shiny-alt .standard:last-child, .box-shiny .standard:last-child, #satrade .standard:last-child {
+    margin: 0;
+    padding: 0; }
+    .box-shiny-alt .standard:last-child .share-buttons, .box-shiny .standard:last-child .share-buttons, #satrade .standard:last-child .share-buttons {
+      display: none; }
 
 .box-shiny-alt, .box-shiny {
   margin: 0 0 1em 0; }
@@ -3694,9 +3718,11 @@ header {
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
-  header a img#logo {
-    -webkit-filter: brightness(1000);
-    filter: brightness(1000); }
+  header a[href="/"] {
+    float: left; }
+    header a[href="/"] img#logo {
+      -webkit-filter: brightness(1000);
+      filter: brightness(1000); }
   header nav#menu a {
     min-height: 53px;
     color: #fff;

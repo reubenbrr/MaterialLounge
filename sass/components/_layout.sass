@@ -422,6 +422,28 @@ main
 		+border-radius(0)
 		&:focus
 			outline: 0
+	// Bet overview page
+	a .team + b,
+	a .team + b + br + i
+		color: $black !important
+	a.active
+		.team
+			box-sizing: content-box
+			+box-shadow(0 0 0 transparent)
+			border: 2px solid $secondary
+			+ b,
+			+ b + br + i
+				color: $secondary !important
+	div:first-child
+		&[style="display: flex"]
+			font-weight: bold
+			margin-bottom: 1em
+	.standard:last-child
+		margin: 0
+		padding: 0
+		.share-buttons
+			display: none
+
 .box-shiny-alt, .box-shiny
 	margin: 0 0 1em 0
 
