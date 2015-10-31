@@ -3242,6 +3242,14 @@ main section.box, main section {
       -moz-box-shadow: 0 0 0 transparent;
       -webkit-box-shadow: 0 0 0 transparent;
       box-shadow: 0 0 0 transparent; }
+  main section.box .betpoll, main section .betpoll {
+    width: 100%;
+    margin: 0; }
+    main section.box .betpoll .left, main section.box .betpoll .right, main section .betpoll .left, main section .betpoll .right {
+      -moz-box-shadow: 0 0 0 transparent;
+      -webkit-box-shadow: 0 0 0 transparent;
+      box-shadow: 0 0 0 transparent;
+      background: transparent; }
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #last30bets, #disqus_thread, #satrade {
