@@ -3291,7 +3291,7 @@ main section.box, main section {
     text-transform: capitalize;
     width: 100% !important; }
   .box-shiny-alt input, .box-shiny input, #last30bets input, #disqus_thread input, #satrade input {
-    width: 78% !important;
+    width: 70% !important;
     float: left !important; }
   .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, #last30bets input, #disqus_thread input, .box-shiny .srch input, #last30bets .srch input, #disqus_thread .srch input, #satrade input, #satrade .srch input {
     margin: 0.5em 0;
@@ -3314,6 +3314,7 @@ main section.box, main section {
       border-top: 0;
       border-left: 0;
       border-right: 0;
+      border-bottom-width: 2px;
       border-color: #ff8a00;
       outline: 0; }
   .box-shiny-alt select, .box-shiny select, #last30bets select, #disqus_thread select, #satrade select {
@@ -3377,6 +3378,18 @@ main section.box, main section {
     .box-shiny-alt .standard:last-child .share-buttons, .box-shiny .standard:last-child .share-buttons, #last30bets .standard:last-child .share-buttons, #disqus_thread .standard:last-child .share-buttons, #satrade .standard:last-child .share-buttons {
       display: none; }
 
+#profile .full input {
+  margin: 1em 0;
+  height: 2em; }
+#profile .full br {
+  width: 100%;
+  float: left;
+  content: "";
+  clear: both; }
+#profile .full .button {
+  text-align: center;
+  width: 13%; }
+
 .winsorloses {
   background: transparent;
   -moz-border-radius: 0;
@@ -3414,6 +3427,7 @@ main section.box, main section {
   width: 100%;
   margin: 0;
   margin: 1em 0;
+  float: left;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
@@ -3514,6 +3528,9 @@ main section.box, main section {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
+  #backpack .srch input, #itemlist .srch input {
+    width: 100%;
+    font-size: 20px; }
   #backpack .bpheader, #itemlist .bpheader {
     width: 100%;
     padding: 0.5 1em;
@@ -3535,9 +3552,6 @@ main section.box, main section {
     width: 100%;
     color: #000;
     text-shadow: none;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -3555,6 +3569,7 @@ main section.box, main section {
     float: right;
     margin: 0;
     padding: 0.25em 0.5em;
+    font-size: 20px;
     background: #fff;
     color: #000;
     border-top: 0;
@@ -3854,7 +3869,7 @@ a.button.destroyer, .button {
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
-.buttonright {
+.buttonright, #profile .srch .button {
   padding: 8px 10px;
   margin: 0 0 0 0.5em;
   background: #ff8a00;
@@ -3871,13 +3886,13 @@ a.button.destroyer, .button {
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   line-height: 1.5em; }
-  .buttonright:hover {
+  .buttonright:hover, #profile .srch .button:hover {
     background: #ffa133;
     color: #fff !important;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-  .buttonright:active, .buttonright:focus {
+  .buttonright:active, #profile .srch .button:active, .buttonright:focus, #profile .srch .button:focus {
     background: #ffa133;
     color: #fff !important;
     -moz-transition: ease 0.3s all;
@@ -3888,7 +3903,7 @@ a.button.destroyer, .button {
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
-.matchmain a.button.destroyer, .matchmain .button, .matchmain .buttonright, .bpheader a.button.destroyer, .bpheader .button, .bpheader .buttonright {
+.matchmain a.button.destroyer, .matchmain .button, .matchmain .buttonright, .matchmain #profile .srch .button, #profile .srch .matchmain .button, .bpheader a.button.destroyer, .bpheader .button, .bpheader .buttonright, .bpheader #profile .srch .button, #profile .srch .bpheader .button {
   background: #6fc34a;
   color: #fff !important;
   -moz-border-radius: 0;
@@ -3898,18 +3913,18 @@ a.button.destroyer, .button {
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   line-height: 1.5em; }
-  .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover {
+  .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .matchmain #profile .srch .button:hover, #profile .srch .matchmain .button:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover, .bpheader #profile .srch .button:hover, #profile .srch .bpheader .button:hover {
     background: #8dd070;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-  .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain .buttonright:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader .buttonright:focus {
+  .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain #profile .srch .button:active, #profile .srch .matchmain .button:active, .matchmain .buttonright:focus, .matchmain #profile .srch .button:focus, #profile .srch .matchmain .button:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader #profile .srch .button:active, #profile .srch .bpheader .button:active, .bpheader .buttonright:focus, .bpheader #profile .srch .button:focus, #profile .srch .bpheader .button:focus {
     background: #8dd070;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
 
-.matchheader .buttonright {
+.matchheader .buttonright, .matchheader #profile .srch .button, #profile .srch .matchheader .button {
   background: #58a436;
   color: #fff !important;
   -moz-border-radius: 0;
@@ -3918,12 +3933,12 @@ a.button.destroyer, .button {
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
-  .matchheader .buttonright:hover {
+  .matchheader .buttonright:hover, .matchheader #profile .srch .button:hover, #profile .srch .matchheader .button:hover {
     background: #437d2a;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-  .matchheader .buttonright:active, .matchheader .buttonright:focus {
+  .matchheader .buttonright:active, .matchheader #profile .srch .button:active, #profile .srch .matchheader .button:active, .matchheader .buttonright:focus, .matchheader #profile .srch .button:focus, #profile .srch .matchheader .button:focus {
     background: #437d2a; }
 
 .tradepoll .tradeheader span a.button {
