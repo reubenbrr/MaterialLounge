@@ -224,6 +224,17 @@ main
 							background-repeat: no-repeat !important
 							+filter(brightness(1.26))
 							+border-radius(0)
+							img[src$="won.png"]
+								+filter(brightness(0.77))
+								height: 35px
+								width: 35px
+								position: absolute !important
+								left: auto !important
+								right : -15px !important
+								top : -15px !important
+								content: url('http://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/drawable-mdpi/ic_check_circle_white_48dp.png')
+								+border-radius(50%)
+								background-color: $secondary
 					a > div:first-child
 						.team
 							right: 0
