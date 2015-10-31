@@ -2900,6 +2900,9 @@ main section.box, main section {
     main section.box a:hover, main section.box a:active, main section.box a:focus, main section a:hover, main section a:active, main section a:focus {
       color: #437d2a; }
   main section.box .title, main section .title {
+    position: relative;
+    width: 100%;
+    float: left;
     margin-left: 0;
     -moz-transition: ease 0.5s all;
     -o-transition: ease 0.5s all;
@@ -2920,7 +2923,8 @@ main section.box, main section {
     main section.box .title a, main section .title a {
       color: #5b5b5b; }
   main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
-    margin: 4em 0 -1.5em 0;
+    float: left;
+    margin: 1em 0 0 0;
     padding: 1em;
     width: 100%;
     background: #fff;
@@ -2936,7 +2940,7 @@ main section.box, main section {
         color: #000; }
   main section.box article.standard, main section article.standard {
     width: 100%;
-    margin: 2.5em 0 0 0 !important; }
+    margin: 1em 0 0 0 !important; }
     main section.box article.standard .full, main section article.standard .full {
       margin: 0;
       padding: 0.5em 1em; }

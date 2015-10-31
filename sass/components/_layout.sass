@@ -28,6 +28,9 @@ main
 			&:hover, &:active, &:focus
 				color: $secondary-darker
 		.title
+			position: relative
+			width: 100%
+			float: left
 			margin-left: 0
 			+transition(0.5s ease all)
 			+filter(brightness(0))
@@ -41,7 +44,8 @@ main
 				color: $grey-darkest
 		/* Lounge destroyer filter options */
 		.ld-trade-filters, .ld-match-filters
-			margin: 4em 0 -1.5em 0
+			float: left
+			margin: 1em 0 0 0
 			padding: 1em
 			width: 100%
 			background: $white
@@ -56,7 +60,7 @@ main
 		/* Article */
 		article.standard
 			width: 100%
-			margin: 2.5em 0 0 0 !important
+			margin: 1em 0 0 0 !important
 			.full
 				margin: 0
 				padding: 0.5em 1em
