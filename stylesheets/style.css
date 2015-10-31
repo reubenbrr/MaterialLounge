@@ -3078,13 +3078,6 @@ main section.box, main section {
         float: right; }
       main section.box .tradepoll .tradecnt hr + div.full span, main section.box .tradepoll .match hr + div.full span, main section.box .matchmain .tradecnt hr + div.full span, main section.box .matchmain .match hr + div.full span, main section .tradepoll .tradecnt hr + div.full span, main section .tradepoll .match hr + div.full span, main section .matchmain .tradecnt hr + div.full span, main section .matchmain .match hr + div.full span {
         line-height: 25px; }
-      main section.box .tradepoll .tradecnt .winsorloses, main section.box .tradepoll .match .winsorloses, main section.box .matchmain .tradecnt .winsorloses, main section.box .matchmain .match .winsorloses, main section .tradepoll .tradecnt .winsorloses, main section .tradepoll .match .winsorloses, main section .matchmain .tradecnt .winsorloses, main section .matchmain .match .winsorloses {
-        background: transparent;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        border-radius: 0; }
-        main section.box .tradepoll .tradecnt .winsorloses a, main section.box .tradepoll .match .winsorloses a, main section.box .matchmain .tradecnt .winsorloses a, main section.box .matchmain .match .winsorloses a, main section .tradepoll .tradecnt .winsorloses a, main section .tradepoll .match .winsorloses a, main section .matchmain .tradecnt .winsorloses a, main section .matchmain .match .winsorloses a {
-          color: #000; }
       main section.box .tradepoll .tradecnt hr, main section.box .tradepoll .match hr, main section.box .matchmain .tradecnt hr, main section.box .matchmain .match hr, main section .tradepoll .tradecnt hr, main section .tradepoll .match hr, main section .matchmain .tradecnt hr, main section .matchmain .match hr {
         width: 100%;
         border-bottom: 1px solid #e8e8e8; }
@@ -3168,7 +3161,8 @@ main section.box, main section {
             border: 2px solid #ff8a00; }
     main section.box .tradepoll .trade-description, main section.box .matchmain .trade-description, main section .tradepoll .trade-description, main section .matchmain .trade-description {
       width: 100%;
-      padding: 1em;
+      margin: 0 2em 2em 2em;
+      padding: 0.5em 1em;
       background: transparent;
       border-left: 2px solid #ff8a00;
       -moz-border-radius: 0;
@@ -3250,7 +3244,7 @@ main section.box, main section {
       box-shadow: 0 0 0 transparent; }
 
 /* Boxes */
-.box-shiny-alt, .box-shiny, #satrade {
+.box-shiny-alt, .box-shiny, #last30bets, #disqus_thread, #satrade {
   padding: 1em !important;
   background: #fff;
   float: left;
@@ -3264,42 +3258,42 @@ main section.box, main section {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
-  .box-shiny-alt .tradepoll, .box-shiny .tradepoll, #satrade .tradepoll {
+  .box-shiny-alt .tradepoll, .box-shiny .tradepoll, #last30bets .tradepoll, #disqus_thread .tradepoll, #satrade .tradepoll {
     margin-top: 0.5em;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-  .box-shiny-alt a.tab, .box-shiny a.tab, #satrade a.tab {
+  .box-shiny-alt a.tab, .box-shiny a.tab, #last30bets a.tab, #disqus_thread a.tab, #satrade a.tab {
     color: #fff !important;
     background: #ff8a00;
     text-transform: uppercase;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0; }
-    .box-shiny-alt a.tab:hover, .box-shiny a.tab:hover, #satrade a.tab:hover {
+    .box-shiny-alt a.tab:hover, .box-shiny a.tab:hover, #last30bets a.tab:hover, #disqus_thread a.tab:hover, #satrade a.tab:hover {
       background: #ffa133;
       color: #fff !important; }
-    .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:active, .box-shiny a.tab:focus, #satrade a.tab:active, #satrade a.tab:focus {
+    .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:active, #last30bets a.tab:active, #disqus_thread a.tab:active, .box-shiny a.tab:focus, #last30bets a.tab:focus, #disqus_thread a.tab:focus, #satrade a.tab:active, #satrade a.tab:focus {
       background: #ffb966;
       color: #fff !important; }
-    .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #satrade a.tab:first-child {
+    .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #last30bets a.tab:first-child, #disqus_thread a.tab:first-child, #satrade a.tab:first-child {
       border-right: 1px solid #fff; }
-  .box-shiny-alt a[href~="profiles"] + div, .box-shiny a[href~="profiles"] + div, #satrade a[href~="profiles"] + div {
+  .box-shiny-alt a[href~="profiles"] + div, .box-shiny a[href~="profiles"] + div, #last30bets a[href~="profiles"] + div, #disqus_thread a[href~="profiles"] + div, #satrade a[href~="profiles"] + div {
     margin: 0 0.5em; }
-  .box-shiny-alt #avatar, .box-shiny #avatar, #satrade #avatar {
+  .box-shiny-alt #avatar, .box-shiny #avatar, #last30bets #avatar, #disqus_thread #avatar, #satrade #avatar {
     margin: 0; }
-  .box-shiny-alt .button, .box-shiny .button, #satrade .button {
+  .box-shiny-alt .button, .box-shiny .button, #last30bets .button, #disqus_thread .button, #satrade .button {
     margin-left: 0;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 0.5em; }
-  .box-shiny-alt .srch input, .box-shiny .srch input, #satrade .srch input {
+  .box-shiny-alt .srch input, .box-shiny .srch input, #last30bets .srch input, #disqus_thread .srch input, #satrade .srch input {
     text-transform: capitalize;
     width: 100% !important; }
-  .box-shiny-alt input, .box-shiny input, #satrade input {
+  .box-shiny-alt input, .box-shiny input, #last30bets input, #disqus_thread input, #satrade input {
     width: 78% !important;
     float: left !important; }
-  .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, .box-shiny .srch input, #satrade input, #satrade .srch input {
+  .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, #last30bets input, #disqus_thread input, .box-shiny .srch input, #last30bets .srch input, #disqus_thread .srch input, #satrade input, #satrade .srch input {
     margin: 0.5em 0;
     padding: 0.25em 0.5em;
     background: #fff;
@@ -3314,7 +3308,7 @@ main section.box, main section {
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-    .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, .box-shiny .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
+    .box-shiny-alt input:focus, .box-shiny-alt .srch input:focus, .box-shiny input:focus, #last30bets input:focus, #disqus_thread input:focus, .box-shiny .srch input:focus, #last30bets .srch input:focus, #disqus_thread .srch input:focus, #satrade input:focus, #satrade .srch input:focus {
       color: #000;
       background: #fff;
       border-top: 0;
@@ -3322,7 +3316,7 @@ main section.box, main section {
       border-right: 0;
       border-color: #ff8a00;
       outline: 0; }
-  .box-shiny-alt select, .box-shiny select, #satrade select {
+  .box-shiny-alt select, .box-shiny select, #last30bets select, #disqus_thread select, #satrade select {
     margin: 0.5em 0 0 0.5em;
     padding: 0.25em 0.5em;
     background: #e8e8e8;
@@ -3334,14 +3328,14 @@ main section.box, main section {
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-    .box-shiny-alt select:focus, .box-shiny select:focus, #satrade select:focus {
+    .box-shiny-alt select:focus, .box-shiny select:focus, #last30bets select:focus, #disqus_thread select:focus, #satrade select:focus {
       color: #000;
       background: #e8e8e8;
       border: 1px solid #ff8a00;
       outline: 0; }
-  .box-shiny-alt textarea, .box-shiny textarea, #satrade textarea {
+  .box-shiny-alt textarea, .box-shiny textarea, #last30bets textarea, #disqus_thread textarea, #satrade textarea {
     width: 100%;
-    margin: 0.5em 0;
+    margin: 0;
     padding: 1em;
     background: #fff;
     color: #000;
@@ -3352,51 +3346,84 @@ main section.box, main section {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0; }
-    .box-shiny-alt textarea:focus, .box-shiny textarea:focus, #satrade textarea:focus {
+    .box-shiny-alt textarea:focus, .box-shiny textarea:focus, #last30bets textarea:focus, #disqus_thread textarea:focus, #satrade textarea:focus {
       outline: 0; }
   .box-shiny-alt a .team + b,
-  .box-shiny-alt a .team + b + br + i, .box-shiny a .team + b,
-  .box-shiny a .team + b + br + i, #satrade a .team + b,
+  .box-shiny-alt a .team + b + br + i, .box-shiny a .team + b, #last30bets a .team + b, #disqus_thread a .team + b,
+  .box-shiny a .team + b + br + i,
+  #last30bets a .team + b + br + i,
+  #disqus_thread a .team + b + br + i, #satrade a .team + b,
   #satrade a .team + b + br + i {
     color: #000 !important; }
-  .box-shiny-alt a.active .team, .box-shiny a.active .team, #satrade a.active .team {
+  .box-shiny-alt a.active .team, .box-shiny a.active .team, #last30bets a.active .team, #disqus_thread a.active .team, #satrade a.active .team {
     box-sizing: content-box;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
     border: 2px solid #6fc34a; }
     .box-shiny-alt a.active .team + b,
-    .box-shiny-alt a.active .team + b + br + i, .box-shiny a.active .team + b,
-    .box-shiny a.active .team + b + br + i, #satrade a.active .team + b,
+    .box-shiny-alt a.active .team + b + br + i, .box-shiny a.active .team + b, #last30bets a.active .team + b, #disqus_thread a.active .team + b,
+    .box-shiny a.active .team + b + br + i,
+    #last30bets a.active .team + b + br + i,
+    #disqus_thread a.active .team + b + br + i, #satrade a.active .team + b,
     #satrade a.active .team + b + br + i {
       color: #6fc34a !important; }
-  .box-shiny-alt div:first-child[style="display: flex"], .box-shiny div:first-child[style="display: flex"], #satrade div:first-child[style="display: flex"] {
+  .box-shiny-alt div:first-child[style="display: flex"], .box-shiny div:first-child[style="display: flex"], #last30bets div:first-child[style="display: flex"], #disqus_thread div:first-child[style="display: flex"], #satrade div:first-child[style="display: flex"] {
     font-weight: bold;
     margin-bottom: 1em; }
-  .box-shiny-alt .standard:last-child, .box-shiny .standard:last-child, #satrade .standard:last-child {
+  .box-shiny-alt .standard:last-child, .box-shiny .standard:last-child, #last30bets .standard:last-child, #disqus_thread .standard:last-child, #satrade .standard:last-child {
     margin: 0;
     padding: 0; }
-    .box-shiny-alt .standard:last-child .share-buttons, .box-shiny .standard:last-child .share-buttons, #satrade .standard:last-child .share-buttons {
+    .box-shiny-alt .standard:last-child .share-buttons, .box-shiny .standard:last-child .share-buttons, #last30bets .standard:last-child .share-buttons, #disqus_thread .standard:last-child .share-buttons, #satrade .standard:last-child .share-buttons {
       display: none; }
 
-.box-shiny-alt, .box-shiny {
+.winsorloses {
+  background: transparent;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .winsorloses a {
+    color: #000; }
+
+#stream .tabselect {
+  width: 100%;
+  margin: 0 0 1em 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+  #stream .tabselect .tab {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    color: #ff8a00; }
+    #stream .tabselect .tab .subtabs {
+      margin-top: -1px; }
+      #stream .tabselect .tab .subtabs .tab:last-child {
+        -moz-border-radius: 0 2px 0 2px;
+        -webkit-border-radius: 0;
+        border-radius: 0 2px 0 2px; }
+    #stream .tabselect .tab:hover, #stream .tabselect .tab:active, #stream .tabselect .tab:focus {
+      background: #f4f4f4;
+      color: #ff8a00 !important; }
+
+.box-shiny-alt, .box-shiny, #last30bets, #disqus_thread {
   margin: 0 0 1em 0; }
 
 .tabholder {
   width: 100%;
   margin: 0;
-  padding: 1em 1em 0 1em;
-  -moz-border-radius: 3px 0 3px 0;
+  margin: 1em 0;
+  -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  border-radius: 3px 0 3px 0; }
+  border-radius: 3px; }
   .tabholder a.tab {
     -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     color: #ff8a00;
     text-transform: uppercase;
-    background: #fff;
-    border-bottom: 1px solid #e8e8e8; }
+    background: #fff; }
     .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
       background: #f4f4f4;
       color: #ff8a00 !important; }
@@ -3410,11 +3437,17 @@ main section.box, main section {
       border-radius: 3px 0 0 0;
       border-right: #e8e8e8 1px solid; }
 
+.box-shiny-alt + .tabholder,
+.box-shiny-alt + .tabholder {
+  margin-top: 0 !important; }
+
 .full {
   width: 100%;
   margin: 0.5em 0;
   color: #000;
   text-shadow: none; }
+  .full + hr {
+    display: none; }
   .full table {
     text-indent: 0 !important;
     width: 100%;
@@ -3538,6 +3571,7 @@ main section.box, main section {
       color: #000;
       background: #fff;
       border-color: #ff8a00;
+      border-bottom-width: 2px;
       outline: 0; }
 
 /* Bet table + LoungeStats */

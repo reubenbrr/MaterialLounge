@@ -194,11 +194,6 @@ main
 				hr + div.full
 					span
 						line-height: 25px
-				.winsorloses
-					background: transparent
-					+border-radius(0)
-					a
-						color: $black
 				hr
 					width: 100%
 					border-bottom: 1px solid $grey-lightest
@@ -273,7 +268,8 @@ main
 							border: 2px solid $primary
 			.trade-description
 				width: 100%
-				padding: 1em
+				margin: 0 2em 2em 2em
+				padding: 0.5em 1em
 				background: transparent
 				border-left: 2px solid $primary
 				a
@@ -413,7 +409,7 @@ main
 			outline: 0
 	textarea
 		width: 100%
-		margin: 0.5em 0
+		margin: 0
 		padding: 1em
 		background: $white
 		color: $black
@@ -444,20 +440,45 @@ main
 		.share-buttons
 			display: none
 
+.winsorloses
+	background: transparent
+	+border-radius(0)
+	a
+		color: $black
+
+#stream
+	.tabselect
+		width: 100%
+		margin: 0 0 1em 0
+		+border-radius(3px)
+		.tab
+			+border-radius(0)
+			background-color: $white
+			color: $primary
+			.subtabs
+				margin-top: -1px
+				.tab:last-child
+					+border-radius(0 2px 0 2px)
+			&:hover, &:active, &:focus
+				background: lighten($grey-lightest, 5)
+				color: $primary !important
+
+#last30bets, #disqus_thread
+	@extend .box-shiny
+
 .box-shiny-alt, .box-shiny
 	margin: 0 0 1em 0
 
 .tabholder
 	width: 100%
 	margin: 0
-	padding: 1em 1em 0 1em
-	+border-radius(3px 0 3px 0)
+	margin: 1em 0
+	+border-radius(3px)
 	a.tab
 		+box-shadow(0 1px 2px rgba($grey, 0.5))
 		color: $primary
 		text-transform: uppercase
 		background: $white
-		border-bottom: 1px solid $grey-lightest
 		&:hover, &:active, &:focus
 			background: lighten($grey-lightest, 5)
 			color: $primary !important
@@ -466,12 +487,17 @@ main
 		&:first-child
 			+border-radius(3px 0 0 0)
 			border-right: $grey-lightest 1px solid
+.box-shiny-alt+.tabholder,
+.box-shiny-alt+.tabholder
+	margin-top: 0 !important
 
 .full
 	width: 100%
 	margin: 0.5em 0
 	color: $black
 	text-shadow: none
+	+ hr
+		display: none
 	table
 		text-indent: 0 !important
 		width: 100%
@@ -588,6 +614,7 @@ main
 			color: $black
 			background: $white
 			border-color: $primary
+			border-bottom-width: 2px
 			outline: 0
 
 /* Bet table + LoungeStats */
