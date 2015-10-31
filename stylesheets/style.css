@@ -724,21 +724,38 @@ main section.box, main section {
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border-radius: 0; }
-      main section.box .tradepoll .tradecnt .matchleft a > div:first-child, main section.box .tradepoll .tradecnt .matchleft a > div:last-child, main section.box .tradepoll .match .matchleft a > div:first-child, main section.box .tradepoll .match .matchleft a > div:last-child, main section.box .matchmain .tradecnt .matchleft a > div:first-child, main section.box .matchmain .tradecnt .matchleft a > div:last-child, main section.box .matchmain .match .matchleft a > div:first-child, main section.box .matchmain .match .matchleft a > div:last-child, main section .tradepoll .tradecnt .matchleft a > div:first-child, main section .tradepoll .tradecnt .matchleft a > div:last-child, main section .tradepoll .match .matchleft a > div:first-child, main section .tradepoll .match .matchleft a > div:last-child, main section .matchmain .tradecnt .matchleft a > div:first-child, main section .matchmain .tradecnt .matchleft a > div:last-child, main section .matchmain .match .matchleft a > div:first-child, main section .matchmain .match .matchleft a > div:last-child {
-        position: relative;
-        width: 40% !important;
-        background: #e8e8e8;
-        border: 1px solid #dbdbdb; }
-        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section.box .tradepoll .match .matchleft a > div:first-child .teamtext, main section.box .tradepoll .match .matchleft a > div:last-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section.box .matchmain .match .matchleft a > div:first-child .teamtext, main section.box .matchmain .match .matchleft a > div:last-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section .tradepoll .match .matchleft a > div:first-child .teamtext, main section .tradepoll .match .matchleft a > div:last-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section .matchmain .match .matchleft a > div:first-child .teamtext, main section .matchmain .match .matchleft a > div:last-child .teamtext {
-          background: transparent; }
-        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team {
-          height: 55px;
-          border: 2px solid #b8b8b8;
-          -moz-border-radius: 0;
-          -webkit-border-radius: 0;
-          border-radius: 0; }
-      main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:first-child .team {
-        right: 0; }
+      main section.box .tradepoll .tradecnt .matchleft, main section.box .tradepoll .match .matchleft, main section.box .matchmain .tradecnt .matchleft, main section.box .matchmain .match .matchleft, main section .tradepoll .tradecnt .matchleft, main section .tradepoll .match .matchleft, main section .matchmain .tradecnt .matchleft, main section .matchmain .match .matchleft {
+        z-index: 1; }
+        main section.box .tradepoll .tradecnt .matchleft a > div:first-child, main section.box .tradepoll .tradecnt .matchleft a > div:last-child, main section.box .tradepoll .match .matchleft a > div:first-child, main section.box .tradepoll .match .matchleft a > div:last-child, main section.box .matchmain .tradecnt .matchleft a > div:first-child, main section.box .matchmain .tradecnt .matchleft a > div:last-child, main section.box .matchmain .match .matchleft a > div:first-child, main section.box .matchmain .match .matchleft a > div:last-child, main section .tradepoll .tradecnt .matchleft a > div:first-child, main section .tradepoll .tradecnt .matchleft a > div:last-child, main section .tradepoll .match .matchleft a > div:first-child, main section .tradepoll .match .matchleft a > div:last-child, main section .matchmain .tradecnt .matchleft a > div:first-child, main section .matchmain .tradecnt .matchleft a > div:last-child, main section .matchmain .match .matchleft a > div:first-child, main section .matchmain .match .matchleft a > div:last-child {
+          position: relative;
+          width: 40% !important;
+          background: #e8e8e8;
+          border: 1px solid #dbdbdb; }
+          main section.box .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section.box .tradepoll .match .matchleft a > div:first-child .teamtext, main section.box .tradepoll .match .matchleft a > div:last-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section.box .matchmain .match .matchleft a > div:first-child .teamtext, main section.box .matchmain .match .matchleft a > div:last-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section .tradepoll .match .matchleft a > div:first-child .teamtext, main section .tradepoll .match .matchleft a > div:last-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section .matchmain .match .matchleft a > div:first-child .teamtext, main section .matchmain .match .matchleft a > div:last-child .teamtext {
+            background: transparent; }
+          main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team {
+            height: 55px;
+            border: 2px solid #b8b8b8;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+            border-radius: 0; }
+        main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:first-child .team {
+          right: 0; }
+    main section.box .tradepoll .match, main section.box .matchmain .match, main section .tradepoll .match, main section .matchmain .match {
+      position: relative; }
+      main section.box .tradepoll .match .matchleft, main section.box .matchmain .match .matchleft, main section .tradepoll .match .matchleft, main section .matchmain .match .matchleft {
+        position: relative; }
+      main section.box .tradepoll .match::after, main section.box .matchmain .match::after, main section .tradepoll .match::after, main section .matchmain .match::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        width: 80px;
+        right: 193px;
+        height: 100%;
+        z-index: 0;
+        background-image: linear-gradient(to right, #ffffff, rgba(0, 0, 0, 0)); }
     main section.box .tradepoll .ld-slidedown, main section.box .matchmain .ld-slidedown, main section .tradepoll .ld-slidedown, main section .matchmain .ld-slidedown {
       margin: 0 0 0.5em 0 !important; }
     main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra {
@@ -841,102 +858,6 @@ main section.box, main section {
       -moz-box-shadow: 0 0 0 transparent;
       -webkit-box-shadow: 0 0 0 transparent;
       box-shadow: 0 0 0 transparent; }
-
-/* Items */
-.tradepoll .left, .tradepoll .right {
-  background: #fff;
-  -moz-box-shadow: 0 0 0 transparent;
-  -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
-.tradepoll .left .oitm {
-  float: right; }
-
-.oitm {
-  -moz-transition: ease 0.1s all;
-  -o-transition: ease 0.1s all;
-  -webkit-transition: ease 0.1s all;
-  transition: ease 0.1s all; }
-  .oitm .name {
-    margin-top: 10px !important;
-    border-top: 2px solid #ff8a00;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    min-width: 0 !important;
-    background: #fff;
-    color: #000;
-    overflow: visible; }
-    .oitm .name span, .oitm .name i, .oitm .name br, .oitm .name b {
-      float: left;
-      clear: both; }
-    .oitm .name:after {
-      content: "";
-      float: left;
-      position: absolute;
-      background: transparent;
-      width: 100%;
-      height: 10px;
-      top: -10px;
-      left: 0; }
-    .oitm .name:before {
-      float: left;
-      position: relative;
-      top: -16px;
-      left: 15%;
-      height: 0;
-      width: 0;
-      content: "";
-      border-left: 10px transparent solid;
-      border-right: 10px transparent solid;
-      border-bottom: 10px #ff8a00 solid; }
-    .oitm .name a {
-      color: #ff8a00 !important;
-      text-shadow: none !important; }
-      .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
-        color: #cc6e00 !important; }
-  .oitm .item {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    background: rgba(168, 168, 168, 0.3); }
-    .oitm .item .value, .oitm .item .rarity {
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0;
-      border-radius: 0;
-      color: #000;
-      text-shadow: none;
-      background-color: rgba(255, 255, 255, 0.7);
-      font-weight: 500;
-      padding: 1px 0; }
-    .oitm .item .value {
-      padding: 1px 4px; }
-  .oitm .item.Souvenir {
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent;
-    background: rgba(255, 206, 0, 0.4); }
-  .oitm .item.Star {
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent;
-    background: rgba(134, 80, 172, 0.3); }
-  .oitm .item.StatTrak {
-    background: rgba(207, 106, 50, 0.3);
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
-    .oitm .item.StatTrak .clreff {
-      -moz-border-radius: 0;
-      -webkit-border-radius: 0;
-      border-radius: 0;
-      background-color: rgba(235, 119, 55, 0.8) !important;
-      text-shadow: none; }
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade {
@@ -1229,6 +1150,152 @@ main section.box, main section {
     height: auto; }
   #ajaxCont #loungestats_datacontainer #loungestats_stats_text a {
     color: #6fc34a; }
+
+.tradepoll .left, .tradepoll .right {
+  background: #fff;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+.tradepoll .left .oitm {
+  float: right; }
+
+.oitm {
+  -moz-transition: ease 0.1s all;
+  -o-transition: ease 0.1s all;
+  -webkit-transition: ease 0.1s all;
+  transition: ease 0.1s all; }
+  .oitm .name {
+    margin-top: 10px !important;
+    border-top: 2px solid #ff8a00;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    min-width: 0 !important;
+    background: #fff;
+    color: #000;
+    overflow: visible; }
+    .oitm .name span, .oitm .name i, .oitm .name br, .oitm .name b {
+      float: left;
+      clear: both; }
+    .oitm .name:after {
+      content: "";
+      float: left;
+      position: absolute;
+      background: transparent;
+      width: 100%;
+      height: 10px;
+      top: -10px;
+      left: 0; }
+    .oitm .name:before {
+      float: left;
+      position: relative;
+      top: -16px;
+      left: 15%;
+      height: 0;
+      width: 0;
+      content: "";
+      border-left: 10px transparent solid;
+      border-right: 10px transparent solid;
+      border-bottom: 10px #ff8a00 solid; }
+    .oitm .name a {
+      color: #ff8a00 !important;
+      text-shadow: none !important; }
+      .oitm .name a:hover, .oitm .name a:active, .oitm .name a:focus {
+        color: #cc6e00 !important; }
+  .oitm .item {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background: rgba(168, 168, 168, 0.3); }
+    .oitm .item .value, .oitm .item .rarity {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      color: #000;
+      text-shadow: none;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-weight: 500;
+      padding: 1px 0; }
+    .oitm .item .value {
+      padding: 1px 4px; }
+  .oitm .item.Souvenir {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    background: rgba(255, 206, 0, 0.4); }
+  .oitm .item.Star {
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent;
+    background: rgba(134, 80, 172, 0.3); }
+  .oitm .item.StatTrak {
+    background: rgba(207, 106, 50, 0.3);
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+    .oitm .item.StatTrak .clreff {
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background-color: rgba(235, 119, 55, 0.8) !important;
+      text-shadow: none; }
+
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz52YOLkDzRyTQmWAPRhW-cz8g7lBxg-4cBrQJm39rlRKgy7toKTZ-EsYolOS8bRU_aPYgupuUg9iaELep2Ppyi72y7vJC5UDFSUDyoF"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09uknYaNnvnLP7LWnn9u5MRjjeyPp9mgilDs-BU4YG3wcdedJw5qaVyB-wW7kufrjJO16J2by3Qw63ZzsGGdwUIIJNFlNw/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz52YOLkDzRyTQmWAPRhW-cz8g7lBxg_7cNqQdr49bpVfVjst4SSNLcvYtAaHsLQUv-Fblr4vhltiKZeKcSPo3651CrtM3BKBUSNo3T8XA"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09uknYaNnvnLPr7Vn35c18lwmO7Eu96kiVCx_kBlY26lJ9eUJlc_MFHW-Ae9l-vogpO5vZTPyHNnuXQitinD30vgHP9iLbw/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz52YOLkDzRyTQmWAPRhW-cz8g7lBxg67cZ1TZm0rr8ALAS-tNaTZbkuM4waScfSCfPXMgD7u0ox0acOeZSPqSrm3Cy7JC5UDOsCbsHU"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09uknYaNnvnLO77QgHJu5MRjjeyPpYin0Qbi-RE5Zmzwd4TAIQI3YFnQqQLrxOrth8S8tZzPm3ow6Clw42GdwUJnuIpzVA/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz59PfWwIzJxdwr9ArVhWvws8RvpHyI818ViWta49oQKIFu38JySM-UqMNAYF8SCXvXSN1_06B1uhaEJKMCK8Xzsj3zha2xcXBa6_j9RhqbZ7TwR_ugB"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposLOzLhRlxfbGTj5X09q_goWYkuHxPYTTl2VQ5sROhuDG_ZjKhFWmrBZyYT30LNeTdAc6MgrT-Fjvlb_njJXvtMnJy3o26CVx5y3ZlxDhgx4abvsv26JQCfbOCA/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz59PfWwIzJxdwr9ArVhWvws8RvpHyI818ViWta49oQLLFi28d_YM7kvYYwYHMmCD6WFNFj04ks61PBefZSB8y-6jyzvPD8CWRPq_WkBzvjH5OV7WiI-bA"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposLOzLhRlxfbGTj5X09q_goWYkuHxPYTTl2VQ5sROh-zF_Jn4t1i1uRQ5fTvzdoGWdwdvMFzU_FbolerujJHptcjAwXo37yUrtyuOyRbliU4aPOdxxavJhXiz6dw/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz59PfWwIzJxdwr9ArVhWvws8RvpHyI818ViWta49oQOLF2p_ZySYeIoYd5JG5PTXKTTM1r06Es-iPVcLJDa9iq73iXgOmdfXka9qT8GhqbZ7ZWxInBa"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposLOzLhRlxfbGTj5X09q_goWYkuHxPYTTl2VQ5sROguzA45XKhFWmrBZyajj1dY6WcVdqZ1DY-AC_yOm7hMS_u8mdz3ZnvyUgti7anESwhhpFb_sv26Lm1HkIJA/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTRDQCKJLSPAF9QO4Xhg-4cBrQJmwp-MDeQ2654PGOuQsOYpOTpbQWPaHMlr-6R87gakLfZSOonjmjnm4JC5UDL-QJASf"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszcYzRA-cizq4GAw6DLP7LWnn9u5MRjjeyP89z2i1KxrhJkMm3wJtedcFVoZQ6C_Qe-xe_u1JG-uMmbm3ZgviUrtGGdwULRVQuqfg/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTRDQCKJLSPAF9QO4Xhg_7cNqQdr4pehXcAjttNCTYuMtOd0aF8bVXKXTb1r-vB84h6UIJ5LY83nn2yXqPXBKBUQ2gZlpGg"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszcYzRA-cizq4GAw6DLPr7Vn35c18lwmO7Eu9mhiwLnr0RvMWnxLdedIwY4YFCC_lnrk-28h5K675rIyntj6ygl4HnD30vgkRiUzqw/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTRDQCKJLSPAF9QO4Xhg67cZ1TZmy874FLV26s9fBMeN-M4tKH5KGWqCBbw776EJtg_IIfZDdpXu92im7JC5UDMMfh7dJ"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszcYzRA-cizq4GAw6DLO77QgHJu5MRjjeyPp4ijjAW1_EBqMG_zcdOTcQJrNFvXqVi_xejqhp697ZSczycyuHEn42GdwUJmbl0i6g/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaLAZs2v_JY3NAtIjnwdPdwq_1Nb_TwW9SupNw07GUoYmg3gKyrxZvNTr3JtWXcFNofxiOrQoC97_e"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbupIgthwczPYgJF7dC_mL-FnvD8J6zYmGxu5cB1g_zMyoD0mlOx5UBrMGyhLNTAcg84MwmG-AO8wunvjZ66us6fm3sw7yN2s3vVmxC-iRhSLrs4iVANjQc/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaO1U1g72Ycz4bvYzvxdLakfWnYuPQxWlTuZ133O_ArN6j0Qa3_BI9Z2rwJoaQbEZgNvzyEwH0"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopujwezhoyszYI2gS09-klYOAhP_7J4Tdn2xZ_Pp9i_vG8MKg2wy1-EA-MWGnI9fDeg86N1HW_1O7xr3sjMC6tZTIz3o2uyIntiuJgVXp1jDnul40/99fx66f"); }
+.item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56I_OKMyJYcxPSPqhHTPAoywrpCDQm18tqU9-iub0CKlnrsIbOM7AkNo4YF8fXUvLVMwz-60I8iKEOLZTb9Xnu2iTra2gUG028u5d2hok"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAR17PLfYQJK9cyzhr-JkvbnJ4Tdn2xZ_Pp9i_vG8MKijFDm_UVvZDz7cIOVIFU_Y1GE-FTrk7q905XpusjNyHJquycq5XeIgVXp1saKgIkM/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaLgtpx_aGJ2gUv9nvkNLcw_SiNuyIz28GucQm0rmYpd6k3gbgrUFtYD32cYadchh-Pw_7jMemUA"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf0Ob3dShD4N6zhpKOg-P1DL_Dl2xe5tZOguzA45XKhFWmrBZyY2igIYfHelU_NArSr1nqx-67gcO6vp2fm3dq6yV35HuMykHmiB1FZvsv26KZt28P2g/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaLQZt0uCGcmUbu4ThzNjcxPXxMeLUz2hQvMYn0uzHpo2j3gLs_Uo_ZTz0LIaWcxh-Pw_jq6SkDQ"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposLuoKhRf0Ob3dzxP7c-JmIWFg_bLP7LWnn9u5MRjjeyPoo333QTsqkdsZDz2ItfHdwI_NQmF-1O5lLjq08W6uMvJwCRl63Ui7WGdwUJj4iqdBQ/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaLAtv0PiGKWkRvN2wkYHexKOtY-6FkjsIupZyj-_AooinjQO2rUBlZmmgcYXBdRh-Pw-G0yebZA"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf1OD3djFN79fnzL-chfbgO6LCqWdY781lteXA54vwxgy3rUc9MTjxJNKUewVvYF7U_AO9xua-hsK8uMzPnyc2uXYk43jfm0apwUYbzF_ISHM/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaJgZjgqOGJWxHuIziw9SKlqWlMuLUkjIB7Jxz2LjF8dn0jFLk8kJsNW71IoKXdBh-Pw_L76JwEA"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf0Ob3fDxBvYyJlYyOnP_tMoTVg2Ru5Mx2gv3--Y3nj1H680Q4MWn7LICQI1BqZ1yCqFfqxem5g5-56svOzyNi6CIj53_UnBe11wYMMLJXi8Kg2Q/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaJgZnhL2dJWUS7t3mwYPdxqahYOiBzzoHu8Yl3OyW8dqh3lDi8kZkMj_6dtCSbEZgNv9tAmxh"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7uifDhjxszFcDoV09GvhoOOmfLLP7LWnn9u5MRjjeyPoo_x2FGw80o4MW6id9XGdgJqYlrY8we3l-_qh5_pvMzOzCRnvCQhsGGdwUIwsOIRxA/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaOARhwaGYP2wXuY61w4Ldw_PyNuLUwz8D6ZZz3bqR8Ij30ASx-UI4MDr1cISRcVIgIQaHJOvxFIM"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbmkOVUw7PTbTi5B7c7kxL-bkvb3NrbQnW5DuJZOhuDG_ZjKhFWmrBZyY2_yco_EIQRoN1iB-lW-l-i51sW-tZuazXdi6SArsyrfyhS-iU5Ebfsv26Is65f-Ng/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaMwoxg6KcP2pA6Iuwx9nTwvOia-vVlDlX68cmiejFpt732AO38kM-ZGz7d4SWdlQgIQaHnYcqtF0"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgporrf0e1Y07PLZTiVPvYznwL-YlOL5ManYl1Rd4cJ5ntbN9J7yjRq28xZrajvwd4KWewc5aVzR_1Dqxubm0MLo6Z7PySYx63F3s3iLyxThn1gSOSLdB7yD/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaJlU0ir2YIzkT79rukoHTlKOlMr2Elz8Cv5EoiO-Wrdz23FfgqkE5ZmmmdY7AbEZgNu4em1jl"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-jxcjhnwMzFI2kb09KzlpWHlsj3Ia7Cl29U-vp9g-7J4bP5iUazrl1qYz_1JNWcJw48YVvV_VTrwrvs05O5u5mdm3diuyMgsH2PnUPihktLcKUx0suZwC4C/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaJhc3naPJdz4StYTgzIPYz_akY73Vkz4B65Z03rCVptqm31fj-kc5a2D7JdOLMlhprTmMyuQ"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFAR17P7YJgJB4N2lh4mNnvLwDLfYkWNF18lwmO7Eu96m2Va1_UJrZmigJo-SdAQ7aQqG81fswrru0cS57cjPnCExuiNw7HrD30vgmi9Wyhc/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaKgw0hL3JIm8S6o3lkoWKw_GmYr-Ak2kC6pEn3L6Z8dr32Qax8kQ_MT3yJIOXbEZgNjyC1Cwf"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhjxszJemkV08u_mpSOhcjnI7TDglRd4cJ5ntbN9J7yjRrn8xA4Yj3yd9OSdFU7aVmF8wPvwrrpgpG47c7InHVjuiMm5ymOn0S2n1gSOR29uyL_/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaLFRz1KKGKGUU6IyzxNeNwq_3a-rSzzJQ6ZBw3r7Frdqm3ASy_xBvN23zJIWWexh-Pw8UaX7P-g"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposem2LFZf1OD3dm5R642Jkoyej8jkJqnBmm5u5cB1g_zMyoD0mlOx5RVuajv6cYSTcgI7Y1jVrFe-k7y-1sXtv5vAzno363UktC2OmBfigxtSLrs4S60vcjM/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaJlNhgszbeDFH4t-zhs6Kz_OmMuuDzm1Qu5Z0iLiQooijjAPi_UZvY2qgJ4WUdAc4aAvT-Qe5366x0hgJMIOg"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alIITCmGpa7cd4nuz-8oP5jGu4ohQ0JwavdcTCJxg7ZlyBqQS5xrvuhZK46M-fyiNgsid053_dzRe_hx9Pbec6jPKaH1ueGeUXSzRAor56/99fx66f"); }
+.item img[src*="-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXU5A1PIYQh5hlcX0nvUOGsx8DdQBJjIAVHubSaPhRw7ODBfThM79mk2tbbz_KlY-OHxDMJvZUp3uvDpI_wiwHhr0trMTj2cYCcdlRoNV7S-wWggbC4gMgSD1s"] {
+  content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8j_OrfdqWhe5sN4mOTE8bP5gVO8vywwMiukcZjEcVc5M1CG-1jtyLi9jJW97pzBmnM27nQlsSvfnkGzhU1OPeY8h6CeVxzAUEsa6pHf/99fx66f"); }
 
 header {
   background-image: none;

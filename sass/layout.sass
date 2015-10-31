@@ -210,6 +210,7 @@ main
 					padding: 0.5em
 					+border-radius(0)
 				.matchleft
+					z-index: 1
 					a > div:first-child, a > div:last-child
 						position: relative
 						width: 40% !important
@@ -224,6 +225,21 @@ main
 					a > div:first-child
 						.team
 							right: 0
+			.match
+				position: relative
+				.matchleft
+					position: relative // To move it forward
+				&::after
+					content: ""
+					display: block
+					position: absolute
+					bottom: 0
+					top: 0
+					width: 80px
+					right: 193px
+					height: 100%
+					z-index: 0
+					background-image: linear-gradient(to right, $white, transparent)
 			.ld-slidedown
 				margin: 0 0 0.5em 0 !important
 			.ld-steam-extra-wrapper .ld-steam-extra
@@ -307,84 +323,6 @@ main
 					border-bottom: 0
 					+border-radius(0)
 					+box-shadow(0 0 0 transparent)
-
-
-/* Items */
-.tradepoll
-	.left, .right
-		background: $white
-		+box-shadow(0 0 0 transparent)
-	.left
-		.oitm
-			float: right
-
-.oitm
-	+transition(0.1s ease all)
-	.name
-		margin-top: 10px !important
-		border-top: 2px solid $primary
-		border-left: 0
-		border-right: 0
-		border-bottom: 0
-		+box-shadow(0 1px 2px rgba($grey, 0.5))
-		+border-radius(3px)
-		min-width: 0 !important
-		background: $white
-		color: $black
-		overflow: visible
-		span, i, br, b
-			float: left
-			clear: both
-		&:after
-			content: ''
-			float: left
-			position: absolute
-			background: transparent
-			width: 100%
-			height: 10px
-			top: -10px
-			left: 0
-		&:before
-			float: left
-			position: relative
-			top: -16px
-			left: 15%
-			height: 0
-			width: 0
-			content: ''
-			border-left: 10px transparent solid
-			border-right: 10px transparent solid
-			border-bottom: 10px $primary solid
-		a
-			color: $primary !important
-			text-shadow: none !important
-			&:hover, &:active, &:focus
-				color: $primary-dark !important
-	.item
-		+border-radius(0)
-		background: rgba($grey, 0.3)
-		.value, .rarity
-			+border-radius(0)
-			color: $black
-			text-shadow: none
-			background-color: rgba($white, 0.7)
-			font-weight: 500
-			padding: 1px 0
-		.value
-			padding: 1px 4px
-	.item.Souvenir
-		+box-shadow(0 0 0 transparent)
-		background: rgba(#ffce00, 0.4)
-	.item.Star
-		+box-shadow(0 0 0 transparent)
-		background: rgba(#8650ac, 0.3)
-	.item.StatTrak
-		background: rgba(207, 106, 50, 0.3)
-		+box-shadow(0 0 0 transparent)
-		.clreff
-			+border-radius(0)
-			background-color: rgba(235, 119, 55, 0.8) !important
-			text-shadow: none
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade
