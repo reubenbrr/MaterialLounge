@@ -3746,7 +3746,9 @@ main section.box, main section {
   content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8j_OrfdqWhe5sN4mOTE8bP5gVO8vywwMiukcZjEcVc5M1CG-1jtyLi9jJW97pzBmnM27nQlsSvfnkGzhU1OPeY8h6CeVxzAUEsa6pHf/99fx66f"); }
 
 header {
-  background-image: none;
+  background: url("//b.thumbs.redditmedia.com/84QAg-eZgfvfMsdD51K-_Kok5R878WQOAdm_8jsAbqg.jpg");
+  min-height: 70px;
+  /*background-image: none */
   background-position: 300px -170px;
   background-color: #252d3a;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -3757,25 +3759,33 @@ header {
     header a[href="/"] img#logo {
       -webkit-filter: brightness(1000);
       filter: brightness(1000); }
-  header nav#menu a {
-    min-height: 53px;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: none;
-    text-transform: capitalize;
-    width: 90px;
-    padding: 0 5px 5px 5px;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0; }
-    header nav#menu a:hover, header nav#menu a:active, header nav#menu a:focus {
+  header nav#menu {
+    float: left; }
+    header nav#menu a {
+      min-height: 53px;
+      color: #fff;
+      font-weight: bold;
+      text-shadow: none;
+      text-transform: capitalize;
+      width: 90px;
+      padding: 0 5px 5px 5px;
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
-      border-radius: 0;
-      background-color: rgba(255, 255, 255, 0.2); }
-    header nav#menu a img {
-      -webkit-filter: grayscale(1) brightness(1000);
-      filter: grayscale(1) brightness(1000); }
+      border-radius: 0; }
+      header nav#menu a:hover, header nav#menu a:active, header nav#menu a:focus {
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.2); }
+      header nav#menu a img {
+        -webkit-filter: grayscale(1) brightness(1000);
+        filter: grayscale(1) brightness(1000); }
+  header a#logout {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/1x_web/ic_exit_to_app_white_48dp.png");
+    background-repeat: no-repeat; }
 
 aside#submenu {
   background: transparent; }

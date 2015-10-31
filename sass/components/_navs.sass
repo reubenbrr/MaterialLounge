@@ -1,7 +1,8 @@
 //Navbar
 header
-	//background: url("//b.thumbs.redditmedia.com/84QAg-eZgfvfMsdD51K-_Kok5R878WQOAdm_8jsAbqg.jpg")
-	background-image: none
+	background: url("//b.thumbs.redditmedia.com/84QAg-eZgfvfMsdD51K-_Kok5R878WQOAdm_8jsAbqg.jpg")
+	min-height: 70px
+	/*background-image: none*/
 	background-position: 300px -170px
 	background-color: $nav-background
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
@@ -10,6 +11,7 @@ header
 		img#logo
 			+filter(brightness(1000))
 	nav#menu
+		float: left
 		a
 			min-height: 53px
 			color: $white
@@ -24,6 +26,12 @@ header
 				background-color: rgba($white, 0.2)
 			img
 				+filter(grayscale(1) brightness(1000))
+	a#logout
+		height: 50px
+		width: 50px
+		margin: 5px
+		background-image: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/1x_web/ic_exit_to_app_white_48dp.png")
+		background-repeat: no-repeat
 
 //Sidebar
 aside
