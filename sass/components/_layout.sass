@@ -90,7 +90,7 @@ main
 				border-top: 0
 				padding: 1em
 				line-height: 2em
-				height: 55px
+				min-height: 3em
 				a
 					font-weight: bold
 					color: $black
@@ -225,7 +225,7 @@ main
 							height: 54px
 							border: 2px solid rgb(184,184,184)
 							background-repeat: no-repeat !important
-							+filter(brightness(1.26))
+							+filter(brightness(1.255))
 							+border-radius(0)
 							img[src$="won.png"]
 								+filter(brightness(0.77))
@@ -245,17 +245,6 @@ main
 				position: relative
 				.matchleft
 					position: relative // To move it forward
-				&::after
-					content: ""
-					display: block
-					position: absolute
-					bottom: 0
-					top: 0
-					width: 80px
-					right: 193px
-					height: 100%
-					z-index: 0
-					background-image: linear-gradient(to right, $white, transparent)
 			.ld-slidedown
 				margin: 0 0 0.5em 0 !important
 			.ld-steam-extra-wrapper .ld-steam-extra
@@ -338,6 +327,23 @@ main
 			.left, .right
 				+box-shadow(0 0 0 transparent)
 				background: transparent
+// Event gradient overlay
+.ld-main
+	article
+		.matchmain
+			.match
+				&::after
+					content: ""
+					display: block
+					position: absolute
+					bottom: 0
+					top: 0
+					width: 80px
+					right: 193px
+					height: 100%
+					z-index: 0
+					background-image: linear-gradient(to right, $white, transparent)
+
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade

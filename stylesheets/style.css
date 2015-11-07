@@ -2969,7 +2969,7 @@ main section.box, main section {
       border-top: 0;
       padding: 1em;
       line-height: 2em;
-      height: 55px; }
+      min-height: 3em; }
       main section.box .tradepoll .tradeheader a, main section.box .tradepoll .matchheader a, main section.box .matchmain .tradeheader a, main section.box .matchmain .matchheader a, main section .tradepoll .tradeheader a, main section .tradepoll .matchheader a, main section .matchmain .tradeheader a, main section .matchmain .matchheader a {
         font-weight: bold;
         color: #000;
@@ -3111,8 +3111,8 @@ main section.box, main section {
             height: 54px;
             border: 2px solid #b8b8b8;
             background-repeat: no-repeat !important;
-            -webkit-filter: brightness(1.26);
-            filter: brightness(1.26);
+            -webkit-filter: brightness(1.255);
+            filter: brightness(1.255);
             -moz-border-radius: 0;
             -webkit-border-radius: 0;
             border-radius: 0; }
@@ -3136,17 +3136,6 @@ main section.box, main section {
       position: relative; }
       main section.box .tradepoll .match .matchleft, main section.box .matchmain .match .matchleft, main section .tradepoll .match .matchleft, main section .matchmain .match .matchleft {
         position: relative; }
-      main section.box .tradepoll .match::after, main section.box .matchmain .match::after, main section .tradepoll .match::after, main section .matchmain .match::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        top: 0;
-        width: 80px;
-        right: 193px;
-        height: 100%;
-        z-index: 0;
-        background-image: linear-gradient(to right, #ffffff, rgba(0, 0, 0, 0)); }
     main section.box .tradepoll .ld-slidedown, main section.box .matchmain .ld-slidedown, main section .tradepoll .ld-slidedown, main section .matchmain .ld-slidedown {
       margin: 0 0 0.5em 0 !important; }
     main section.box .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section.box .matchmain .ld-steam-extra-wrapper .ld-steam-extra, main section .tradepoll .ld-steam-extra-wrapper .ld-steam-extra, main section .matchmain .ld-steam-extra-wrapper .ld-steam-extra {
@@ -3250,6 +3239,18 @@ main section.box, main section {
       -webkit-box-shadow: 0 0 0 transparent;
       box-shadow: 0 0 0 transparent;
       background: transparent; }
+
+.ld-main article .matchmain .match::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 80px;
+  right: 193px;
+  height: 100%;
+  z-index: 0;
+  background-image: linear-gradient(to right, #ffffff, rgba(0, 0, 0, 0)); }
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #last30bets, #disqus_thread, #satrade {
@@ -3831,6 +3832,12 @@ header {
     background-image: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/1x_web/ic_exit_to_app_white_48dp.png");
     background-repeat: no-repeat; }
 
+#mt > div {
+  color: #fff;
+  background-color: #252d3a; }
+  #mt > div:hover {
+    background: #394559; }
+
 aside#submenu {
   background: transparent; }
   aside#submenu nav {
@@ -3869,7 +3876,7 @@ aside#submenu {
       color: #cc6e00; }
 
 a.button.destroyer, .button {
-  padding: 8px 10px;
+  padding: 0.25em 0.5em;
   margin: 0 0.5em 0 0;
   background: #fff;
   color: #ff8a00 !important;
@@ -3879,12 +3886,13 @@ a.button.destroyer, .button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px !important;
-  line-height: 1.5em;
+  line-height: 2em;
   border: none;
   text-shadow: none !important;
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
-  box-shadow: 0 0 0 transparent; }
+  box-shadow: 0 0 0 transparent;
+  height: 2.5em; }
   a.button.destroyer:hover, .button:hover {
     background: #ff8a00;
     color: #fff !important;
@@ -4020,3 +4028,13 @@ a.button.destroyer, .button {
   float: right; }
   .box-shiny-alt .button:nth-child(7), .box-shiny-alt .button:nth-child(8) {
     margin-top: 1em; }
+
+@media screen and (max-width: 976px) {
+  main section.box, main section {
+    width: 100%; }
+    main section.box tradepoll .matchheader,
+    main section.box tradepoll .tradeheader, main section.box .matchmain .matchheader,
+    main section.box .matchmain .tradeheader, main section tradepoll .matchheader,
+    main section tradepoll .tradeheader, main section .matchmain .matchheader,
+    main section .matchmain .tradeheader {
+      text-align: center; } }
