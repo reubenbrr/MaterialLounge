@@ -2929,6 +2929,9 @@ main section.box, main section {
     width: 100%;
     background: #fff;
     height: auto;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
     -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
@@ -2959,9 +2962,9 @@ main section.box, main section {
     -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
     main section.box .tradepoll .tradeheader, main section.box .tradepoll .matchheader, main section.box .matchmain .tradeheader, main section.box .matchmain .matchheader, main section .tradepoll .tradeheader, main section .tradepoll .matchheader, main section .matchmain .tradeheader, main section .matchmain .matchheader {
       width: 100%;
       margin: 0;
@@ -3187,9 +3190,9 @@ main section.box, main section {
       color: #424242; }
   main section.box article.standard #betreturns, main section article.standard #betreturns {
     float: left;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
     main section.box article.standard #betreturns + .bpheader, main section article.standard #betreturns + .bpheader {
       margin-top: 1em; }
   main section.box article.standard .bpheader, main section.box article.standard #betreturns .bpheader, main section article.standard .bpheader, main section article.standard #betreturns .bpheader {
@@ -3200,6 +3203,7 @@ main section.box, main section {
     background: #fff;
     color: #424242;
     border-top: 0;
+    border-bottom: 2px solid #6fc34a;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -3213,9 +3217,9 @@ main section.box, main section {
     main section.box article.standard .bpheader + .full, main section.box article.standard .bpheader + .full + .full, main section.box article.standard #betreturns .bpheader + .full, main section.box article.standard #betreturns .bpheader + .full + .full, main section article.standard .bpheader + .full, main section article.standard .bpheader + .full + .full, main section article.standard #betreturns .bpheader + .full, main section article.standard #betreturns .bpheader + .full + .full {
       width: 100%;
       background: #fff;
-      -moz-border-radius: 0 0 3px 3px;
+      -moz-border-radius: 0;
       -webkit-border-radius: 0;
-      border-radius: 0 0 3px 3px;
+      border-radius: 0;
       -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
       -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
       box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
@@ -3285,17 +3289,17 @@ main section.box, main section {
   background: #fff;
   float: left;
   width: 100% !important;
-  margin: 0;
+  margin: 0.5em 0 !important;
   color: #000;
   text-shadow: none;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   .box-shiny-alt .slvl, .box-shiny .slvl, #last30bets .slvl, #disqus_thread .slvl, #satrade .slvl {
-    padding: 0.9rem 0 0.9rem 0.75rem;
+    padding: 0.9rem 0.5rem 0.9rem 0.75rem;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
@@ -3341,7 +3345,7 @@ main section.box, main section {
     text-transform: capitalize;
     width: 100% !important; }
   .box-shiny-alt input, .box-shiny input, #last30bets input, #disqus_thread input, #satrade input {
-    width: 70% !important;
+    width: 75% !important;
     float: left !important; }
   .box-shiny-alt input, .box-shiny-alt .srch input, .box-shiny input, #last30bets input, #disqus_thread input, .box-shiny .srch input, #last30bets .srch input, #disqus_thread .srch input, #satrade input, #satrade .srch input {
     margin: 0.5em 0;
@@ -3491,12 +3495,12 @@ article#messages #offer {
   clear: both; }
 #profile .full .button {
   text-align: center;
-  width: 13%; }
+  width: 11%; }
 
 #queue {
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
   padding: 1em !important;
   background-color: #fff !important;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5) !important;
@@ -3520,9 +3524,9 @@ article#messages #offer {
   margin: 0;
   margin: 1em 0;
   float: left;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   .tabholder a.tab {
     -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
     -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -3533,14 +3537,7 @@ article#messages #offer {
     .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
       background: #f4f4f4;
       color: #ff8a00 !important; }
-    .tabholder a.tab:last-child {
-      -moz-border-radius: 0 3px 0 0;
-      -webkit-border-radius: 0;
-      border-radius: 0 3px 0 0; }
     .tabholder a.tab:first-child {
-      -moz-border-radius: 3px 0 0 0;
-      -webkit-border-radius: 3px;
-      border-radius: 3px 0 0 0;
       border-right: #e8e8e8 1px solid; }
 
 .box-shiny-alt + .tabholder,
@@ -3550,9 +3547,9 @@ article#messages #offer {
 #stream .tabselect {
   width: 100%;
   margin: 0.5em 0;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   #stream .tabselect .tab {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
@@ -3562,9 +3559,9 @@ article#messages #offer {
     #stream .tabselect .tab .subtabs {
       margin-top: -1px; }
       #stream .tabselect .tab .subtabs .tab:last-child {
-        -moz-border-radius: 0 2px 0 2px;
+        -moz-border-radius: 0;
         -webkit-border-radius: 0;
-        border-radius: 0 2px 0 2px; }
+        border-radius: 0; }
     #stream .tabselect .tab:hover, #stream .tabselect .tab:active, #stream .tabselect .tab:focus {
       background: #f4f4f4;
       color: #ff8a00 !important; }
@@ -3641,9 +3638,9 @@ article#messages #offer {
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   #backpack .srch input, #itemlist .srch input {
     width: 100%;
     font-size: 20px; }
@@ -3667,9 +3664,9 @@ article#messages #offer {
     width: 100%;
     color: #000;
     text-shadow: none;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
     #backpack .inventoryStatisticsBox + .full, #itemlist .inventoryStatisticsBox + .full {
       margin: 0; }
   #backpack .standard a, #itemlist .standard a {
@@ -3719,9 +3716,9 @@ article#messages #offer {
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
   #ajaxCont hr {
     padding-top: 0.5em;
     width: 100%;
@@ -3933,7 +3930,7 @@ header {
 aside#submenu {
   background: transparent; }
   aside#submenu nav {
-    margin-top: 1.25em; }
+    margin-top: 1.85em; }
     aside#submenu nav a {
       background: #fff;
       color: #5b5b5b;
@@ -3985,13 +3982,7 @@ a.button.destroyer, .button {
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   height: 2.5em; }
-  a.button.destroyer:hover, .button:hover {
-    background: #ff8a00;
-    color: #fff !important;
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
-  a.button.destroyer:active, a.button.destroyer:focus, .button:active, .button:focus {
+  a.button.destroyer:active, a.button.destroyer:focus, a.button.destroyer:hover, .button:active, .button:focus, .button:hover {
     background: #ff8a00;
     color: #fff !important;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
@@ -4016,22 +4007,12 @@ a.button.destroyer, .button {
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   line-height: 1.5em; }
-  .buttonright:hover, #profile .srch .button:hover,
+  .buttonright:active, #profile .srch .button:active,
+  #queue .button:active, .buttonright:focus, #profile .srch .button:focus,
+  #queue .button:focus, .buttonright:hover, #profile .srch .button:hover,
   #queue .button:hover {
     background: #ffa133;
     color: #fff !important;
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
-  .buttonright:active, #profile .srch .button:active,
-  #queue .button:active, .buttonright:focus, #profile .srch .button:focus,
-  #queue .button:focus {
-    background: #ffa133;
-    color: #fff !important;
-    -moz-transition: ease 0.3s all;
-    -o-transition: ease 0.3s all;
-    -webkit-transition: ease 0.3s all;
-    transition: ease 0.3s all;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
@@ -4041,9 +4022,9 @@ a.button.destroyer, .button {
   .button#freezebutton {
     width: 100%;
     text-align: center;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; }
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
     .button#freezebutton + div {
       margin-top: 1em !important; }
 
@@ -4065,24 +4046,19 @@ a.button.destroyer, .button {
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   line-height: 1.5em; }
-  .matchmain a.button.destroyer:hover, .matchmain .button:hover, .matchmain .buttonright:hover, .matchmain #profile .srch .button:hover, #profile .srch .matchmain .button:hover,
-  .matchmain #queue .button:hover,
-  #queue .matchmain .button:hover, .bpheader a.button.destroyer:hover, .bpheader .button:hover, .bpheader .buttonright:hover, .bpheader #profile .srch .button:hover, #profile .srch .bpheader .button:hover,
-  .bpheader #queue .button:hover,
-  #queue .bpheader .button:hover {
-    background: #8dd070;
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
-  .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain .button:active, .matchmain .button:focus, .matchmain .buttonright:active, .matchmain #profile .srch .button:active, #profile .srch .matchmain .button:active,
+  .matchmain a.button.destroyer:active, .matchmain a.button.destroyer:focus, .matchmain a.button.destroyer:hover, .matchmain .button:active, .matchmain .button:focus, .matchmain .button:hover, .matchmain .buttonright:active, .matchmain #profile .srch .button:active, #profile .srch .matchmain .button:active,
   .matchmain #queue .button:active,
   #queue .matchmain .button:active, .matchmain .buttonright:focus, .matchmain #profile .srch .button:focus, #profile .srch .matchmain .button:focus,
   .matchmain #queue .button:focus,
-  #queue .matchmain .button:focus, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader .button:active, .bpheader .button:focus, .bpheader .buttonright:active, .bpheader #profile .srch .button:active, #profile .srch .bpheader .button:active,
+  #queue .matchmain .button:focus, .matchmain .buttonright:hover, .matchmain #profile .srch .button:hover, #profile .srch .matchmain .button:hover,
+  .matchmain #queue .button:hover,
+  #queue .matchmain .button:hover, .bpheader a.button.destroyer:active, .bpheader a.button.destroyer:focus, .bpheader a.button.destroyer:hover, .bpheader .button:active, .bpheader .button:focus, .bpheader .button:hover, .bpheader .buttonright:active, .bpheader #profile .srch .button:active, #profile .srch .bpheader .button:active,
   .bpheader #queue .button:active,
   #queue .bpheader .button:active, .bpheader .buttonright:focus, .bpheader #profile .srch .button:focus, #profile .srch .bpheader .button:focus,
   .bpheader #queue .button:focus,
-  #queue .bpheader .button:focus {
+  #queue .bpheader .button:focus, .bpheader .buttonright:hover, .bpheader #profile .srch .button:hover, #profile .srch .bpheader .button:hover,
+  .bpheader #queue .button:hover,
+  #queue .bpheader .button:hover {
     background: #8dd070;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
     -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
@@ -4099,18 +4075,13 @@ a.button.destroyer, .button {
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
-  .matchheader .buttonright:hover, .matchheader #profile .srch .button:hover, #profile .srch .matchheader .button:hover,
-  .matchheader #queue .button:hover,
-  #queue .matchheader .button:hover {
-    background: #437d2a;
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
   .matchheader .buttonright:active, .matchheader #profile .srch .button:active, #profile .srch .matchheader .button:active,
   .matchheader #queue .button:active,
   #queue .matchheader .button:active, .matchheader .buttonright:focus, .matchheader #profile .srch .button:focus, #profile .srch .matchheader .button:focus,
   .matchheader #queue .button:focus,
-  #queue .matchheader .button:focus {
+  #queue .matchheader .button:focus, .matchheader .buttonright:hover, .matchheader #profile .srch .button:hover, #profile .srch .matchheader .button:hover,
+  .matchheader #queue .button:hover,
+  #queue .matchheader .button:hover {
     background: #437d2a; }
 
 .tradepoll .tradeheader span a.button {

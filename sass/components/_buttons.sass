@@ -12,11 +12,7 @@ a.button.destroyer, .button
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
 	height: 2.5em
-	&:hover
-		background: $primary
-		color: $white !important
-		+box-shadow(0 0 0 transparent)
-	&:active, &:focus
+	&:active, &:focus, &:hover
 		background: $primary
 		color: $white !important
 		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
@@ -34,14 +30,9 @@ a.button.destroyer, .button
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
 	line-height: 1.5em
-	&:hover
+	&:active, &:focus, &:hover
 		background: $primary-light
 		color: $white !important
-		+box-shadow(0 0 0 transparent)
-	&:active, &:focus
-		background: $primary-light
-		color: $white !important
-		+transition(0.3s ease all)
 		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
 .button
@@ -49,7 +40,7 @@ a.button.destroyer, .button
 	&#freezebutton
 		width: 100%
 		text-align: center
-		+border-radius(3px)
+		+border-radius(0)
 		+ div
 			margin-top: 1em !important
 
@@ -69,10 +60,7 @@ a.button.destroyer, .button
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
 		line-height: 1.5em
-		&:hover
-			background: $secondary-light
-			+box-shadow(0 0 0 transparent)
-		&:active, &:focus
+		&:active, &:focus, &:hover
 			background: $secondary-light
 			+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
 
@@ -82,10 +70,7 @@ a.button.destroyer, .button
 		color: $white !important
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
-		&:hover
-			background: $secondary-darker
-			+box-shadow(0 0 0 transparent)
-		&:active, &:focus
+		&:active, &:focus, &:hover
 			background: $secondary-darker
 
 .tradepoll .tradeheader span a.button

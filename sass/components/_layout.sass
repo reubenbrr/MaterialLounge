@@ -50,6 +50,7 @@ main
 			width: 100%
 			background: $white
 			height: auto
+			+border-radius(0)
 			+box-shadow(0 1px 2px rgba($grey, 0.5))
 			a
 				font-weight: bold
@@ -82,7 +83,7 @@ main
 			width: 100%
 			padding: 0
 			+box-shadow(0 1px 2px rgba($grey, 0.5))
-			+border-radius(3px)
+			+border-radius(0)
 			.tradeheader, .matchheader
 				width: 100%
 				margin: 0
@@ -291,7 +292,7 @@ main
 		article.standard
 			#betreturns
 				float: left
-				+border-radius(3px)
+				+border-radius(0)
 				+ .bpheader
 					margin-top: 1em
 			.bpheader, #betreturns .bpheader
@@ -302,6 +303,7 @@ main
 				background: $white
 				color: $grey-b-darkest
 				border-top: 0
+				border-bottom: 2px solid $secondary
 				+border-radius(0)
 				+box-shadow(0 1px 2px rgba($grey, 0.5))
 				.full
@@ -311,7 +313,7 @@ main
 				+ .full, + .full + .full
 					width: 100%
 					background: $white
-					+border-radius(0 0 3px 3px)
+					+border-radius(0)
 					+box-shadow(0 1px 2px rgba($grey, 0.5))
 				+ .full + .bpheader
 					margin-top: 1em
@@ -378,13 +380,13 @@ main
 	background: $white
 	float: left
 	width: 100% !important
-	margin: 0
+	margin: 0.5em 0 !important
 	color: $black
 	text-shadow: none
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
-	+border-radius(3px)
+	+border-radius(0)
 	.slvl
-		padding: 0.90rem 0 0.9rem .75rem
+		padding: 0.9rem 0.5rem 0.9rem 0.75rem
 		+box-shadow(0 0 0 transparent)
 		+border-radius(0)
 		border: 2px solid
@@ -422,7 +424,7 @@ main
 		text-transform: capitalize
 		width: 100% !important
 	input
-		width: 70% !important
+		width: 75% !important
 		float: left !important
 	input, .srch input
 		margin: 0.5em 0
@@ -545,12 +547,12 @@ article#messages
 			clear: both
 		.button
 			text-align: center
-			width: 13%
+			width: 11%
 			&:nth-child(7),
 			&:nth-child(8)
 
 #queue
-	+border-radius(3px)
+	+border-radius(0)
 	padding: 1em !important
 	background-color: $white !important
 	+box-shadow(0 1px 2px rgba($grey, 0.5) !important)
@@ -573,7 +575,7 @@ article#messages
 	margin: 0
 	margin: 1em 0
 	float: left
-	+border-radius(3px)
+	+border-radius(0)
 	a.tab
 		+box-shadow(0 1px 2px rgba($grey, 0.5))
 		color: $primary
@@ -582,10 +584,7 @@ article#messages
 		&:hover, &:active, &:focus
 			background: lighten($grey-lightest, 5)
 			color: $primary !important
-		&:last-child
-			+border-radius(0 3px 0 0)
 		&:first-child
-			+border-radius(3px 0 0 0)
 			border-right: $grey-lightest 1px solid
 .box-shiny-alt+.tabholder,
 .box-shiny-alt+.tabholder
@@ -595,7 +594,7 @@ article#messages
 	.tabselect
 		width: 100%
 		margin: 0.5em 0
-		+border-radius(3px)
+		+border-radius(0)
 		.tab
 			+border-radius(0)
 			background-color: $white
@@ -603,7 +602,7 @@ article#messages
 			.subtabs
 				margin-top: -1px
 				.tab:last-child
-					+border-radius(0 2px 0 2px)
+					+border-radius(0)
 			&:hover, &:active, &:focus
 				background: lighten($grey-lightest, 5)
 				color: $primary !important
@@ -682,7 +681,7 @@ article#messages
 	margin-top: 0
 	padding: 1em
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
-	+border-radius(3px)
+	+border-radius(0)
 	.srch
 		input
 			width: 100%
@@ -707,7 +706,7 @@ article#messages
 		width: 100%
 		color: $black
 		text-shadow: none
-		+border-radius(3px)
+		+border-radius(0)
 		+ .full
 			margin: 0
 	.standard
@@ -752,7 +751,7 @@ article#messages
 	color: $black
 	text-shadow: none
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
-	+border-radius(3px)
+	+border-radius(0)
 	hr
 		padding-top: 0.5em
 		width: 100%
