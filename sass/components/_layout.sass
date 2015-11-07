@@ -489,13 +489,49 @@ main
 		padding: 0
 		.share-buttons
 			display: none
+
+// Trade page
 #tradediv
 	.message
+		padding: 0.5em 1em
 		margin: 0.5em 0
 		width: 100%
 		background: $white
 		+border-radius(0)
 		+box-shadow(0 1px 2px rgba($grey, 0.5))
+		.standard
+			width: 100%
+			margin: 0
+article#messages
+	.message
+		width: 100%
+		margin: 0.5em 0
+		background: $white
+		+border-radius(0)
+		+box-shadow(0 1px 2px rgba($grey, 0.5))
+		border: 0
+		.msgright, .msgleft
+			margin: 0
+		.msgleft
+			padding: 0.5em 0 0.5em 1em
+		.msgright
+			width: 50%
+			padding: 0.5em 1em 0.5em 0
+		&.notavailable
+			border: 0
+			opacity: 0.6
+			background: $grey-lighter
+			+box-shadow(0 0 0 transparent)
+	#offer
+		background: $white
+		padding: 0.5em 1em
+		float: left
+		width: 100%
+		margin: 0.5em 0
+		#notes
+			width: 100%
+			margin: 0.5em 0
+			+box-shadow(0 0 0 transparent)
 
 #profile
 	.full
