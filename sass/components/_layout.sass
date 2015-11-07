@@ -76,7 +76,7 @@ main
 				.matchheader
 					border-bottom: 2px solid $secondary
 		.tradepoll, .matchmain
-			margin: 0 0 1em 0
+			margin: 0.5em 0
 			background: $white
 			float: left
 			width: 100%
@@ -344,6 +344,33 @@ main
 					z-index: 0
 					background-image: linear-gradient(to right, $white, transparent)
 
+// Pagination
+.simplePagerNav
+	float: right
+	margin: 0.5em 0
+	li
+		a
+			background: $white
+			+border-radius(0)
+			+box-shadow(0 0 0 transparent)
+			border: 0
+			height: auto
+			color: $black !important
+			padding: 0.35em 0.25em
+			margin: 2px !important
+			&:hover
+				background: $grey-lighter
+				padding: 0.35em 0.25em !important
+				margin: 2px !important
+		&.currentPage
+			a
+				color: $grey-b-darkest !important
+				background: $grey-lighter
+
+//Half
+.half
+	margin: 0 !important
+
 
 /* Boxes */
 .box-shiny-alt, .box-shiny, #satrade
@@ -356,6 +383,13 @@ main
 	text-shadow: none
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
 	+border-radius(3px)
+	.slvl
+		padding: 0.90rem 0 0.9rem .75rem
+		+box-shadow(0 0 0 transparent)
+		+border-radius(0)
+		border: 2px solid
+		margin-right: 0.5em
+		color: $primary
 	.tradepoll
 		margin-top: 0.5em
 		+box-shadow(0 0 0 transparent)
@@ -455,6 +489,13 @@ main
 		padding: 0
 		.share-buttons
 			display: none
+#tradediv
+	.message
+		margin: 0.5em 0
+		width: 100%
+		background: $white
+		+border-radius(0)
+		+box-shadow(0 1px 2px rgba($grey, 0.5))
 
 #profile
 	.full
@@ -488,7 +529,7 @@ main
 	@extend .box-shiny
 
 .box-shiny-alt, .box-shiny
-	margin: 0 0 1em 0
+	margin: 0.5em 0
 
 /* Tabs */
 .tabholder
@@ -517,7 +558,7 @@ main
 #stream
 	.tabselect
 		width: 100%
-		margin: 0 0 1em 0
+		margin: 0.5em 0
 		+border-radius(3px)
 		.tab
 			+border-radius(0)
@@ -624,7 +665,7 @@ main
 		margin: 0
 	.inventoryStatisticsBox
 		padding: 1em
-		margin: 0 0 1em 0
+		margin: 0.5em 0
 		background: $white
 		float: left
 		width: 100%
