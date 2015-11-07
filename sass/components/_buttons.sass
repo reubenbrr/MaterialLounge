@@ -29,11 +29,19 @@ a.button.destroyer, .button
 	border: none
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
-	line-height: 1.5em
+	line-height: 16px
 	&:active, &:focus, &:hover
 		background: $primary-light
 		color: $white !important
 		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
+
+#offer .button
+	@extend .buttonright
+	margin-left: 0 !important
+	margin-right: 0.5em !important
+
+#offer .buttonright
+	@extend .button
 
 .button
 	margin-left: 0

@@ -460,11 +460,11 @@ main
 			border: 1px solid $primary
 			outline: 0
 	textarea
-		width: 100%
-		margin: 0
-		padding: 1em
-		background: $white
-		color: $black
+		width: 100% !important
+		margin: 0 !important
+		padding: 1em !important
+		background: $white !important
+		color: $black !important
 		border-left: 2px solid $primary
 		+box-shadow(0 0 0 transparent)
 		+border-radius(0)
@@ -530,6 +530,22 @@ article#messages
 		float: left
 		width: 100%
 		margin: 0.5em 0
+		textarea
+			height: 100px
+			width: 100% !important
+			margin: 0.5em 0 !important
+			padding: 1em !important
+			background: $white !important
+			color: $black !important
+			border-left: 2px solid $primary
+			+box-shadow(0 0 0 transparent)
+			+border-radius(0)
+			resize: none
+			+transition(0.5s ease height)
+			&:focus, &:active
+				+transition(0.5s ease height)
+				height: 200px
+				outline: 0
 		#notes
 			width: 100%
 			margin: 0.5em 0
