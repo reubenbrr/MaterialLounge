@@ -3853,6 +3853,15 @@ article#messages #offer {
       background-color: rgba(235, 119, 55, 0.8) !important;
       text-shadow: none; }
 
+#modalPreview {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #fff;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
+
 .item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz52YOLkDzRyTQmWAPRhW-cz8g7lBxg-4cBrQJm39rlRKgy7toKTZ-EsYolOS8bRU_aPYgupuUg9iaELep2Ppyi72y7vJC5UDFSUDyoF"] {
   content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhjxszFJTwW09uknYaNnvnLP7LWnn9u5MRjjeyPp9mgilDs-BU4YG3wcdedJw5qaVyB-wW7kufrjJO16J2by3Qw63ZzsGGdwUIIJNFlNw/99fx66f"); }
 .item img[src*="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz52YOLkDzRyTQmWAPRhW-cz8g7lBxg_7cNqQdr49bpVfVjst4SSNLcvYtAaHsLQUv-Fblr4vhltiKZeKcSPo3651CrtM3BKBUSNo3T8XA"] {
