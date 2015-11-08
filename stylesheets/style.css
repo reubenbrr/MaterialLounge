@@ -3107,7 +3107,12 @@ main section.box, main section {
           position: relative;
           width: 40% !important;
           background: #e8e8e8;
-          border: 1px solid #e8e8e8; }
+          border: 1px solid #e8e8e8;
+          color: #000;
+          -moz-transition: ease 0.1s all;
+          -o-transition: ease 0.1s all;
+          -webkit-transition: ease 0.1s all;
+          transition: ease 0.1s all; }
           main section.box .tradepoll .tradecnt .matchleft a > div:first-child:hover, main section.box .tradepoll .tradecnt .matchleft a > div:last-child:hover, main section.box .tradepoll .match .matchleft a > div:first-child:hover, main section.box .tradepoll .match .matchleft a > div:last-child:hover, main section.box .matchmain .tradecnt .matchleft a > div:first-child:hover, main section.box .matchmain .tradecnt .matchleft a > div:last-child:hover, main section.box .matchmain .match .matchleft a > div:first-child:hover, main section.box .matchmain .match .matchleft a > div:last-child:hover, main section .tradepoll .tradecnt .matchleft a > div:first-child:hover, main section .tradepoll .tradecnt .matchleft a > div:last-child:hover, main section .tradepoll .match .matchleft a > div:first-child:hover, main section .tradepoll .match .matchleft a > div:last-child:hover, main section .matchmain .tradecnt .matchleft a > div:first-child:hover, main section .matchmain .tradecnt .matchleft a > div:last-child:hover, main section .matchmain .match .matchleft a > div:first-child:hover, main section .matchmain .match .matchleft a > div:last-child:hover {
             -moz-transition: ease 0.3s all;
             -o-transition: ease 0.3s all;
@@ -3306,7 +3311,7 @@ main section.box, main section {
   -webkit-border-radius: 0;
   border-radius: 0; }
   .box-shiny-alt .slvl, .box-shiny .slvl, #last30bets .slvl, #disqus_thread .slvl, #satrade .slvl {
-    padding: 0.9rem 0.75rem 0.9rem 1.25rem;
+    padding: 0.9rem 0.7rem 0.9rem 1.25rem;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
