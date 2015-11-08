@@ -16,7 +16,7 @@ main
 	section.box, section
 		background: transparent
 		+box-shadow(0 0 0 transparent)
-		margin: 1em 0
+		margin: 0.5em 0
 		padding-left: 1em
 		padding-right: 1em
 		width: 50%
@@ -45,7 +45,7 @@ main
 		/* Lounge destroyer filter options */
 		.ld-trade-filters, .ld-match-filters
 			float: left
-			margin: 1em 0 0 0
+			margin: 0.5em 0
 			padding: 1em
 			width: 100%
 			background: $white
@@ -61,7 +61,7 @@ main
 		/* Article */
 		article.standard
 			width: 100%
-			margin: 1em 0 0 0 !important
+			margin: 0.5em 0 !important
 			.full
 				margin: 0
 				padding: 0.5em 1em
@@ -174,7 +174,7 @@ main
 					font-weight: normal
 				.whenm, .eventm
 					font-weight: bold
-					line-height: 20px
+					line-height: 21px
 					text-shadow: none !important
 					span
 						font-weight: normal
@@ -219,7 +219,11 @@ main
 						position: relative
 						width: 40% !important
 						background: $grey-lightest
-						border: 1px solid darken($grey-lightest, 5)
+						border: 1px solid $grey-lightest
+						&:hover
+							+transition(0.3s ease all)
+							border-color: $secondary
+							color: $secondary
 						.teamtext
 							background: transparent
 						.team
@@ -266,7 +270,7 @@ main
 							border: 2px solid $primary
 			.trade-description
 				width: 100%
-				margin: 0 2em 2em 2em
+				margin: 0
 				padding: 0.5em 1em
 				background: transparent
 				border-left: 2px solid $primary
@@ -434,7 +438,7 @@ main
 		border-top: 0
 		border-left: 0
 		border-right: 0
-		border-bottom: 1px solid $grey-lighter
+		border-bottom: 2px solid $grey-lighter
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
 		&:focus
@@ -443,7 +447,6 @@ main
 			border-top: 0
 			border-left: 0
 			border-right: 0
-			border-bottom-width: 2px
 			border-color: $primary
 			outline: 0
 	select
@@ -474,6 +477,10 @@ main
 	a .team + b,
 	a .team + b + br + i
 		color: $black !important
+	a
+		.team
+			box-sizing: content-box
+			border: 2px solid $grey-lighter
 	a.active
 		.team
 			box-sizing: content-box
@@ -508,17 +515,40 @@ article#messages
 	.message
 		width: 100%
 		margin: 0.5em 0
-		background: $white
-		+border-radius(0)
-		+box-shadow(0 1px 2px rgba($grey, 0.5))
 		border: 0
+		background: transparent
+		+box-shadow(0 0 0 transparent)
 		.msgright, .msgleft
+			width: 100%
+			float: left
 			margin: 0
+			background: $white
+			+border-radius(0)
+			+box-shadow(0 1px 2px rgba($grey, 0.5))
 		.msgleft
-			padding: 0.5em 0 0.5em 1em
+			padding: 0.5em 1em 0 1em
+			text-align: right
+			line-height: 3em
+			b
+				line-height: 2em
+				float: left
+				text-align: left
+			hr
+				margin: 0 !important
+				float: left !important
+				width: 100% !important
+				border-color: transparent
+				border-width: 0
+			.msgtxt
+				margin-left: -1em
+				border-left: 2px solid $primary
+				line-height: 1em
+				padding: 1em
+				float: left
+				width: 100%
+				text-align: left
 		.msgright
-			width: 50%
-			padding: 0.5em 1em 0.5em 0
+			padding: 0.5em
 		&.notavailable
 			border: 0
 			opacity: 0.6
@@ -589,7 +619,7 @@ article#messages
 .tabholder
 	width: 100%
 	margin: 0
-	margin: 1em 0
+	margin: 0.5em 0
 	float: left
 	+border-radius(0)
 	a.tab
@@ -605,14 +635,14 @@ article#messages
 .box-shiny-alt+.tabholder,
 .box-shiny-alt+.tabholder
 	margin-top: 0 !important
-
 #stream
 	.tabselect
 		width: 100%
 		margin: 0.5em 0
 		+border-radius(0)
+		+box-shadow(0 1px 2px rgba($grey, 0.5))
 		.tab
-			+border-radius(0)
+			+border-radius(0 !important)
 			background-color: $white
 			color: $primary
 			.subtabs
@@ -622,6 +652,8 @@ article#messages
 			&:hover, &:active, &:focus
 				background: lighten($grey-lightest, 5)
 				color: $primary !important
+	iframe
+		margin: 0.5em 0
 
 
 /* Used as fullwidth container in boxes */
@@ -694,7 +726,7 @@ article#messages
 #backpack, #itemlist
 	background: $white
 	color: $black
-	margin-top: 0
+	margin: 0.5em 0
 	padding: 1em
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
 	+border-radius(0)
@@ -747,7 +779,7 @@ article#messages
 		border-top: 0
 		border-left: 0
 		border-right: 0
-		border-bottom: 1px solid $grey-lighter
+		border-bottom: 2px solid $grey-lighter
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
 		&:focus

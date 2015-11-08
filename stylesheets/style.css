@@ -2884,7 +2884,7 @@ main section.box, main section {
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
-  margin: 1em 0;
+  margin: 0.5em 0;
   padding-left: 1em;
   padding-right: 1em;
   width: 50%;
@@ -2924,7 +2924,7 @@ main section.box, main section {
       color: #5b5b5b; }
   main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
     float: left;
-    margin: 1em 0 0 0;
+    margin: 0.5em 0;
     padding: 1em;
     width: 100%;
     background: #fff;
@@ -2943,7 +2943,7 @@ main section.box, main section {
         color: #000; }
   main section.box article.standard, main section article.standard {
     width: 100%;
-    margin: 1em 0 0 0 !important; }
+    margin: 0.5em 0 !important; }
     main section.box article.standard .full, main section article.standard .full {
       margin: 0;
       padding: 0.5em 1em; }
@@ -3056,7 +3056,7 @@ main section.box, main section {
         font-weight: normal; }
       main section.box .tradepoll .tradeheader .whenm, main section.box .tradepoll .tradeheader .eventm, main section.box .tradepoll .matchheader .whenm, main section.box .tradepoll .matchheader .eventm, main section.box .matchmain .tradeheader .whenm, main section.box .matchmain .tradeheader .eventm, main section.box .matchmain .matchheader .whenm, main section.box .matchmain .matchheader .eventm, main section .tradepoll .tradeheader .whenm, main section .tradepoll .tradeheader .eventm, main section .tradepoll .matchheader .whenm, main section .tradepoll .matchheader .eventm, main section .matchmain .tradeheader .whenm, main section .matchmain .tradeheader .eventm, main section .matchmain .matchheader .whenm, main section .matchmain .matchheader .eventm {
         font-weight: bold;
-        line-height: 20px;
+        line-height: 21px;
         text-shadow: none !important; }
         main section.box .tradepoll .tradeheader .whenm span, main section.box .tradepoll .tradeheader .eventm span, main section.box .tradepoll .matchheader .whenm span, main section.box .tradepoll .matchheader .eventm span, main section.box .matchmain .tradeheader .whenm span, main section.box .matchmain .tradeheader .eventm span, main section.box .matchmain .matchheader .whenm span, main section.box .matchmain .matchheader .eventm span, main section .tradepoll .tradeheader .whenm span, main section .tradepoll .tradeheader .eventm span, main section .tradepoll .matchheader .whenm span, main section .tradepoll .matchheader .eventm span, main section .matchmain .tradeheader .whenm span, main section .matchmain .tradeheader .eventm span, main section .matchmain .matchheader .whenm span, main section .matchmain .matchheader .eventm span {
           font-weight: normal; }
@@ -3107,7 +3107,14 @@ main section.box, main section {
           position: relative;
           width: 40% !important;
           background: #e8e8e8;
-          border: 1px solid #dbdbdb; }
+          border: 1px solid #e8e8e8; }
+          main section.box .tradepoll .tradecnt .matchleft a > div:first-child:hover, main section.box .tradepoll .tradecnt .matchleft a > div:last-child:hover, main section.box .tradepoll .match .matchleft a > div:first-child:hover, main section.box .tradepoll .match .matchleft a > div:last-child:hover, main section.box .matchmain .tradecnt .matchleft a > div:first-child:hover, main section.box .matchmain .tradecnt .matchleft a > div:last-child:hover, main section.box .matchmain .match .matchleft a > div:first-child:hover, main section.box .matchmain .match .matchleft a > div:last-child:hover, main section .tradepoll .tradecnt .matchleft a > div:first-child:hover, main section .tradepoll .tradecnt .matchleft a > div:last-child:hover, main section .tradepoll .match .matchleft a > div:first-child:hover, main section .tradepoll .match .matchleft a > div:last-child:hover, main section .matchmain .tradecnt .matchleft a > div:first-child:hover, main section .matchmain .tradecnt .matchleft a > div:last-child:hover, main section .matchmain .match .matchleft a > div:first-child:hover, main section .matchmain .match .matchleft a > div:last-child:hover {
+            -moz-transition: ease 0.3s all;
+            -o-transition: ease 0.3s all;
+            -webkit-transition: ease 0.3s all;
+            transition: ease 0.3s all;
+            border-color: #6fc34a;
+            color: #6fc34a; }
           main section.box .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section.box .tradepoll .match .matchleft a > div:first-child .teamtext, main section.box .tradepoll .match .matchleft a > div:last-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section.box .matchmain .match .matchleft a > div:first-child .teamtext, main section.box .matchmain .match .matchleft a > div:last-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section .tradepoll .match .matchleft a > div:first-child .teamtext, main section .tradepoll .match .matchleft a > div:last-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section .matchmain .match .matchleft a > div:first-child .teamtext, main section .matchmain .match .matchleft a > div:last-child .teamtext {
             background: transparent; }
           main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team {
@@ -3161,7 +3168,7 @@ main section.box, main section {
             border: 2px solid #ff8a00; }
     main section.box .tradepoll .trade-description, main section.box .matchmain .trade-description, main section .tradepoll .trade-description, main section .matchmain .trade-description {
       width: 100%;
-      margin: 0 2em 2em 2em;
+      margin: 0;
       padding: 0.5em 1em;
       background: transparent;
       border-left: 2px solid #ff8a00;
@@ -3355,7 +3362,7 @@ main section.box, main section {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid #cecece;
+    border-bottom: 2px solid #cecece;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -3368,7 +3375,6 @@ main section.box, main section {
       border-top: 0;
       border-left: 0;
       border-right: 0;
-      border-bottom-width: 2px;
       border-color: #ff8a00;
       outline: 0; }
   .box-shiny-alt select, .box-shiny select, #last30bets select, #disqus_thread select, #satrade select {
@@ -3410,6 +3416,9 @@ main section.box, main section {
   #disqus_thread a .team + b + br + i, #satrade a .team + b,
   #satrade a .team + b + br + i {
     color: #000 !important; }
+  .box-shiny-alt a .team, .box-shiny a .team, #last30bets a .team, #disqus_thread a .team, #satrade a .team {
+    box-sizing: content-box;
+    border: 2px solid #cecece; }
   .box-shiny-alt a.active .team, .box-shiny a.active .team, #last30bets a.active .team, #disqus_thread a.active .team, #satrade a.active .team {
     box-sizing: content-box;
     -moz-box-shadow: 0 0 0 transparent;
@@ -3450,21 +3459,46 @@ main section.box, main section {
 article#messages .message {
   width: 100%;
   margin: 0.5em 0;
-  background: #fff;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-  border: 0; }
+  border: 0;
+  background: transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
   article#messages .message .msgright, article#messages .message .msgleft {
-    margin: 0; }
+    width: 100%;
+    float: left;
+    margin: 0;
+    background: #fff;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
   article#messages .message .msgleft {
-    padding: 0.5em 0 0.5em 1em; }
+    padding: 0.5em 1em 0 1em;
+    text-align: right;
+    line-height: 3em; }
+    article#messages .message .msgleft b {
+      line-height: 2em;
+      float: left;
+      text-align: left; }
+    article#messages .message .msgleft hr {
+      margin: 0 !important;
+      float: left !important;
+      width: 100% !important;
+      border-color: transparent;
+      border-width: 0; }
+    article#messages .message .msgleft .msgtxt {
+      margin-left: -1em;
+      border-left: 2px solid #ff8a00;
+      line-height: 1em;
+      padding: 1em;
+      float: left;
+      width: 100%;
+      text-align: left; }
   article#messages .message .msgright {
-    width: 50%;
-    padding: 0.5em 1em 0.5em 0; }
+    padding: 0.5em; }
   article#messages .message.notavailable {
     border: 0;
     opacity: 0.6;
@@ -3548,7 +3582,7 @@ article#messages #offer {
 .tabholder {
   width: 100%;
   margin: 0;
-  margin: 1em 0;
+  margin: 0.5em 0;
   float: left;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -3575,11 +3609,14 @@ article#messages #offer {
   margin: 0.5em 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5); }
   #stream .tabselect .tab {
-    -moz-border-radius: 0;
+    -moz-border-radius: 0 !important;
     -webkit-border-radius: 0;
-    border-radius: 0;
+    border-radius: 0 !important;
     background-color: #fff;
     color: #ff8a00; }
     #stream .tabselect .tab .subtabs {
@@ -3591,6 +3628,8 @@ article#messages #offer {
     #stream .tabselect .tab:hover, #stream .tabselect .tab:active, #stream .tabselect .tab:focus {
       background: #f4f4f4;
       color: #ff8a00 !important; }
+#stream iframe {
+  margin: 0.5em 0; }
 
 /* Used as fullwidth container in boxes */
 .full {
@@ -3659,7 +3698,7 @@ article#messages #offer {
 #backpack, #itemlist {
   background: #fff;
   color: #000;
-  margin-top: 0;
+  margin: 0.5em 0;
   padding: 1em;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -3716,7 +3755,7 @@ article#messages #offer {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 1px solid #cecece;
+    border-bottom: 2px solid #cecece;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
