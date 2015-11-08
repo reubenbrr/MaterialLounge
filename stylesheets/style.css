@@ -3478,9 +3478,9 @@ article#messages .message {
   article#messages .message .msgleft {
     padding: 0.5em 1em 0 1em;
     text-align: right;
-    line-height: 3em; }
+    line-height: 2.5em; }
     article#messages .message .msgleft b {
-      line-height: 2em;
+      line-height: 1.5em;
       float: left;
       text-align: left; }
     article#messages .message .msgleft hr {
@@ -3498,7 +3498,7 @@ article#messages .message {
       width: 100%;
       text-align: left; }
   article#messages .message .msgright {
-    padding: 0.5em; }
+    padding: 0.5em 0.5em 0 0.5em; }
   article#messages .message.notavailable {
     border: 0;
     opacity: 0.6;
