@@ -3056,7 +3056,7 @@ main section.box, main section {
         font-weight: normal; }
       main section.box .tradepoll .tradeheader .whenm, main section.box .tradepoll .tradeheader .eventm, main section.box .tradepoll .matchheader .whenm, main section.box .tradepoll .matchheader .eventm, main section.box .matchmain .tradeheader .whenm, main section.box .matchmain .tradeheader .eventm, main section.box .matchmain .matchheader .whenm, main section.box .matchmain .matchheader .eventm, main section .tradepoll .tradeheader .whenm, main section .tradepoll .tradeheader .eventm, main section .tradepoll .matchheader .whenm, main section .tradepoll .matchheader .eventm, main section .matchmain .tradeheader .whenm, main section .matchmain .tradeheader .eventm, main section .matchmain .matchheader .whenm, main section .matchmain .matchheader .eventm {
         font-weight: bold;
-        line-height: 21px;
+        line-height: 1.8em;
         text-shadow: none !important; }
         main section.box .tradepoll .tradeheader .whenm span, main section.box .tradepoll .tradeheader .eventm span, main section.box .tradepoll .matchheader .whenm span, main section.box .tradepoll .matchheader .eventm span, main section.box .matchmain .tradeheader .whenm span, main section.box .matchmain .tradeheader .eventm span, main section.box .matchmain .matchheader .whenm span, main section.box .matchmain .matchheader .eventm span, main section .tradepoll .tradeheader .whenm span, main section .tradepoll .tradeheader .eventm span, main section .tradepoll .matchheader .whenm span, main section .tradepoll .matchheader .eventm span, main section .matchmain .tradeheader .whenm span, main section .matchmain .tradeheader .eventm span, main section .matchmain .matchheader .whenm span, main section .matchmain .matchheader .eventm span {
           font-weight: normal; }
@@ -3306,7 +3306,7 @@ main section.box, main section {
   -webkit-border-radius: 0;
   border-radius: 0; }
   .box-shiny-alt .slvl, .box-shiny .slvl, #last30bets .slvl, #disqus_thread .slvl, #satrade .slvl {
-    padding: 0.9rem 0.5rem 0.9rem 0.75rem;
+    padding: 0.9rem 0.75rem 0.9rem 1.25rem;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
@@ -3316,6 +3316,8 @@ main section.box, main section {
     border: 2px solid;
     margin-right: 0.5em;
     color: #ff8a00; }
+    .box-shiny-alt .slvl.sl10, .box-shiny .slvl.sl10, #last30bets .slvl.sl10, #disqus_thread .slvl.sl10, #satrade .slvl.sl10 {
+      padding: 0.9rem 0.4rem 0.9rem 0.75rem; }
   .box-shiny-alt .tradepoll, .box-shiny .tradepoll, #last30bets .tradepoll, #disqus_thread .tradepoll, #satrade .tradepoll {
     margin-top: 0.5em;
     -moz-box-shadow: 0 0 0 transparent;
@@ -3456,6 +3458,15 @@ main section.box, main section {
     width: 100%;
     margin: 0; }
 
+.notavailable {
+  cursor: not-allowed;
+  border: 0;
+  opacity: 0.6;
+  background: #cecece;
+  -moz-box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+
 article#messages .message {
   width: 100%;
   margin: 0.5em 0;
@@ -3499,13 +3510,6 @@ article#messages .message {
       text-align: left; }
   article#messages .message .msgright {
     padding: 0.5em 0.5em 0 0.5em; }
-  article#messages .message.notavailable {
-    border: 0;
-    opacity: 0.6;
-    background: #cecece;
-    -moz-box-shadow: 0 0 0 transparent;
-    -webkit-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
 article#messages #offer {
   background: #fff;
   padding: 0.5em 1em;
