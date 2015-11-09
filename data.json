@@ -3,18 +3,8 @@
 	"css": "https://cdn.rawgit.com/rwlumino/MaterialLounge/master/stylesheets/style.css",
 	"author": "rwlumino",
 	"version": "1.0",
-	"title": "MaterialLounge",
+	"title": "materialtheme",
 	"description":Material design inspired theme for CSGOLounge / Dota2Lounge",
 	"bg": "https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
 	"disableCss": false,
-	"options": {
-		"class1": {
-			"description": "If selected, .body.class1 will match body",
-			"checked": true
-		},
-		"class2": {
-			"description": "If selected, .body.class2 will match body",
-			"checked": false
-		}
-	}
 }
