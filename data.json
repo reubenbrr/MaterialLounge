@@ -6,9 +6,9 @@
 	"version":		"1.0",
 	"description":	"Material design inspired theme for CSGOLounge / Dota2Lounge",
 
-	"css":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/stylesheets/style.css",
-	"icon" :		"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/icon.jpg",
-	"bg":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
+	"css":			"//1lumino.com/dev/MaterialLounge/style.css",
+	"icon" :		"//1lumino.com/dev/MaterialLounge/icon.jpg",
+	"bg":			"//1lumino.com/dev/MaterialLounge/screenshot.png",
 
 	"disableCss":	false
 }
