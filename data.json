@@ -10,5 +10,5 @@
 	"icon" :		"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/icon.jpg",
 	"bg":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
 
-	"disableCss":	false,
+	"disableCss":	false
 }
