@@ -1,10 +1,14 @@
 {
-	"name": "MaterialLounge",
-	"css": "https://cdn.rawgit.com/rwlumino/MaterialLounge/master/stylesheets/style.css",
-	"author": "rwlumino",
-	"version": "1.0",
-	"title": "materialtheme",
-	"description": "Material design inspired theme for CSGOLounge / Dota2Lounge",
-	"bg": "https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
-	"disableCss": false,
+	"name":		"MaterialLounge",
+	"title":		"materialtheme",
+
+	"author":		"rwlumino",
+	"version":		"1.0",
+	"description":	"Material design inspired theme for CSGOLounge / Dota2Lounge",
+
+	"css":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/stylesheets/style.css",
+	"icon" :		"http://api.ncla.me/themes/CleanLounge2/icon.png",
+	"bg":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
+
+	"disableCss":	false,
 }
