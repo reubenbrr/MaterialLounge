@@ -4,7 +4,7 @@
 	"author": "rwlumino",
 	"version": "1.0",
 	"title": "materialtheme",
-	"description":Material design inspired theme for CSGOLounge / Dota2Lounge",
+	"description": "Material design inspired theme for CSGOLounge / Dota2Lounge",
 	"bg": "https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
 	"disableCss": false,
 }
