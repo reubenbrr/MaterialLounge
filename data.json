@@ -7,7 +7,7 @@
 	"description":	"Material design inspired theme for CSGOLounge / Dota2Lounge",
 
 	"css":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/stylesheets/style.css",
-	"icon" :		"http://api.ncla.me/themes/CleanLounge2/icon.png",
+	"icon" :		"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/icon.jpg",
 	"bg":			"https://cdn.rawgit.com/rwlumino/MaterialLounge/master/screenshot.png",
 
 	"disableCss":	false,
