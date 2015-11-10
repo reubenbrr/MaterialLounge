@@ -3148,6 +3148,8 @@ main section.box, main section {
         main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:first-child .team {
           right: 0; }
     main section.box .tradepoll .match, main section.box .matchmain .match, main section .tradepoll .match, main section .matchmain .match {
+      background-repeat: no-repeat !important;
+      background-position: right !important;
       position: relative; }
       main section.box .tradepoll .match .matchleft, main section.box .matchmain .match .matchleft, main section .tradepoll .match .matchleft, main section .matchmain .match .matchleft {
         position: relative; }
@@ -3464,7 +3466,6 @@ main section.box, main section {
     margin: 0; }
 
 .notavailable {
-  cursor: not-allowed;
   border: 0;
   opacity: 0.6;
   background: #cecece;

@@ -249,6 +249,8 @@ main
 						.team
 							right: 0
 			.match
+				background-repeat: no-repeat !important
+				background-position: right !important
 				position: relative
 				.matchleft
 					position: relative // To move it forward
@@ -516,7 +518,6 @@ main
 			width: 100%
 			margin: 0
 .notavailable
-	cursor: not-allowed
 	border: 0
 	opacity: 0.6
 	background: $grey-lighter
@@ -599,8 +600,6 @@ article#messages
 		.button
 			text-align: center
 			width: 11%
-			&:nth-child(7),
-			&:nth-child(8)
 
 #queue
 	+border-radius(0)
