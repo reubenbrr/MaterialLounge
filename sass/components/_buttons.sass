@@ -12,10 +12,14 @@ a.button.destroyer, .button
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
 	height: 2.5em
-	&:active, &:focus, &:hover
+	&:hover
 		background: $primary
 		color: $white !important
-		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
+		+box-shadow(0 0 0 transparent)
+	&:active, &:focus
+		background: $primary
+		color: $white !important
+		+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
 
 .buttonright
 	padding: 8px 10px
@@ -30,10 +34,14 @@ a.button.destroyer, .button
 	text-shadow: none !important
 	+box-shadow(0 0 0 transparent)
 	line-height: 16px
-	&:active, &:focus, &:hover
+	&:hover
 		background: $primary-light
 		color: $white !important
-		+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
+		+box-shadow(0 0 0 transparent)
+	&:active, &:focus
+		background: $primary-light
+		color: $white !important
+		+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
 
 #offer .button
 	@extend .buttonright
@@ -68,9 +76,12 @@ a.button.destroyer, .button
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
 		line-height: 1.5em
-		&:active, &:focus, &:hover
+		&:hover
 			background: $secondary-light
-			+box-shadow(0 2px 3px rgba($grey-darker, 0.5))
+			+box-shadow(0 0 0 transparent)
+		&:active, &:focus
+			background: $secondary-light
+			+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
 
 .matchheader
 	.buttonright
@@ -78,8 +89,10 @@ a.button.destroyer, .button
 		color: $white !important
 		+border-radius(0)
 		+box-shadow(0 0 0 transparent)
-		&:active, &:focus, &:hover
+		&:hover
 			background: $secondary-darker
+		&:active, &:focus
+			+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
 
 .tradepoll .tradeheader span a.button
 	float: left !important

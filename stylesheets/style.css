@@ -2971,8 +2971,8 @@ main section.box, main section {
       background: #fff;
       border-top: 0;
       padding: 1em;
-      line-height: 2em;
-      min-height: 3em; }
+      line-height: 2.4em;
+      min-height: 30px; }
       main section.box .tradepoll .tradeheader a, main section.box .tradepoll .matchheader a, main section.box .matchmain .tradeheader a, main section.box .matchmain .matchheader a, main section .tradepoll .tradeheader a, main section .tradepoll .matchheader a, main section .matchmain .tradeheader a, main section .matchmain .matchheader a {
         font-weight: bold;
         color: #000;
@@ -3102,10 +3102,12 @@ main section.box, main section {
         -webkit-border-radius: 0;
         border-radius: 0; }
       main section.box .tradepoll .tradecnt .matchleft, main section.box .tradepoll .match .matchleft, main section.box .matchmain .tradecnt .matchleft, main section.box .matchmain .match .matchleft, main section .tradepoll .tradecnt .matchleft, main section .tradepoll .match .matchleft, main section .matchmain .tradecnt .matchleft, main section .matchmain .match .matchleft {
+        margin: 0 !important;
+        padding: 1em 2% !important;
         z-index: 1; }
         main section.box .tradepoll .tradecnt .matchleft a > div:first-child, main section.box .tradepoll .tradecnt .matchleft a > div:last-child, main section.box .tradepoll .match .matchleft a > div:first-child, main section.box .tradepoll .match .matchleft a > div:last-child, main section.box .matchmain .tradecnt .matchleft a > div:first-child, main section.box .matchmain .tradecnt .matchleft a > div:last-child, main section.box .matchmain .match .matchleft a > div:first-child, main section.box .matchmain .match .matchleft a > div:last-child, main section .tradepoll .tradecnt .matchleft a > div:first-child, main section .tradepoll .tradecnt .matchleft a > div:last-child, main section .tradepoll .match .matchleft a > div:first-child, main section .tradepoll .match .matchleft a > div:last-child, main section .matchmain .tradecnt .matchleft a > div:first-child, main section .matchmain .tradecnt .matchleft a > div:last-child, main section .matchmain .match .matchleft a > div:first-child, main section .matchmain .match .matchleft a > div:last-child {
           position: relative;
-          width: 40% !important;
+          width: 45% !important;
           background: #e8e8e8;
           border: 1px solid #e8e8e8;
           color: #000;
@@ -4066,12 +4068,18 @@ a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   height: 2.5em; }
-  a.button.destroyer:active, #offer a.destroyer.buttonright:active, #offer a.destroyer.button:active, a.button.destroyer:focus, #offer a.destroyer.buttonright:focus, #offer a.destroyer.button:focus, a.button.destroyer:hover, #offer a.destroyer.buttonright:hover, #offer a.destroyer.button:hover, .button:active, #offer .buttonright:active, #offer .button:active, .button:focus, #offer .buttonright:focus, #offer .button:focus, .button:hover, #offer .buttonright:hover, #offer .button:hover {
+  a.button.destroyer:hover, #offer a.destroyer.buttonright:hover, #offer a.destroyer.button:hover, .button:hover, #offer .buttonright:hover, #offer .button:hover {
     background: #ff8a00;
     color: #fff !important;
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  a.button.destroyer:active, #offer a.destroyer.buttonright:active, #offer a.destroyer.button:active, a.button.destroyer:focus, #offer a.destroyer.buttonright:focus, #offer a.destroyer.button:focus, .button:active, #offer .buttonright:active, #offer .button:active, .button:focus, #offer .buttonright:focus, #offer .button:focus {
+    background: #ff8a00;
+    color: #fff !important;
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3); }
 
 .buttonright, #offer .button, #offer .buttonright, #profile .srch .button, #profile .srch #offer .buttonright, #offer #profile .srch .buttonright,
 #queue .button {
@@ -4091,15 +4099,21 @@ a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   line-height: 16px; }
-  .buttonright:active, #offer .button:active, #offer .buttonright:active, #profile .srch .button:active,
-  #queue .button:active, .buttonright:focus, #offer .button:focus, #offer .buttonright:focus, #profile .srch .button:focus,
-  #queue .button:focus, .buttonright:hover, #offer .button:hover, #offer .buttonright:hover, #profile .srch .button:hover,
+  .buttonright:hover, #offer .button:hover, #offer .buttonright:hover, #profile .srch .button:hover,
   #queue .button:hover {
     background: #ffa133;
     color: #fff !important;
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  .buttonright:active, #offer .button:active, #offer .buttonright:active, #profile .srch .button:active,
+  #queue .button:active, .buttonright:focus, #offer .button:focus, #offer .buttonright:focus, #profile .srch .button:focus,
+  #queue .button:focus {
+    background: #ffa133;
+    color: #fff !important;
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3); }
 
 #offer .buttonright, #offer .button, #offer #profile .srch .button, #profile .srch #offer .button {
   margin-left: 0 !important;
@@ -4134,23 +4148,28 @@ a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   line-height: 1.5em; }
-  .matchmain a.button.destroyer:active, .matchmain #offer a.destroyer.buttonright:active, #offer .matchmain a.destroyer.buttonright:active, .matchmain #offer a.destroyer.button:active, #offer .matchmain a.destroyer.button:active, .matchmain a.button.destroyer:focus, .matchmain #offer a.destroyer.buttonright:focus, #offer .matchmain a.destroyer.buttonright:focus, .matchmain #offer a.destroyer.button:focus, #offer .matchmain a.destroyer.button:focus, .matchmain a.button.destroyer:hover, .matchmain #offer a.destroyer.buttonright:hover, #offer .matchmain a.destroyer.buttonright:hover, .matchmain #offer a.destroyer.button:hover, #offer .matchmain a.destroyer.button:hover, .matchmain .button:active, .matchmain #offer .buttonright:active, #offer .matchmain .buttonright:active, .matchmain #offer .button:active, #offer .matchmain .button:active, .matchmain .button:focus, .matchmain #offer .buttonright:focus, #offer .matchmain .buttonright:focus, .matchmain #offer .button:focus, #offer .matchmain .button:focus, .matchmain .button:hover, .matchmain #offer .buttonright:hover, #offer .matchmain .buttonright:hover, .matchmain #offer .button:hover, #offer .matchmain .button:hover, .matchmain .buttonright:active, .matchmain #offer .button:active, #offer .matchmain .button:active, .matchmain #offer .buttonright:active, #offer .matchmain .buttonright:active, .matchmain #profile .srch .button:active, #profile .srch .matchmain .button:active,
-  .matchmain #queue .button:active,
-  #queue .matchmain .button:active, .matchmain .buttonright:focus, .matchmain #offer .button:focus, #offer .matchmain .button:focus, .matchmain #offer .buttonright:focus, #offer .matchmain .buttonright:focus, .matchmain #profile .srch .button:focus, #profile .srch .matchmain .button:focus,
-  .matchmain #queue .button:focus,
-  #queue .matchmain .button:focus, .matchmain .buttonright:hover, .matchmain #offer .button:hover, #offer .matchmain .button:hover, .matchmain #offer .buttonright:hover, #offer .matchmain .buttonright:hover, .matchmain #profile .srch .button:hover, #profile .srch .matchmain .button:hover,
+  .matchmain a.button.destroyer:hover, .matchmain #offer a.destroyer.buttonright:hover, #offer .matchmain a.destroyer.buttonright:hover, .matchmain #offer a.destroyer.button:hover, #offer .matchmain a.destroyer.button:hover, .matchmain .button:hover, .matchmain #offer .buttonright:hover, #offer .matchmain .buttonright:hover, .matchmain #offer .button:hover, #offer .matchmain .button:hover, .matchmain .buttonright:hover, .matchmain #offer .button:hover, #offer .matchmain .button:hover, .matchmain #offer .buttonright:hover, #offer .matchmain .buttonright:hover, .matchmain #profile .srch .button:hover, #profile .srch .matchmain .button:hover,
   .matchmain #queue .button:hover,
-  #queue .matchmain .button:hover, .bpheader a.button.destroyer:active, .bpheader #offer a.destroyer.buttonright:active, #offer .bpheader a.destroyer.buttonright:active, .bpheader #offer a.destroyer.button:active, #offer .bpheader a.destroyer.button:active, .bpheader a.button.destroyer:focus, .bpheader #offer a.destroyer.buttonright:focus, #offer .bpheader a.destroyer.buttonright:focus, .bpheader #offer a.destroyer.button:focus, #offer .bpheader a.destroyer.button:focus, .bpheader a.button.destroyer:hover, .bpheader #offer a.destroyer.buttonright:hover, #offer .bpheader a.destroyer.buttonright:hover, .bpheader #offer a.destroyer.button:hover, #offer .bpheader a.destroyer.button:hover, .bpheader .button:active, .bpheader #offer .buttonright:active, #offer .bpheader .buttonright:active, .bpheader #offer .button:active, #offer .bpheader .button:active, .bpheader .button:focus, .bpheader #offer .buttonright:focus, #offer .bpheader .buttonright:focus, .bpheader #offer .button:focus, #offer .bpheader .button:focus, .bpheader .button:hover, .bpheader #offer .buttonright:hover, #offer .bpheader .buttonright:hover, .bpheader #offer .button:hover, #offer .bpheader .button:hover, .bpheader .buttonright:active, .bpheader #offer .button:active, #offer .bpheader .button:active, .bpheader #offer .buttonright:active, #offer .bpheader .buttonright:active, .bpheader #profile .srch .button:active, #profile .srch .bpheader .button:active,
-  .bpheader #queue .button:active,
-  #queue .bpheader .button:active, .bpheader .buttonright:focus, .bpheader #offer .button:focus, #offer .bpheader .button:focus, .bpheader #offer .buttonright:focus, #offer .bpheader .buttonright:focus, .bpheader #profile .srch .button:focus, #profile .srch .bpheader .button:focus,
-  .bpheader #queue .button:focus,
-  #queue .bpheader .button:focus, .bpheader .buttonright:hover, .bpheader #offer .button:hover, #offer .bpheader .button:hover, .bpheader #offer .buttonright:hover, #offer .bpheader .buttonright:hover, .bpheader #profile .srch .button:hover, #profile .srch .bpheader .button:hover,
+  #queue .matchmain .button:hover, .bpheader a.button.destroyer:hover, .bpheader #offer a.destroyer.buttonright:hover, #offer .bpheader a.destroyer.buttonright:hover, .bpheader #offer a.destroyer.button:hover, #offer .bpheader a.destroyer.button:hover, .bpheader .button:hover, .bpheader #offer .buttonright:hover, #offer .bpheader .buttonright:hover, .bpheader #offer .button:hover, #offer .bpheader .button:hover, .bpheader .buttonright:hover, .bpheader #offer .button:hover, #offer .bpheader .button:hover, .bpheader #offer .buttonright:hover, #offer .bpheader .buttonright:hover, .bpheader #profile .srch .button:hover, #profile .srch .bpheader .button:hover,
   .bpheader #queue .button:hover,
   #queue .bpheader .button:hover {
     background: #8dd070;
-    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5);
-    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.5); }
+    -moz-box-shadow: 0 0 0 transparent;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+  .matchmain a.button.destroyer:active, .matchmain #offer a.destroyer.buttonright:active, #offer .matchmain a.destroyer.buttonright:active, .matchmain #offer a.destroyer.button:active, #offer .matchmain a.destroyer.button:active, .matchmain a.button.destroyer:focus, .matchmain #offer a.destroyer.buttonright:focus, #offer .matchmain a.destroyer.buttonright:focus, .matchmain #offer a.destroyer.button:focus, #offer .matchmain a.destroyer.button:focus, .matchmain .button:active, .matchmain #offer .buttonright:active, #offer .matchmain .buttonright:active, .matchmain #offer .button:active, #offer .matchmain .button:active, .matchmain .button:focus, .matchmain #offer .buttonright:focus, #offer .matchmain .buttonright:focus, .matchmain #offer .button:focus, #offer .matchmain .button:focus, .matchmain .buttonright:active, .matchmain #offer .button:active, #offer .matchmain .button:active, .matchmain #offer .buttonright:active, #offer .matchmain .buttonright:active, .matchmain #profile .srch .button:active, #profile .srch .matchmain .button:active,
+  .matchmain #queue .button:active,
+  #queue .matchmain .button:active, .matchmain .buttonright:focus, .matchmain #offer .button:focus, #offer .matchmain .button:focus, .matchmain #offer .buttonright:focus, #offer .matchmain .buttonright:focus, .matchmain #profile .srch .button:focus, #profile .srch .matchmain .button:focus,
+  .matchmain #queue .button:focus,
+  #queue .matchmain .button:focus, .bpheader a.button.destroyer:active, .bpheader #offer a.destroyer.buttonright:active, #offer .bpheader a.destroyer.buttonright:active, .bpheader #offer a.destroyer.button:active, #offer .bpheader a.destroyer.button:active, .bpheader a.button.destroyer:focus, .bpheader #offer a.destroyer.buttonright:focus, #offer .bpheader a.destroyer.buttonright:focus, .bpheader #offer a.destroyer.button:focus, #offer .bpheader a.destroyer.button:focus, .bpheader .button:active, .bpheader #offer .buttonright:active, #offer .bpheader .buttonright:active, .bpheader #offer .button:active, #offer .bpheader .button:active, .bpheader .button:focus, .bpheader #offer .buttonright:focus, #offer .bpheader .buttonright:focus, .bpheader #offer .button:focus, #offer .bpheader .button:focus, .bpheader .buttonright:active, .bpheader #offer .button:active, #offer .bpheader .button:active, .bpheader #offer .buttonright:active, #offer .bpheader .buttonright:active, .bpheader #profile .srch .button:active, #profile .srch .bpheader .button:active,
+  .bpheader #queue .button:active,
+  #queue .bpheader .button:active, .bpheader .buttonright:focus, .bpheader #offer .button:focus, #offer .bpheader .button:focus, .bpheader #offer .buttonright:focus, #offer .bpheader .buttonright:focus, .bpheader #profile .srch .button:focus, #profile .srch .bpheader .button:focus,
+  .bpheader #queue .button:focus,
+  #queue .bpheader .button:focus {
+    background: #8dd070;
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3); }
 
 .matchheader .buttonright, .matchheader #offer .button, #offer .matchheader .button, .matchheader #offer .buttonright, #offer .matchheader .buttonright, .matchheader #profile .srch .button, #profile .srch .matchheader .button,
 .matchheader #queue .button,
@@ -4163,14 +4182,18 @@ a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
+  .matchheader .buttonright:hover, .matchheader #offer .button:hover, #offer .matchheader .button:hover, .matchheader #offer .buttonright:hover, #offer .matchheader .buttonright:hover, .matchheader #profile .srch .button:hover, #profile .srch .matchheader .button:hover,
+  .matchheader #queue .button:hover,
+  #queue .matchheader .button:hover {
+    background: #437d2a; }
   .matchheader .buttonright:active, .matchheader #offer .button:active, #offer .matchheader .button:active, .matchheader #offer .buttonright:active, #offer .matchheader .buttonright:active, .matchheader #profile .srch .button:active, #profile .srch .matchheader .button:active,
   .matchheader #queue .button:active,
   #queue .matchheader .button:active, .matchheader .buttonright:focus, .matchheader #offer .button:focus, #offer .matchheader .button:focus, .matchheader #offer .buttonright:focus, #offer .matchheader .buttonright:focus, .matchheader #profile .srch .button:focus, #profile .srch .matchheader .button:focus,
   .matchheader #queue .button:focus,
-  #queue .matchheader .button:focus, .matchheader .buttonright:hover, .matchheader #offer .button:hover, #offer .matchheader .button:hover, .matchheader #offer .buttonright:hover, #offer .matchheader .buttonright:hover, .matchheader #profile .srch .button:hover, #profile .srch .matchheader .button:hover,
-  .matchheader #queue .button:hover,
-  #queue .matchheader .button:hover {
-    background: #437d2a; }
+  #queue .matchheader .button:focus {
+    -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    -webkit-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
+    box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3); }
 
 .tradepoll .tradeheader span a.button, .tradepoll .tradeheader span #offer a.buttonright, #offer .tradepoll .tradeheader span a.buttonright, .tradepoll .tradeheader span #offer a.button, #offer .tradepoll .tradeheader span a.button {
   float: left !important; }
