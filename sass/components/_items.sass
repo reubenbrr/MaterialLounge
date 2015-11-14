@@ -56,27 +56,29 @@
 	.item
 		+border-radius(0)
 		background: rgba($grey, 0.3)
+		&.warning
+			background: $red-light
 		.value, .rarity
 			+border-radius(0)
 			color: $black
 			text-shadow: none
-			background-color: rgba($white, 0.7)
+			background-color: $white
 			font-weight: 500
 			padding: 1px 0
 		.value
 			padding: 1px 4px
 	.item.Souvenir
 		+box-shadow(0 0 0 transparent)
-		background: rgba(#ffce00, 0.4)
+		background: rgba(#ffe629, 0.7)
 	.item.Star
 		+box-shadow(0 0 0 transparent)
-		background: rgba(#8650ac, 0.3)
+		background: rgba(#8650ac, 0.6)
 	.item.StatTrak
-		background: rgba(207, 106, 50, 0.3)
+		background: rgba(237, 114, 46, 0.7)
 		+box-shadow(0 0 0 transparent)
 		.clreff
 			+border-radius(0)
-			background-color: rgba(235, 119, 55, 0.8) !important
+			background-color: rgba(235, 119, 55, 1) !important
 			text-shadow: none
 
 #modalPreview

@@ -1,14 +1,14 @@
 {
 	"name":		"MaterialLounge",
-	"title":		"materialtheme",
+	"title":		"MaterialLounge",
 
 	"author":		"rwlumino",
 	"version":		"1.0",
 	"description":	"Material design inspired theme for CSGOLounge / Dota2Lounge",
 
-	"css":			"//1lumino.com/dev/MaterialLounge/style.css",
-	"icon" :		"//1lumino.com/dev/MaterialLounge/icon.jpg",
-	"bg":			"//1lumino.com/dev/MaterialLounge/screenshot.png",
+	"css":			"http://1lumino.com/dev/MaterialLounge/style.css",
+	"icon" :		"http://1lumino.com/dev/MaterialLounge/icon.jpg",
+	"bg":			"http://1lumino.com/dev/MaterialLounge/screenshot.png",
 
 	"disableCss":	false
 }

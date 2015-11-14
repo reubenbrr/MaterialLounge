@@ -1,26 +1,75 @@
 @media screen and (max-width:1199px)
 	header
 		nav#menu
-			margin-top: 0.5em
+			height: auto !important
+			margin-top: 0.5em !important
 			a
-				padding: 0 0.1em
-				margin: 0 0.25em
-				min-height: 0
-				min-width: 50px
-				width: auto
-				font-size: 0
+				padding: 0 0.1em !important
+				margin: 0 0.25em !important
+				min-height: 0 !important
+				min-width: 50px !important
+				width: auto !important
+				font-size: 0 !important
 		a#logout
 			display: block !important
-			margin: 0.7em 0 0 0
-			float: right
-			background-image: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/1x_web/ic_exit_to_app_white_36dp.png")
-
+			margin: 0.7em 0 0 0 !important
+			float: right !important
 	main
 		section.box, section
-			width: 100%
-			padding-left: 1em
+			width: 100% !important
+			padding-left: 1em !important
 			padding-right: 1em !important
 			tradepoll, .matchmain
 				.matchheader,
 				.tradeheader
-					text-align: center
+					text-align: center !important
+	#profile
+		.full
+			input
+				width: 60% !important
+			.button
+				width: 18% !important
+	#backpack
+		.full
+			input
+				width: 100% !important
+	aside#submenu
+		width: 100% !important
+		nav
+			width: 100% !important
+			a
+				width: 14.15549999999% !important
+				margin-right: 1px !important
+				float: left !important
+				&:first-child
+					margin-left: 0.05em !important
+				&:last-child
+					margin-right: 0 !important
+
+@media screen and (max-width: 1000px)
+	.ld-trade
+		.box
+			.box-shiny-alt:first-child
+				.half:first-child
+					width: 100% !important
+					margin: 0 0 0.5em 0 !important
+				.half[style="width: auto; float: right"]
+					float: left !important
+					.buttonright
+						float: left !important
+@media screen and (max-width: 800px)
+	.tradepoll
+		.left, .right
+			width: 100% !important
+			float: left !important
+			max-width: none !important
+		.left
+			.oitm
+				float: left !important
+		.tradecnt
+			background: $white !important
+			background-image: none !important
+@media screen and (max-width: 600px)
+	a.tab
+		width: 100% !important
+

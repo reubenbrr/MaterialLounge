@@ -16,7 +16,7 @@ main
 	section.box, section
 		background: transparent
 		+box-shadow(0 0 0 transparent)
-		margin: 0.5em 0
+		margin: 1em 0
 		padding-left: 1em
 		padding-right: 1em
 		width: 50%
@@ -45,7 +45,7 @@ main
 		/* Lounge destroyer filter options */
 		.ld-trade-filters, .ld-match-filters
 			float: left
-			margin: 0.5em 0
+			margin: 2em 0 0 0
 			padding: 1em
 			width: 100%
 			background: $white
@@ -183,7 +183,7 @@ main
 					font-size: 25px
 					color: $secondary
 			.tradecnt
-				background: url('https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/av/2x_web/ic_play_arrow_black_24dp.png')
+				background: url('1lumino.com/dev/MaterialLounge/img/arrow.png')
 				background-repeat: no-repeat !important
 				background-position: 50% 50%
 			.tradecnt, .match
@@ -221,13 +221,9 @@ main
 						position: relative
 						width: 45% !important
 						background: $grey-lightest
-						border: 1px solid $grey-lightest
+						border: 2px solid $grey-lightest
 						color: $black
 						+transition(0.1s ease all)
-						&:hover
-							+transition(0.3s ease all)
-							border-color: $secondary
-							color: $secondary
 						.teamtext
 							background: transparent
 						.team
@@ -244,7 +240,7 @@ main
 								left: auto !important
 								right : -15px !important
 								top : -15px !important
-								content: url('http://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/drawable-mdpi/ic_check_circle_white_48dp.png')
+								content: url('//1lumino.com/dev/MaterialLounge/img/check.png')
 								+border-radius(50%)
 								background-color: $secondary
 					a > div:first-child
@@ -395,6 +391,11 @@ main
 	text-shadow: none
 	+box-shadow(0 1px 2px rgba($grey, 0.5))
 	+border-radius(0)
+	div[style="padding: 0.5em;background: #444;line-height: 1.5rem;margin: 1rem;border: 1px solid #333;text-align: center;"]
+		/* Draft delayed */
+		border: 2px solid $primary !important
+		color: $primary !important
+		background: $white !important
 	.slvl
 		padding: 0.9rem 0.7rem 0.9rem 1.25rem
 		+box-shadow(0 0 0 transparent)
@@ -407,22 +408,9 @@ main
 	.tradepoll
 		margin-top: 0.5em
 		+box-shadow(0 0 0 transparent)
-		background: url('https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/av/2x_web/ic_play_arrow_black_24dp.png')
+		background: url('//1lumino.com/dev/MaterialLounge/img/arrow.png')
 		background-repeat: no-repeat !important
 		background-position: 50% 50%
-	a.tab
-		color: $white !important
-		background: $primary
-		text-transform: uppercase
-		+border-radius(0)
-		&:hover
-			background: $primary-light
-			color: $white !important
-		&:active, &:focus
-			background: $primary-lighter
-			color: $white !important
-		&:first-child
-			border-right: 1px solid $white
 	a[href~="profiles"]+div
 		margin: 0 0.5em
 	#avatar
@@ -507,6 +495,49 @@ main
 		.share-buttons
 			display: none
 
+/* Tabs */
+.ld-match, .tabholder
+	.box-shiny-alt + div
+		float: left
+		+border-radius(0 !important)
+		width: 100% !important
+		margin: 0.5em 0 !important
+a.tab
+	+box-shadow(0 1px 2px rgba($grey, 0.5))
+	color: $primary
+	text-transform: uppercase
+	background: $white
+	border-right: $grey-lightest 1px solid
+	&[style="width: 33%;"],
+	&[style="width: 34%;"]
+		width: 33.3333333333% !important
+	&:hover, &:active, &:focus
+		background: lighten($grey-lightest, 5)
+		color: $primary !important
+	&:first-child
+		border-left: 0 !important
+
+/* Item groups */
+.ld-add-item-group-wrapper
+	.button
+		line-height: 1 !important
+	input.selectbox
+		background: $white
+		+border-radius(0 !important)
+		color: $black
+		border-bottom: 2px solid $grey-b-lighter
+		+box-shadow(0 !important)
+		&:active, &:hover, &:focus
+			outline: 0 !important
+			border-bottom: 2px solid $primary
+
+// Bet page header
+.ld-match
+	.box-shiny-alt
+		div[style="display: flex"]
+			.half
+				width: 33.333333% !important
+
 // Trade page
 #tradediv
 	.message
@@ -519,6 +550,8 @@ main
 		.standard
 			width: 100%
 			margin: 0
+	+ div[style="overflow:hidden; text-align: center; margin: 3em 6% 3em 6%; width: 88%"]
+		display: none !important
 .notavailable
 	border: 0
 	opacity: 0.6
@@ -560,6 +593,9 @@ article#messages
 				float: left
 				width: 100%
 				text-align: left
+				&:empty
+					border-left: none !important
+					padding: 0 !important
 		.msgright
 			padding: 0.5em 0.5em 0 0.5em
 	#offer
@@ -584,6 +620,14 @@ article#messages
 				+transition(0.5s ease height)
 				height: 200px
 				outline: 0
+		#recaptcha
+			div[style="padding: 0.5em;background: #BBB;line-height: 1.5rem;margin: 0.5em;border: 1px solid #AAA;"]
+				background: $white !important
+				border: 2px solid $orange !important
+				margin: 0.5em 0 !important
+				width: 100% !important
+				a
+					text-shadow: none !Important
 		#notes
 			width: 100%
 			margin: 0.5em 0
@@ -591,6 +635,7 @@ article#messages
 
 #profile
 	.full
+		margin: 0.5em 0 !important
 		input
 			margin: 1em 0
 			height: 2em
@@ -602,6 +647,11 @@ article#messages
 		.button
 			text-align: center
 			width: 11%
+	a + div
+		padding: 0 !important
+		margin: 0 0 0 0.5em !important
+		h1
+			margin: 0 0 0.5em 0 !important
 
 #queue
 	+border-radius(0)
@@ -621,26 +671,6 @@ article#messages
 .box-shiny-alt, .box-shiny
 	margin: 0.5em 0
 
-/* Tabs */
-.tabholder
-	width: 100%
-	margin: 0
-	margin: 0.5em 0
-	float: left
-	+border-radius(0)
-	a.tab
-		+box-shadow(0 1px 2px rgba($grey, 0.5))
-		color: $primary
-		text-transform: uppercase
-		background: $white
-		&:hover, &:active, &:focus
-			background: lighten($grey-lightest, 5)
-			color: $primary !important
-		&:first-child
-			border-right: $grey-lightest 1px solid
-.box-shiny-alt+.tabholder,
-.box-shiny-alt+.tabholder
-	margin-top: 0 !important
 #stream
 	.tabselect
 		width: 100%

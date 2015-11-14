@@ -2884,7 +2884,7 @@ main section.box, main section {
   -moz-box-shadow: 0 0 0 transparent;
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
-  margin: 0.5em 0;
+  margin: 1em 0;
   padding-left: 1em;
   padding-right: 1em;
   width: 50%;
@@ -2924,7 +2924,7 @@ main section.box, main section {
       color: #5b5b5b; }
   main section.box .ld-trade-filters, main section.box .ld-match-filters, main section .ld-trade-filters, main section .ld-match-filters {
     float: left;
-    margin: 0.5em 0;
+    margin: 2em 0 0 0;
     padding: 1em;
     width: 100%;
     background: #fff;
@@ -3065,7 +3065,7 @@ main section.box, main section {
         font-size: 25px;
         color: #6fc34a; }
     main section.box .tradepoll .tradecnt, main section.box .matchmain .tradecnt, main section .tradepoll .tradecnt, main section .matchmain .tradecnt {
-      background: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/av/2x_web/ic_play_arrow_black_24dp.png");
+      background: url("1lumino.com/dev/MaterialLounge/img/arrow.png");
       background-repeat: no-repeat !important;
       background-position: 50% 50%; }
     main section.box .tradepoll .tradecnt, main section.box .tradepoll .match, main section.box .matchmain .tradecnt, main section.box .matchmain .match, main section .tradepoll .tradecnt, main section .tradepoll .match, main section .matchmain .tradecnt, main section .matchmain .match {
@@ -3109,19 +3109,12 @@ main section.box, main section {
           position: relative;
           width: 45% !important;
           background: #e8e8e8;
-          border: 1px solid #e8e8e8;
+          border: 2px solid #e8e8e8;
           color: #000;
           -moz-transition: ease 0.1s all;
           -o-transition: ease 0.1s all;
           -webkit-transition: ease 0.1s all;
           transition: ease 0.1s all; }
-          main section.box .tradepoll .tradecnt .matchleft a > div:first-child:hover, main section.box .tradepoll .tradecnt .matchleft a > div:last-child:hover, main section.box .tradepoll .match .matchleft a > div:first-child:hover, main section.box .tradepoll .match .matchleft a > div:last-child:hover, main section.box .matchmain .tradecnt .matchleft a > div:first-child:hover, main section.box .matchmain .tradecnt .matchleft a > div:last-child:hover, main section.box .matchmain .match .matchleft a > div:first-child:hover, main section.box .matchmain .match .matchleft a > div:last-child:hover, main section .tradepoll .tradecnt .matchleft a > div:first-child:hover, main section .tradepoll .tradecnt .matchleft a > div:last-child:hover, main section .tradepoll .match .matchleft a > div:first-child:hover, main section .tradepoll .match .matchleft a > div:last-child:hover, main section .matchmain .tradecnt .matchleft a > div:first-child:hover, main section .matchmain .tradecnt .matchleft a > div:last-child:hover, main section .matchmain .match .matchleft a > div:first-child:hover, main section .matchmain .match .matchleft a > div:last-child:hover {
-            -moz-transition: ease 0.3s all;
-            -o-transition: ease 0.3s all;
-            -webkit-transition: ease 0.3s all;
-            transition: ease 0.3s all;
-            border-color: #6fc34a;
-            color: #6fc34a; }
           main section.box .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section.box .tradepoll .match .matchleft a > div:first-child .teamtext, main section.box .tradepoll .match .matchleft a > div:last-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section.box .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section.box .matchmain .match .matchleft a > div:first-child .teamtext, main section.box .matchmain .match .matchleft a > div:last-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:first-child .teamtext, main section .tradepoll .tradecnt .matchleft a > div:last-child .teamtext, main section .tradepoll .match .matchleft a > div:first-child .teamtext, main section .tradepoll .match .matchleft a > div:last-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:first-child .teamtext, main section .matchmain .tradecnt .matchleft a > div:last-child .teamtext, main section .matchmain .match .matchleft a > div:first-child .teamtext, main section .matchmain .match .matchleft a > div:last-child .teamtext {
             background: transparent; }
           main section.box .tradepoll .tradecnt .matchleft a > div:first-child .team, main section.box .tradepoll .tradecnt .matchleft a > div:last-child .team, main section.box .tradepoll .match .matchleft a > div:first-child .team, main section.box .tradepoll .match .matchleft a > div:last-child .team, main section.box .matchmain .tradecnt .matchleft a > div:first-child .team, main section.box .matchmain .tradecnt .matchleft a > div:last-child .team, main section.box .matchmain .match .matchleft a > div:first-child .team, main section.box .matchmain .match .matchleft a > div:last-child .team, main section .tradepoll .tradecnt .matchleft a > div:first-child .team, main section .tradepoll .tradecnt .matchleft a > div:last-child .team, main section .tradepoll .match .matchleft a > div:first-child .team, main section .tradepoll .match .matchleft a > div:last-child .team, main section .matchmain .tradecnt .matchleft a > div:first-child .team, main section .matchmain .tradecnt .matchleft a > div:last-child .team, main section .matchmain .match .matchleft a > div:first-child .team, main section .matchmain .match .matchleft a > div:last-child .team {
@@ -3142,7 +3135,7 @@ main section.box, main section {
               left: auto !important;
               right: -15px !important;
               top: -15px !important;
-              content: url("http://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/drawable-mdpi/ic_check_circle_white_48dp.png");
+              content: url("//1lumino.com/dev/MaterialLounge/img/check.png");
               -moz-border-radius: 50%;
               -webkit-border-radius: 50%;
               border-radius: 50%;
@@ -3314,6 +3307,11 @@ main section.box, main section {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0; }
+  .box-shiny-alt div[style="padding: 0.5em;background: #444;line-height: 1.5rem;margin: 1rem;border: 1px solid #333;text-align: center;"], .box-shiny div[style="padding: 0.5em;background: #444;line-height: 1.5rem;margin: 1rem;border: 1px solid #333;text-align: center;"], #last30bets div[style="padding: 0.5em;background: #444;line-height: 1.5rem;margin: 1rem;border: 1px solid #333;text-align: center;"], #disqus_thread div[style="padding: 0.5em;background: #444;line-height: 1.5rem;margin: 1rem;border: 1px solid #333;text-align: center;"], #satrade div[style="padding: 0.5em;background: #444;line-height: 1.5rem;margin: 1rem;border: 1px solid #333;text-align: center;"] {
+    /* Draft delayed */
+    border: 2px solid #ff8a00 !important;
+    color: #ff8a00 !important;
+    background: #fff !important; }
   .box-shiny-alt .slvl, .box-shiny .slvl, #last30bets .slvl, #disqus_thread .slvl, #satrade .slvl {
     padding: 0.9rem 0.7rem 0.9rem 1.25rem;
     -moz-box-shadow: 0 0 0 transparent;
@@ -3332,24 +3330,9 @@ main section.box, main section {
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
-    background: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/av/2x_web/ic_play_arrow_black_24dp.png");
+    background: url("//1lumino.com/dev/MaterialLounge/img/arrow.png");
     background-repeat: no-repeat !important;
     background-position: 50% 50%; }
-  .box-shiny-alt a.tab, .box-shiny a.tab, #last30bets a.tab, #disqus_thread a.tab, #satrade a.tab {
-    color: #fff !important;
-    background: #ff8a00;
-    text-transform: uppercase;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-radius: 0; }
-    .box-shiny-alt a.tab:hover, .box-shiny a.tab:hover, #last30bets a.tab:hover, #disqus_thread a.tab:hover, #satrade a.tab:hover {
-      background: #ffa133;
-      color: #fff !important; }
-    .box-shiny-alt a.tab:active, .box-shiny-alt a.tab:focus, .box-shiny a.tab:active, #last30bets a.tab:active, #disqus_thread a.tab:active, .box-shiny a.tab:focus, #last30bets a.tab:focus, #disqus_thread a.tab:focus, #satrade a.tab:active, #satrade a.tab:focus {
-      background: #ffb966;
-      color: #fff !important; }
-    .box-shiny-alt a.tab:first-child, .box-shiny a.tab:first-child, #last30bets a.tab:first-child, #disqus_thread a.tab:first-child, #satrade a.tab:first-child {
-      border-right: 1px solid #fff; }
   .box-shiny-alt a[href~="profiles"] + div, .box-shiny a[href~="profiles"] + div, #last30bets a[href~="profiles"] + div, #disqus_thread a[href~="profiles"] + div, #satrade a[href~="profiles"] + div {
     margin: 0 0.5em; }
   .box-shiny-alt #avatar, .box-shiny #avatar, #last30bets #avatar, #disqus_thread #avatar, #satrade #avatar {
@@ -3452,6 +3435,51 @@ main section.box, main section {
     .box-shiny-alt .standard:last-child .share-buttons, .box-shiny .standard:last-child .share-buttons, #last30bets .standard:last-child .share-buttons, #disqus_thread .standard:last-child .share-buttons, #satrade .standard:last-child .share-buttons {
       display: none; }
 
+/* Tabs */
+.ld-match .box-shiny-alt + div, .tabholder .box-shiny-alt + div {
+  float: left;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0;
+  border-radius: 0 !important;
+  width: 100% !important;
+  margin: 0.5em 0 !important; }
+
+a.tab {
+  -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
+  color: #ff8a00;
+  text-transform: uppercase;
+  background: #fff;
+  border-right: #e8e8e8 1px solid; }
+  a.tab[style="width: 33%;"], a.tab[style="width: 34%;"] {
+    width: 33.33333% !important; }
+  a.tab:hover, a.tab:active, a.tab:focus {
+    background: #f4f4f4;
+    color: #ff8a00 !important; }
+  a.tab:first-child {
+    border-left: 0 !important; }
+
+/* Item groups */
+.ld-add-item-group-wrapper .button, .ld-add-item-group-wrapper #offer .buttonright, #offer .ld-add-item-group-wrapper .buttonright, .ld-add-item-group-wrapper #offer .button, #offer .ld-add-item-group-wrapper .button {
+  line-height: 1 !important; }
+.ld-add-item-group-wrapper input.selectbox {
+  background: #fff;
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0;
+  border-radius: 0 !important;
+  color: #000;
+  border-bottom: 2px solid #b5b5b5;
+  -moz-box-shadow: 0 !important;
+  -webkit-box-shadow: 0 !important;
+  box-shadow: 0 !important; }
+  .ld-add-item-group-wrapper input.selectbox:active, .ld-add-item-group-wrapper input.selectbox:hover, .ld-add-item-group-wrapper input.selectbox:focus {
+    outline: 0 !important;
+    border-bottom: 2px solid #ff8a00; }
+
+.ld-match .box-shiny-alt div[style="display: flex"] .half {
+  width: 33.33333% !important; }
+
 #tradediv .message {
   padding: 0.5em 1em;
   margin: 0.5em 0;
@@ -3466,6 +3494,8 @@ main section.box, main section {
   #tradediv .message .standard {
     width: 100%;
     margin: 0; }
+#tradediv + div[style="overflow:hidden; text-align: center; margin: 3em 6% 3em 6%; width: 88%"] {
+  display: none !important; }
 
 .notavailable {
   border: 0;
@@ -3516,6 +3546,9 @@ article#messages .message {
       float: left;
       width: 100%;
       text-align: left; }
+      article#messages .message .msgleft .msgtxt:empty {
+        border-left: none !important;
+        padding: 0 !important; }
   article#messages .message .msgright {
     padding: 0.5em 0.5em 0 0.5em; }
 article#messages #offer {
@@ -3550,6 +3583,13 @@ article#messages #offer {
       transition: ease 0.5s height;
       height: 200px;
       outline: 0; }
+  article#messages #offer #recaptcha div[style="padding: 0.5em;background: #BBB;line-height: 1.5rem;margin: 0.5em;border: 1px solid #AAA;"] {
+    background: #fff !important;
+    border: 2px solid #f0b23c !important;
+    margin: 0.5em 0 !important;
+    width: 100% !important; }
+    article#messages #offer #recaptcha div[style="padding: 0.5em;background: #BBB;line-height: 1.5rem;margin: 0.5em;border: 1px solid #AAA;"] a {
+      text-shadow: none !important; }
   article#messages #offer #notes {
     width: 100%;
     margin: 0.5em 0;
@@ -3557,17 +3597,24 @@ article#messages #offer {
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
 
-#profile .full input {
-  margin: 1em 0;
-  height: 2em; }
-#profile .full br {
-  width: 100%;
-  float: left;
-  content: "";
-  clear: both; }
-#profile .full .button, #profile .full #offer .buttonright, #offer #profile .full .buttonright {
-  text-align: center;
-  width: 11%; }
+#profile .full {
+  margin: 0.5em 0 !important; }
+  #profile .full input {
+    margin: 1em 0;
+    height: 2em; }
+  #profile .full br {
+    width: 100%;
+    float: left;
+    content: "";
+    clear: both; }
+  #profile .full .button, #profile .full #offer .buttonright, #offer #profile .full .buttonright {
+    text-align: center;
+    width: 11%; }
+#profile a + div {
+  padding: 0 !important;
+  margin: 0 0 0 0.5em !important; }
+  #profile a + div h1 {
+    margin: 0 0 0.5em 0 !important; }
 
 #queue {
   -moz-border-radius: 0;
@@ -3589,32 +3636,6 @@ article#messages #offer {
 
 .box-shiny-alt, .box-shiny, #last30bets, #disqus_thread {
   margin: 0.5em 0; }
-
-/* Tabs */
-.tabholder {
-  width: 100%;
-  margin: 0;
-  margin: 0.5em 0;
-  float: left;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0; }
-  .tabholder a.tab {
-    -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
-    color: #ff8a00;
-    text-transform: uppercase;
-    background: #fff; }
-    .tabholder a.tab:hover, .tabholder a.tab:active, .tabholder a.tab:focus {
-      background: #f4f4f4;
-      color: #ff8a00 !important; }
-    .tabholder a.tab:first-child {
-      border-right: #e8e8e8 1px solid; }
-
-.box-shiny-alt + .tabholder,
-.box-shiny-alt + .tabholder {
-  margin-top: 0 !important; }
 
 #stream .tabselect {
   width: 100%;
@@ -3871,13 +3892,15 @@ article#messages #offer {
     -webkit-border-radius: 0;
     border-radius: 0;
     background: rgba(168, 168, 168, 0.3); }
+    .oitm .item.warning {
+      background: #da4747; }
     .oitm .item .value, .oitm .item .rarity {
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
       border-radius: 0;
       color: #000;
       text-shadow: none;
-      background-color: rgba(255, 255, 255, 0.7);
+      background-color: #fff;
       font-weight: 500;
       padding: 1px 0; }
     .oitm .item .value {
@@ -3886,14 +3909,14 @@ article#messages #offer {
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
-    background: rgba(255, 206, 0, 0.4); }
+    background: rgba(255, 230, 41, 0.7); }
   .oitm .item.Star {
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent;
-    background: rgba(134, 80, 172, 0.3); }
+    background: rgba(134, 80, 172, 0.6); }
   .oitm .item.StatTrak {
-    background: rgba(207, 106, 50, 0.3);
+    background: rgba(237, 114, 46, 0.7);
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
@@ -3901,7 +3924,7 @@ article#messages #offer {
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
       border-radius: 0;
-      background-color: rgba(235, 119, 55, 0.8) !important;
+      background-color: #eb7737 !important;
       text-shadow: none; }
 
 #modalPreview {
@@ -3965,9 +3988,9 @@ article#messages #offer {
   content: url("http://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ09-jq5WYh8j_OrfdqWhe5sN4mOTE8bP5gVO8vywwMiukcZjEcVc5M1CG-1jtyLi9jJW97pzBmnM27nQlsSvfnkGzhU1OPeY8h6CeVxzAUEsa6pHf/99fx66f"); }
 
 header {
-  background: url("//b.thumbs.redditmedia.com/84QAg-eZgfvfMsdD51K-_Kok5R878WQOAdm_8jsAbqg.jpg");
+  background: url("//1lumino.com/dev/MaterialLounge/img/nav.jpg");
   min-height: 70px;
-  background-position: 300px -170px;
+  background-position: 300px -50px;
   background-color: #252d3a;
   -moz-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
   -webkit-box-shadow: 0 1px 2px rgba(168, 168, 168, 0.5);
@@ -3982,12 +4005,10 @@ header {
   header nav#menu {
     float: left; }
     header nav#menu a {
-      min-height: 53px;
+      height: 70px;
       color: #fff;
-      font-weight: bold;
       text-shadow: none;
-      text-transform: capitalize;
-      width: 90px;
+      text-transform: uppercase;
       padding: 0 5px 5px 5px;
       -moz-border-radius: 0;
       -webkit-border-radius: 0;
@@ -4000,12 +4021,21 @@ header {
       header nav#menu a img {
         -webkit-filter: grayscale(1) brightness(1000);
         filter: grayscale(1) brightness(1000); }
+  header a#login {
+    margin: 12px 0 0 10px !important;
+    height: 50px !important;
+    width: 50px !important;
+    -webkit-filter: grayscale(1) brightness(1000);
+    filter: grayscale(1) brightness(1000);
+    background-image: url("http://csgolounge.com/img/sign_in.png");
+    background-repeat: no-repeat !important; }
   header a#logout {
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/1x_web/ic_exit_to_app_white_48dp.png");
-    background-repeat: no-repeat; }
+    height: 40px;
+    width: 40px;
+    margin: 12px 0 0 10px;
+    background-image: url("//1lumino.com/dev/MaterialLounge/img/logout.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 #mt > div {
   color: #fff;
@@ -4050,7 +4080,10 @@ aside#submenu {
     aside#submenu footer a:hover {
       color: #cc6e00; }
 
-a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .button, #offer .buttonright, #offer .button, #offer #profile .srch .button, #profile .srch #offer .button {
+.ld-main aside#submenu nav {
+  margin-top: 6.25em; }
+
+a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .button, #offer .buttonright, #offer .button, #offer #profile .srch .button, #profile .srch #offer .button, a.button, #offer a.buttonright, #offer a.button, #offer #profile .srch a.button, #profile .srch #offer a.button {
   padding: 0.25em 0.5em;
   margin: 0 0.5em 0 0;
   background: #fff;
@@ -4068,13 +4101,13 @@ a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .
   -webkit-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   height: 2.5em; }
-  a.button.destroyer:hover, #offer a.destroyer.buttonright:hover, #offer a.destroyer.button:hover, .button:hover, #offer .buttonright:hover, #offer .button:hover {
+  a.button.destroyer:hover, #offer a.destroyer.buttonright:hover, #offer a.destroyer.button:hover, .button:hover, #offer .buttonright:hover, #offer .button:hover, a.button:hover, #offer a.buttonright:hover, #offer a.button:hover {
     background: #ff8a00;
     color: #fff !important;
     -moz-box-shadow: 0 0 0 transparent;
     -webkit-box-shadow: 0 0 0 transparent;
     box-shadow: 0 0 0 transparent; }
-  a.button.destroyer:active, #offer a.destroyer.buttonright:active, #offer a.destroyer.button:active, a.button.destroyer:focus, #offer a.destroyer.buttonright:focus, #offer a.destroyer.button:focus, .button:active, #offer .buttonright:active, #offer .button:active, .button:focus, #offer .buttonright:focus, #offer .button:focus {
+  a.button.destroyer:active, #offer a.destroyer.buttonright:active, #offer a.destroyer.button:active, a.button.destroyer:focus, #offer a.destroyer.buttonright:focus, #offer a.destroyer.button:focus, .button:active, #offer .buttonright:active, #offer .button:active, .button:focus, #offer .buttonright:focus, #offer .button:focus, a.button:active, #offer a.buttonright:active, #offer a.button:active, a.button:focus, #offer a.buttonright:focus, #offer a.button:focus {
     background: #ff8a00;
     color: #fff !important;
     -moz-box-shadow: 0 2px 3px rgba(130, 130, 130, 0.3);
@@ -4205,27 +4238,71 @@ a.button.destroyer, #offer a.destroyer.buttonright, #offer a.destroyer.button, .
 
 @media screen and (max-width: 1199px) {
   header nav#menu {
-    margin-top: 0.5em; }
+    height: auto !important;
+    margin-top: 0.5em !important; }
     header nav#menu a {
-      padding: 0 0.1em;
-      margin: 0 0.25em;
-      min-height: 0;
-      min-width: 50px;
-      width: auto;
-      font-size: 0; }
+      padding: 0 0.1em !important;
+      margin: 0 0.25em !important;
+      min-height: 0 !important;
+      min-width: 50px !important;
+      width: auto !important;
+      font-size: 0 !important; }
   header a#logout {
     display: block !important;
-    margin: 0.7em 0 0 0;
-    float: right;
-    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/2.0.0/action/1x_web/ic_exit_to_app_white_36dp.png"); }
+    margin: 0.7em 0 0 0 !important;
+    float: right !important; }
 
   main section.box, main section {
-    width: 100%;
-    padding-left: 1em;
+    width: 100% !important;
+    padding-left: 1em !important;
     padding-right: 1em !important; }
     main section.box tradepoll .matchheader,
     main section.box tradepoll .tradeheader, main section.box .matchmain .matchheader,
     main section.box .matchmain .tradeheader, main section tradepoll .matchheader,
     main section tradepoll .tradeheader, main section .matchmain .matchheader,
     main section .matchmain .tradeheader {
-      text-align: center; } }
+      text-align: center !important; }
+
+  #profile .full input {
+    width: 60% !important; }
+  #profile .full .button, #profile .full #offer .buttonright, #offer #profile .full .buttonright {
+    width: 18% !important; }
+
+  #backpack .full input {
+    width: 100% !important; }
+
+  aside#submenu {
+    width: 100% !important; }
+    aside#submenu nav {
+      width: 100% !important; }
+      aside#submenu nav a {
+        width: 14.1555% !important;
+        margin-right: 1px !important;
+        float: left !important; }
+        aside#submenu nav a:first-child {
+          margin-left: 0.05em !important; }
+        aside#submenu nav a:last-child {
+          margin-right: 0 !important; } }
+@media screen and (max-width: 1000px) {
+  .ld-trade .box .box-shiny-alt:first-child .half:first-child {
+    width: 100% !important;
+    margin: 0 0 0.5em 0 !important; }
+  .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] {
+    float: left !important; }
+    .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] .buttonright, .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] #offer .button, #offer .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] .button, .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] #offer .buttonright, #offer .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] .buttonright, .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] #profile .srch .button, #profile .srch .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] .button,
+    .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] #queue .button,
+    #queue .ld-trade .box .box-shiny-alt:first-child .half[style="width: auto; float: right"] .button {
+      float: left !important; } }
+@media screen and (max-width: 800px) {
+  .tradepoll .left, .tradepoll .right {
+    width: 100% !important;
+    float: left !important;
+    max-width: none !important; }
+  .tradepoll .left .oitm {
+    float: left !important; }
+  .tradepoll .tradecnt {
+    background: #fff !important;
+    background-image: none !important; } }
+@media screen and (max-width: 600px) {
+  a.tab {
+    width: 100% !important; } }
