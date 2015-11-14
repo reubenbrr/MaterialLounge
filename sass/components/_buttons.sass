@@ -1,104 +1,94 @@
-a.button.destroyer, .button, a.button
-	padding: 0.25em 0.5em
-	margin: 0 0.5em 0 0
-	background: $white
-	color: $primary !important
-	+border-radius(0)
-	text-transform: uppercase
-	font-weight: 700
-	font-size: 12px !important
-	line-height: 2em
-	border: none
-	text-shadow: none !important
-	+box-shadow(0 0 0 transparent)
-	height: 2.5em
-	&:hover
-		background: $primary
-		color: $white !important
-		+box-shadow(0 0 0 transparent)
-	&:active, &:focus
-		background: $primary
-		color: $white !important
-		+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
-
-.buttonright
-	padding: 8px 10px
-	margin: 0 0 0 0.5em
-	background: $primary
-	color: $white !important
-	+border-radius(0)
-	text-transform: uppercase
-	font-weight: 700
-	font-size: 12px !important
-	border: none
-	text-shadow: none !important
-	+box-shadow(0 0 0 transparent)
-	line-height: 16px
-	&:hover
-		background: $primary-light
-		color: $white !important
-		+box-shadow(0 0 0 transparent)
-	&:active, &:focus
-		background: $primary-light
-		color: $white !important
-		+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
-
-#offer .button
-	@extend .buttonright
-	margin-left: 0 !important
-	margin-right: 0.5em !important
-
-#offer .buttonright
-	@extend .button
-
-.button
-	margin-left: 0
-	&#freezebutton
-		width: 100%
-		text-align: center
+main section
+	a.button.destroyer, .button, a.button
+		padding: 0.25em 0.5em
+		margin: 0 0.5em 0 0
+		background: $white
+		color: $primary !important
 		+border-radius(0)
-		+ div
-			margin-top: 1em !important
-
-
-#profile .srch .button,
-#queue .button
-	@extend .buttonright
-
-#queue .button
-	width: 100% !important
-	margin: 0.5em 0
-
-.matchmain, .bpheader
-	a.button.destroyer, .button, .buttonright
-		background: $secondary
-		color: $white !important
-		+border-radius(0)
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 12px !important
+		line-height: 2em
+		border: none
+		text-shadow: none !important
 		+box-shadow(0 0 0 transparent)
-		line-height: 1.5em
+		height: 2.5em
 		&:hover
-			background: $secondary-light
+			background: $primary
+			color: $white !important
 			+box-shadow(0 0 0 transparent)
 		&:active, &:focus
-			background: $secondary-light
+			background: $primary
+			color: $white !important
 			+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
-
-.matchheader
-	.buttonright
-		background: $secondary-dark
+	.buttonright, a.buttonright
+		padding: 8px 10px
+		margin: 0 0 0 0.5em
+		background: $primary
 		color: $white !important
 		+border-radius(0)
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 12px !important
+		border: none
+		text-shadow: none !important
 		+box-shadow(0 0 0 transparent)
+		line-height: 16px
 		&:hover
-			background: $secondary-darker
+			background: $primary-light
+			color: $white !important
+			+box-shadow(0 0 0 transparent)
 		&:active, &:focus
+			background: $primary-light
+			color: $white !important
 			+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
-
-.tradepoll .tradeheader span a.button
-	float: left !important
-
-.box-shiny-alt
+	#offer .button, a.button
+		@extend .buttonright
+		margin-left: 0 !important
+		margin-right: 0.5em !important
+	#offer .buttonright
+		@extend .button
 	.button
-		float: right
-		&:nth-child(7), &:nth-child(8)
-			margin-top: 1em
+		margin-left: 0
+		&#freezebutton
+			width: 100%
+			text-align: center
+			+border-radius(0)
+			+ div
+				margin-top: 1em !important
+	#profile .srch .button,
+	#queue .button
+		@extend .buttonright
+	#queue .button
+		width: 100% !important
+		margin: 0.5em 0
+	.matchmain, .bpheader
+		a.button.destroyer, .button, .buttonright
+			background: $secondary
+			color: $white !important
+			+border-radius(0)
+			+box-shadow(0 0 0 transparent)
+			line-height: 1.5em
+			&:hover
+				background: $secondary-light
+				+box-shadow(0 0 0 transparent)
+			&:active, &:focus
+				background: $secondary-light
+				+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
+	.matchheader
+		.buttonright
+			background: $secondary-dark
+			color: $white !important
+			+border-radius(0)
+			+box-shadow(0 0 0 transparent)
+			&:hover
+				background: $secondary-darker
+			&:active, &:focus
+				+box-shadow(0 2px 3px rgba($grey-darker, 0.3))
+	.tradepoll .tradeheader span a.button
+		float: left !important
+	.box-shiny-alt
+		.button
+			float: right
+			&:nth-child(7), &:nth-child(8)
+				margin-top: 1em

@@ -4,10 +4,11 @@
 			height: auto !important
 			margin-top: 0.5em !important
 			a
+				height: 40px !important
 				padding: 0 0.1em !important
 				margin: 0 0.25em !important
 				min-height: 0 !important
-				min-width: 50px !important
+				min-width: 0px !important
 				width: auto !important
 				font-size: 0 !important
 		a#logout
@@ -15,7 +16,12 @@
 			margin: 0.7em 0 0 0 !important
 			float: right !important
 	main
+		width: 100% !important
+		height: auto !important
+		float: left !important
+		padding-right: 1em !important
 		section.box, section
+			max-width: none !important
 			width: 100% !important
 			padding-left: 1em !important
 			padding-right: 1em !important
@@ -57,18 +63,24 @@
 					float: left !important
 					.buttonright
 						float: left !important
+	
 @media screen and (max-width: 800px)
+	.oitm
+		float: left !important
 	.tradepoll
 		.left, .right
 			width: 100% !important
 			float: left !important
 			max-width: none !important
-		.left
+			.oitm
+				float: left !important
+		form.left, .left
 			.oitm
 				float: left !important
 		.tradecnt
 			background: $white !important
 			background-image: none !important
+
 @media screen and (max-width: 600px)
 	a.tab
 		width: 100% !important
